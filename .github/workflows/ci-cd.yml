@@ -62,3 +62,4 @@ jobs:
           cache-dependency-path: frontend-react/package-lock.json
 
       - name: Install dependencies
+        working-directory: frontend-react
