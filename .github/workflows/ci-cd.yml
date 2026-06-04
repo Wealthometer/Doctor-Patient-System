@@ -50,3 +50,4 @@ jobs:
   # ────────────────────────────────────────────────────────────────────────────
   test-frontend:
     name: Test Frontend
+    runs-on: ubuntu-latest
