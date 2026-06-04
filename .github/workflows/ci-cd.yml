@@ -36,3 +36,4 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
+      - name: Run tests — ${{ matrix.service }}
