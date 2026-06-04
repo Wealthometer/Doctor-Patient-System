@@ -45,3 +45,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: test-report-${{ matrix.service }}
+          path: backend/${{ matrix.service }}/target/surefire-reports/
