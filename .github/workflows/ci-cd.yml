@@ -11,3 +11,4 @@ env:
   AWS_ACCOUNT_ID:  ${{ secrets.AWS_ACCOUNT_ID }}
   EKS_CLUSTER:     healthcare-cluster
   ECR_REGISTRY:    ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+
