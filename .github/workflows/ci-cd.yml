@@ -18,3 +18,4 @@ jobs:
     name: Test Backend Services
     runs-on: ubuntu-latest
     strategy:
+      matrix:
