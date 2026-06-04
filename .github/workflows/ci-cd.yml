@@ -64,3 +64,4 @@ jobs:
       - name: Install dependencies
         working-directory: frontend-react
         run: npm ci
+
