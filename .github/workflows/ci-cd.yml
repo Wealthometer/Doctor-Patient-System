@@ -24,3 +24,4 @@ jobs:
           - patient-service
           - doctor-service
           - appointment-service
+          - prescription-service
