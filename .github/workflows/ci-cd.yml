@@ -23,3 +23,4 @@ jobs:
           - auth-service
           - patient-service
           - doctor-service
+          - appointment-service
