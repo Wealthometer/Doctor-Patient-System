@@ -40,3 +40,4 @@ jobs:
         working-directory: backend/${{ matrix.service }}
         run: mvn clean test -B
 
+      - name: Upload test reports
