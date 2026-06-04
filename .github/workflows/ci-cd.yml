@@ -27,3 +27,4 @@ jobs:
           - prescription-service
           - billing-service
     steps:
+      - uses: actions/checkout@v4
