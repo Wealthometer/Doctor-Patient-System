@@ -2,3 +2,4 @@ name: HealthCare+ CI/CD Pipeline
 
 on:
   push:
+    branches: [main, develop]
