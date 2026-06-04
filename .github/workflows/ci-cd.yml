@@ -47,3 +47,4 @@ jobs:
           name: test-report-${{ matrix.service }}
           path: backend/${{ matrix.service }}/target/surefire-reports/
 
+  # ────────────────────────────────────────────────────────────────────────────
