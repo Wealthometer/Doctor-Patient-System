@@ -52,3 +52,4 @@ jobs:
     name: Test Frontend
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
