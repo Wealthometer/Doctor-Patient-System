@@ -48,3 +48,4 @@ jobs:
           path: backend/${{ matrix.service }}/target/surefire-reports/
 
   # ────────────────────────────────────────────────────────────────────────────
+  test-frontend:
