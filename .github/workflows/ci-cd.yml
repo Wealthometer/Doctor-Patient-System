@@ -41,3 +41,4 @@ jobs:
         run: mvn clean test -B
 
       - name: Upload test reports
+        uses: actions/upload-artifact@v4
