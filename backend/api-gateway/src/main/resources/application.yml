@@ -10,3 +10,4 @@ spring:
     gateway:
       discovery:
         locator:
+          enabled: true
