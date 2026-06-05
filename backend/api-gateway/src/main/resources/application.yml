@@ -82,3 +82,4 @@ spring:
 
         # ── Billing Service ─────────────────────────────────────────────
         - id: billing-service
+          uri: lb://billing-service
