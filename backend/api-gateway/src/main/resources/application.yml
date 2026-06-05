@@ -34,3 +34,4 @@ spring:
             - name: CircuitBreaker
               args:
                 name: auth-service
+                fallbackUri: forward:/fallback/auth
