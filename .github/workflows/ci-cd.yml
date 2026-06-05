@@ -166,3 +166,4 @@ jobs:
     needs: [build-and-push, build-and-push-frontend]
     if: github.ref == 'refs/heads/main'
     steps:
+      - uses: actions/checkout@v4
