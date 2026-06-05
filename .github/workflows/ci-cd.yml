@@ -157,3 +157,4 @@ jobs:
             -t $ECR_REGISTRY/frontend:${{ github.sha }} \
             -t $ECR_REGISTRY/frontend:latest .
           docker push $ECR_REGISTRY/frontend:${{ github.sha }}
+          docker push $ECR_REGISTRY/frontend:latest
