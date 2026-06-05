@@ -183,3 +183,4 @@ springdoc:
 logging:
   level:
     com.healthcare.gateway: DEBUG
+    org.springframework.cloud.gateway: INFO
