@@ -86,3 +86,4 @@ spring:
           predicates:
             - Path=/api/v1/billing/**
           filters:
+            - name: CircuitBreaker
