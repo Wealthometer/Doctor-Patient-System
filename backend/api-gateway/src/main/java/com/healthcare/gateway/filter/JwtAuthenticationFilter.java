@@ -46,3 +46,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         if (PUBLIC_PATHS.stream().anyMatch(path::startsWith)) {
             return chain.filter(exchange);
         }
+
