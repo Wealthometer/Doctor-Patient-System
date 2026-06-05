@@ -51,3 +51,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             return unauthorized(exchange, "Missing or invalid Authorization header");
+        }
