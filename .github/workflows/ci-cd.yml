@@ -86,3 +86,4 @@ jobs:
     strategy:
       matrix:
         service:
+          - auth-service
