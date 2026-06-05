@@ -72,3 +72,4 @@ jobs:
       - name: Lint
         working-directory: frontend-react
         run: npm run lint
+
