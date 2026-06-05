@@ -20,3 +20,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
         Instant start = Instant.now();
         String method = exchange.getRequest().getMethod().name();
         String path   = exchange.getRequest().getURI().getPath();
+
