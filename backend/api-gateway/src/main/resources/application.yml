@@ -113,3 +113,4 @@ spring:
             - RewritePath=/patient-service/v3/api-docs, /v3/api-docs
 
         - id: doctor-service-docs
+          uri: lb://doctor-service
