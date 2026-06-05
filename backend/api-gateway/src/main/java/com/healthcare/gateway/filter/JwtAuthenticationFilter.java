@@ -24,3 +24,4 @@ import java.util.List;
 @Slf4j
 public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
+    @Value("${application.security.jwt.secret-key}")
