@@ -21,3 +21,4 @@ public class FallbackController {
                 "message", service + " is currently unavailable. Please try again later."
         ));
     }
+
