@@ -90,3 +90,4 @@ spring:
               args:
                 name: billing-service
                 fallbackUri: forward:/fallback/billing
+
