@@ -120,3 +120,4 @@ jobs:
       - name: Build Docker image — ${{ matrix.service }}
         working-directory: backend/${{ matrix.service }}
         run: |
+          docker build \
