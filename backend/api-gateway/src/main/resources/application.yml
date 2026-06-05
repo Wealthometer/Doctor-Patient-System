@@ -68,4 +68,5 @@ spring:
               args:
                 name: appointment-service
                 fallbackUri: forward:/fallback/appointment
+
             - name: CircuitBreaker
