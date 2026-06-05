@@ -66,3 +66,4 @@ jobs:
         run: npm ci
 
       - name: Type check
+        working-directory: frontend-react
