@@ -88,3 +88,4 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
+                name: billing-service
