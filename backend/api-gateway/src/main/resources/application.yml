@@ -33,3 +33,4 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
+                name: auth-service
