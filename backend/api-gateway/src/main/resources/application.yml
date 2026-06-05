@@ -149,3 +149,4 @@ eureka:
 
 application:
   security:
+    jwt:
