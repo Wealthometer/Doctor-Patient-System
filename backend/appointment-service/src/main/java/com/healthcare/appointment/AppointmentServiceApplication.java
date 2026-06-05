@@ -11,3 +11,4 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 public class AppointmentServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(AppointmentServiceApplication.class, args);
+    }
