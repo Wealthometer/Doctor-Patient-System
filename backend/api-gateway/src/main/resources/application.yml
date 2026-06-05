@@ -104,3 +104,4 @@ spring:
             - Path=/auth-service/v3/api-docs
           filters:
             - RewritePath=/auth-service/v3/api-docs, /v3/api-docs
+
