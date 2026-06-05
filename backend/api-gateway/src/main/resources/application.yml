@@ -48,3 +48,4 @@ spring:
                 fallbackUri: forward:/fallback/patient
 
         # ── Doctor Service ──────────────────────────────────────────────
+        - id: doctor-service
