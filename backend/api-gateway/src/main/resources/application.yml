@@ -100,3 +100,4 @@ spring:
         # ── Swagger UI aggregation ──────────────────────────────────────
         - id: auth-service-docs
           uri: lb://auth-service
+          predicates:
