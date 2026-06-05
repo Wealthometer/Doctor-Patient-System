@@ -188,3 +188,4 @@ jobs:
         run: kubectl apply -f kubernetes/statefulsets/postgres-statefulsets.yaml
 
       - name: Deploy microservices
+        run: |
