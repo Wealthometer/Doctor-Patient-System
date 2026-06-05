@@ -69,4 +69,5 @@ spring:
                 name: appointment-service
                 fallbackUri: forward:/fallback/appointment
 
+        # ── Prescription Service ────────────────────────────────────────
             - name: CircuitBreaker
