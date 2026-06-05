@@ -131,3 +131,4 @@ jobs:
           docker push $ECR_REGISTRY/${{ matrix.service }}:latest
 
   # ────────────────────────────────────────────────────────────────────────────
+  build-and-push-frontend:
