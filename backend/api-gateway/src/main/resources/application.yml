@@ -168,3 +168,4 @@ springdoc:
     path: /swagger-ui.html
     urls:
       - name: Auth Service
+        url: /auth-service/v3/api-docs
