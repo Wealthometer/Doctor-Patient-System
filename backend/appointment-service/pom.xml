@@ -91,3 +91,4 @@
       <version>${mapstruct.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.mapstruct</groupId>
