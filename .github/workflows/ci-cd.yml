@@ -110,3 +110,4 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
+      - name: Set up JDK 21 (for backend builds)
