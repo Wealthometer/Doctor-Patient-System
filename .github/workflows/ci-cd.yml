@@ -117,3 +117,4 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
+      - name: Build Docker image — ${{ matrix.service }}
