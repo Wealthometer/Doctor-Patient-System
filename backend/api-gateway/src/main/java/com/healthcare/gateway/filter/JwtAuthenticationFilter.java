@@ -21,3 +21,4 @@ import javax.crypto.SecretKey;
 import java.util.List;
 
 @Component
+@Slf4j
