@@ -61,3 +61,4 @@ spring:
         # ── Appointment Service ─────────────────────────────────────────
         - id: appointment-service
           uri: lb://appointment-service
+          predicates:
