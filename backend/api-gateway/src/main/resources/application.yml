@@ -27,3 +27,4 @@ spring:
       routes:
         # ── Auth Service ────────────────────────────────────────────────
         - id: auth-service
+          uri: lb://auth-service
