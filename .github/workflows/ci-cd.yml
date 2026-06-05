@@ -164,3 +164,4 @@ jobs:
     name: Deploy to Kubernetes (EKS)
     runs-on: ubuntu-latest
     needs: [build-and-push, build-and-push-frontend]
+    if: github.ref == 'refs/heads/main'
