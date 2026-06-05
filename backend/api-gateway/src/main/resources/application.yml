@@ -177,3 +177,4 @@ springdoc:
         url: /appointment-service/v3/api-docs
       - name: Prescription Service
         url: /prescription-service/v3/api-docs
+      - name: Billing Service
