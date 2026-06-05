@@ -15,3 +15,4 @@
   <name>api-gateway</name>
 
   <properties>
+    <java.version>21</java.version>
