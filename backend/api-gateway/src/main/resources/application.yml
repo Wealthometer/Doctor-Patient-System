@@ -112,3 +112,4 @@ spring:
           filters:
             - RewritePath=/patient-service/v3/api-docs, /v3/api-docs
 
+        - id: doctor-service-docs
