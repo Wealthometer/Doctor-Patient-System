@@ -26,3 +26,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
     @Value("${application.security.jwt.secret-key}")
     private String secretKey;
+
