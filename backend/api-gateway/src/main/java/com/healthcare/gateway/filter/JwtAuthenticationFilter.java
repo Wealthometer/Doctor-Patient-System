@@ -43,3 +43,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         String path = request.getURI().getPath();
 
         // Allow public paths
+        if (PUBLIC_PATHS.stream().anyMatch(path::startsWith)) {
