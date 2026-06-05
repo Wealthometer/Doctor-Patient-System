@@ -94,3 +94,4 @@ spring:
         # ── Notification Service ────────────────────────────────────────
         - id: notification-service
           uri: lb://notification-service
+          predicates:
