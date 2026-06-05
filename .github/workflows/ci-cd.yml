@@ -74,3 +74,4 @@ jobs:
         run: npm run lint
 
       - name: Run tests
+        working-directory: frontend-react
