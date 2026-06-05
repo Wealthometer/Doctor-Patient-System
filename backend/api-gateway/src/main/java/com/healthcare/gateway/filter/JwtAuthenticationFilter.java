@@ -71,3 +71,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .build();
 
             return chain.filter(exchange.mutate().request(mutatedRequest).build());
+
