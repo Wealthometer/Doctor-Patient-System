@@ -82,3 +82,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         ServerHttpResponse response = exchange.getResponse();
         response.setStatusCode(HttpStatus.UNAUTHORIZED);
         response.getHeaders().add("Content-Type", "application/json");
+        var body = response.bufferFactory().wrap(
