@@ -86,3 +86,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                 ("{\"error\":\"Unauthorized\",\"message\":\"" + message + "\"}").getBytes());
         return response.writeWith(Mono.just(body));
     }
+
