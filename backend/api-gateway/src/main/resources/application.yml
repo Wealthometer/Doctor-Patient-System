@@ -66,4 +66,5 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
+                name: appointment-service
             - name: CircuitBreaker
