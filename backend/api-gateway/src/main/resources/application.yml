@@ -121,3 +121,4 @@ spring:
 
         - id: appointment-service-docs
           uri: lb://appointment-service
+          predicates:
