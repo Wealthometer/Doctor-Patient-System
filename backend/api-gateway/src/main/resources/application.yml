@@ -44,3 +44,4 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
+                name: patient-service
