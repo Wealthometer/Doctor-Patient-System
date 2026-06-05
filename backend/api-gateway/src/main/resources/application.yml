@@ -136,3 +136,4 @@ spring:
         - id: billing-service-docs
           uri: lb://billing-service
           predicates:
+            - Path=/billing-service/v3/api-docs
