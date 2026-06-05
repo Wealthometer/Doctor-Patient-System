@@ -84,3 +84,4 @@ jobs:
     needs: [test-backend, test-frontend]
     if: github.ref == 'refs/heads/main'
     strategy:
+      matrix:
