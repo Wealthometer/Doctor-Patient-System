@@ -128,3 +128,4 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
