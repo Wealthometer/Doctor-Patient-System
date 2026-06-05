@@ -69,3 +69,4 @@ jobs:
         working-directory: frontend-react
         run: npx tsc --noEmit
 
+      - name: Lint
