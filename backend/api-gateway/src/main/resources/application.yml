@@ -80,3 +80,4 @@ spring:
                 name: prescription-service
                 fallbackUri: forward:/fallback/prescription
 
+        # ── Billing Service ─────────────────────────────────────────────
