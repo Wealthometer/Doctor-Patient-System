@@ -85,3 +85,4 @@ spring:
           uri: lb://billing-service
           predicates:
             - Path=/api/v1/billing/**
+          filters:
