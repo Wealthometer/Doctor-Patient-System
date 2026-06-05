@@ -41,3 +41,4 @@ spring:
           uri: lb://patient-service
           predicates:
             - Path=/api/v1/patients/**
+          filters:
