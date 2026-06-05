@@ -135,3 +135,4 @@ spring:
 
         - id: billing-service-docs
           uri: lb://billing-service
+          predicates:
