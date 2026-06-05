@@ -148,3 +148,4 @@ eureka:
     prefer-ip-address: true
 
 application:
+  security:
