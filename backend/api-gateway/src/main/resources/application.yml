@@ -43,3 +43,4 @@ spring:
             - Path=/api/v1/patients/**
           filters:
             - name: CircuitBreaker
+              args:
