@@ -102,3 +102,4 @@ spring:
           uri: lb://auth-service
           predicates:
             - Path=/auth-service/v3/api-docs
+          filters:
