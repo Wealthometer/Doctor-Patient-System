@@ -63,5 +63,6 @@ spring:
           uri: lb://appointment-service
           predicates:
             - Path=/api/v1/appointments/**
+          filters:
             - name: CircuitBreaker
             - name: CircuitBreaker
