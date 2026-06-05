@@ -17,3 +17,4 @@ public class FallbackController {
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(Map.of(
                 "timestamp", Instant.now().toString(),
                 "status", 503,
+                "error", "Service Unavailable",
