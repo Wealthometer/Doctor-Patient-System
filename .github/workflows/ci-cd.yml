@@ -77,3 +77,4 @@ jobs:
         working-directory: frontend-react
         run: npm test -- --run
 
+  # ────────────────────────────────────────────────────────────────────────────
