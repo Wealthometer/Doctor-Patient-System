@@ -153,3 +153,4 @@ jobs:
         working-directory: frontend-react
         run: |
           docker build \
+            --build-arg VITE_API_URL=https://api.healthcare.yourdomain.com \
