@@ -13,3 +13,4 @@ import java.util.Map;
 @RequestMapping("/fallback")
 public class FallbackController {
 
+    private ResponseEntity<Map<String, Object>> fallback(String service) {
