@@ -40,3 +40,4 @@ backend/**/target/
 */.history
 */.nyc_output
 /backend\api-gateway\.idea
+backend/**/.idea/
