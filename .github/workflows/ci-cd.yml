@@ -198,3 +198,4 @@ jobs:
           kubectl apply -f kubernetes/hpa/hpa.yaml
           kubectl apply -f kubernetes/ingress/ingress.yaml
 
+      - name: Wait for rollout
