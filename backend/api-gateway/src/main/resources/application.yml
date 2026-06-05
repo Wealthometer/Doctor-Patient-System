@@ -79,3 +79,4 @@ spring:
               args:
                 name: prescription-service
                 fallbackUri: forward:/fallback/prescription
+
