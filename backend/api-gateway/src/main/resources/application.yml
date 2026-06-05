@@ -49,3 +49,4 @@ spring:
 
         # ── Doctor Service ──────────────────────────────────────────────
         - id: doctor-service
+          uri: lb://doctor-service
