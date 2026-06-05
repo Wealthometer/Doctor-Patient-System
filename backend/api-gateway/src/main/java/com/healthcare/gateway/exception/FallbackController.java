@@ -18,3 +18,4 @@ public class FallbackController {
                 "timestamp", Instant.now().toString(),
                 "status", 503,
                 "error", "Service Unavailable",
+                "message", service + " is currently unavailable. Please try again later."
