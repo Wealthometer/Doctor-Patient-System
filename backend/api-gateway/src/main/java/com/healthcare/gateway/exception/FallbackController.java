@@ -15,3 +15,4 @@ public class FallbackController {
 
     private ResponseEntity<Map<String, Object>> fallback(String service) {
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(Map.of(
+                "timestamp", Instant.now().toString(),
