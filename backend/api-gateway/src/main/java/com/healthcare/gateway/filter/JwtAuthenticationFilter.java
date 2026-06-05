@@ -63,3 +63,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .getPayload();
 
             // Forward user info as headers to downstream services
+            ServerHttpRequest mutatedRequest = request.mutate()
