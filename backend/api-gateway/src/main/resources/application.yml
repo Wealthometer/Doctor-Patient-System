@@ -130,3 +130,4 @@ spring:
           uri: lb://prescription-service
           predicates:
             - Path=/prescription-service/v3/api-docs
+          filters:
