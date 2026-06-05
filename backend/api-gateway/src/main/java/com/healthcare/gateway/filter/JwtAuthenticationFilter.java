@@ -47,3 +47,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
             return chain.filter(exchange);
         }
 
+        String authHeader = request.getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
