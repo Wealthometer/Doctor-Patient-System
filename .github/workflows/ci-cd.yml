@@ -214,3 +214,4 @@ jobs:
       - name: Rollback on failure
         if: failure()
         run: |
+          echo "❌ Deployment failed — rolling back"
