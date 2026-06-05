@@ -164,3 +164,4 @@ management:
       show-details: always
 
 springdoc:
+  swagger-ui:
