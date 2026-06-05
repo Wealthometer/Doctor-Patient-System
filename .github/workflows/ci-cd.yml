@@ -97,3 +97,4 @@ jobs:
           - discovery-service
           - config-server
     steps:
+      - uses: actions/checkout@v4
