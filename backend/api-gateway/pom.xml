@@ -54,3 +54,4 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>org.projectlombok</groupId>
