@@ -190,3 +190,4 @@ jobs:
       - name: Deploy microservices
         run: |
           # Substitute image tag
+          sed -i "s|:latest|:${{ github.sha }}|g" kubernetes/deployments/deployments.yaml
