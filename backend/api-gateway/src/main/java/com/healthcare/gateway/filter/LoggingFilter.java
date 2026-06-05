@@ -18,3 +18,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         Instant start = Instant.now();
+        String method = exchange.getRequest().getMethod().name();
