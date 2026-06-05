@@ -160,3 +160,4 @@ jobs:
           docker push $ECR_REGISTRY/frontend:latest
 
   # ────────────────────────────────────────────────────────────────────────────
+  deploy:
