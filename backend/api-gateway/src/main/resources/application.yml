@@ -138,3 +138,4 @@ spring:
           predicates:
             - Path=/billing-service/v3/api-docs
           filters:
+            - RewritePath=/billing-service/v3/api-docs, /v3/api-docs
