@@ -108,3 +108,4 @@ spring:
         - id: patient-service-docs
           uri: lb://patient-service
           predicates:
+            - Path=/patient-service/v3/api-docs
