@@ -27,3 +27,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
                     ? exchange.getResponse().getStatusCode().value() : 0;
             log.info("[GATEWAY] {} {} -> {} ({}ms)", method, path, status, elapsed);
         });
+    }
