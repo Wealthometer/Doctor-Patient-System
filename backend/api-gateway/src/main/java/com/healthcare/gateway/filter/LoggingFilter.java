@@ -28,3 +28,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
             log.info("[GATEWAY] {} {} -> {} ({}ms)", method, path, status, elapsed);
         });
     }
+
