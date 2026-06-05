@@ -194,3 +194,4 @@ jobs:
           kubectl apply -f kubernetes/deployments/deployments.yaml
 
       - name: Apply HPA & Ingress
+        run: |
