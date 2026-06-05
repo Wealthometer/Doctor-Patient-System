@@ -74,4 +74,5 @@ spring:
           uri: lb://prescription-service
           predicates:
             - Path=/api/v1/prescriptions/**
+          filters:
             - name: CircuitBreaker
