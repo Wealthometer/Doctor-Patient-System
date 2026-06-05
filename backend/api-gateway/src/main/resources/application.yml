@@ -53,3 +53,4 @@ spring:
           predicates:
             - Path=/api/v1/doctors/**
           filters:
+            - name: CircuitBreaker
