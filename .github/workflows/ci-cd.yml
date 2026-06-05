@@ -152,3 +152,4 @@ jobs:
       - name: Build & push frontend
         working-directory: frontend-react
         run: |
+          docker build \
