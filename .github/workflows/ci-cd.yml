@@ -212,3 +212,4 @@ jobs:
         run: echo "✅ Deployment to EKS successful — SHA ${{ github.sha }}"
 
       - name: Rollback on failure
+        if: failure()
