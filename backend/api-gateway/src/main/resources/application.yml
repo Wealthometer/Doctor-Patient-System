@@ -118,3 +118,4 @@ spring:
             - Path=/doctor-service/v3/api-docs
           filters:
             - RewritePath=/doctor-service/v3/api-docs, /v3/api-docs
+
