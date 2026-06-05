@@ -111,3 +111,4 @@ spring:
             - Path=/patient-service/v3/api-docs
           filters:
             - RewritePath=/patient-service/v3/api-docs, /v3/api-docs
+
