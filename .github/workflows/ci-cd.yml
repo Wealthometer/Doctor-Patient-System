@@ -216,3 +216,4 @@ jobs:
         run: |
           echo "❌ Deployment failed — rolling back"
           kubectl rollout undo deployment/api-gateway  -n healthcare-system
+          kubectl rollout undo deployment/auth-service -n healthcare-system
