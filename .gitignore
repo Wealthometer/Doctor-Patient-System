@@ -8,6 +8,7 @@
 */.idea
 */.vscode
 */target
+backend/**/target/
 */dist
 */build
 */coverage
