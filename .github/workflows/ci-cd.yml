@@ -87,3 +87,4 @@ jobs:
       matrix:
         service:
           - auth-service
+          - patient-service
