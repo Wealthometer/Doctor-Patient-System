@@ -126,3 +126,4 @@ jobs:
             .
 
       - name: Push to ECR — ${{ matrix.service }}
+        run: |
