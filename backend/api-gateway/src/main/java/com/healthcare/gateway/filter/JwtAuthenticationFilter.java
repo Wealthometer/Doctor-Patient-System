@@ -87,3 +87,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         return response.writeWith(Mono.just(body));
     }
 
+    private SecretKey getSignInKey() {
