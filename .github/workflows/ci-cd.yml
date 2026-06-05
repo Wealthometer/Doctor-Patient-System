@@ -95,3 +95,4 @@ jobs:
           - billing-service
           - api-gateway
           - discovery-service
+          - config-server
