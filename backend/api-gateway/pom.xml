@@ -42,3 +42,4 @@
       <version>0.12.3</version>
     </dependency>
     <dependency>
+      <groupId>io.jsonwebtoken</groupId>
