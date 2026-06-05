@@ -26,3 +26,4 @@ public class FallbackController {
     @GetMapping("/patient")      public ResponseEntity<?> patientFallback()      { return fallback("Patient Service"); }
     @GetMapping("/doctor")       public ResponseEntity<?> doctorFallback()       { return fallback("Doctor Service"); }
     @GetMapping("/appointment")  public ResponseEntity<?> appointmentFallback()  { return fallback("Appointment Service"); }
+    @GetMapping("/prescription") public ResponseEntity<?> prescriptionFallback() { return fallback("Prescription Service"); }
