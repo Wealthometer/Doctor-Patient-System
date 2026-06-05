@@ -98,3 +98,4 @@ spring:
             - Path=/api/v1/notifications/**
 
         # ── Swagger UI aggregation ──────────────────────────────────────
+        - id: auth-service-docs
