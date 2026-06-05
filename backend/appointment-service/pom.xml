@@ -63,3 +63,4 @@
       <artifactId>flyway-database-postgresql</artifactId>
       <version>10.8.1</version>
     </dependency>
+    <dependency>
