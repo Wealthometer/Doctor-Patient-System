@@ -10,3 +10,4 @@
     <relativePath/>
   </parent>
   <groupId>com.healthcare</groupId>
+  <artifactId>api-gateway</artifactId>
