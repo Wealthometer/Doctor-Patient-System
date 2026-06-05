@@ -199,3 +199,4 @@ jobs:
           kubectl apply -f kubernetes/ingress/ingress.yaml
 
       - name: Wait for rollout
+        run: |
