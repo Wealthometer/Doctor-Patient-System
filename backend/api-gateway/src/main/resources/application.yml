@@ -40,3 +40,4 @@ spring:
         - id: patient-service
           uri: lb://patient-service
           predicates:
+            - Path=/api/v1/patients/**
