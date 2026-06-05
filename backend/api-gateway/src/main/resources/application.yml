@@ -125,3 +125,4 @@ spring:
             - Path=/appointment-service/v3/api-docs
           filters:
             - RewritePath=/appointment-service/v3/api-docs, /v3/api-docs
+
