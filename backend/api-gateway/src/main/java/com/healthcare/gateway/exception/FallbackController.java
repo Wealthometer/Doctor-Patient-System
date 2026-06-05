@@ -10,3 +10,4 @@ import java.time.Instant;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/fallback")
