@@ -182,3 +182,4 @@ jobs:
         run: |
           kubectl apply -f kubernetes/namespaces/namespace.yaml
           kubectl apply -f kubernetes/secrets/secrets.yaml
+          kubectl apply -f kubernetes/configmaps/configmaps.yaml
