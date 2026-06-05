@@ -179,3 +179,4 @@ jobs:
         run: aws eks update-kubeconfig --region $AWS_REGION --name $EKS_CLUSTER
 
       - name: Apply namespace & config
+        run: |
