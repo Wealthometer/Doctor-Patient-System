@@ -76,3 +76,4 @@ spring:
             - Path=/api/v1/prescriptions/**
           filters:
             - name: CircuitBreaker
+              args:
