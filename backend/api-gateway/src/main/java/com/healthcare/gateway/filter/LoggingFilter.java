@@ -22,3 +22,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
         String path   = exchange.getRequest().getURI().getPath();
 
         return chain.filter(exchange).doFinally(signalType -> {
+            long elapsed = Duration.between(start, Instant.now()).toMillis();
