@@ -18,3 +18,4 @@
 */.nuxt
 */.vuepress
 */.serverless
+*/.parcel-cache
