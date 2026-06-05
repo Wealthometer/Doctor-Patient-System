@@ -184,3 +184,4 @@ jobs:
           kubectl apply -f kubernetes/secrets/secrets.yaml
           kubectl apply -f kubernetes/configmaps/configmaps.yaml
 
+      - name: Deploy databases
