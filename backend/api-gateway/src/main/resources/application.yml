@@ -36,3 +36,4 @@ spring:
                 name: auth-service
                 fallbackUri: forward:/fallback/auth
 
+        # ── Patient Service ─────────────────────────────────────────────
