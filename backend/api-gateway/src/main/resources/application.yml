@@ -32,3 +32,4 @@ spring:
             - Path=/api/v1/auth/**
           filters:
             - name: CircuitBreaker
+              args:
