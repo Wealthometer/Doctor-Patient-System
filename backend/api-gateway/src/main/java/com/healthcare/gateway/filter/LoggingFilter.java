@@ -21,3 +21,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
         String method = exchange.getRequest().getMethod().name();
         String path   = exchange.getRequest().getURI().getPath();
 
+        return chain.filter(exchange).doFinally(signalType -> {
