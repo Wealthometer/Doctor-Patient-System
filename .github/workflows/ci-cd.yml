@@ -128,3 +128,4 @@ jobs:
       - name: Push to ECR — ${{ matrix.service }}
         run: |
           docker push $ECR_REGISTRY/${{ matrix.service }}:${{ github.sha }}
+          docker push $ECR_REGISTRY/${{ matrix.service }}:latest
