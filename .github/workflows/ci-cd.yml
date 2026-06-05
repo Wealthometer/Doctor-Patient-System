@@ -91,3 +91,4 @@ jobs:
           - doctor-service
           - appointment-service
           - prescription-service
+          - notification-service
