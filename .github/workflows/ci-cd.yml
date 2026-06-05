@@ -93,3 +93,4 @@ jobs:
           - prescription-service
           - notification-service
           - billing-service
+          - api-gateway
