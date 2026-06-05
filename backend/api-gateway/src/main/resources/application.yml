@@ -59,3 +59,4 @@ spring:
                 fallbackUri: forward:/fallback/doctor
 
         # ── Appointment Service ─────────────────────────────────────────
+        - id: appointment-service
