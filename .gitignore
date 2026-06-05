@@ -33,3 +33,4 @@
 */.yarn/sdks
 */.yarn/versions
 */.pnp.*
+*/.vscode-test
