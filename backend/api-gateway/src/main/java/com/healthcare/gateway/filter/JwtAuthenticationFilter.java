@@ -57,3 +57,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
         try {
             Claims claims = Jwts.parser()
+                    .verifyWith(getSignInKey())
