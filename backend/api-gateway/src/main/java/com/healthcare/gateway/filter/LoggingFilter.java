@@ -24,3 +24,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
         return chain.filter(exchange).doFinally(signalType -> {
             long elapsed = Duration.between(start, Instant.now()).toMillis();
             int status   = exchange.getResponse().getStatusCode() != null
+                    ? exchange.getResponse().getStatusCode().value() : 0;
