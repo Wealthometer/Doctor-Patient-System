@@ -73,3 +73,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
             return chain.filter(exchange.mutate().request(mutatedRequest).build());
 
         } catch (Exception e) {
+            log.warn("JWT validation failed for path {}: {}", path, e.getMessage());
