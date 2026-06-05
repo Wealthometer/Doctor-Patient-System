@@ -129,3 +129,4 @@ spring:
         - id: prescription-service-docs
           uri: lb://prescription-service
           predicates:
+            - Path=/prescription-service/v3/api-docs
