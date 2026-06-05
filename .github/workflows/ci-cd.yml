@@ -205,3 +205,4 @@ jobs:
           kubectl rollout status deployment/patient-service -n healthcare-system --timeout=300s
 
       - name: Verify deployment
+        run: kubectl get pods -n healthcare-system
