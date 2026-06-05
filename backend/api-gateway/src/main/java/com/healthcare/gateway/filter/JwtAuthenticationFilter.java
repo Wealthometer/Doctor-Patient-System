@@ -62,3 +62,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .parseSignedClaims(token)
                     .getPayload();
 
+            // Forward user info as headers to downstream services
