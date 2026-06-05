@@ -30,3 +30,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
     // Paths that don't need JWT
     private static final List<String> PUBLIC_PATHS = List.of(
             "/api/v1/auth/register",
+            "/api/v1/auth/login",
