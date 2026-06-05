@@ -7,3 +7,4 @@
 */.env.production
 */.idea
 */.vscode
+*/target
