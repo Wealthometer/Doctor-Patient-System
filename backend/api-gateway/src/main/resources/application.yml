@@ -132,3 +132,4 @@ spring:
             - Path=/prescription-service/v3/api-docs
           filters:
             - RewritePath=/prescription-service/v3/api-docs, /v3/api-docs
+
