@@ -109,3 +109,4 @@ spring:
           uri: lb://patient-service
           predicates:
             - Path=/patient-service/v3/api-docs
+          filters:
