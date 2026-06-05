@@ -193,3 +193,4 @@ jobs:
           sed -i "s|:latest|:${{ github.sha }}|g" kubernetes/deployments/deployments.yaml
           kubectl apply -f kubernetes/deployments/deployments.yaml
 
+      - name: Apply HPA & Ingress
