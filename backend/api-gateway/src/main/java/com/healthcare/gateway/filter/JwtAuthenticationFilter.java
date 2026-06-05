@@ -22,3 +22,4 @@ import java.util.List;
 
 @Component
 @Slf4j
+public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
