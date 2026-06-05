@@ -91,3 +91,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
     }
+
