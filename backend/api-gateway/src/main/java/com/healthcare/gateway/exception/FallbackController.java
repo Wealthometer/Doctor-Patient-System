@@ -22,3 +22,4 @@ public class FallbackController {
         ));
     }
 
+    @GetMapping("/auth")         public ResponseEntity<?> authFallback()         { return fallback("Auth Service"); }
