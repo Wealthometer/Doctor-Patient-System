@@ -186,3 +186,4 @@ jobs:
 
       - name: Deploy databases
         run: kubectl apply -f kubernetes/statefulsets/postgres-statefulsets.yaml
+
