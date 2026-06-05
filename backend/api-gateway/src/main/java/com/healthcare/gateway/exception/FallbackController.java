@@ -19,3 +19,4 @@ public class FallbackController {
                 "status", 503,
                 "error", "Service Unavailable",
                 "message", service + " is currently unavailable. Please try again later."
+        ));
