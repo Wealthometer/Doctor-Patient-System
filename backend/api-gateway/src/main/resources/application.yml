@@ -62,3 +62,4 @@ spring:
         - id: appointment-service
           uri: lb://appointment-service
           predicates:
+            - name: CircuitBreaker
