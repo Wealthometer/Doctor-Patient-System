@@ -69,3 +69,4 @@
     <dependencies>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
