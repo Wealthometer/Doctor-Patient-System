@@ -57,3 +57,4 @@ spring:
               args:
                 name: doctor-service
                 fallbackUri: forward:/fallback/doctor
+
