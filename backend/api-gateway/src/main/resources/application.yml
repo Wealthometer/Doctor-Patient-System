@@ -134,3 +134,4 @@ spring:
             - RewritePath=/prescription-service/v3/api-docs, /v3/api-docs
 
         - id: billing-service-docs
+          uri: lb://billing-service
