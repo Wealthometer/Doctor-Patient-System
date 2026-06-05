@@ -34,8 +34,8 @@
 */.yarn/versions
 */.pnp.*
 */.vscode-test
-*/.idea
 */.vs
 */.vscode
 */.history
 */.nyc_output
+/backend\api-gateway\.idea
