@@ -77,3 +77,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
             return unauthorized(exchange, "Invalid or expired token");
         }
     }
+
