@@ -55,3 +55,4 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
+                name: doctor-service
