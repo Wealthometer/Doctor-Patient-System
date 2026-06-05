@@ -157,3 +157,4 @@ management:
     web:
       exposure:
         include: health,info,metrics,gateway
+  endpoint:
