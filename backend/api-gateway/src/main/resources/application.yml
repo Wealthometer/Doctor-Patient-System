@@ -163,3 +163,4 @@ management:
     health:
       show-details: always
 
+springdoc:
