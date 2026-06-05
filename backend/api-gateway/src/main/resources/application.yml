@@ -173,3 +173,4 @@ springdoc:
         url: /patient-service/v3/api-docs
       - name: Doctor Service
         url: /doctor-service/v3/api-docs
+      - name: Appointment Service
