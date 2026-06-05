@@ -84,3 +84,4 @@ spring:
         - id: billing-service
           uri: lb://billing-service
           predicates:
+            - Path=/api/v1/billing/**
