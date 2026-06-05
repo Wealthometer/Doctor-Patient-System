@@ -123,3 +123,4 @@ jobs:
           docker build \
             -t $ECR_REGISTRY/${{ matrix.service }}:${{ github.sha }} \
             -t $ECR_REGISTRY/${{ matrix.service }}:latest \
+            .
