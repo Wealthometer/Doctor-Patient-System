@@ -113,3 +113,4 @@ jobs:
       - name: Set up JDK 21 (for backend builds)
         uses: actions/setup-java@v4
         with:
+          java-version: '21'
