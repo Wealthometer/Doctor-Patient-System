@@ -28,3 +28,4 @@ spring:
         # ── Auth Service ────────────────────────────────────────────────
         - id: auth-service
           uri: lb://auth-service
+          predicates:
