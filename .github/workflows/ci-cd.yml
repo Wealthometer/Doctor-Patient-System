@@ -125,3 +125,4 @@ jobs:
             -t $ECR_REGISTRY/${{ matrix.service }}:latest \
             .
 
+      - name: Push to ECR — ${{ matrix.service }}
