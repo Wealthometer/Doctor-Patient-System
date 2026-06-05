@@ -88,3 +88,4 @@ jobs:
         service:
           - auth-service
           - patient-service
+          - doctor-service
