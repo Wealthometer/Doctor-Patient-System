@@ -60,3 +60,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .verifyWith(getSignInKey())
                     .build()
                     .parseSignedClaims(token)
+                    .getPayload();
