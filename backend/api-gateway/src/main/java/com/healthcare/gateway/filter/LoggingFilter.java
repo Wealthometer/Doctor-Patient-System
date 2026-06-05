@@ -16,3 +16,4 @@ import java.time.Instant;
 public class LoggingFilter implements GlobalFilter, Ordered {
 
     @Override
+    public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
