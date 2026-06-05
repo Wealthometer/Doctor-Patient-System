@@ -87,3 +87,4 @@ spring:
             - Path=/api/v1/billing/**
           filters:
             - name: CircuitBreaker
+              args:
