@@ -91,3 +91,4 @@ spring:
                 name: billing-service
                 fallbackUri: forward:/fallback/billing
 
+        # ── Notification Service ────────────────────────────────────────
