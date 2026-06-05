@@ -155,3 +155,4 @@ jobs:
           docker build \
             --build-arg VITE_API_URL=https://api.healthcare.yourdomain.com \
             -t $ECR_REGISTRY/frontend:${{ github.sha }} \
+            -t $ECR_REGISTRY/frontend:latest .
