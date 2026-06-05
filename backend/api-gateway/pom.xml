@@ -48,3 +48,4 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>io.jsonwebtoken</groupId>
