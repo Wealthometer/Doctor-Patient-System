@@ -93,3 +93,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
     }
 
     @Override
+    public int getOrder() {
