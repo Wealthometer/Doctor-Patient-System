@@ -10,3 +10,4 @@
         <module name="api-gateway" />
       </profile>
     </annotationProcessing>
+  </component>
