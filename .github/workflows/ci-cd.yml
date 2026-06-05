@@ -121,3 +121,4 @@ jobs:
         working-directory: backend/${{ matrix.service }}
         run: |
           docker build \
+            -t $ECR_REGISTRY/${{ matrix.service }}:${{ github.sha }} \
