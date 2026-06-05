@@ -115,3 +115,4 @@ spring:
         - id: doctor-service-docs
           uri: lb://doctor-service
           predicates:
+            - Path=/doctor-service/v3/api-docs
