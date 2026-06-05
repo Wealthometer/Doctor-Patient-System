@@ -182,3 +182,4 @@ springdoc:
 
 logging:
   level:
+    com.healthcare.gateway: DEBUG
