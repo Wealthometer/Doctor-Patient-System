@@ -59,3 +59,4 @@
       <artifactId>flyway-core</artifactId>
     </dependency>
     <dependency>
+      <artifactId>flyway-database-postgresql</artifactId>
