@@ -114,3 +114,4 @@ spring:
 
         - id: doctor-service-docs
           uri: lb://doctor-service
+          predicates:
