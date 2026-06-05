@@ -53,3 +53,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
             return unauthorized(exchange, "Missing or invalid Authorization header");
         }
 
+        String token = authHeader.substring(7);
