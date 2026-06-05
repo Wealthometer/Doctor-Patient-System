@@ -181,3 +181,4 @@ springdoc:
         url: /billing-service/v3/api-docs
 
 logging:
+  level:
