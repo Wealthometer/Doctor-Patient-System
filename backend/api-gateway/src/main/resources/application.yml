@@ -128,3 +128,4 @@ spring:
 
         - id: prescription-service-docs
           uri: lb://prescription-service
+          predicates:
