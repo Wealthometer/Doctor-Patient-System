@@ -89,3 +89,4 @@ spring:
             - name: CircuitBreaker
               args:
                 name: billing-service
+                fallbackUri: forward:/fallback/billing
