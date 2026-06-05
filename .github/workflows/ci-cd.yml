@@ -203,3 +203,4 @@ jobs:
           kubectl rollout status deployment/api-gateway     -n healthcare-system --timeout=300s
           kubectl rollout status deployment/auth-service    -n healthcare-system --timeout=300s
           kubectl rollout status deployment/patient-service -n healthcare-system --timeout=300s
+
