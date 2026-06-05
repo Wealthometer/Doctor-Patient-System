@@ -51,3 +51,4 @@ spring:
         - id: doctor-service
           uri: lb://doctor-service
           predicates:
+            - Path=/api/v1/doctors/**
