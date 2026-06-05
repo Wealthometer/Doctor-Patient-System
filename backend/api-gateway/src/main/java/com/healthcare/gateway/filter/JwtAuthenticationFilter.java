@@ -75,3 +75,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         } catch (Exception e) {
             log.warn("JWT validation failed for path {}: {}", path, e.getMessage());
             return unauthorized(exchange, "Invalid or expired token");
+        }
