@@ -161,3 +161,4 @@ management:
     gateway:
       enabled: true
     health:
+      show-details: always
