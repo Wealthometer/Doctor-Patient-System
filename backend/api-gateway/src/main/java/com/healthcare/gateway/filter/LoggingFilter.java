@@ -29,3 +29,4 @@ public class LoggingFilter implements GlobalFilter, Ordered {
         });
     }
 
+    @Override
