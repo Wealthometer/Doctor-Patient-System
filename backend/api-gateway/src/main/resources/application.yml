@@ -122,3 +122,4 @@ spring:
         - id: appointment-service-docs
           uri: lb://appointment-service
           predicates:
+            - Path=/appointment-service/v3/api-docs
