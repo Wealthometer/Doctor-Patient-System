@@ -27,4 +27,5 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
     @Value("${application.security.jwt.secret-key}")
     private String secretKey;
 
+    // Paths that don't need JWT
     private static final List<String> PUBLIC_PATHS = List.of(
