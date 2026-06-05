@@ -39,3 +39,4 @@ spring:
         # ── Patient Service ─────────────────────────────────────────────
         - id: patient-service
           uri: lb://patient-service
+          predicates:
