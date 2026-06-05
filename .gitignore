@@ -34,3 +34,4 @@
 */.yarn/versions
 */.pnp.*
 */.vscode-test
+*/.idea
