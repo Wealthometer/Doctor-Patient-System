@@ -77,3 +77,4 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
+                name: prescription-service
