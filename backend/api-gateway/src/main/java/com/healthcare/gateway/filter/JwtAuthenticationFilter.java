@@ -67,3 +67,4 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .header("X-User-Id",    claims.get("userId", String.class))
                     .header("X-Username",   claims.getSubject())
                     .header("X-User-Email", claims.get("email", String.class))
+                    .header("X-User-Role",  claims.get("role",  String.class))
