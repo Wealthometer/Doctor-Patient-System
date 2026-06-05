@@ -25,3 +25,4 @@ spring:
             allowedHeaders: "*"
             allowCredentials: true
       routes:
+        # ── Auth Service ────────────────────────────────────────────────
