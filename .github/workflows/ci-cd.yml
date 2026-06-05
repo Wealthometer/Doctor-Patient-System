@@ -162,3 +162,4 @@ jobs:
   # ────────────────────────────────────────────────────────────────────────────
   deploy:
     name: Deploy to Kubernetes (EKS)
+    runs-on: ubuntu-latest
