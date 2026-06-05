@@ -46,3 +46,4 @@ spring:
               args:
                 name: patient-service
                 fallbackUri: forward:/fallback/patient
+
