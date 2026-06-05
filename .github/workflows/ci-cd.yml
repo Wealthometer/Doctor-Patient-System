@@ -118,3 +118,4 @@ jobs:
           cache: 'maven'
 
       - name: Build Docker image — ${{ matrix.service }}
+        working-directory: backend/${{ matrix.service }}
