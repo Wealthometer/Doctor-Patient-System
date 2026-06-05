@@ -39,4 +39,3 @@ backend/**/target/
 */.vscode
 */.history
 */.nyc_output
-/backend\api-gateway\.idea
