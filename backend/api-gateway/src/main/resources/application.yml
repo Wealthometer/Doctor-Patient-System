@@ -72,4 +72,5 @@ spring:
         # ── Prescription Service ────────────────────────────────────────
         - id: prescription-service
           uri: lb://prescription-service
+          predicates:
             - name: CircuitBreaker
