@@ -180,3 +180,4 @@ jobs:
 
       - name: Apply namespace & config
         run: |
+          kubectl apply -f kubernetes/namespaces/namespace.yaml
