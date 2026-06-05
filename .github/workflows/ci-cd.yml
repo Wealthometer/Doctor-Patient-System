@@ -134,3 +134,4 @@ jobs:
   build-and-push-frontend:
     name: Build & Push Frontend
     runs-on: ubuntu-latest
+    needs: [test-frontend]
