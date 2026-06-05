@@ -26,3 +26,4 @@ spring:
             allowCredentials: true
       routes:
         # ── Auth Service ────────────────────────────────────────────────
+        - id: auth-service
