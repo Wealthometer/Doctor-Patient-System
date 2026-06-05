@@ -126,3 +126,4 @@ spring:
           filters:
             - RewritePath=/appointment-service/v3/api-docs, /v3/api-docs
 
+        - id: prescription-service-docs
