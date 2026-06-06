@@ -180,3 +180,4 @@ public class BillingService {
     public void markOverdueInvoices() {
         List<Invoice> overdue = invoiceRepository.findByStatusAndDueDateBefore(
                 InvoiceStatus.PENDING, LocalDate.now());
+        overdue.forEach(i -> i.setStatus(InvoiceStatus.OVERDUE));
