@@ -54,3 +54,4 @@ public class Appointment {
     @Column(nullable = false)
     private AppointmentType type;
 
+    @Column(length = 1000)
