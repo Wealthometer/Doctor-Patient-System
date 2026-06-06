@@ -69,3 +69,4 @@ public class AppointmentController {
             @PageableDefault(size = 50, sort = "startTime") Pageable pageable) {
         return ResponseEntity.ok(appointmentService.getDoctorAppointmentsByDate(doctorId, date, pageable));
     }
+
