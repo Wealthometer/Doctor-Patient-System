@@ -197,3 +197,4 @@ public class AppointmentService {
                 .orElseThrow(() -> new AppointmentNotFoundException("Appointment not found: " + id));
     }
 
+    private String generateAppointmentNumber(LocalDate date) {
