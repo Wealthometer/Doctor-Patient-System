@@ -183,3 +183,4 @@ public class BillingService {
         overdue.forEach(i -> i.setStatus(InvoiceStatus.OVERDUE));
         invoiceRepository.saveAll(overdue);
         if (!overdue.isEmpty()) log.info("Marked {} invoices as overdue", overdue.size());
+    }
