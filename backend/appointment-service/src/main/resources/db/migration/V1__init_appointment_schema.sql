@@ -8,3 +8,4 @@ CREATE TABLE appointments (
     patient_id           UUID NOT NULL,
     patient_name         VARCHAR(200) NOT NULL,
     doctor_id            UUID NOT NULL,
+    doctor_name          VARCHAR(200) NOT NULL,
