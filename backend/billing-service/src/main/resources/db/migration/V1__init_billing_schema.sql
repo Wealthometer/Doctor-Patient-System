@@ -50,3 +50,4 @@ CREATE TABLE payments (
 );
 
 CREATE INDEX idx_invoices_patient_id ON invoices(patient_id);
+CREATE INDEX idx_invoices_status     ON invoices(status);
