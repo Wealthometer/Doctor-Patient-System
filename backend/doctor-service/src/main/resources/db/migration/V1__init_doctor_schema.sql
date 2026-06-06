@@ -26,3 +26,4 @@ CREATE TABLE doctors (
     max_daily_appointments  INT DEFAULT 20,
     profile_image_url       VARCHAR(500),
     status                  VARCHAR(20) NOT NULL DEFAULT 'ACTIVE',
+    average_rating          DECIMAL(3,1) NOT NULL DEFAULT 0.0,
