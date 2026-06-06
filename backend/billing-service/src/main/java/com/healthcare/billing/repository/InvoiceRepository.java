@@ -19,3 +19,4 @@ import java.util.UUID;
 public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
 
     Optional<Invoice> findByInvoiceNumber(String invoiceNumber);
+    Page<Invoice> findByPatientId(UUID patientId, Pageable pageable);
