@@ -41,3 +41,4 @@ public class AuthService {
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.existsByUsername(request.getUsername())) {
             throw new AuthException("Username already taken: " + request.getUsername());
+        }
