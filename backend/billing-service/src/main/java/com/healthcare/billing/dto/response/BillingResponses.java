@@ -48,3 +48,4 @@ public class BillingResponses {
         private String serviceCode;
         private Integer quantity;
         private BigDecimal unitPrice;
+        private BigDecimal totalPrice;
