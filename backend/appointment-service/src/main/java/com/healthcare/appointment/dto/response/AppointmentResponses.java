@@ -25,3 +25,4 @@ public class AppointmentResponses {
         private String department;
         private LocalDate appointmentDate;
         private LocalTime startTime;
+        private LocalTime endTime;
