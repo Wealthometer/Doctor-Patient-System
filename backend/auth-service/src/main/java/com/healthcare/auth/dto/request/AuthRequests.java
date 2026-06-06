@@ -32,3 +32,4 @@ public class AuthRequests {
         @NotNull(message = "Role is required")
         private Role role;
     }
+
