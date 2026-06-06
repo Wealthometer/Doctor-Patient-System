@@ -51,3 +51,4 @@ public class BillingResponses {
         private BigDecimal totalPrice;
     }
 
+    @Data @Builder
