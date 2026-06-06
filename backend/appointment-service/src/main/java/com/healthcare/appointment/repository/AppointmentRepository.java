@@ -19,3 +19,4 @@ import java.util.UUID;
 public interface AppointmentRepository extends JpaRepository<Appointment, UUID> {
 
     Optional<Appointment> findByAppointmentNumber(String appointmentNumber);
+
