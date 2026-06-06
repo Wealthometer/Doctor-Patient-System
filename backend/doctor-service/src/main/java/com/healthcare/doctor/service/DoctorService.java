@@ -114,6 +114,7 @@ public class DoctorService {
                 .totalDoctors(doctorRepository.count())
                 .onLeaveDoctors(doctorRepository.countByStatus(DoctorStatus.ON_LEAVE))
                 .specializations(doctorRepository.findAllActiveSpecializations())
+                .build();
     }
 
     private String generateDoctorCode() {
