@@ -12,3 +12,4 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class BillingServiceApplication {
     public static void main(String[] args) {
+        SpringApplication.run(BillingServiceApplication.class, args);
