@@ -90,3 +90,4 @@ public class User implements UserDetails {
     public boolean isCredentialsNonExpired() { return credentialsNonExpired; }
 
     @Override
+    public boolean isEnabled() { return enabled; }
