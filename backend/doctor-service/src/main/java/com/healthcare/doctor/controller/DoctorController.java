@@ -86,3 +86,4 @@ public class DoctorController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<Page<DoctorResponse>> getBySpecialization(
             @PathVariable String specialization,
+            @PageableDefault(size = 20) Pageable pageable) {
