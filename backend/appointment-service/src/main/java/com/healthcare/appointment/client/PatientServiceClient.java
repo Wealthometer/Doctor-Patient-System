@@ -30,3 +30,4 @@ public interface PatientServiceClient {
         public PatientDto getPatientById(UUID id) {
             return PatientDto.builder()
                     .id(id)
+                    .firstName("Unknown")
