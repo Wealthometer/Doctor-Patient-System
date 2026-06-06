@@ -13,3 +13,4 @@ CREATE TABLE appointments (
     appointment_date     DATE NOT NULL,
     start_time           TIME NOT NULL,
     end_time             TIME NOT NULL,
+    status               VARCHAR(20) NOT NULL DEFAULT 'SCHEDULED',
