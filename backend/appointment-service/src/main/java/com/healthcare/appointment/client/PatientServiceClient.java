@@ -25,3 +25,4 @@ public interface PatientServiceClient {
         private String phone;
     }
 
+    class PatientServiceFallback implements PatientServiceClient {
