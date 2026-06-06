@@ -37,3 +37,4 @@ public class AuthResponses {
     public static class TokenValidationResponse {
         private boolean valid;
         private UUID userId;
+        private String username;
