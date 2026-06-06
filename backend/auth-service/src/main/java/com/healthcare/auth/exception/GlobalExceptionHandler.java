@@ -67,3 +67,4 @@ public class GlobalExceptionHandler {
         return pd;
     }
 
+    @ExceptionHandler(Exception.class)
