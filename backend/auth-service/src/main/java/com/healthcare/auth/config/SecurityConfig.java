@@ -67,3 +67,4 @@ public class SecurityConfig {
         return config.getAuthenticationManager();
     }
 
+    @Bean
