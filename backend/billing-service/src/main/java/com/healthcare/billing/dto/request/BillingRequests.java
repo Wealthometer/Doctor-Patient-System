@@ -32,3 +32,4 @@ public class BillingRequests {
 
     @Data
     public static class LineItemRequest {
+        @NotBlank private String description;
