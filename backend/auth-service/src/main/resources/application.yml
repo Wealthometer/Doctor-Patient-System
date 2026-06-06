@@ -46,3 +46,4 @@ application:
 management:
   endpoints:
     web:
+      exposure:
