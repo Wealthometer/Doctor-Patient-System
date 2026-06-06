@@ -116,3 +116,4 @@ public class AppointmentService {
         List<AvailableSlot> slots = new ArrayList<>();
         LocalTime current = start;
 
+        while (current.plusMinutes(30).isBefore(end) || current.plusMinutes(30).equals(end)) {
