@@ -33,6 +33,7 @@ spring:
         smtp:
           auth: true
           starttls:
+  endpoints:
     web:
       exposure:
         include: health,info,metrics,prometheus
