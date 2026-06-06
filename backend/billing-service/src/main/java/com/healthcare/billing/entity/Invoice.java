@@ -50,3 +50,4 @@ public class Invoice {
 
     @Column(nullable = false, precision = 5, scale = 2)
     @Builder.Default
+    private BigDecimal taxRate = BigDecimal.ZERO;
