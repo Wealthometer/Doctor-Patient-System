@@ -62,3 +62,4 @@ public class BillingController {
     @GetMapping("/invoices/status/{status}")
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get invoices by status")
+    public ResponseEntity<Page<InvoiceResponse>> getByStatus(
