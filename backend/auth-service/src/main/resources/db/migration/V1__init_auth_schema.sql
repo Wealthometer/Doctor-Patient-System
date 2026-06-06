@@ -11,3 +11,4 @@ CREATE TABLE users (
     last_name VARCHAR(100) NOT NULL,
     role VARCHAR(20) NOT NULL CHECK (role IN ('ADMIN','DOCTOR','PATIENT','NURSE')),
     enabled BOOLEAN NOT NULL DEFAULT true,
+    account_non_locked BOOLEAN NOT NULL DEFAULT true,
