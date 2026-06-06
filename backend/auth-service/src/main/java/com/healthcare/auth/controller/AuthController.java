@@ -70,3 +70,4 @@ public class AuthController {
     }
 
     @GetMapping("/me")
+    @SecurityRequirement(name = "bearerAuth")
