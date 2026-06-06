@@ -214,3 +214,4 @@ public class BillingService {
                 .insuranceCoverage(i.getInsuranceCoverage())
                 .status(i.getStatus())
                 .notes(i.getNotes())
+                .lineItems(i.getLineItems().stream().map(li -> LineItemResponse.builder()
