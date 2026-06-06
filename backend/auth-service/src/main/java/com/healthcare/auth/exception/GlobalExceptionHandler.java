@@ -34,3 +34,4 @@ public class GlobalExceptionHandler {
         pd.setTitle("User Not Found");
         pd.setProperty("timestamp", Instant.now());
         return pd;
+    }
