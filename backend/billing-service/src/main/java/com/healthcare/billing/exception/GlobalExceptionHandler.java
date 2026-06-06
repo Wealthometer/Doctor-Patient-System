@@ -17,3 +17,4 @@ import java.util.Map;
 @Slf4j
 public class GlobalExceptionHandler {
 
+    @ExceptionHandler(InvoiceNotFoundException.class)
