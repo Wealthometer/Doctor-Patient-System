@@ -71,3 +71,4 @@ public class AppointmentController {
     }
 
     @GetMapping("/doctor/{doctorId}/slots")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
