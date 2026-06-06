@@ -231,3 +231,4 @@ public class AppointmentService {
                 .updatedAt(a.getUpdatedAt())
                 .build();
     }
+}
