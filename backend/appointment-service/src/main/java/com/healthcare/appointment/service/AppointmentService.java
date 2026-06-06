@@ -211,6 +211,7 @@ public class AppointmentService {
                 .id(a.getId())
                 .appointmentNumber(a.getAppointmentNumber())
                 .patientId(a.getPatientId())
+                .appointmentDate(a.getAppointmentDate())
                 .startTime(a.getStartTime())
                 .endTime(a.getEndTime())
                 .status(a.getStatus())
