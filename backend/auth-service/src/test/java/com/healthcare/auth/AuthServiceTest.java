@@ -84,3 +84,4 @@ class AuthServiceTest {
 
         assertThat(response).isNotNull();
         assertThat(response.getAccessToken()).isEqualTo("accessToken");
+        verify(userRepository).save(any(User.class));
