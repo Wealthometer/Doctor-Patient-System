@@ -13,3 +13,4 @@ CREATE TABLE users (
     enabled BOOLEAN NOT NULL DEFAULT true,
     account_non_locked BOOLEAN NOT NULL DEFAULT true,
     account_non_expired BOOLEAN NOT NULL DEFAULT true,
+    credentials_non_expired BOOLEAN NOT NULL DEFAULT true,
