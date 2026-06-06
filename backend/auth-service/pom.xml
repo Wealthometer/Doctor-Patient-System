@@ -139,3 +139,4 @@
         <configuration>
           <excludes>
             <exclude>
+              <groupId>org.projectlombok</groupId>
