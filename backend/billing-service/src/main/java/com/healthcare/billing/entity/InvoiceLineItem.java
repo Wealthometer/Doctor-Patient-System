@@ -12,3 +12,4 @@ import java.util.UUID;
 @Table(name = "invoice_line_items")
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class InvoiceLineItem {
+
