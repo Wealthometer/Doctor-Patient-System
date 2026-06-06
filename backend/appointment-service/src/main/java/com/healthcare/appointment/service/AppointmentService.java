@@ -76,3 +76,4 @@ public class AppointmentService {
                 .build();
 
         Appointment saved = appointmentRepository.save(appointment);
+        log.info("Booked appointment: {} for patient {} with doctor {}",
