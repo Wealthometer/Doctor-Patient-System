@@ -24,3 +24,4 @@ public interface DoctorMapper {
     DoctorSummaryResponse toSummary(Doctor doctor);
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
+    @Mapping(target = "id", ignore = true)
