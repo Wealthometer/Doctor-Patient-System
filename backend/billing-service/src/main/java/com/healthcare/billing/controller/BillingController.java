@@ -50,3 +50,4 @@ public class BillingController {
         return ResponseEntity.ok(billingService.getAllInvoices(pageable));
     }
 
+    @GetMapping("/invoices/patient/{patientId}")
