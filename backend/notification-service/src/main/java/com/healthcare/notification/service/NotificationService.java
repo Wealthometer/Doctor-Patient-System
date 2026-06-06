@@ -106,6 +106,7 @@ public class NotificationService {
                     Regards,
                     HealthCare+ Team
                     """, patientName, doctorName, rxNumber))
+                .type(NotificationType.PRESCRIPTION_ISSUED)
     }
 
     }
