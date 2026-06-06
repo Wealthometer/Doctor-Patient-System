@@ -71,3 +71,4 @@ management:
       exposure:
         include: health,info,metrics,prometheus
   health:
+    circuitbreakers:
