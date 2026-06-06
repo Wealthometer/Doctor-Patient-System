@@ -31,3 +31,4 @@ public class AppointmentRequests {
         @NotNull(message = "Appointment type is required")
         private AppointmentType type;
 
+        @NotBlank(message = "Reason for appointment is required")
