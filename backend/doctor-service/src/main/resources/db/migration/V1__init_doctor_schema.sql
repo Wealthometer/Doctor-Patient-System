@@ -29,3 +29,4 @@ CREATE TABLE doctors (
     average_rating          DECIMAL(3,1) NOT NULL DEFAULT 0.0,
     total_ratings           INT NOT NULL DEFAULT 0,
     created_at              TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at              TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
