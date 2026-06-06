@@ -28,4 +28,5 @@ public class NotificationService {
             if (notification.getChannel() == NotificationChannel.EMAIL) {
             } else if (notification.getChannel() == NotificationChannel.SMS) {
             }
+            notification.setSentAt(LocalDateTime.now());
 
