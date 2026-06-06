@@ -11,3 +11,4 @@ import java.time.LocalTime;
 import java.util.UUID;
 
 @Entity
+@Table(name = "appointments")
