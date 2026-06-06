@@ -77,3 +77,4 @@ public class AppointmentController {
             @PathVariable UUID doctorId,
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         return ResponseEntity.ok(appointmentService.getAvailableSlots(doctorId, date));
+    }
