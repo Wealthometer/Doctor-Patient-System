@@ -68,3 +68,4 @@ public class DoctorService {
     }
 
     @Transactional(readOnly = true)
+    public Page<DoctorResponse> searchDoctors(String query, Pageable pageable) {
