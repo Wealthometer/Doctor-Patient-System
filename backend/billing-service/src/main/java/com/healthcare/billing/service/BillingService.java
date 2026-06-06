@@ -87,3 +87,4 @@ public class BillingService {
         Invoice saved = invoiceRepository.save(invoice);
         log.info("Created invoice {} for patient {}", saved.getInvoiceNumber(), saved.getPatientName());
         return toResponse(saved);
+    }
