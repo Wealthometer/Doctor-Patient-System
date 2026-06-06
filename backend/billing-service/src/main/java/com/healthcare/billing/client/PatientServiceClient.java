@@ -18,3 +18,4 @@ public interface PatientServiceClient {
     class PatientDto {
         private UUID id;
         private String firstName;
+        private String lastName;
