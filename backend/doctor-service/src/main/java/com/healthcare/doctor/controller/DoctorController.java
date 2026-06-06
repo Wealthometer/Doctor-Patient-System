@@ -99,5 +99,6 @@ public class DoctorController {
     }
 
     @PatchMapping("/{id}/status")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<DoctorResponse> updateDoctorStatus(
             @PathVariable UUID id,
