@@ -40,3 +40,4 @@ public class GlobalExceptionHandler {
     public ProblemDetail handleBadCredentials(BadCredentialsException ex) {
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, "Invalid credentials");
         pd.setTitle("Authentication Failed");
+        pd.setProperty("timestamp", Instant.now());
