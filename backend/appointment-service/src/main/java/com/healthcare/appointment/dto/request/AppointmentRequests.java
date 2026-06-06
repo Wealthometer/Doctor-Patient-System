@@ -34,3 +34,4 @@ public class AppointmentRequests {
         @NotBlank(message = "Reason for appointment is required")
         @Size(max = 1000)
         private String reason;
+
