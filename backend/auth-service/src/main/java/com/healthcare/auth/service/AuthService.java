@@ -127,3 +127,4 @@ public class AuthService {
     }
 
     public void changePassword(UUID userId, ChangePasswordRequest request) {
+        User user = userRepository.findById(userId)
