@@ -35,3 +35,4 @@ public class AppointmentRequests {
         @Size(max = 1000)
         private String reason;
 
+        private String notes;
