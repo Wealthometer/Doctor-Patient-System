@@ -14,3 +14,4 @@ import java.util.UUID;
 @Table(name = "appointments")
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class Appointment {
+
