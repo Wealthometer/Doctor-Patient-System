@@ -6,3 +6,4 @@ import com.healthcare.auth.entity.User;
 import com.healthcare.auth.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
