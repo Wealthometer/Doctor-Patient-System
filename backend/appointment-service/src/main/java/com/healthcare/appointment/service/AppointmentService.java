@@ -142,3 +142,4 @@ public class AppointmentService {
         });
     }
 
+    public AppointmentResponse startAppointment(UUID id) {
