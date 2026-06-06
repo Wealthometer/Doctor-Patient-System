@@ -63,3 +63,4 @@ public class BillingController {
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get invoices by status")
     public ResponseEntity<Page<InvoiceResponse>> getByStatus(
+            @PathVariable InvoiceStatus status,
