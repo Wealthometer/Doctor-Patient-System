@@ -107,3 +107,4 @@ public class AuthService {
     public TokenValidationResponse validateToken(String token) {
         if (!jwtService.isTokenValid(token)) {
             return TokenValidationResponse.builder().valid(false).build();
+        }
