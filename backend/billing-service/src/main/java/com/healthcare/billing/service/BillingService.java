@@ -59,3 +59,4 @@ public class BillingService {
                 .totalAmount(BigDecimal.ZERO)
                 .build();
 
+        for (var itemReq : request.getLineItems()) {
