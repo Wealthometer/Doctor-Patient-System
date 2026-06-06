@@ -78,3 +78,4 @@ class AuthServiceTest {
         when(jwtService.generateToken(any())).thenReturn("accessToken");
         when(jwtService.generateRefreshToken(any())).thenReturn("refreshToken");
         when(jwtService.getJwtExpiration()).thenReturn(900000L);
+        when(refreshTokenRepository.save(any())).thenReturn(mock(RefreshToken.class));
