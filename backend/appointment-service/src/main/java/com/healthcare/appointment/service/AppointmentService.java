@@ -44,3 +44,4 @@ public class AppointmentService {
                 request.getStartTime(), request.getEndTime());
 
         if (!conflicts.isEmpty()) {
+            throw new AppointmentConflictException(
