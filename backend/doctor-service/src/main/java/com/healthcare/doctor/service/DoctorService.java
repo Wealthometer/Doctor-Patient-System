@@ -108,4 +108,5 @@ public class DoctorService {
         double newAvg = ((doctor.getAverageRating() * doctor.getTotalRatings()) + request.getRating()) / totalRatings;
         doctor.setAverageRating(Math.round(newAvg * 10.0) / 10.0);
         return doctorMapper.toResponse(doctorRepository.save(doctor));
+    }
 }
