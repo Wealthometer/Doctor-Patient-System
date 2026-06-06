@@ -31,4 +31,5 @@ spring:
     properties:
       mail:
         smtp:
+          auth: true
           starttls:
