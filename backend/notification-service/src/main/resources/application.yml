@@ -33,6 +33,7 @@ spring:
         smtp:
           auth: true
           starttls:
+management:
   endpoints:
     web:
       exposure:
