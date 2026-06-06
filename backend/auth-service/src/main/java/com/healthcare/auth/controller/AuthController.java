@@ -45,3 +45,4 @@ public class AuthController {
     @Operation(summary = "Validate JWT token (used by API Gateway)")
     public ResponseEntity<TokenValidationResponse> validateToken(
             @RequestHeader("Authorization") String authHeader) {
+        String token = authHeader.startsWith("Bearer ") ? authHeader.substring(7) : authHeader;
