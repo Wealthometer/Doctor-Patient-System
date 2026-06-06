@@ -5,3 +5,4 @@ public enum Role {
     DOCTOR,
     PATIENT,
     NURSE
+}
