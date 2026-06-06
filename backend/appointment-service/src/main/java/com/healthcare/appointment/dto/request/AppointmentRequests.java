@@ -38,3 +38,4 @@ public class AppointmentRequests {
         private String notes;
     }
 
+    @Data
