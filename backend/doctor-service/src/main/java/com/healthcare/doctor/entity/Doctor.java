@@ -28,3 +28,4 @@ public class Doctor {
 
     @Column(nullable = false, unique = true, length = 20)
     private String doctorCode; // e.g. D-1001
+
