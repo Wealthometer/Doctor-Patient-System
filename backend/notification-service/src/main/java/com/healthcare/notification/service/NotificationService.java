@@ -83,6 +83,7 @@ public class NotificationService {
                     
                     Regards,
                     HealthCare+ Team
+                    """, patientName, doctorName, dateTime))
                 .recipientEmail(email)
                 .body(String.format("""
                     
