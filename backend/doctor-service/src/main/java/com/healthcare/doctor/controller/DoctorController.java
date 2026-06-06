@@ -60,5 +60,6 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.getAllDoctors(pageable));
     }
 
+    @GetMapping("/search")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<Page<DoctorResponse>> searchDoctors(
