@@ -21,3 +21,4 @@ COPY --from=build /app/target/*.jar app.jar
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
   CMD wget -q --spider http://localhost:${SERVER_PORT:-8080}/actuator/health || exit 1
+
