@@ -112,6 +112,7 @@ public class DoctorService {
 
     public DoctorStatsResponse getStats() {
                 .totalDoctors(doctorRepository.count())
+                .activeDoctors(doctorRepository.countByStatus(DoctorStatus.ACTIVE))
                 .onLeaveDoctors(doctorRepository.countByStatus(DoctorStatus.ON_LEAVE))
                 .departments(doctorRepository.findAllActiveDepartments())
                 .specializations(doctorRepository.findAllActiveSpecializations())
