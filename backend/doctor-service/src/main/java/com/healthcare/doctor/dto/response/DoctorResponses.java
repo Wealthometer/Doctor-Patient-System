@@ -45,8 +45,10 @@ public class DoctorResponses {
 
         private double averageRating;
         private String consultationFee;
+        private DoctorStatus status;
     }
 
+    @Data
     @Builder
         private long totalDoctors;
         private long activeDoctors;
