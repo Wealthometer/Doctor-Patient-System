@@ -64,3 +64,4 @@ public class BillingService {
                     .multiply(BigDecimal.valueOf(itemReq.getQuantity() != null ? itemReq.getQuantity() : 1));
             subtotal = subtotal.add(lineTotal);
 
+            InvoiceLineItem item = InvoiceLineItem.builder()
