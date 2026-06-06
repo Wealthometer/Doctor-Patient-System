@@ -134,3 +134,4 @@ public class AppointmentService {
         return slots;
     }
 
+    public AppointmentResponse confirmAppointment(UUID id) {
