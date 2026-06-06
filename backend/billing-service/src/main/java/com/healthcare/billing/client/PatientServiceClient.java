@@ -22,3 +22,4 @@ public interface PatientServiceClient {
         private String email;
         private String insuranceProvider;
     }
+
