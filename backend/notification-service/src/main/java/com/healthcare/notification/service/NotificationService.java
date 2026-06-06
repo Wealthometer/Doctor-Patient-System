@@ -31,4 +31,5 @@ public class NotificationService {
             notification.setSentAt(LocalDateTime.now());
         } catch (Exception e) {
             notification.setErrorMessage(e.getMessage());
+        }
 
