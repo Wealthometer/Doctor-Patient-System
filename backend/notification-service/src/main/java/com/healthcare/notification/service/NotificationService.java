@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                    Due Date: %s
                     
                     Please log into your portal to make a payment.
                     
