@@ -74,3 +74,4 @@ public class GlobalExceptionHandler {
                 HttpStatus.INTERNAL_SERVER_ERROR, "An unexpected error occurred");
         pd.setTitle("Internal Server Error");
         pd.setProperty("timestamp", Instant.now());
+        return pd;
