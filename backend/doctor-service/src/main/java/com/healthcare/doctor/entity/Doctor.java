@@ -90,3 +90,4 @@ public class Doctor {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+}
