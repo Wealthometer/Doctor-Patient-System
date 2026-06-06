@@ -117,3 +117,4 @@ public class DoctorController {
     @GetMapping("/stats")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<DoctorStatsResponse> getStats() {
+        return ResponseEntity.ok(doctorService.getStats());
