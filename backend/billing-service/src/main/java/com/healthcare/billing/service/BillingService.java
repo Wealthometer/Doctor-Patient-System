@@ -208,3 +208,4 @@ public class BillingService {
                 .taxRate(i.getTaxRate())
                 .taxAmount(i.getTaxAmount())
                 .totalAmount(i.getTotalAmount())
+                .paidAmount(i.getPaidAmount())
