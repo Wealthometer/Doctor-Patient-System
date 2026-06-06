@@ -135,3 +135,4 @@ class AuthServiceTest {
         request.setUsernameOrEmail("testuser");
         request.setPassword("wrongpassword");
 
+        when(authenticationManager.authenticate(any()))
