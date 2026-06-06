@@ -46,3 +46,4 @@ public class AppointmentRequests {
         private AppointmentType type;
         private String reason;
         private String notes;
+        private String diagnosisSummary;
