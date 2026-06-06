@@ -70,3 +70,4 @@ public class BillingService {
                     .serviceCode(itemReq.getServiceCode())
                     .quantity(itemReq.getQuantity() != null ? itemReq.getQuantity() : 1)
                     .unitPrice(itemReq.getUnitPrice())
+                    .totalPrice(lineTotal)
