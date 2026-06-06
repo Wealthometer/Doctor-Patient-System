@@ -7,3 +7,4 @@ CREATE TABLE notifications (
     recipient_id     UUID,
     recipient_email  VARCHAR(255) NOT NULL,
     recipient_phone  VARCHAR(20),
+    subject          VARCHAR(500) NOT NULL,
