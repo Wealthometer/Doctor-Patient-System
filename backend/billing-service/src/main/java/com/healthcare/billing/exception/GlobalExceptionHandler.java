@@ -18,3 +18,4 @@ import java.util.Map;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(InvoiceNotFoundException.class)
+    public ProblemDetail handleNotFound(InvoiceNotFoundException ex) {
