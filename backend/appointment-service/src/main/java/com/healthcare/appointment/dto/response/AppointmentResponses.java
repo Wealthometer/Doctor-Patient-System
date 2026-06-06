@@ -24,3 +24,4 @@ public class AppointmentResponses {
         private String doctorName;
         private String department;
         private LocalDate appointmentDate;
+        private LocalTime startTime;
