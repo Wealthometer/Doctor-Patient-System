@@ -48,3 +48,4 @@ public class AppointmentResponses {
         private long completedAppointments;
         private long cancelledAppointments;
         private Map<String, Long> byDepartment;
+    }
