@@ -31,4 +31,5 @@ management:
       show-details: always
 
 logging:
+  level:
     com.netflix.eureka: WARN
