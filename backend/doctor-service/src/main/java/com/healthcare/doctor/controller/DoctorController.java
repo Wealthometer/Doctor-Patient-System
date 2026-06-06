@@ -32,3 +32,4 @@ public class DoctorController {
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<DoctorResponse> createDoctor(@Valid @RequestBody CreateDoctorRequest request) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(doctorService.createDoctor(request));
