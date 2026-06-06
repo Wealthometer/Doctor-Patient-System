@@ -42,3 +42,4 @@ public class AuthResponses {
         private Role role;
     }
 
+    @Data
