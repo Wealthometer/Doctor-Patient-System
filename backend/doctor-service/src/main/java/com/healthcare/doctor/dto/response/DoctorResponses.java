@@ -17,3 +17,4 @@ public class DoctorResponses {
     public static class DoctorResponse {
         private UUID id;
         private UUID userId;
+        private String doctorCode;
