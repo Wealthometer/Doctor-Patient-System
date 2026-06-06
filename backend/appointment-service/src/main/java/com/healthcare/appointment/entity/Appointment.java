@@ -72,3 +72,4 @@ public class Appointment {
     private LocalDateTime completedAt;
 
     @CreationTimestamp
+    @Column(updatable = false)
