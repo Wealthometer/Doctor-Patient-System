@@ -98,3 +98,4 @@ public class AppointmentController {
             @RequestBody UpdateAppointmentRequest request) {
         return ResponseEntity.ok(appointmentService.completeAppointment(id, request));
     }
+
