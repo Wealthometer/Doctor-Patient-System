@@ -49,3 +49,4 @@ class AuthServiceTest {
     @BeforeEach
     void setUp() {
         ReflectionTestUtils.setField(authService, "refreshTokenExpiration", 604800000L);
+        testUser = User.builder()
