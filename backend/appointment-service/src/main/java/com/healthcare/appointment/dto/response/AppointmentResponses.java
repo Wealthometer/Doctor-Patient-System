@@ -21,3 +21,4 @@ public class AppointmentResponses {
         private UUID patientId;
         private String patientName;
         private UUID doctorId;
+        private String doctorName;
