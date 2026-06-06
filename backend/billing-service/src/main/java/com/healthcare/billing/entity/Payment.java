@@ -36,3 +36,4 @@ public class Payment {
     private PaymentStatus status = PaymentStatus.COMPLETED;
 
     private String transactionId;
+    private String notes;
