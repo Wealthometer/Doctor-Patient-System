@@ -9,3 +9,4 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+@Repository
