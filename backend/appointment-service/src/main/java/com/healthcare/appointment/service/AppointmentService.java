@@ -8,3 +8,4 @@ import com.healthcare.appointment.entity.Appointment;
 import com.healthcare.appointment.entity.AppointmentStatus;
 import com.healthcare.appointment.exception.AppointmentConflictException;
 import com.healthcare.appointment.exception.AppointmentNotFoundException;
+import com.healthcare.appointment.exception.InvalidAppointmentStateException;
