@@ -58,3 +58,4 @@ public class AppointmentController {
     public ResponseEntity<Page<AppointmentResponse>> getByDoctor(
             @PathVariable UUID doctorId,
             @PageableDefault(size = 20, sort = "appointmentDate") Pageable pageable) {
+        return ResponseEntity.ok(appointmentService.getAppointmentsByDoctor(doctorId, pageable));
