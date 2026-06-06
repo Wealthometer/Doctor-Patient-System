@@ -56,3 +56,4 @@ public class AppointmentService {
         if (doctorDto.getMaxDailyAppointments() != null && todayCount >= doctorDto.getMaxDailyAppointments()) {
             throw new AppointmentConflictException("Doctor has reached maximum daily appointments");
         }
+
