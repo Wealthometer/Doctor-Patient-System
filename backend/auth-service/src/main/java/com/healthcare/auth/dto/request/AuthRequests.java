@@ -14,3 +14,4 @@ public class AuthRequests {
         @NotBlank(message = "Username is required")
         @Size(min = 3, max = 50)
         private String username;
+
