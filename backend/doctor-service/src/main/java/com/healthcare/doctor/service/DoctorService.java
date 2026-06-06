@@ -73,3 +73,4 @@ public class DoctorService {
     }
 
     @Transactional(readOnly = true)
+    public Page<DoctorResponse> getDoctorsByDepartment(String department, Pageable pageable) {
