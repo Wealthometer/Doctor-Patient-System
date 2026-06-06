@@ -35,3 +35,4 @@ CREATE TABLE doctors (
 CREATE INDEX idx_doctors_user_id       ON doctors(user_id);
 CREATE INDEX idx_doctors_code          ON doctors(doctor_code);
 CREATE INDEX idx_doctors_department    ON doctors(department);
+CREATE INDEX idx_doctors_specialization ON doctors(specialization);
