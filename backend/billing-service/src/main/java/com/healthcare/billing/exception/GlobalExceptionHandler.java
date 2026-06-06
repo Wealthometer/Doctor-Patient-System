@@ -33,3 +33,4 @@ public class GlobalExceptionHandler {
         return pd;
     }
 
+    @ExceptionHandler(AccessDeniedException.class)
