@@ -75,6 +75,7 @@ public class NotificationService {
                     Your appointment has been confirmed.
                     
                     Doctor: Dr. %s
+                    Date & Time: %s
                 .recipientEmail(email)
                 .body(String.format("""
                     
