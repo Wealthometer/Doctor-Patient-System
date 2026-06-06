@@ -36,3 +36,4 @@ public interface DoctorServiceClient {
         public DoctorDto getDoctorById(UUID id) {
             return DoctorDto.builder()
                     .id(id)
+                    .firstName("Unknown")
