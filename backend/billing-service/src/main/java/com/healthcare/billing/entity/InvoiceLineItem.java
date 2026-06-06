@@ -23,3 +23,4 @@ public class InvoiceLineItem {
 
     @Column(nullable = false)
     private String description;
+
