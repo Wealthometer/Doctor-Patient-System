@@ -210,3 +210,4 @@ public class BillingService {
                 .totalAmount(i.getTotalAmount())
                 .paidAmount(i.getPaidAmount())
                 .balanceDue(balance)
+                .insuranceProvider(i.getInsuranceProvider())
