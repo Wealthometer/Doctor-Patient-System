@@ -38,3 +38,4 @@ public class AuthResponses {
         private boolean valid;
         private UUID userId;
         private String username;
+        private String email;
