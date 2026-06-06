@@ -64,3 +64,4 @@ public class DoctorRequests {
         private String bio;
         private String qualifications;
         private Integer yearsOfExperience;
+        private String consultationFee;
