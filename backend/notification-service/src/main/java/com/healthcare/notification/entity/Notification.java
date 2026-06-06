@@ -23,3 +23,4 @@ public class Notification {
     private String recipientEmail;
 
     private String recipientPhone;
+
