@@ -14,3 +14,4 @@ import java.util.UUID;
 @Table(name = "doctors")
 @Getter
 @Setter
+@NoArgsConstructor
