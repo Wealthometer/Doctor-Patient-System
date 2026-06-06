@@ -7,3 +7,4 @@ import com.healthcare.doctor.entity.DoctorStatus;
 import com.healthcare.doctor.exception.DoctorAlreadyExistsException;
 import com.healthcare.doctor.exception.DoctorNotFoundException;
 import com.healthcare.doctor.repository.DoctorRepository;
+import lombok.RequiredArgsConstructor;
