@@ -49,3 +49,4 @@ public class DoctorController {
 
     @GetMapping("/code/{code}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
+        return ResponseEntity.ok(doctorService.getDoctorByCode(code));
