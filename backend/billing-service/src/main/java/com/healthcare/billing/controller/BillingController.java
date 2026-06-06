@@ -73,3 +73,4 @@ public class BillingController {
     @Operation(summary = "Record a payment against an invoice")
     public ResponseEntity<InvoiceResponse> recordPayment(
             @PathVariable UUID id,
+            @Valid @RequestBody RecordPaymentRequest request) {
