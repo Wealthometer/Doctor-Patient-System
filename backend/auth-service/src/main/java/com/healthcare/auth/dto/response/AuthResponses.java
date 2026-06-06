@@ -29,3 +29,4 @@ public class AuthResponses {
         private String firstName;
         private String lastName;
         private Role role;
+        private LocalDateTime createdAt;
