@@ -159,3 +159,4 @@ public class AppointmentService {
         if (request.getDiagnosisSummary() != null) appointment.setDiagnosisSummary(request.getDiagnosisSummary());
         if (request.getNotes() != null) appointment.setNotes(request.getNotes());
 
+        return toResponse(appointmentRepository.save(appointment));
