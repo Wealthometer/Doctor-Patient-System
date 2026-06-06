@@ -140,3 +140,4 @@ public class BillingService {
         invoice.setPaidAmount(newPaid);
 
         if (newPaid.compareTo(invoice.getTotalAmount()) >= 0) {
+            invoice.setStatus(InvoiceStatus.PAID);
