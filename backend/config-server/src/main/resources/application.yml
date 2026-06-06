@@ -13,3 +13,4 @@ spring:
     active: native   # Use filesystem configs (swap to 'git' for production)
 
 eureka:
+  client:
