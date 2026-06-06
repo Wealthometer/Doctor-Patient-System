@@ -29,3 +29,4 @@ import java.util.UUID;
 @Transactional
 public class AuthService {
 
+    private final UserRepository userRepository;
