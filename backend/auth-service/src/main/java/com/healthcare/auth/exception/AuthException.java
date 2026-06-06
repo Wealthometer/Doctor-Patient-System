@@ -5,3 +5,4 @@ public class AuthException extends RuntimeException {
         super(message);
     }
     public AuthException(String message, Throwable cause) {
+        super(message, cause);
