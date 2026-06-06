@@ -31,3 +31,4 @@ public class User implements UserDetails {
     private UUID id;
 
     @Column(nullable = false, unique = true)
+    private String username;
