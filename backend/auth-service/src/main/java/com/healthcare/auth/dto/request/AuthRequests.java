@@ -42,3 +42,4 @@ public class AuthRequests {
         private String password;
     }
 
+    @Data
