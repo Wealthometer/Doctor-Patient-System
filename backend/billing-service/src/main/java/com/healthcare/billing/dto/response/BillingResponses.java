@@ -36,3 +36,4 @@ public class BillingResponses {
         private BigDecimal insuranceCoverage;
         private InvoiceStatus status;
         private String notes;
+        private List<LineItemResponse> lineItems;
