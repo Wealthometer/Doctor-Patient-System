@@ -62,3 +62,4 @@ public class Doctor {
     private String consultationFee;
 
     private LocalTime workStartTime;
+
