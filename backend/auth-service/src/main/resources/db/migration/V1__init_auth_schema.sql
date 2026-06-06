@@ -35,3 +35,4 @@ CREATE INDEX idx_refresh_tokens_user_id ON refresh_tokens(user_id);
 
 -- Default admin user (password: Admin@123)
 INSERT INTO users (id, username, email, password, first_name, last_name, role)
+VALUES (
