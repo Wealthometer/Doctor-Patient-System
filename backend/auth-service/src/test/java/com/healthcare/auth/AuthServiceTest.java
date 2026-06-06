@@ -128,3 +128,4 @@ class AuthServiceTest {
         verify(refreshTokenRepository).revokeAllUserTokens(testUser);
     }
 
+    @Test
