@@ -35,3 +35,4 @@ public class Notification {
     private NotificationType type;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
