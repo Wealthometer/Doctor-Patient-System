@@ -163,3 +163,4 @@ public class AppointmentService {
     }
 
     public AppointmentResponse cancelAppointment(UUID id, CancelAppointmentRequest request) {
+        Appointment appointment = findAppointment(id);
