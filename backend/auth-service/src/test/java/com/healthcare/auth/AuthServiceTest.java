@@ -180,3 +180,4 @@ class AuthServiceTest {
                 .revoked(false)
                 .build();
 
+        when(refreshTokenRepository.findByToken("validRefreshToken")).thenReturn(Optional.of(storedToken));
