@@ -178,3 +178,4 @@ public class AppointmentService {
     @Transactional(readOnly = true)
     public AppointmentStatsResponse getStats() {
         return AppointmentStatsResponse.builder()
+                .totalAppointments(appointmentRepository.count())
