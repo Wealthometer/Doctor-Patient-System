@@ -48,3 +48,4 @@ feign:
         loggerLevel: basic
 
 resilience4j:
+  circuitbreaker:
