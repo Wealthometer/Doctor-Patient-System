@@ -83,3 +83,4 @@ public class AuthController {
                 .createdAt(user.getCreatedAt())
                 .build());
     }
+}
