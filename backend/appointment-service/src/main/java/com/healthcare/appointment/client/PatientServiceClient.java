@@ -29,3 +29,4 @@ public interface PatientServiceClient {
         @Override
         public PatientDto getPatientById(UUID id) {
             return PatientDto.builder()
+                    .id(id)
