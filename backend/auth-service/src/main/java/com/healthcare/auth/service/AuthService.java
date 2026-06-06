@@ -64,3 +64,4 @@ public class AuthService {
     public AuthResponse login(LoginRequest request) {
         try {
             authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(
