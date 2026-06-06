@@ -95,3 +95,4 @@ public class BillingService {
                 .map(this::toResponse)
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found: " + id));
     }
+
