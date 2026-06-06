@@ -27,3 +27,4 @@ CREATE TABLE appointments (
 );
 
 CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
+CREATE INDEX idx_appt_doctor_id     ON appointments(doctor_id);
