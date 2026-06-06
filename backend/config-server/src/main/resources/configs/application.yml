@@ -26,3 +26,4 @@ management:
 
 spring:
   datasource:
+    username: ${DB_USERNAME:postgres}
