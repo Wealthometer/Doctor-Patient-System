@@ -13,3 +13,4 @@ CREATE TABLE invoices (
     doctor_name          VARCHAR(200),
     department           VARCHAR(200) NOT NULL,
     invoice_date         DATE NOT NULL,
+    due_date             DATE NOT NULL,
