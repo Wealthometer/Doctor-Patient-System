@@ -19,3 +19,4 @@ import java.time.LocalDateTime;
 public class NotificationService {
     private final JavaMailSender mailSender;
     @Async
+    public void sendNotification(NotificationRequest request) {
