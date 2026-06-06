@@ -79,3 +79,4 @@ public class Invoice {
     @Builder.Default
     private List<InvoiceLineItem> lineItems = new ArrayList<>();
 
+    @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
