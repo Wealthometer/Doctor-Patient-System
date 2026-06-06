@@ -75,3 +75,4 @@ public class DoctorController {
             @PageableDefault(size = 20) Pageable pageable) {
         return ResponseEntity.ok(doctorService.getDoctorsByDepartment(department, pageable));
     }
+
