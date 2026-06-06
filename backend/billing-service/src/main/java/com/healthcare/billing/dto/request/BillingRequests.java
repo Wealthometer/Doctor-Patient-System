@@ -44,3 +44,4 @@ public class BillingRequests {
         @NotNull private PaymentMethod method;
         private String transactionId;
         private String notes;
+    }
