@@ -41,3 +41,4 @@ public class DoctorService {
         return doctorMapper.toResponse(saved);
     }
 
+    @Transactional(readOnly = true)
