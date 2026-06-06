@@ -47,3 +47,4 @@ public class AuthResponses {
     public static class MessageResponse {
         private String message;
         private boolean success;
+    }
