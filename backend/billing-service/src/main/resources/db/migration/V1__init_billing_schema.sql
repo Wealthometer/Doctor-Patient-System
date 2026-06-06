@@ -35,3 +35,4 @@ CREATE TABLE invoice_line_items (
     quantity     INT          NOT NULL DEFAULT 1,
     unit_price   DECIMAL(10,2) NOT NULL,
     total_price  DECIMAL(10,2) NOT NULL
+);
