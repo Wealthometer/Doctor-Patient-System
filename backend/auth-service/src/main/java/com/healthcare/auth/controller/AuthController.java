@@ -69,3 +69,4 @@ public class AuthController {
                 .build());
     }
 
+    @GetMapping("/me")
