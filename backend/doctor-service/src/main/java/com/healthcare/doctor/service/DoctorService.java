@@ -62,3 +62,4 @@ public class DoctorService {
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found with code: " + code));
     }
 
+    @Transactional(readOnly = true)
