@@ -56,3 +56,4 @@ public class Invoice {
     private BigDecimal taxAmount;
 
     @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal totalAmount;
