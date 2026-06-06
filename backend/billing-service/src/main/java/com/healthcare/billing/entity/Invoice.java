@@ -83,3 +83,4 @@ public class Invoice {
     @Builder.Default
     private List<Payment> payments = new ArrayList<>();
 
+    @CreationTimestamp
