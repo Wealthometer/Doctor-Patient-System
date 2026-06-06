@@ -35,3 +35,4 @@ public class Appointment {
     private String doctorName;
 
     @Column(nullable = false)
+    private String department;
