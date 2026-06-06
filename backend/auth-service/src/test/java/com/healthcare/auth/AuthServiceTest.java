@@ -168,3 +168,4 @@ class AuthServiceTest {
     }
 
     @Test
+    @DisplayName("Should refresh token when valid refresh token provided")
