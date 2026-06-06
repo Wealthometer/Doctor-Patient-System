@@ -191,3 +191,4 @@ public class BillingService {
         return "INV-" + datePart + "-" + String.format("%04d", count);
     }
 
+    private InvoiceResponse toResponse(Invoice i) {
