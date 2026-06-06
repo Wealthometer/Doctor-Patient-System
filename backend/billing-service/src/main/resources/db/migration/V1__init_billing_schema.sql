@@ -10,3 +10,4 @@ CREATE TABLE invoices (
     appointment_id       UUID,
     appointment_number   VARCHAR(30),
     doctor_id            UUID,
+    doctor_name          VARCHAR(200),
