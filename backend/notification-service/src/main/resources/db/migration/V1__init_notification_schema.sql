@@ -17,3 +17,4 @@ CREATE TABLE notifications (
     created_at       TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE INDEX idx_notif_recipient_id ON notifications(recipient_id);
