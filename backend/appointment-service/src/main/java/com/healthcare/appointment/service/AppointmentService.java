@@ -127,3 +127,4 @@ public class AppointmentService {
                     .startTime(slotStart)
                     .endTime(slotEnd)
                     .available(!isBooked)
+                    .build());
