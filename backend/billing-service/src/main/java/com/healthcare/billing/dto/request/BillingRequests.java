@@ -17,3 +17,4 @@ public class BillingRequests {
         @NotNull private UUID patientId;
         private UUID appointmentId;
         private String appointmentNumber;
+        private UUID doctorId;
