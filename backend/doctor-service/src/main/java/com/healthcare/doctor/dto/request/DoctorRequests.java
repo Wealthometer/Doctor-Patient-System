@@ -36,3 +36,4 @@ public class DoctorRequests {
         private String licenseNumber;
 
         private LocalDate licenseExpiryDate;
+        private String bio;
