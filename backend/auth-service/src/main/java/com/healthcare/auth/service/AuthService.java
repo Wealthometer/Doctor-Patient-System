@@ -72,3 +72,4 @@ public class AuthService {
         } catch (BadCredentialsException e) {
             throw new AuthException("Invalid credentials");
         }
+
