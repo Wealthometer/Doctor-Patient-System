@@ -40,3 +40,4 @@ public class DoctorRequests {
         private String qualifications;
 
         @Min(0) @Max(60)
+        private Integer yearsOfExperience;
