@@ -28,3 +28,4 @@ public class BillingController {
 
     private final BillingService billingService;
 
+    @PostMapping("/invoices")
