@@ -40,3 +40,4 @@ public class Appointment {
     @Column(nullable = false)
     private LocalDate appointmentDate;
 
+    @Column(nullable = false)
