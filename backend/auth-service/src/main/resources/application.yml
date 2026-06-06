@@ -15,3 +15,4 @@ spring:
       minimum-idle: 5
       connection-timeout: 20000
   jpa:
+    hibernate:
