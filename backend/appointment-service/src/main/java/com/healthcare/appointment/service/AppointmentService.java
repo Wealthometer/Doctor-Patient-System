@@ -200,4 +200,5 @@ public class AppointmentService {
     private String generateAppointmentNumber(LocalDate date) {
         String datePart = date.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
         long count = appointmentRepository.countByAppointmentDate(date) + 1;
+
     }
