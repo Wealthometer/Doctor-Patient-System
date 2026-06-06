@@ -107,3 +107,4 @@ public class BillingService {
     }
 
     @Transactional(readOnly = true)
+    public Page<InvoiceResponse> getInvoicesByStatus(InvoiceStatus status, Pageable pageable) {
