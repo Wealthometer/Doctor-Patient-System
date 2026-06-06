@@ -15,3 +15,4 @@ public class DoctorRequests {
         private UUID userId;
 
         @NotBlank
+        private String firstName;
