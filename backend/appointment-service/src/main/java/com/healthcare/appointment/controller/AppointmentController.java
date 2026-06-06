@@ -27,3 +27,4 @@ import java.util.UUID;
 @SecurityRequirement(name = "bearerAuth")
 @Tag(name = "Appointments", description = "Appointment management APIs")
 public class AppointmentController {
+
