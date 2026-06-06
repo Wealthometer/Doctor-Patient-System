@@ -133,3 +133,4 @@ class AuthServiceTest {
     void login_ShouldThrow_WhenInvalidCredentials() {
         LoginRequest request = new LoginRequest();
         request.setUsernameOrEmail("testuser");
+        request.setPassword("wrongpassword");
