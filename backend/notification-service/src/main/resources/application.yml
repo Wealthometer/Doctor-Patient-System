@@ -33,6 +33,7 @@ spring:
         smtp:
           auth: true
           starttls:
+  instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}
 
