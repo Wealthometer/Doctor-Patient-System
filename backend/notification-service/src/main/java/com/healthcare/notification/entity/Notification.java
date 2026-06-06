@@ -47,3 +47,4 @@ public class Notification {
     private LocalDateTime sentAt;
 
     @CreationTimestamp
+    @Column(updatable = false)
