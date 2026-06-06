@@ -175,3 +175,4 @@ public class BillingService {
                 .build();
     }
 
+    // Mark overdue invoices daily at 1 AM
