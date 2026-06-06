@@ -16,3 +16,4 @@ public class DoctorResponses {
     @Builder
     public static class DoctorResponse {
         private UUID id;
+        private UUID userId;
