@@ -49,3 +49,4 @@ public class BillingResponses {
         private Integer quantity;
         private BigDecimal unitPrice;
         private BigDecimal totalPrice;
+    }
