@@ -33,3 +33,4 @@ spring:
         smtp:
           auth: true
           starttls:
+    com.healthcare.notification: DEBUG
