@@ -38,3 +38,4 @@ public class GlobalExceptionHandler {
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.FORBIDDEN, "Access denied");
         pd.setTitle("Forbidden");
         pd.setProperty("timestamp", Instant.now());
+        return pd;
