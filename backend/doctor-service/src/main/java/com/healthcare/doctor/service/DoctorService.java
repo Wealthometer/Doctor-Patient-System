@@ -82,3 +82,4 @@ public class DoctorService {
         return doctorRepository.findBySpecialization(specialization, pageable).map(doctorMapper::toResponse);
     }
 
+    @Transactional(readOnly = true)
