@@ -14,3 +14,4 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "invoices")
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
