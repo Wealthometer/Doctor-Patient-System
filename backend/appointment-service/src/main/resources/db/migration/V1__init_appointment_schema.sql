@@ -19,4 +19,5 @@ CREATE TABLE appointments (
     notes                TEXT,
     diagnosis_summary    TEXT,
     cancellation_reason  VARCHAR(500),
+    cancelled_at         TIMESTAMP,
 CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
