@@ -42,3 +42,4 @@ public class DoctorService {
     }
 
     @Transactional(readOnly = true)
+    public DoctorResponse getDoctorById(UUID id) {
