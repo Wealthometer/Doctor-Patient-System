@@ -64,3 +64,4 @@ public class Doctor {
     private LocalTime workStartTime;
 
     private LocalTime workEndTime;
+
