@@ -20,4 +20,5 @@ public class AppointmentRequests {
 
         @NotNull(message = "Appointment date is required")
         @FutureOrPresent(message = "Appointment date cannot be in the past")
+        private LocalDate appointmentDate;
         @NotNull(message = "Start time is required")
