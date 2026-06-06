@@ -75,3 +75,4 @@ public class AppointmentService {
                 .status(AppointmentStatus.SCHEDULED)
                 .build();
 
+        Appointment saved = appointmentRepository.save(appointment);
