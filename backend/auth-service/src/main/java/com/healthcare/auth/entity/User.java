@@ -20,3 +20,4 @@ import java.util.UUID;
         @UniqueConstraint(columnNames = "username")
     })
 @Getter
+@Setter
