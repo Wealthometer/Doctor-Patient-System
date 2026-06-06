@@ -44,3 +44,4 @@ public class BillingService {
                 .patientId(request.getPatientId())
                 .patientName(patient.getFirstName() + " " + patient.getLastName())
                 .appointmentId(request.getAppointmentId())
+                .appointmentNumber(request.getAppointmentNumber())
