@@ -94,3 +94,4 @@ public class DoctorService {
         doctorMapper.updateEntity(request, doctor);
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
+
