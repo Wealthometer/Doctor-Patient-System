@@ -50,3 +50,4 @@ public class DoctorRequests {
         @Min(1) @Max(50)
         private Integer maxDailyAppointments;
 
+        private String profileImageUrl;
