@@ -110,3 +110,4 @@ public class AuthService {
         }
 
         String username = jwtService.extractUsername(token);
+        User user = userRepository.findByUsername(username)
