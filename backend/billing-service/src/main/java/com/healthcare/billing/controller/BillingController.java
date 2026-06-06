@@ -89,3 +89,4 @@ public class BillingController {
     @Operation(summary = "Get billing statistics")
     public ResponseEntity<BillingStatsResponse> getStats() {
         return ResponseEntity.ok(billingService.getStats());
+    }
