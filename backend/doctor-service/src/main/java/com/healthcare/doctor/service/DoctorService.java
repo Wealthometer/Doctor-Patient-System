@@ -27,3 +27,4 @@ public class DoctorService {
     private final DoctorMapper doctorMapper;
 
     public DoctorResponse createDoctor(CreateDoctorRequest request) {
+        if (doctorRepository.existsByEmail(request.getEmail()))
