@@ -30,3 +30,4 @@ public class Payment {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private PaymentMethod method;
+
