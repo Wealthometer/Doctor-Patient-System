@@ -51,4 +51,5 @@ public class JwtService {
         extraClaims.put("userId", user.getId().toString());
         extraClaims.put("email", user.getEmail());
         extraClaims.put("role", user.getRole().name());
+        extraClaims.put("firstName", user.getFirstName());
 
