@@ -174,3 +174,4 @@ public class AuthService {
                         .role(user.getRole())
                         .createdAt(user.getCreatedAt())
                         .build())
+                .build();
