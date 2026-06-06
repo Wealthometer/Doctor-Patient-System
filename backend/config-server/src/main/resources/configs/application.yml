@@ -32,3 +32,4 @@ spring:
     open-in-view: false
     properties:
       hibernate:
+        jdbc:
