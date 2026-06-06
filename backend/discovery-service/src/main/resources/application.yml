@@ -8,3 +8,4 @@ spring:
     user:
       name: ${EUREKA_USERNAME:eureka}
       password: ${EUREKA_PASSWORD:eureka-secret}
+
