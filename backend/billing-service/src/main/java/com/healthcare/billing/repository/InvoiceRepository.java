@@ -25,3 +25,4 @@ public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
 
     List<Invoice> findByStatusAndDueDateBefore(InvoiceStatus status, LocalDate date);
 
+    @Query("SELECT SUM(i.totalAmount) FROM Invoice i WHERE i.status = 'PAID' AND i.invoiceDate BETWEEN :start AND :end")
