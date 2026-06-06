@@ -104,3 +104,4 @@ public class AppointmentController {
     public ResponseEntity<AppointmentResponse> cancel(
             @PathVariable UUID id,
             @Valid @RequestBody CancelAppointmentRequest request) {
+        return ResponseEntity.ok(appointmentService.cancelAppointment(id, request));
