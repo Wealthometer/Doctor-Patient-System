@@ -126,3 +126,4 @@ public class AppointmentService {
             slots.add(AvailableSlot.builder()
                     .startTime(slotStart)
                     .endTime(slotEnd)
+                    .available(!isBooked)
