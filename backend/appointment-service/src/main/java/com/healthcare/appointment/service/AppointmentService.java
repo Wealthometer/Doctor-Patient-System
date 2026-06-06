@@ -95,3 +95,4 @@ public class AppointmentService {
 
     @Transactional(readOnly = true)
     public Page<AppointmentResponse> getAppointmentsByDoctor(UUID doctorId, Pageable pageable) {
+        return appointmentRepository.findByDoctorId(doctorId, pageable).map(this::toResponse);
