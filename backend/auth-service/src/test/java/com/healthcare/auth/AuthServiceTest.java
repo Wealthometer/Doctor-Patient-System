@@ -165,3 +165,4 @@ class AuthServiceTest {
         TokenValidationResponse response = authService.validateToken("expiredToken");
 
         assertThat(response.isValid()).isFalse();
+    }
