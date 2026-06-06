@@ -13,3 +13,4 @@ import java.util.UUID;
 public class Notification {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
