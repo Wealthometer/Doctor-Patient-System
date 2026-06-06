@@ -65,3 +65,4 @@ public class BillingService {
             subtotal = subtotal.add(lineTotal);
 
             InvoiceLineItem item = InvoiceLineItem.builder()
+                    .invoice(invoice)
