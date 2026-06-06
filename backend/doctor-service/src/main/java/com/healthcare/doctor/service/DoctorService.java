@@ -66,3 +66,4 @@ public class DoctorService {
     public Page<DoctorResponse> getAllDoctors(Pageable pageable) {
         return doctorRepository.findAll(pageable).map(doctorMapper::toResponse);
     }
+
