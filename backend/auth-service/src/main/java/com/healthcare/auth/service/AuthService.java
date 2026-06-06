@@ -137,3 +137,4 @@ public class AuthService {
         user.setPassword(passwordEncoder.encode(request.getNewPassword()));
         userRepository.save(user);
         refreshTokenRepository.revokeAllUserTokens(user);
+        log.info("Password changed for user: {}", user.getUsername());
