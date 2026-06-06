@@ -21,3 +21,4 @@ CREATE TABLE invoices (
     paid_amount          DECIMAL(10,2) NOT NULL DEFAULT 0.00,
     insurance_provider   VARCHAR(200)  NOT NULL DEFAULT 'Self-pay',
     insurance_coverage   DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+    status               VARCHAR(20)   NOT NULL DEFAULT 'PENDING',
