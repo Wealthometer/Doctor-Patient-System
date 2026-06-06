@@ -39,3 +39,4 @@ public class Doctor {
     private String email;
 
     @Column(nullable = false)
+    private String phone;
