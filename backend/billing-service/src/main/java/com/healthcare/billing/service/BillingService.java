@@ -145,3 +145,4 @@ public class BillingService {
             invoice.setStatus(InvoiceStatus.PARTIALLY_PAID);
         }
 
+        log.info("Payment {} recorded for invoice {}", payment.getPaymentReference(), invoice.getInvoiceNumber());
