@@ -28,3 +28,4 @@ public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
     @Query("SELECT SUM(i.totalAmount) FROM Invoice i WHERE i.status = 'PAID' AND i.invoiceDate BETWEEN :start AND :end")
     BigDecimal sumPaidAmountBetween(@Param("start") LocalDate start, @Param("end") LocalDate end);
 
+    @Query("SELECT SUM(i.totalAmount - i.paidAmount) FROM Invoice i WHERE i.status IN ('PENDING','PARTIALLY_PAID','OVERDUE')")
