@@ -56,3 +56,4 @@ public class AppointmentResponses {
         private LocalTime startTime;
         private LocalTime endTime;
         private boolean available;
+    }
