@@ -14,3 +14,4 @@ CREATE TABLE doctors (
     phone                   VARCHAR(20) NOT NULL,
     specialization          VARCHAR(200) NOT NULL,
     department              VARCHAR(200) NOT NULL,
+    license_number          VARCHAR(100) NOT NULL UNIQUE,
