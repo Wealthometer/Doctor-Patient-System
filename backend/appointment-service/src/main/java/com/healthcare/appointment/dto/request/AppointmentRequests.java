@@ -53,3 +53,4 @@ public class AppointmentRequests {
     public static class CancelAppointmentRequest {
         @NotBlank(message = "Cancellation reason is required")
         private String cancellationReason;
+    }
