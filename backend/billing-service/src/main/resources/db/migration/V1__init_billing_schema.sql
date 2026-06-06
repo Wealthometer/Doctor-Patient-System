@@ -23,3 +23,4 @@ CREATE TABLE invoices (
     insurance_coverage   DECIMAL(10,2) NOT NULL DEFAULT 0.00,
     status               VARCHAR(20)   NOT NULL DEFAULT 'PENDING',
     notes                TEXT,
+    created_at           TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
