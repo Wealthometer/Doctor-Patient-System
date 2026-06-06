@@ -157,3 +157,4 @@ public class BillingService {
         invoice.setStatus(InvoiceStatus.CANCELLED);
         return toResponse(invoiceRepository.save(invoice));
     }
+
