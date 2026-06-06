@@ -33,6 +33,7 @@ spring:
         smtp:
           auth: true
           starttls:
+
 eureka:
   client:
     service-url:
