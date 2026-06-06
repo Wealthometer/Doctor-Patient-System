@@ -41,3 +41,4 @@ public class BillingService {
         BigDecimal subtotal = BigDecimal.ZERO;
         Invoice invoice = Invoice.builder()
                 .invoiceNumber(generateInvoiceNumber(request.getInvoiceDate()))
+                .patientId(request.getPatientId())
