@@ -150,3 +150,4 @@ class AuthServiceTest {
         when(jwtService.extractUsername("validToken")).thenReturn("testuser");
         when(userRepository.findByUsername("testuser")).thenReturn(Optional.of(testUser));
 
+        TokenValidationResponse response = authService.validateToken("validToken");
