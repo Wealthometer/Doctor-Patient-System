@@ -74,3 +74,4 @@ public class Invoice {
     private InvoiceStatus status = InvoiceStatus.PENDING;
 
     private String notes;
+
