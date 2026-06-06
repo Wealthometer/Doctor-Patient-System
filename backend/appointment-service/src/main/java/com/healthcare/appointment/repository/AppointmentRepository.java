@@ -53,3 +53,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
         a.appointmentDate BETWEEN :startDate AND :endDate
         AND (:doctorId IS NULL OR a.doctorId = :doctorId)
         AND (:patientId IS NULL OR a.patientId = :patientId)
+        AND (:status IS NULL OR a.status = :status)
