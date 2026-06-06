@@ -83,3 +83,4 @@ public class Doctor {
     @Column(nullable = false)
     @Builder.Default
     private int totalRatings = 0;
+
