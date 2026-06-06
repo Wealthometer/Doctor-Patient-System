@@ -16,3 +16,4 @@ public class DoctorRequests {
 
         @NotBlank
         private String firstName;
+
