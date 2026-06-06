@@ -56,3 +56,4 @@ class AuthServiceTest {
                 .password("encodedPassword")
                 .firstName("Test")
                 .lastName("User")
+                .role(Role.PATIENT)
