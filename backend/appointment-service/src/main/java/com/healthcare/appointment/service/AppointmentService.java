@@ -66,3 +66,4 @@ public class AppointmentService {
                 .doctorId(request.getDoctorId())
                 .doctorName(doctorDto.getFirstName() + " " + doctorDto.getLastName())
                 .department(doctorDto.getDepartment())
+                .appointmentDate(request.getAppointmentDate())
