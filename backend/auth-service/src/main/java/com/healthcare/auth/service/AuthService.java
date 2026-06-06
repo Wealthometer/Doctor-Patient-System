@@ -79,3 +79,4 @@ public class AuthService {
 
         userRepository.updateLastLoginTime(user.getId(), LocalDateTime.now());
         refreshTokenRepository.revokeAllUserTokens(user);
+        refreshTokenRepository.deleteRevokedTokensByUser(user);
