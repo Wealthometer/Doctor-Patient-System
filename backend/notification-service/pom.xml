@@ -55,3 +55,4 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>org.flywaydb</groupId>
