@@ -141,3 +141,4 @@ public class BillingService {
 
         if (newPaid.compareTo(invoice.getTotalAmount()) >= 0) {
             invoice.setStatus(InvoiceStatus.PAID);
+        } else {
