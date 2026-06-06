@@ -1,0 +1,1 @@
+    public InvalidAppointmentStateException(String message) {
