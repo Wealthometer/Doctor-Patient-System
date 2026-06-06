@@ -17,3 +17,4 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
 
 
+  "-XX:+UseContainerSupport", \
