@@ -110,6 +110,7 @@ public class DoctorService {
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
 
+                .specializations(doctorRepository.findAllActiveSpecializations())
     }
 
     private String generateDoctorCode() {
