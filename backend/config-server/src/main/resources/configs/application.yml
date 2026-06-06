@@ -27,3 +27,4 @@ management:
 spring:
   datasource:
     username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:w3e4r5t6y7}
