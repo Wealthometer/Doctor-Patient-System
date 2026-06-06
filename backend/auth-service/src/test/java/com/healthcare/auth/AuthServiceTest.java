@@ -142,3 +142,4 @@ class AuthServiceTest {
                 .isInstanceOf(AuthException.class)
                 .hasMessage("Invalid credentials");
     }
+
