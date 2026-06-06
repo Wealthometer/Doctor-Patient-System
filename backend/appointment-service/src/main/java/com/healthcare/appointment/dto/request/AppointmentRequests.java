@@ -55,3 +55,4 @@ public class AppointmentRequests {
         private String cancellationReason;
     }
 
+    @Data
