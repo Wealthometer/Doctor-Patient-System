@@ -118,3 +118,4 @@ class AuthServiceTest {
                 .thenReturn(Optional.of(testUser));
         when(jwtService.generateToken(any())).thenReturn("accessToken");
         when(jwtService.generateRefreshToken(any())).thenReturn("refreshToken");
+        when(jwtService.getJwtExpiration()).thenReturn(900000L);
