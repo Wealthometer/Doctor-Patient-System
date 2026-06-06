@@ -15,3 +15,4 @@ import java.util.UUID;
 public class BillingResponses {
 
     @Data @Builder
+    public static class InvoiceResponse {
