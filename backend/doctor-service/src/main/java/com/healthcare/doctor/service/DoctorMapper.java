@@ -30,3 +30,4 @@ public interface DoctorMapper {
     @Mapping(target = "email", ignore = true)
     @Mapping(target = "licenseNumber", ignore = true)
     @Mapping(target = "status", ignore = true)
+    @Mapping(target = "averageRating", ignore = true)
