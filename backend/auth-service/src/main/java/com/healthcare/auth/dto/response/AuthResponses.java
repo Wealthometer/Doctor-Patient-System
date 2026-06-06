@@ -25,3 +25,4 @@ public class AuthResponses {
     public static class UserInfo {
         private UUID id;
         private String username;
+        private String email;
