@@ -60,3 +60,4 @@ public class DoctorRequests {
         private String phone;
         private String specialization;
         private String department;
+        private LocalDate licenseExpiryDate;
