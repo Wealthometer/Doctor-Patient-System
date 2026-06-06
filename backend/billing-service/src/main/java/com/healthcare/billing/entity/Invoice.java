@@ -66,3 +66,4 @@ public class Invoice {
     private String insuranceProvider;
 
     @Column(precision = 10, scale = 2)
+    @Builder.Default
