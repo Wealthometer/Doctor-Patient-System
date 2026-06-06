@@ -42,3 +42,4 @@ public class Notification {
     @Builder.Default
     private NotificationStatus status = NotificationStatus.PENDING;
 
+    private String errorMessage;
