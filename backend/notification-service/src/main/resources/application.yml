@@ -30,3 +30,4 @@ spring:
     password: ${MAIL_PASSWORD:changeme}
     properties:
       mail:
+        smtp:
