@@ -84,3 +84,4 @@ public class AuthService {
         log.info("User logged in: {}", user.getUsername());
         return buildAuthResponse(user);
     }
+
