@@ -42,3 +42,4 @@ feign:
     enabled: true
   client:
     config:
+      default:
