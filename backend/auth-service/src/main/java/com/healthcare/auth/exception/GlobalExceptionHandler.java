@@ -24,3 +24,4 @@ public class GlobalExceptionHandler {
         log.warn("Auth error: {}", ex.getMessage());
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, ex.getMessage());
         pd.setTitle("Authentication Error");
+        pd.setProperty("timestamp", Instant.now());
