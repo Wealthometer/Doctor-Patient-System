@@ -76,3 +76,4 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.getDoctorsByDepartment(department, pageable));
     }
 
+    @GetMapping("/department/{department}/active")
