@@ -77,3 +77,4 @@ public class DoctorService {
         return doctorRepository.findByDepartment(department, pageable).map(doctorMapper::toResponse);
     }
 
+    @Transactional(readOnly = true)
