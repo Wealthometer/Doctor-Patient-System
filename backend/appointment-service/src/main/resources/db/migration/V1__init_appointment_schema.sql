@@ -14,3 +14,4 @@ CREATE TABLE appointments (
     start_time           TIME NOT NULL,
     end_time             TIME NOT NULL,
     status               VARCHAR(20) NOT NULL DEFAULT 'SCHEDULED',
+CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
