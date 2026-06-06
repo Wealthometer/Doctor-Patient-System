@@ -66,3 +66,4 @@ public class User implements UserDetails {
     private boolean credentialsNonExpired = true;
 
     @CreationTimestamp
+    @Column(updatable = false)
