@@ -32,3 +32,4 @@ public class AppointmentRequests {
         private AppointmentType type;
 
         @NotBlank(message = "Reason for appointment is required")
+        @Size(max = 1000)
