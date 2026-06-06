@@ -34,3 +34,4 @@ public class User implements UserDetails {
     private String username;
 
     @Column(nullable = false, unique = true)
+    private String email;
