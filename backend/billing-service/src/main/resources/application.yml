@@ -41,3 +41,4 @@ feign:
   circuitbreaker:
     enabled: true
   client:
+    config:
