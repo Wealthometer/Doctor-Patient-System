@@ -66,3 +66,4 @@ public class AuthController {
         return ResponseEntity.ok(MessageResponse.builder()
                 .message("Password changed successfully")
                 .success(true)
+                .build());
