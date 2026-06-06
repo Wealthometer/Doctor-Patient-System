@@ -85,3 +85,4 @@ public class BillingController {
     }
 
     @GetMapping("/stats")
+    @PreAuthorize("hasRole('ADMIN')")
