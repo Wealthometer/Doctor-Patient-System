@@ -58,3 +58,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
     Page<Appointment> findWithFilters(
             @Param("startDate") LocalDate startDate,
             @Param("endDate") LocalDate endDate,
+            @Param("doctorId") UUID doctorId,
