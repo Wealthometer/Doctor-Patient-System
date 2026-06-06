@@ -11,3 +11,4 @@ import java.util.UUID;
 
 @FeignClient(name = "doctor-service", fallback = DoctorServiceClient.DoctorServiceFallback.class)
 public interface DoctorServiceClient {
+
