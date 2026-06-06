@@ -9,3 +9,4 @@ import java.util.UUID;
 @Table(name = "refresh_tokens")
 @Getter
 @Setter
+@NoArgsConstructor
