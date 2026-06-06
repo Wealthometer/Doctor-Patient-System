@@ -172,3 +172,4 @@ class AuthServiceTest {
     void refreshToken_ShouldReturnNewTokens_WhenValidRefreshToken() {
         RefreshTokenRequest request = new RefreshTokenRequest();
         request.setRefreshToken("validRefreshToken");
+
