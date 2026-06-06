@@ -196,3 +196,4 @@ public class BillingService {
         return InvoiceResponse.builder()
                 .id(i.getId())
                 .invoiceNumber(i.getInvoiceNumber())
+                .patientId(i.getPatientId())
