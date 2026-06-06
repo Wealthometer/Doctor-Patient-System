@@ -37,3 +37,4 @@ public class Appointment {
     @Column(nullable = false)
     private String department;
 
+    @Column(nullable = false)
