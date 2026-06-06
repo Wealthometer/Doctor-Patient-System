@@ -47,3 +47,4 @@ public class AuthRequests {
         @NotBlank(message = "Refresh token is required")
         private String refreshToken;
     }
+
