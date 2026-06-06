@@ -88,3 +88,4 @@ public class DoctorService {
                 .stream().map(doctorMapper::toSummary).toList();
     }
 
+    public DoctorResponse updateDoctor(UUID id, UpdateDoctorRequest request) {
