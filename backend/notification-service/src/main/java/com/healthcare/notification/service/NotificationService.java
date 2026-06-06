@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                .build();
         sendNotification(req);
     }
 }
