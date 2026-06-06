@@ -28,3 +28,4 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @Slf4j
 @Transactional
+public class BillingService {
