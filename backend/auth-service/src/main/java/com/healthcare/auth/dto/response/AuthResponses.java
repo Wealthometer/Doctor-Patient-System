@@ -36,3 +36,4 @@ public class AuthResponses {
     @Builder
     public static class TokenValidationResponse {
         private boolean valid;
+        private UUID userId;
