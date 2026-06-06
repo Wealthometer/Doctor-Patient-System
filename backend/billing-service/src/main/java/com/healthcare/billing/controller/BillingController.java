@@ -86,3 +86,4 @@ public class BillingController {
 
     @GetMapping("/stats")
     @PreAuthorize("hasRole('ADMIN')")
+    @Operation(summary = "Get billing statistics")
