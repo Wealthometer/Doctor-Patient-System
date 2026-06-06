@@ -137,3 +137,4 @@ class AuthServiceTest {
 
         when(authenticationManager.authenticate(any()))
                 .thenThrow(new BadCredentialsException("Bad credentials"));
+
