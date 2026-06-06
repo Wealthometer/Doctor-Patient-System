@@ -94,6 +94,7 @@ public class NotificationService {
                                                     String doctorName, String rxNumber) {
         NotificationRequest req = NotificationRequest.builder()
                 .recipientEmail(email)
+                .subject("New Prescription Issued - " + rxNumber)
                 .body(String.format("""
                     
     }
