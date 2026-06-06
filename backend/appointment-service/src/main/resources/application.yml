@@ -53,3 +53,4 @@ resilience4j:
       patient-service:
         registerHealthIndicator: true
         slidingWindowSize: 10
+        minimumNumberOfCalls: 5
