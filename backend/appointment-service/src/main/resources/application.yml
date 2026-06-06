@@ -50,3 +50,4 @@ feign:
 resilience4j:
   circuitbreaker:
     instances:
+      patient-service:
