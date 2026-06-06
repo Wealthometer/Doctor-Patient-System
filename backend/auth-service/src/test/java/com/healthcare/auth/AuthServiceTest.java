@@ -36,3 +36,4 @@ import static org.mockito.Mockito.*;
 class AuthServiceTest {
 
     @Mock private UserRepository userRepository;
+    @Mock private RefreshTokenRepository refreshTokenRepository;
