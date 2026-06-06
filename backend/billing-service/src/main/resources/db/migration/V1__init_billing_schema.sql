@@ -41,3 +41,4 @@ CREATE TABLE payments (
     id                UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     invoice_id        UUID NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
     payment_reference VARCHAR(30)   NOT NULL UNIQUE,
+    amount            DECIMAL(10,2) NOT NULL,
