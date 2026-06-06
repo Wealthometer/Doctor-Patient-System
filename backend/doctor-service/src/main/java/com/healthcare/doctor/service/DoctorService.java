@@ -95,3 +95,4 @@ public class DoctorService {
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
 
+    public DoctorResponse updateDoctorStatus(UUID id, DoctorStatus status) {
