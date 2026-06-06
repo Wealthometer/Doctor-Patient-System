@@ -17,3 +17,4 @@ public class Appointment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
