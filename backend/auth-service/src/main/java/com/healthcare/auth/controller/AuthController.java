@@ -53,3 +53,4 @@ public class AuthController {
     @SecurityRequirement(name = "bearerAuth")
     @Operation(summary = "Logout - revoke refresh tokens")
     public ResponseEntity<MessageResponse> logout(@AuthenticationPrincipal User user) {
+        return ResponseEntity.ok(authService.logout(user.getId()));
