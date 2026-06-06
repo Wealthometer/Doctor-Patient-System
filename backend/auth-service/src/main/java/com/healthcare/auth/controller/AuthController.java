@@ -61,3 +61,4 @@ public class AuthController {
     @Operation(summary = "Change password")
     public ResponseEntity<MessageResponse> changePassword(
             @AuthenticationPrincipal User user,
+            @Valid @RequestBody ChangePasswordRequest request) {
