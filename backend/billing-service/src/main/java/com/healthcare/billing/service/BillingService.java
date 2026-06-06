@@ -205,3 +205,4 @@ public class BillingService {
                 .invoiceDate(i.getInvoiceDate())
                 .dueDate(i.getDueDate())
                 .subtotal(i.getSubtotal())
+                .taxRate(i.getTaxRate())
