@@ -54,3 +54,4 @@ public class BillingController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
     @Operation(summary = "Get invoices for a patient")
     public ResponseEntity<Page<InvoiceResponse>> getPatientInvoices(
+            @PathVariable UUID patientId,
