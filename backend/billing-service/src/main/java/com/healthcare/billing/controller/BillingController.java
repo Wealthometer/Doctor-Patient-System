@@ -81,3 +81,4 @@ public class BillingController {
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Cancel an invoice")
     public ResponseEntity<InvoiceResponse> cancelInvoice(@PathVariable UUID id) {
+        return ResponseEntity.ok(billingService.cancelInvoice(id));
