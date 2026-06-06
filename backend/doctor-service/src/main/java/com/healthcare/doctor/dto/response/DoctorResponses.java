@@ -43,6 +43,7 @@ public class DoctorResponses {
         private LocalDateTime updatedAt;
     }
 
+        private String department;
         private double averageRating;
         private String consultationFee;
         private DoctorStatus status;
