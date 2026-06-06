@@ -26,3 +26,4 @@ public class RefreshToken {
     private User user;
 
     @Column(nullable = false)
+    private Instant expiryDate;
