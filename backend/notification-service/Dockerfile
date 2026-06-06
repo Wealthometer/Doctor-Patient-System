@@ -13,6 +13,7 @@ WORKDIR /app
 
 # Non-root user for security
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
 
 # Copy jar
 COPY --from=build /app/target/*.jar app.jar
