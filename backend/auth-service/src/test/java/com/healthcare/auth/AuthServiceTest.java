@@ -92,3 +92,4 @@ class AuthServiceTest {
     void register_ShouldThrow_WhenUsernameExists() {
         RegisterRequest request = new RegisterRequest();
         request.setUsername("existinguser");
+        request.setEmail("new@example.com");
