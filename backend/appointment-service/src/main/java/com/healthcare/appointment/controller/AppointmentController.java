@@ -25,3 +25,4 @@ import java.util.UUID;
 @RequestMapping("/api/v1/appointments")
 @RequiredArgsConstructor
 @SecurityRequirement(name = "bearerAuth")
+@Tag(name = "Appointments", description = "Appointment management APIs")
