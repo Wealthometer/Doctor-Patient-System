@@ -216,3 +216,4 @@ public class BillingService {
                 .notes(i.getNotes())
                 .lineItems(i.getLineItems().stream().map(li -> LineItemResponse.builder()
                         .id(li.getId()).description(li.getDescription())
+                        .serviceCode(li.getServiceCode()).quantity(li.getQuantity())
