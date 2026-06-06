@@ -81,6 +81,7 @@ public class NotificationService {
                     
                     To cancel or reschedule, please log into your portal.
                     
+                    Regards,
                 .recipientEmail(email)
                 .body(String.format("""
                     
