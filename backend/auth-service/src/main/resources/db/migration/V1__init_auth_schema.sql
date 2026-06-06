@@ -27,3 +27,4 @@ CREATE TABLE refresh_tokens (
     revoked BOOLEAN NOT NULL DEFAULT false
 );
 
+CREATE INDEX idx_users_username ON users(username);
