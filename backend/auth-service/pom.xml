@@ -72,3 +72,4 @@
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-impl</artifactId>
+      <version>${jjwt.version}</version>
