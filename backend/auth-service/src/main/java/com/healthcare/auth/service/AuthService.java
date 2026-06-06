@@ -101,3 +101,4 @@ public class AuthService {
         refreshTokenRepository.save(storedToken);
 
         return buildAuthResponse(user);
+    }
