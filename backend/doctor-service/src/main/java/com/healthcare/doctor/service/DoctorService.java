@@ -60,3 +60,4 @@ public class DoctorService {
         return doctorRepository.findByDoctorCode(code)
                 .map(doctorMapper::toResponse)
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found with code: " + code));
+    }
