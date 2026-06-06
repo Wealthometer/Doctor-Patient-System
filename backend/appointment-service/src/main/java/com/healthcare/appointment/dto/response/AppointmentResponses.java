@@ -27,3 +27,4 @@ public class AppointmentResponses {
         private LocalTime startTime;
         private LocalTime endTime;
         private AppointmentStatus status;
+        private AppointmentType type;
