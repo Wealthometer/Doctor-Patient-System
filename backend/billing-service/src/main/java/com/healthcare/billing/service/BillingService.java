@@ -77,3 +77,4 @@ public class BillingService {
 
         BigDecimal taxAmount = subtotal.multiply(invoice.getTaxRate())
                 .divide(BigDecimal.valueOf(100), 2, RoundingMode.HALF_UP);
+        BigDecimal total = subtotal.add(taxAmount).subtract(invoice.getInsuranceCoverage())
