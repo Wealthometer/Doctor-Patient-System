@@ -57,3 +57,4 @@ public class Appointment {
     @Column(length = 1000)
     private String reason;
 
+    @Column(columnDefinition = "TEXT")
