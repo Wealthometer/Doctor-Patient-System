@@ -74,3 +74,4 @@ public class AuthController {
     @Operation(summary = "Get current user info")
     public ResponseEntity<UserInfo> getCurrentUser(@AuthenticationPrincipal User user) {
         return ResponseEntity.ok(UserInfo.builder()
+                .id(user.getId())
