@@ -110,3 +110,4 @@ public class AppointmentService {
         LocalTime start = doctor.getWorkStartTime() != null ? doctor.getWorkStartTime() : LocalTime.of(9, 0);
         LocalTime end = doctor.getWorkEndTime() != null ? doctor.getWorkEndTime() : LocalTime.of(17, 0);
 
+        List<Appointment> bookedSlots = appointmentRepository
