@@ -39,3 +39,4 @@ public class AuthRequests {
         private String usernameOrEmail;
 
         @NotBlank(message = "Password is required")
+        private String password;
