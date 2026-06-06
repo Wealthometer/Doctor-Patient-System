@@ -87,3 +87,4 @@ public class Invoice {
     @Column(updatable = false)
     private LocalDateTime createdAt;
 
+    @UpdateTimestamp
