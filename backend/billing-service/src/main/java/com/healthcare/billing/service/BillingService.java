@@ -56,3 +56,4 @@ public class BillingService {
                 .notes(request.getNotes())
                 .subtotal(BigDecimal.ZERO)
                 .taxAmount(BigDecimal.ZERO)
+                .totalAmount(BigDecimal.ZERO)
