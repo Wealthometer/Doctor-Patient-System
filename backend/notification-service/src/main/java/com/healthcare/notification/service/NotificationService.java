@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                    """, patientName, invoiceNumber, amount, dueDate))
                 .type(NotificationType.BILLING_INVOICE)
                 .channel(NotificationChannel.EMAIL)
                 .build();
