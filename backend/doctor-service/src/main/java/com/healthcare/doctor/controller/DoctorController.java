@@ -118,3 +118,4 @@ public class DoctorController {
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<DoctorStatsResponse> getStats() {
         return ResponseEntity.ok(doctorService.getStats());
+    }
