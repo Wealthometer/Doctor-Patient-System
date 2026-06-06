@@ -25,3 +25,4 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class User implements UserDetails {
+
