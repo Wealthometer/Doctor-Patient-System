@@ -59,3 +59,4 @@ public class AuthService {
         log.info("New user registered: {} with role {}", user.getUsername(), user.getRole());
 
         return buildAuthResponse(user);
+    }
