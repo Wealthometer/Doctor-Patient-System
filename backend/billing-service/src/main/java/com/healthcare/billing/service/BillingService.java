@@ -122,3 +122,4 @@ public class BillingService {
         BigDecimal balance = invoice.getTotalAmount().subtract(invoice.getPaidAmount());
         if (request.getAmount().compareTo(balance) > 0) {
             throw new InvalidBillingStateException("Payment amount exceeds balance due of $" + balance);
+        }
