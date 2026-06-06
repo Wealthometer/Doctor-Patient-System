@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                    
                     A new invoice has been generated for your recent visit.
                     
                     Invoice Number: %s
