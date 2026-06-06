@@ -19,3 +19,4 @@ public class RefreshToken {
     private UUID id;
 
     @Column(nullable = false, unique = true)
+    private String token;
