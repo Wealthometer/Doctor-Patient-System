@@ -88,3 +88,4 @@ public class BillingController {
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get billing statistics")
     public ResponseEntity<BillingStatsResponse> getStats() {
+        return ResponseEntity.ok(billingService.getStats());
