@@ -21,3 +21,4 @@ CREATE TABLE users (
 
 CREATE TABLE refresh_tokens (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    token VARCHAR(512) NOT NULL UNIQUE,
