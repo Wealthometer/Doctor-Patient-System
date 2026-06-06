@@ -69,3 +69,4 @@ public class DoctorController {
     }
 
     @GetMapping("/department/{department}")
+            @PathVariable String department,
