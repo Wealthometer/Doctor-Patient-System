@@ -144,3 +144,4 @@ public class BillingService {
         } else {
             invoice.setStatus(InvoiceStatus.PARTIALLY_PAID);
         }
+
