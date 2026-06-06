@@ -20,3 +20,4 @@ public class BillingResponses {
         private String invoiceNumber;
         private UUID patientId;
         private String patientName;
+        private UUID appointmentId;
