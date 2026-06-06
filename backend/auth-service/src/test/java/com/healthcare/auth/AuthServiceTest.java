@@ -111,3 +111,4 @@ class AuthServiceTest {
         LoginRequest request = new LoginRequest();
         request.setUsernameOrEmail("testuser");
         request.setPassword("Password@123");
+
