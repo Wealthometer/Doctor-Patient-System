@@ -48,6 +48,7 @@ public class NotificationService {
         }
         notificationRepository.save(notification);
     }
+
     private void sendEmail(Notification notification) {
         message.setTo(notification.getRecipientEmail());
         message.setText(notification.getBody());
