@@ -94,3 +94,4 @@ public class AppointmentService {
     }
 
     @Transactional(readOnly = true)
+    public Page<AppointmentResponse> getAppointmentsByDoctor(UUID doctorId, Pageable pageable) {
