@@ -30,3 +30,4 @@ import java.util.UUID;
 public class AuthService {
 
     private final UserRepository userRepository;
+    private final RefreshTokenRepository refreshTokenRepository;
