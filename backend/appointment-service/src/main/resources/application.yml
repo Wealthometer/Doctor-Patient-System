@@ -68,3 +68,4 @@ resilience4j:
 management:
   endpoints:
     web:
+      exposure:
