@@ -50,3 +50,4 @@ public class AppointmentService {
 
         // Check daily appointment limit
         long todayCount = appointmentRepository.countByDoctorIdAndAppointmentDate(
+                request.getDoctorId(), request.getAppointmentDate());
