@@ -31,3 +31,4 @@ public interface DoctorServiceClient {
         private String status;
     }
 
+    class DoctorServiceFallback implements DoctorServiceClient {
