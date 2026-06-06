@@ -43,3 +43,4 @@ application:
       refresh-token:
         expiration: 604800000   # 7 days
 
+management:
