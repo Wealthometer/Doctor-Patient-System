@@ -16,3 +16,4 @@ public class BillingRequests {
     public static class CreateInvoiceRequest {
         @NotNull private UUID patientId;
         private UUID appointmentId;
+        private String appointmentNumber;
