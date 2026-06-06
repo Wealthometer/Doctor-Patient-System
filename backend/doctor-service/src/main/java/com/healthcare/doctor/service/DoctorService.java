@@ -101,6 +101,7 @@ public class DoctorService {
         doctor.setStatus(status);
         log.info("Doctor {} status updated to {}", doctor.getDoctorCode(), status);
         return doctorMapper.toResponse(doctorRepository.save(doctor));
+    }
 
     public DoctorResponse submitRating(UUID id, RatingRequest request) {
         Doctor doctor = doctorRepository.findById(id)
