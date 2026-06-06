@@ -17,3 +17,4 @@ USER appuser
 
 # Copy jar
 COPY --from=build /app/target/*.jar app.jar
+
