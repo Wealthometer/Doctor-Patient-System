@@ -73,3 +73,4 @@ public class User implements UserDetails {
     private LocalDateTime updatedAt;
 
     @Column
+    private LocalDateTime lastLoginAt;
