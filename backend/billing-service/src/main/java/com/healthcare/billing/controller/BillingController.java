@@ -65,3 +65,4 @@ public class BillingController {
     public ResponseEntity<Page<InvoiceResponse>> getByStatus(
             @PathVariable InvoiceStatus status,
             @PageableDefault(size = 20) Pageable pageable) {
+        return ResponseEntity.ok(billingService.getInvoicesByStatus(status, pageable));
