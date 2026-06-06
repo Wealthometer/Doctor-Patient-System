@@ -19,3 +19,4 @@ CREATE TABLE invoices (
     tax_amount           DECIMAL(10,2) NOT NULL DEFAULT 0.00,
     total_amount         DECIMAL(10,2) NOT NULL DEFAULT 0.00,
     paid_amount          DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+    insurance_provider   VARCHAR(200)  NOT NULL DEFAULT 'Self-pay',
