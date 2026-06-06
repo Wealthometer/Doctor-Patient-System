@@ -62,4 +62,5 @@ public class AppointmentRequests {
         private UUID doctorId;
         private UUID patientId;
         private String status;
+    }
 }
