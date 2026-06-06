@@ -28,3 +28,4 @@ spring:
     baseline-on-migrate: true
 
 eureka:
+  client:
