@@ -10,3 +10,4 @@ public enum NotificationType {
     BILLING_INVOICE,
     PAYMENT_RECEIVED,
     GENERAL
+}
