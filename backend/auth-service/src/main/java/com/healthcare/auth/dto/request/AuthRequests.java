@@ -33,3 +33,4 @@ public class AuthRequests {
         private Role role;
     }
 
+    @Data
