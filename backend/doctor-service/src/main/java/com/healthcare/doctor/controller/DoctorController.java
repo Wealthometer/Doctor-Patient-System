@@ -94,3 +94,4 @@ public class DoctorController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
     public ResponseEntity<DoctorResponse> updateDoctor(
             @PathVariable UUID id,
+            @Valid @RequestBody UpdateDoctorRequest request) {
