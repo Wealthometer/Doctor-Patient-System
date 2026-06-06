@@ -58,3 +58,4 @@ public class BillingResponses {
         private BigDecimal amount;
         private PaymentMethod method;
         private PaymentStatus status;
+        private String transactionId;
