@@ -42,3 +42,4 @@ public class BillingResponses {
     }
 
     @Data @Builder
+    public static class LineItemResponse {
