@@ -34,3 +34,4 @@ public class BillingResponses {
         private BigDecimal balanceDue;
         private String insuranceProvider;
         private BigDecimal insuranceCoverage;
+        private InvoiceStatus status;
