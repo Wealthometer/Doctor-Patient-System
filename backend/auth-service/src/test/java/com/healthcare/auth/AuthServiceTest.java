@@ -160,3 +160,4 @@ class AuthServiceTest {
     @Test
     @DisplayName("Should return invalid for expired token")
     void validateToken_ShouldReturnInvalid_WhenTokenExpired() {
+        when(jwtService.isTokenValid("expiredToken")).thenReturn(false);
