@@ -175,3 +175,4 @@ class AuthServiceTest {
 
         RefreshToken storedToken = RefreshToken.builder()
                 .token("validRefreshToken")
+                .user(testUser)
