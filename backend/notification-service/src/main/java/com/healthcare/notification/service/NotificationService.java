@@ -64,6 +64,7 @@ public class NotificationService {
     // Template helpers for common notification types
                                              String doctorName, String dateTime) {
                 .recipientEmail(email)
+                .body(String.format("""
     }
 
     }
