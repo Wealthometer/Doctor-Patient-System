@@ -76,6 +76,7 @@ public class NotificationService {
                     
                     Doctor: Dr. %s
                     Date & Time: %s
+                    
                 .recipientEmail(email)
                 .body(String.format("""
                     
