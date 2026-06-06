@@ -50,6 +50,7 @@ public class NotificationService {
     }
 
     private void sendEmail(Notification notification) {
+        SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(notification.getRecipientEmail());
         message.setText(notification.getBody());
         mailSender.send(message);
