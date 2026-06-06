@@ -55,3 +55,4 @@ public class AuthController {
     public ResponseEntity<MessageResponse> logout(@AuthenticationPrincipal User user) {
         return ResponseEntity.ok(authService.logout(user.getId()));
     }
+
