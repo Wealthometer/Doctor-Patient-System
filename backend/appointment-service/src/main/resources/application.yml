@@ -66,3 +66,4 @@ resilience4j:
         failureRateThreshold: 50
 
 management:
+  endpoints:
