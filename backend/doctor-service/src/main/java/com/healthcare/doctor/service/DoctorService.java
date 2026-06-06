@@ -96,3 +96,4 @@ public class DoctorService {
     }
 
     public DoctorResponse updateDoctorStatus(UUID id, DoctorStatus status) {
+        Doctor doctor = doctorRepository.findById(id)
