@@ -100,3 +100,4 @@ public class AuthService {
         storedToken.setRevoked(true);
         refreshTokenRepository.save(storedToken);
 
+        return buildAuthResponse(user);
