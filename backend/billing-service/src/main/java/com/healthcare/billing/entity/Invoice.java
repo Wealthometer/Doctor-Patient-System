@@ -53,3 +53,4 @@ public class Invoice {
     private BigDecimal taxRate = BigDecimal.ZERO;
 
     @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal taxAmount;
