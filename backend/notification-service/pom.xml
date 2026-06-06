@@ -130,3 +130,4 @@
         <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
