@@ -120,3 +120,4 @@ public class AppointmentService {
             LocalTime slotEnd = current.plusMinutes(30);
             final LocalTime slotStart = current;
 
+            boolean isBooked = bookedSlots.stream().anyMatch(a ->
