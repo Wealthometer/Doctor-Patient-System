@@ -9,3 +9,4 @@ import lombok.Data;
 
 public class AuthRequests {
 
+    @Data
