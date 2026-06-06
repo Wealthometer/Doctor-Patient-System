@@ -20,3 +20,4 @@ import java.util.Map;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(AuthException.class)
+    public ProblemDetail handleAuthException(AuthException ex) {
