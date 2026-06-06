@@ -45,3 +45,4 @@ public class GlobalExceptionHandler {
     public ProblemDetail handleValidation(MethodArgumentNotValidException ex) {
         Map<String, String> errors = new HashMap<>();
         ex.getBindingResult().getAllErrors().forEach(e ->
+                errors.put(((FieldError) e).getField(), e.getDefaultMessage()));
