@@ -21,3 +21,4 @@ public class InvoiceLineItem {
     @JoinColumn(name = "invoice_id", nullable = false)
     private Invoice invoice;
 
+    @Column(nullable = false)
