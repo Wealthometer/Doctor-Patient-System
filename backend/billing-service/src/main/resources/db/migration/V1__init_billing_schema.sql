@@ -27,3 +27,4 @@ CREATE TABLE invoices (
     updated_at           TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE invoice_line_items (
