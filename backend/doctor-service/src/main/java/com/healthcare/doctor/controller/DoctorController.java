@@ -66,4 +66,5 @@ public class DoctorController {
             @RequestParam String query,
             @PageableDefault(size = 20) Pageable pageable) {
         return ResponseEntity.ok(doctorService.searchDoctors(query, pageable));
+
     @GetMapping("/department/{department}")
