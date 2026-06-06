@@ -18,3 +18,4 @@ public class BillingRequests {
         private UUID appointmentId;
         private String appointmentNumber;
         private UUID doctorId;
+        private String doctorName;
