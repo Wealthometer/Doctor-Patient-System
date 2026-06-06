@@ -183,3 +183,4 @@ class AuthServiceTest {
         when(refreshTokenRepository.findByToken("validRefreshToken")).thenReturn(Optional.of(storedToken));
         when(jwtService.generateToken(any())).thenReturn("newAccessToken");
         when(jwtService.generateRefreshToken(any())).thenReturn("newRefreshToken");
+        when(jwtService.getJwtExpiration()).thenReturn(900000L);
