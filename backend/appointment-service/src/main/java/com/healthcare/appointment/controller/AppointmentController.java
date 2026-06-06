@@ -35,3 +35,4 @@ public class AppointmentController {
     @Operation(summary = "Book a new appointment")
     public ResponseEntity<AppointmentResponse> bookAppointment(
             @Valid @RequestBody BookAppointmentRequest request) {
+        return ResponseEntity.status(HttpStatus.CREATED)
