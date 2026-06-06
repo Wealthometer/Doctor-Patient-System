@@ -54,3 +54,4 @@ public class User implements UserDetails {
     private boolean enabled = true;
 
     @Column(nullable = false)
+    @Builder.Default
