@@ -27,3 +27,4 @@ CREATE TABLE doctors (
     profile_image_url       VARCHAR(500),
     status                  VARCHAR(20) NOT NULL DEFAULT 'ACTIVE',
     average_rating          DECIMAL(3,1) NOT NULL DEFAULT 0.0,
+    total_ratings           INT NOT NULL DEFAULT 0,
