@@ -29,3 +29,4 @@ public class AppointmentResponses {
         private AppointmentStatus status;
         private AppointmentType type;
         private String reason;
+        private String notes;
