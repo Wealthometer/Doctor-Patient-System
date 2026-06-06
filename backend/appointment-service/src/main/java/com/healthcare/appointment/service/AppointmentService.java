@@ -112,3 +112,4 @@ public class AppointmentService {
 
         List<Appointment> bookedSlots = appointmentRepository
                 .findByDoctorIdAndAppointmentDateAndStatusNot(doctorId, date, AppointmentStatus.CANCELLED);
+
