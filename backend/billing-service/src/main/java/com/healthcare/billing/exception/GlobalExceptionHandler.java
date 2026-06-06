@@ -21,3 +21,4 @@ public class GlobalExceptionHandler {
     public ProblemDetail handleNotFound(InvoiceNotFoundException ex) {
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, ex.getMessage());
         pd.setTitle("Invoice Not Found");
+        pd.setProperty("timestamp", Instant.now());
