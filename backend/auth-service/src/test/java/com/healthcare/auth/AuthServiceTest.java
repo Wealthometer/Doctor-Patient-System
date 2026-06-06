@@ -127,3 +127,4 @@ class AuthServiceTest {
         assertThat(response.getAccessToken()).isNotNull();
         verify(refreshTokenRepository).revokeAllUserTokens(testUser);
     }
+
