@@ -16,3 +16,4 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
+public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
