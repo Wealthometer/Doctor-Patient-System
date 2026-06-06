@@ -179,3 +179,4 @@ public class BillingService {
     @Scheduled(cron = "0 0 1 * * *")
     public void markOverdueInvoices() {
         List<Invoice> overdue = invoiceRepository.findByStatusAndDueDateBefore(
+                InvoiceStatus.PENDING, LocalDate.now());
