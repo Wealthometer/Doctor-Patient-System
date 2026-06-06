@@ -51,3 +51,4 @@ resilience4j:
   circuitbreaker:
     instances:
       patient-service:
+        registerHealthIndicator: true
