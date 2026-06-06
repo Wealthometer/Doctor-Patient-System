@@ -41,3 +41,4 @@ public class AuthController {
         return ResponseEntity.ok(authService.refreshToken(request));
     }
 
+    @GetMapping("/validate")
