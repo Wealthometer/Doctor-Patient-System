@@ -31,3 +31,4 @@ public class BillingResponses {
         private BigDecimal taxAmount;
         private BigDecimal totalAmount;
         private BigDecimal paidAmount;
+        private BigDecimal balanceDue;
