@@ -20,3 +20,4 @@ import java.util.UUID;
 public class Doctor {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
