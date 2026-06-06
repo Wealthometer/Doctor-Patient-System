@@ -193,3 +193,4 @@ public class AppointmentService {
         return toResponse(appointmentRepository.save(a));
     }
 
+        return appointmentRepository.findById(id)
