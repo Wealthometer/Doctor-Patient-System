@@ -99,4 +99,5 @@ public class DoctorController {
     }
 
     @PatchMapping("/{id}/status")
+    public ResponseEntity<DoctorResponse> updateDoctorStatus(
             @PathVariable UUID id,
