@@ -38,3 +38,4 @@ public class AppointmentService {
     private final AtomicLong appointmentCounter = new AtomicLong(1);
 
     public AppointmentResponse bookAppointment(BookAppointmentRequest request) {
+        // Validate no time conflicts
