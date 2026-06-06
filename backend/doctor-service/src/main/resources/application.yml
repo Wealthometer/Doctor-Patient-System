@@ -35,6 +35,7 @@ management:
         include: health,info,metrics,prometheus
 springdoc:
     path: /v3/api-docs
+  swagger-ui:
     path: /swagger-ui.html
 
 logging:
