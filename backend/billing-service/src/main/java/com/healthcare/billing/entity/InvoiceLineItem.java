@@ -28,3 +28,4 @@ public class InvoiceLineItem {
     private String serviceCode;
 
     @Column(nullable = false)
+    @Builder.Default
