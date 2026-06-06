@@ -36,3 +36,4 @@ public class AuthController {
     }
 
     @PostMapping("/refresh-token")
+    @Operation(summary = "Refresh access token")
