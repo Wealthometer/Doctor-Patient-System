@@ -48,3 +48,4 @@ public class Doctor {
     private String department;
 
     @Column(nullable = false)
+    private String licenseNumber;
