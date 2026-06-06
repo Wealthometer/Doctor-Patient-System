@@ -20,3 +20,4 @@ public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
+
