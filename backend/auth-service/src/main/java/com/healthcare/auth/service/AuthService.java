@@ -74,3 +74,4 @@ public class AuthService {
         }
 
         User user = userRepository.findByUsernameOrEmail(
+                request.getUsernameOrEmail(), request.getUsernameOrEmail()
