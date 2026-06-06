@@ -25,3 +25,4 @@ public interface PatientServiceClient {
 
     class Fallback implements PatientServiceClient {
         @Override
+        public PatientDto getPatientById(UUID id) {
