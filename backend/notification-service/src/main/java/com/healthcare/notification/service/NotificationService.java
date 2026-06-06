@@ -37,6 +37,7 @@ public class NotificationService {
             } else if (notification.getChannel() == NotificationChannel.SMS) {
                 sendSms(notification);
             }
+            notification.setStatus(NotificationStatus.SENT);
             notification.setSentAt(LocalDateTime.now());
         } catch (Exception e) {
             notification.setStatus(NotificationStatus.FAILED);
