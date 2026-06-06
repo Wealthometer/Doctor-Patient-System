@@ -51,3 +51,4 @@ public class DoctorRequests {
         private Integer maxDailyAppointments;
 
         private String profileImageUrl;
+    }
