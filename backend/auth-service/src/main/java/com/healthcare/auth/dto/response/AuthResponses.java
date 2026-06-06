@@ -14,3 +14,4 @@ public class AuthResponses {
     public static class AuthResponse {
         private String accessToken;
         private String refreshToken;
+        @Builder.Default
