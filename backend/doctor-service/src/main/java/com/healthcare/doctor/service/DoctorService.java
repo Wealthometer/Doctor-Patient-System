@@ -78,3 +78,4 @@ public class DoctorService {
     }
 
     @Transactional(readOnly = true)
+    public Page<DoctorResponse> getDoctorsBySpecialization(String specialization, Pageable pageable) {
