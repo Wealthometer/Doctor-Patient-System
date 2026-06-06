@@ -40,3 +40,4 @@ public class AuthResponses {
         private String username;
         private String email;
         private Role role;
+    }
