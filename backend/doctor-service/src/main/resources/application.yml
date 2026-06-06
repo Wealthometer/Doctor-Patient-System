@@ -36,3 +36,4 @@ management:
 springdoc:
     path: /v3/api-docs
     path: /swagger-ui.html
+logging:
