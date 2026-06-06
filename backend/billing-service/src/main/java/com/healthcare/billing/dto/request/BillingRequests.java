@@ -27,3 +27,4 @@ public class BillingRequests {
         @DecimalMin("0.0") private BigDecimal insuranceCoverage;
         private String notes;
         @NotEmpty @Valid
+        private List<LineItemRequest> lineItems;
