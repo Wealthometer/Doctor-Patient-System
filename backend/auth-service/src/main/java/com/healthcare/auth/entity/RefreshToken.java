@@ -14,3 +14,4 @@ import java.util.UUID;
 @Builder
 public class RefreshToken {
 
+    @Id
