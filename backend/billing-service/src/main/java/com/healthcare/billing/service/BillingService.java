@@ -199,3 +199,4 @@ public class BillingService {
                 .patientId(i.getPatientId())
                 .patientName(i.getPatientName())
                 .appointmentId(i.getAppointmentId())
+                .appointmentNumber(i.getAppointmentNumber())
