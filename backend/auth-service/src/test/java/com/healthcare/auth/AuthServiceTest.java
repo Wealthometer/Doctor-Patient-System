@@ -35,3 +35,4 @@ import static org.mockito.Mockito.*;
 @DisplayName("AuthService Tests")
 class AuthServiceTest {
 
+    @Mock private UserRepository userRepository;
