@@ -25,3 +25,4 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
