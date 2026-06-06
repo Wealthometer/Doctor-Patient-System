@@ -90,6 +90,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+    public void sendPrescriptionIssuedNotification(String email, String patientName,
                 .recipientEmail(email)
                 .body(String.format("""
                     
