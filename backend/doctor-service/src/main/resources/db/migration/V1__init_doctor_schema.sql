@@ -13,3 +13,4 @@ CREATE TABLE doctors (
     email                   VARCHAR(255) NOT NULL UNIQUE,
     phone                   VARCHAR(20) NOT NULL,
     specialization          VARCHAR(200) NOT NULL,
+    department              VARCHAR(200) NOT NULL,
