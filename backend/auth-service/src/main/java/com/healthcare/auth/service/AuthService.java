@@ -117,3 +117,4 @@ public class AuthService {
             return TokenValidationResponse.builder().valid(false).build();
         }
 
+        return TokenValidationResponse.builder()
