@@ -69,3 +69,4 @@ public class Doctor {
     private String workDays; // e.g. "MON,TUE,WED,THU,FRI"
 
     private Integer maxDailyAppointments;
+
