@@ -24,3 +24,4 @@ public class Invoice {
     @Column(nullable = false, unique = true)
     private String invoiceNumber; // INV-20260601-0001
 
+    @Column(nullable = false)
