@@ -168,3 +168,4 @@ public class AppointmentService {
                 appointment.getStatus() == AppointmentStatus.CANCELLED)
             throw new InvalidAppointmentStateException("Cannot cancel a " + appointment.getStatus() + " appointment");
 
+        appointment.setStatus(AppointmentStatus.CANCELLED);
