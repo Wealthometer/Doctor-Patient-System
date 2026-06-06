@@ -9,3 +9,4 @@ CREATE TABLE notifications (
     recipient_phone  VARCHAR(20),
     subject          VARCHAR(500) NOT NULL,
     body             TEXT NOT NULL,
+    type             VARCHAR(50) NOT NULL,
