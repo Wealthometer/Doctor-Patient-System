@@ -57,3 +57,4 @@ public class DoctorRequests {
     public static class UpdateDoctorRequest {
         private String firstName;
         private String lastName;
+        private String phone;
