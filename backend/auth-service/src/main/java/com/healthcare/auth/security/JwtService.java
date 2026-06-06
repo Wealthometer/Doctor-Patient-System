@@ -29,3 +29,4 @@ public class JwtService {
     private long refreshExpiration;
 
     public String extractUsername(String token) {
+        return extractClaim(token, Claims::getSubject);
