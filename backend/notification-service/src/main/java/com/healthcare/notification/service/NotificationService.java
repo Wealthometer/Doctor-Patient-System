@@ -62,6 +62,7 @@ public class NotificationService {
         // Integration point for SMS provider (Twilio, AWS SNS, etc.)
         log.info("SMS to {}: {}", notification.getRecipientPhone(), notification.getBody());
     }
+
     // Template helpers for common notification types
                                              String doctorName, String dateTime) {
                     
