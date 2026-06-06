@@ -29,3 +29,4 @@ public class BillingResponses {
         private BigDecimal subtotal;
         private BigDecimal taxRate;
         private BigDecimal taxAmount;
+        private BigDecimal totalAmount;
