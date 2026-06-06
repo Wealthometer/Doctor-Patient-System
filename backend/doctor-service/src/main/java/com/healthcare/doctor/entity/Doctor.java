@@ -66,3 +66,4 @@ public class Doctor {
     private LocalTime workEndTime;
 
     @Column(length = 100)
+    private String workDays; // e.g. "MON,TUE,WED,THU,FRI"
