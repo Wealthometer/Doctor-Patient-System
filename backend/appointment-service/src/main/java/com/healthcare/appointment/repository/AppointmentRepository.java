@@ -50,3 +50,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
 
     @Query("""
         SELECT a FROM Appointment a WHERE
+        a.appointmentDate BETWEEN :startDate AND :endDate
