@@ -34,3 +34,4 @@ public class DoctorService {
         if (doctorRepository.existsByLicenseNumber(request.getLicenseNumber()))
             throw new DoctorAlreadyExistsException("License number already registered: " + request.getLicenseNumber());
 
+        Doctor doctor = doctorMapper.toEntity(request);
