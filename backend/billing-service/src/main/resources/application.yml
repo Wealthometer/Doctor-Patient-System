@@ -39,3 +39,4 @@ application:
 
 feign:
   circuitbreaker:
+    enabled: true
