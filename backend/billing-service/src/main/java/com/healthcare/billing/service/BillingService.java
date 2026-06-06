@@ -102,3 +102,4 @@ public class BillingService {
     }
 
     @Transactional(readOnly = true)
+    public Page<InvoiceResponse> getAllInvoices(Pageable pageable) {
