@@ -5,3 +5,4 @@ import com.healthcare.notification.entity.NotificationType;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.UUID;
