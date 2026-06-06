@@ -18,3 +18,4 @@ import java.time.LocalDateTime;
 @Slf4j
 public class NotificationService {
     private final JavaMailSender mailSender;
+    @Async
