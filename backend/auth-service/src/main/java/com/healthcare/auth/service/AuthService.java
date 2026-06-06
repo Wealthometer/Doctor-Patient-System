@@ -81,3 +81,4 @@ public class AuthService {
         refreshTokenRepository.revokeAllUserTokens(user);
         refreshTokenRepository.deleteRevokedTokensByUser(user);
 
+        log.info("User logged in: {}", user.getUsername());
