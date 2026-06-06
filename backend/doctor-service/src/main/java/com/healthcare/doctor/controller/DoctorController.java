@@ -51,4 +51,5 @@ public class DoctorController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     public ResponseEntity<DoctorResponse> getDoctorByCode(@PathVariable String code) {
         return ResponseEntity.ok(doctorService.getDoctorByCode(code));
+    }
 
