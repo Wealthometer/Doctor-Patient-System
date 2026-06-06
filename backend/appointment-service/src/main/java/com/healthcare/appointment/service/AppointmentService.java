@@ -211,6 +211,7 @@ public class AppointmentService {
                 .id(a.getId())
                 .appointmentNumber(a.getAppointmentNumber())
                 .patientId(a.getPatientId())
+                .createdAt(a.getCreatedAt())
                 .updatedAt(a.getUpdatedAt())
                 .build();
     }
