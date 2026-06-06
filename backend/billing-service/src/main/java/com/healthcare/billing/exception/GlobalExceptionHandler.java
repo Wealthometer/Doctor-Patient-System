@@ -31,3 +31,4 @@ public class GlobalExceptionHandler {
         pd.setTitle("Invalid Billing State");
         pd.setProperty("timestamp", Instant.now());
         return pd;
+    }
