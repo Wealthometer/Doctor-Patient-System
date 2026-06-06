@@ -68,3 +68,4 @@ public class AppointmentService {
                 .department(doctorDto.getDepartment())
                 .appointmentDate(request.getAppointmentDate())
                 .startTime(request.getStartTime())
+                .endTime(request.getEndTime())
