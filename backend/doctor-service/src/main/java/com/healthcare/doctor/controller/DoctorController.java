@@ -113,3 +113,4 @@ public class DoctorController {
             @Valid @RequestBody RatingRequest request) {
         return ResponseEntity.ok(doctorService.submitRating(id, request));
     }
+
