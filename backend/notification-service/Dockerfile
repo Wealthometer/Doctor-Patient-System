@@ -19,6 +19,7 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
 
 
   "-XX:+UseContainerSupport", \
+  "-XX:MaxRAMPercentage=75.0", \
   "-XX:+UseG1GC", \
   "-Djava.security.egd=file:/dev/./urandom", \
   "-jar", "app.jar"]
