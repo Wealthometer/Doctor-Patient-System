@@ -74,3 +74,4 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     @Operation(summary = "Get available time slots for a doctor on a specific date")
     public ResponseEntity<List<AvailableSlot>> getAvailableSlots(
+            @PathVariable UUID doctorId,
