@@ -57,3 +57,4 @@ public class AppointmentRequests {
 
     @Data
     public static class AppointmentFilterRequest {
+        private LocalDate startDate;
