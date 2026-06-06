@@ -30,3 +30,4 @@ public class AppointmentRequests {
 
         @NotNull(message = "Appointment type is required")
         private AppointmentType type;
+
