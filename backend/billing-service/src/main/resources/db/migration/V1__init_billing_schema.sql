@@ -48,3 +48,4 @@ CREATE TABLE payments (
     notes             TEXT,
     created_at        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+
