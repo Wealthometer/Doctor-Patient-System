@@ -110,4 +110,5 @@ public class DoctorService {
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
         return "D-" + String.format("%04d", count + 1001);
+    }
 }
