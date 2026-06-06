@@ -61,3 +61,4 @@ public class Appointment {
     private String notes;
 
     @Column(columnDefinition = "TEXT")
+    private String diagnosisSummary;
