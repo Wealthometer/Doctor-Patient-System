@@ -36,3 +36,4 @@ public class Doctor {
     private String lastName;
 
     @Column(nullable = false, unique = true)
+    private String email;
