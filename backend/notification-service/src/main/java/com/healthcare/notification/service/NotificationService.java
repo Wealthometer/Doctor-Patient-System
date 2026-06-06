@@ -70,6 +70,7 @@ public class NotificationService {
                 .recipientEmail(email)
                 .subject("Appointment Confirmed - HealthCare+")
                 .body(String.format("""
+                    Dear %s,
                     
                 .recipientEmail(email)
                 .body(String.format("""
