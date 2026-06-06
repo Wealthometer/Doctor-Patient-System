@@ -50,3 +50,4 @@ public class Appointment {
     @Builder.Default
     private AppointmentStatus status = AppointmentStatus.SCHEDULED;
 
+    @Enumerated(EnumType.STRING)
