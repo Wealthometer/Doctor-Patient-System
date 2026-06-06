@@ -22,3 +22,4 @@ CREATE TABLE doctors (
     consultation_fee        VARCHAR(50),
     work_start_time         TIME,
     work_end_time           TIME,
+    work_days               VARCHAR(100),
