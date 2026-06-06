@@ -114,3 +114,4 @@ public class AuthService {
                 .orElse(null);
 
         if (user == null || !user.isEnabled()) {
+            return TokenValidationResponse.builder().valid(false).build();
