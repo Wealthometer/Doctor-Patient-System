@@ -56,3 +56,4 @@ public class DoctorService {
     }
 
     @Transactional(readOnly = true)
+    public DoctorResponse getDoctorByCode(String code) {
