@@ -25,3 +25,4 @@ public class GlobalExceptionHandler {
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, ex.getMessage());
         pd.setTitle("Authentication Error");
         pd.setProperty("timestamp", Instant.now());
+        return pd;
