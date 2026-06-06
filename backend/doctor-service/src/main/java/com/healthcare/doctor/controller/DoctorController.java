@@ -60,3 +60,4 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.getAllDoctors(pageable));
     }
 
+    public ResponseEntity<Page<DoctorResponse>> searchDoctors(
