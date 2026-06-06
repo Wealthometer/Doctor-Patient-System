@@ -43,3 +43,4 @@ public class User implements UserDetails {
     private String firstName;
 
     @Column(nullable = false)
+    private String lastName;
