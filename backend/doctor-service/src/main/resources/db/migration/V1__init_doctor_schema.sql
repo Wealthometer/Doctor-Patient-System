@@ -32,3 +32,4 @@ CREATE TABLE doctors (
     updated_at              TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE INDEX idx_doctors_user_id       ON doctors(user_id);
