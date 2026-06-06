@@ -28,3 +28,4 @@ public class AppointmentResponses {
         private LocalTime endTime;
         private AppointmentStatus status;
         private AppointmentType type;
+        private String reason;
