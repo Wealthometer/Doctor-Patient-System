@@ -121,3 +121,4 @@ public class AuthService {
                 .valid(true)
                 .userId(user.getId())
                 .username(user.getUsername())
+                .email(user.getEmail())
