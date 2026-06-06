@@ -62,3 +62,4 @@ class AuthServiceTest {
 
     @Test
     @DisplayName("Should register a new user successfully")
+    void register_ShouldCreateUser_WhenValidRequest() {
