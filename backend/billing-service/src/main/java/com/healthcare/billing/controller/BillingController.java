@@ -46,3 +46,4 @@ public class BillingController {
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get all invoices")
     public ResponseEntity<Page<InvoiceResponse>> getAllInvoices(
+            @PageableDefault(size = 20, sort = "invoiceDate") Pageable pageable) {
