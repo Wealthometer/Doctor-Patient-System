@@ -22,3 +22,4 @@ eureka:
     enable-self-preservation: false
 
 management:
+  endpoints:
