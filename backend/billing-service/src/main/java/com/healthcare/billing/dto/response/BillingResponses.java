@@ -70,3 +70,4 @@ public class BillingResponses {
         private long paidInvoices;
         private BigDecimal totalRevenue;
         private BigDecimal outstandingBalance;
+        private BigDecimal monthlyRevenue;
