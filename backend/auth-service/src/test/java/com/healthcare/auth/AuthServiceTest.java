@@ -151,3 +151,4 @@ class AuthServiceTest {
         when(userRepository.findByUsername("testuser")).thenReturn(Optional.of(testUser));
 
         TokenValidationResponse response = authService.validateToken("validToken");
+
