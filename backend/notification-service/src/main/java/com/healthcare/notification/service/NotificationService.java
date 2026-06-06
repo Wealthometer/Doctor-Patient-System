@@ -99,6 +99,7 @@ public class NotificationService {
                     Dear %s,
                     
                     Dr. %s has issued a new prescription (%s) for you.
+                    
     }
 
     }
