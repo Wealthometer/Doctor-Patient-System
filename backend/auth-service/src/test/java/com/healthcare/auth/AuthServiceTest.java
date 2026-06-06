@@ -100,3 +100,4 @@ class AuthServiceTest {
 
         when(userRepository.existsByUsername("existinguser")).thenReturn(true);
 
+        assertThatThrownBy(() -> authService.register(request))
