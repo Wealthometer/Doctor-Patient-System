@@ -23,3 +23,4 @@ public class GlobalExceptionHandler {
         pd.setTitle("Invoice Not Found");
         pd.setProperty("timestamp", Instant.now());
         return pd;
+    }
