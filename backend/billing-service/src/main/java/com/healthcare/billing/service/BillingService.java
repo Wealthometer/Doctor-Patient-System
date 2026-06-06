@@ -146,3 +146,4 @@ public class BillingService {
         }
 
         log.info("Payment {} recorded for invoice {}", payment.getPaymentReference(), invoice.getInvoiceNumber());
+        return toResponse(invoiceRepository.save(invoice));
