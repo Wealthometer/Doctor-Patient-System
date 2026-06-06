@@ -200,6 +200,7 @@ public class AppointmentService {
     private String generateAppointmentNumber(LocalDate date) {
         String datePart = date.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
         long count = appointmentRepository.countByAppointmentDate(date) + 1;
+        return "APT-" + datePart + "-" + String.format("%04d", count);
     }
 
     private AppointmentResponse toResponse(Appointment a) {
