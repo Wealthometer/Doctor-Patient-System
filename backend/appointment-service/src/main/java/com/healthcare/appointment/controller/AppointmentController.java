@@ -68,3 +68,4 @@ public class AppointmentController {
             @PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date,
             @PageableDefault(size = 50, sort = "startTime") Pageable pageable) {
         return ResponseEntity.ok(appointmentService.getDoctorAppointmentsByDate(doctorId, date, pageable));
+    }
