@@ -40,3 +40,4 @@ public class Payment {
 
     @CreationTimestamp
     @Column(updatable = false)
+    private LocalDateTime createdAt;
