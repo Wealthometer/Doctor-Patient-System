@@ -48,3 +48,4 @@ public class AppointmentRequests {
         private String notes;
         private String diagnosisSummary;
     }
+
