@@ -203,4 +203,5 @@ public class AppointmentService {
     }
 
     private AppointmentResponse toResponse(Appointment a) {
+        return AppointmentResponse.builder()
     }
