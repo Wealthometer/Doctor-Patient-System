@@ -53,3 +53,4 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.getAppointmentsByPatient(patientId, pageable));
     }
 
+    @GetMapping("/doctor/{doctorId}")
