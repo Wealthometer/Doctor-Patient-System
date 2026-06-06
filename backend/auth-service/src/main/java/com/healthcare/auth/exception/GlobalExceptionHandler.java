@@ -70,3 +70,4 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ProblemDetail handleGenericException(Exception ex) {
         log.error("Unexpected error: ", ex);
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(
