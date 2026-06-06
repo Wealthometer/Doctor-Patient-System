@@ -30,3 +30,4 @@ CREATE TABLE doctors (
     total_ratings           INT NOT NULL DEFAULT 0,
     created_at              TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at              TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
