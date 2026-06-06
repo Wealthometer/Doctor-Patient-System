@@ -25,3 +25,4 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @SecurityRequirement(name = "bearerAuth")
 @Tag(name = "Doctors", description = "Doctor management APIs")
+public class DoctorController {
