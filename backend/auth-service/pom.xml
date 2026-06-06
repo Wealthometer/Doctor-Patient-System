@@ -60,3 +60,4 @@
       <artifactId>flyway-core</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.flywaydb</groupId>
