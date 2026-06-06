@@ -30,3 +30,4 @@ import java.util.UUID;
 @Transactional
 public class BillingService {
 
+    private final InvoiceRepository invoiceRepository;
