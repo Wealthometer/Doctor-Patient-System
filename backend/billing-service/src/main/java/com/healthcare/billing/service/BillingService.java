@@ -36,3 +36,4 @@ public class BillingService {
 
     public InvoiceResponse createInvoice(CreateInvoiceRequest request) {
         var patient = patientServiceClient.getPatientById(request.getPatientId());
+
