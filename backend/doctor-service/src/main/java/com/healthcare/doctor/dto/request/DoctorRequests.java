@@ -55,3 +55,4 @@ public class DoctorRequests {
 
     @Data
     public static class UpdateDoctorRequest {
+        private String firstName;
