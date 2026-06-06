@@ -22,3 +22,4 @@ public class AppointmentResponses {
         private String patientName;
         private UUID doctorId;
         private String doctorName;
+        private String department;
