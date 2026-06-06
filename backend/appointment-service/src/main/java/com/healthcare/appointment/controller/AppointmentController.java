@@ -79,3 +79,4 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.getAvailableSlots(doctorId, date));
     }
 
+    @PatchMapping("/{id}/confirm")
