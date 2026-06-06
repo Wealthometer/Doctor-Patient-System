@@ -37,3 +37,4 @@ public class BillingResponses {
         private InvoiceStatus status;
         private String notes;
         private List<LineItemResponse> lineItems;
+        private List<PaymentResponse> payments;
