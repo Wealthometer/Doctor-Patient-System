@@ -166,3 +166,4 @@ public class BillingService {
         BigDecimal outstanding = invoiceRepository.sumOutstandingBalance();
 
         return BillingStatsResponse.builder()
+                .totalInvoices(invoiceRepository.count())
