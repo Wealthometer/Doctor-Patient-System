@@ -33,3 +33,4 @@ spring:
 management:
     web:
         include: health,info,metrics,prometheus
+springdoc:
