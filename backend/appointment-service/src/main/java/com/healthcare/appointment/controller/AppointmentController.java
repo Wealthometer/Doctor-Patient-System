@@ -95,3 +95,4 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
     public ResponseEntity<AppointmentResponse> complete(
             @PathVariable UUID id,
+            @RequestBody UpdateAppointmentRequest request) {
