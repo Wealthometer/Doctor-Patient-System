@@ -51,3 +51,4 @@ public class AppointmentRequests {
 
     @Data
     public static class CancelAppointmentRequest {
+        @NotBlank(message = "Cancellation reason is required")
