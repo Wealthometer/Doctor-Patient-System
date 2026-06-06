@@ -113,3 +113,4 @@ public class AuthService {
         User user = userRepository.findByUsername(username)
                 .orElse(null);
 
+        if (user == null || !user.isEnabled()) {
