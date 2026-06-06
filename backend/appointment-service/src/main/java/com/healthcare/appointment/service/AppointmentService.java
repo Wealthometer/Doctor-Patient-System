@@ -99,3 +99,4 @@ public class AppointmentService {
     }
 
     @Transactional(readOnly = true)
+    public Page<AppointmentResponse> getDoctorAppointmentsByDate(UUID doctorId, LocalDate date, Pageable pageable) {
