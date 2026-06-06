@@ -190,3 +190,4 @@ public class BillingService {
         long count = invoiceRepository.count() + 1;
         return "INV-" + datePart + "-" + String.format("%04d", count);
     }
+
