@@ -34,3 +34,4 @@ public class BillingRequests {
     public static class LineItemRequest {
         @NotBlank private String description;
         @NotBlank private String serviceCode;
+        @Min(1) private Integer quantity;
