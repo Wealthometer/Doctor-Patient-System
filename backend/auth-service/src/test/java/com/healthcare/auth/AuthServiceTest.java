@@ -58,3 +58,4 @@ class AuthServiceTest {
                 .lastName("User")
                 .role(Role.PATIENT)
                 .build();
+    }
