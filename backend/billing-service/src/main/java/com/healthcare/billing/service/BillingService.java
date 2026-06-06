@@ -73,3 +73,4 @@ public class BillingService {
                     .totalPrice(lineTotal)
                     .build();
             invoice.getLineItems().add(item);
+        }
