@@ -99,3 +99,4 @@ public class DoctorController {
     }
 
     @PatchMapping("/{id}/status")
+            @PathVariable UUID id,
