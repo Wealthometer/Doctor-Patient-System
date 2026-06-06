@@ -29,3 +29,4 @@ public class InvoiceLineItem {
 
     @Column(nullable = false)
     @Builder.Default
+    private Integer quantity = 1;
