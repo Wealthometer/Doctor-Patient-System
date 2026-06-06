@@ -93,3 +93,4 @@ public class DoctorService {
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found: " + id));
         doctorMapper.updateEntity(request, doctor);
         return doctorMapper.toResponse(doctorRepository.save(doctor));
+    }
