@@ -31,3 +31,4 @@ public class RefreshToken {
     @Column(nullable = false)
     @Builder.Default
     private boolean revoked = false;
+}
