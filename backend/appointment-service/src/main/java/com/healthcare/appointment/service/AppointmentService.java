@@ -107,3 +107,4 @@ public class AppointmentService {
     public List<AvailableSlot> getAvailableSlots(UUID doctorId, LocalDate date) {
         var doctor = doctorServiceClient.getDoctorById(doctorId);
 
+        LocalTime end = doctor.getWorkEndTime() != null ? doctor.getWorkEndTime() : LocalTime.of(17, 0);
