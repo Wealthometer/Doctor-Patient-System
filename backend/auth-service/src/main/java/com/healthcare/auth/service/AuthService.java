@@ -38,3 +38,4 @@ public class AuthService {
     @Value("${application.security.jwt.refresh-token.expiration}")
     private long refreshTokenExpiration;
 
+    public AuthResponse register(RegisterRequest request) {
