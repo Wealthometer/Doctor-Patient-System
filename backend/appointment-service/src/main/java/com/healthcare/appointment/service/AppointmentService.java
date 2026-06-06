@@ -52,3 +52,4 @@ public class AppointmentService {
         long todayCount = appointmentRepository.countByDoctorIdAndAppointmentDate(
                 request.getDoctorId(), request.getAppointmentDate());
 
+        var doctorDto = doctorServiceClient.getDoctorById(request.getDoctorId());
