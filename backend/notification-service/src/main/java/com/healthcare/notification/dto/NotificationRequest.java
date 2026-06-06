@@ -14,3 +14,4 @@ public class NotificationRequest {
     private String recipientEmail;
     private String recipientPhone;
     private String subject;
+    private String body;
