@@ -68,3 +68,4 @@ public class BillingController {
         return ResponseEntity.ok(billingService.getInvoicesByStatus(status, pageable));
     }
 
+    @PostMapping("/invoices/{id}/payments")
