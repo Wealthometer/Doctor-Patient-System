@@ -38,3 +38,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
         LOWER(d.department) LIKE LOWER(CONCAT('%', :query, '%')) OR
         LOWER(d.doctorCode) LIKE LOWER(CONCAT('%', :query, '%'))
     """)
+    Page<Doctor> searchDoctors(@Param("query") String query, Pageable pageable);
