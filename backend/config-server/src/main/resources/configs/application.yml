@@ -18,3 +18,4 @@ eureka:
 management:
   endpoints:
     web:
+      exposure:
