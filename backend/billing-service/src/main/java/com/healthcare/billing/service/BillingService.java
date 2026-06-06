@@ -223,3 +223,4 @@ public class BillingService {
                         .amount(p.getAmount()).method(p.getMethod()).status(p.getStatus())
                         .transactionId(p.getTransactionId()).createdAt(p.getCreatedAt()).build()).toList())
                 .createdAt(i.getCreatedAt())
+                .build();
