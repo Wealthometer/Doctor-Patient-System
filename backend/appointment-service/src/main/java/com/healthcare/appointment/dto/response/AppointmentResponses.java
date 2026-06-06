@@ -15,3 +15,4 @@ public class AppointmentResponses {
 
     @Data
     @Builder
+    public static class AppointmentResponse {
