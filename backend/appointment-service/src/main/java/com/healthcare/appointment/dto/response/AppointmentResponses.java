@@ -45,3 +45,4 @@ public class AppointmentResponses {
         private long totalAppointments;
         private long todayAppointments;
         private long scheduledAppointments;
+        private long completedAppointments;
