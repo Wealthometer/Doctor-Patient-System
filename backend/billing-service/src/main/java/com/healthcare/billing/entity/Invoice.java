@@ -16,3 +16,4 @@ import java.util.UUID;
 @Table(name = "invoices")
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class Invoice {
+
