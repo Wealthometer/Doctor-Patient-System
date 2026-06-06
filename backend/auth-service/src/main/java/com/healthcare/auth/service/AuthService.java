@@ -139,3 +139,4 @@ public class AuthService {
         refreshTokenRepository.revokeAllUserTokens(user);
         log.info("Password changed for user: {}", user.getUsername());
     }
+
