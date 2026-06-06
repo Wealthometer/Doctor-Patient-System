@@ -155,3 +155,4 @@ public class AuthService {
         String refreshTokenStr = jwtService.generateRefreshToken(user);
 
         RefreshToken refreshToken = RefreshToken.builder()
+                .token(refreshTokenStr)
