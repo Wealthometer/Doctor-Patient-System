@@ -128,3 +128,4 @@ public class BillingService {
         Payment payment = Payment.builder()
                 .invoice(invoice)
                 .paymentReference("PAY-" + LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"))
+                        + "-" + String.format("%04d", count))
