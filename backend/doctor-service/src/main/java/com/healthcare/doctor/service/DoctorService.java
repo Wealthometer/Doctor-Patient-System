@@ -35,3 +35,4 @@ public class DoctorService {
             throw new DoctorAlreadyExistsException("License number already registered: " + request.getLicenseNumber());
 
         Doctor doctor = doctorMapper.toEntity(request);
+        doctor.setDoctorCode(generateDoctorCode());
