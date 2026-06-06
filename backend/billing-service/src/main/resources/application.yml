@@ -48,3 +48,4 @@ feign:
 
 management:
   endpoints:
+    web:
