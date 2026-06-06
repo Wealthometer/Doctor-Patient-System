@@ -53,3 +53,4 @@ class AuthServiceTest {
                 .id(UUID.randomUUID())
                 .username("testuser")
                 .email("test@example.com")
+                .password("encodedPassword")
