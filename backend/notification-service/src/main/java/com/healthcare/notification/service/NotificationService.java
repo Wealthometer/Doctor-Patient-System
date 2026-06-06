@@ -84,6 +84,7 @@ public class NotificationService {
                     Regards,
                     HealthCare+ Team
                     """, patientName, doctorName, dateTime))
+                .type(NotificationType.APPOINTMENT_CONFIRMED)
                 .recipientEmail(email)
                 .body(String.format("""
                     
