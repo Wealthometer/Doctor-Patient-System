@@ -142,3 +142,4 @@ public class AuthService {
 
     public MessageResponse logout(UUID userId) {
         User user = userRepository.findById(userId)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
