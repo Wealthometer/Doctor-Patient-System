@@ -21,3 +21,4 @@ public class Appointment {
 
     @Column(nullable = false, unique = true)
     private String appointmentNumber; // APT-20260601-0001
+
