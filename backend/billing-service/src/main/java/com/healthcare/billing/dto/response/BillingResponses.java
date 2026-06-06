@@ -59,3 +59,4 @@ public class BillingResponses {
         private PaymentMethod method;
         private PaymentStatus status;
         private String transactionId;
+        private LocalDateTime createdAt;
