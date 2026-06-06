@@ -69,4 +69,5 @@ public class DoctorController {
     }
 
     @GetMapping("/department/{department}")
+    public ResponseEntity<Page<DoctorResponse>> getByDepartment(
             @PathVariable String department,
