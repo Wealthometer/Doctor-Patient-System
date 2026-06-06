@@ -33,3 +33,4 @@ spring:
     properties:
       hibernate:
         jdbc:
+          batch_size: 20
