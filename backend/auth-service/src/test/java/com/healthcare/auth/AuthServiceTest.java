@@ -116,3 +116,4 @@ class AuthServiceTest {
                 new UsernamePasswordAuthenticationToken("testuser", "Password@123"));
         when(userRepository.findByUsernameOrEmail(anyString(), anyString()))
                 .thenReturn(Optional.of(testUser));
+        when(jwtService.generateToken(any())).thenReturn("accessToken");
