@@ -99,3 +99,4 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.completeAppointment(id, request));
     }
 
+    @PatchMapping("/{id}/cancel")
