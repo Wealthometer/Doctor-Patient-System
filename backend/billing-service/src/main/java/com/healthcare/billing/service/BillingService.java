@@ -173,3 +173,4 @@ public class BillingService {
                 .monthlyRevenue(monthlyRevenue != null ? monthlyRevenue : BigDecimal.ZERO)
                 .outstandingBalance(outstanding != null ? outstanding : BigDecimal.ZERO)
                 .build();
+    }
