@@ -100,3 +100,4 @@ public class DoctorService {
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found: " + id));
         doctor.setStatus(status);
         log.info("Doctor {} status updated to {}", doctor.getDoctorCode(), status);
+        return doctorMapper.toResponse(doctorRepository.save(doctor));
