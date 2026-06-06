@@ -88,3 +88,4 @@ public class JwtService {
             log.warn("JWT validation failed: {}", e.getMessage());
             return false;
         }
+    }
