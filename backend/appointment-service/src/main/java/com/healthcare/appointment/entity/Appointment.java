@@ -55,3 +55,4 @@ public class Appointment {
     private AppointmentType type;
 
     @Column(length = 1000)
+    private String reason;
