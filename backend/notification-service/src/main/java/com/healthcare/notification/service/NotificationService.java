@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                .type(NotificationType.BILLING_INVOICE)
                 .channel(NotificationChannel.EMAIL)
                 .build();
         sendNotification(req);
