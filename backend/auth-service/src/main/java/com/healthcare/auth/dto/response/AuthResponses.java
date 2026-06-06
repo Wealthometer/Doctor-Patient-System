@@ -48,3 +48,4 @@ public class AuthResponses {
         private String message;
         private boolean success;
     }
+}
