@@ -27,3 +27,4 @@ spring:
     host: ${MAIL_HOST:smtp.gmail.com}
     port: ${MAIL_PORT:587}
     username: ${MAIL_USERNAME:noreply@healthcare.com}
+    password: ${MAIL_PASSWORD:changeme}
