@@ -23,3 +23,4 @@ public class AuthResponses {
     @Data
     @Builder
     public static class UserInfo {
+        private UUID id;
