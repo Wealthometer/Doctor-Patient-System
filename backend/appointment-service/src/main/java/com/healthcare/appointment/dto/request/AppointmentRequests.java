@@ -23,3 +23,4 @@ public class AppointmentRequests {
         private LocalDate appointmentDate;
 
         @NotNull(message = "Start time is required")
+        private LocalTime startTime;
