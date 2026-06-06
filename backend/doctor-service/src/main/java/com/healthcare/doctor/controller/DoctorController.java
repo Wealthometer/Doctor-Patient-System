@@ -84,3 +84,4 @@ public class DoctorController {
 
     @GetMapping("/specialization/{specialization}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
+    public ResponseEntity<Page<DoctorResponse>> getBySpecialization(
