@@ -31,3 +31,4 @@ public class Doctor {
 
     @Column(nullable = false)
     private String firstName;
+
