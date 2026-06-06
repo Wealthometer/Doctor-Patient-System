@@ -32,3 +32,4 @@ import java.util.concurrent.atomic.AtomicLong;
 @Transactional
 public class AppointmentService {
 
+    private final AppointmentRepository appointmentRepository;
