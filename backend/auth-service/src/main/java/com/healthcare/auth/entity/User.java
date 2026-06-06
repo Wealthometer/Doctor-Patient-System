@@ -57,3 +57,4 @@ public class User implements UserDetails {
     @Builder.Default
     private boolean accountNonLocked = true;
 
+    @Column(nullable = false)
