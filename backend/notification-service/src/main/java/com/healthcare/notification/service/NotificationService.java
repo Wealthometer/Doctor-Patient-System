@@ -109,6 +109,7 @@ public class NotificationService {
                 .type(NotificationType.PRESCRIPTION_ISSUED)
                 .channel(NotificationChannel.EMAIL)
                 .build();
+        sendNotification(req);
     }
 
     }
