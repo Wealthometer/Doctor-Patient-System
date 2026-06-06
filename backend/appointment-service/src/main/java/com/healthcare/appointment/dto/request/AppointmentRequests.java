@@ -42,3 +42,4 @@ public class AppointmentRequests {
     public static class UpdateAppointmentRequest {
         private LocalDate appointmentDate;
         private LocalTime startTime;
+        private LocalTime endTime;
