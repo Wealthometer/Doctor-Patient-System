@@ -26,3 +26,4 @@ public class GlobalExceptionHandler {
         pd.setTitle("Authentication Error");
         pd.setProperty("timestamp", Instant.now());
         return pd;
+    }
