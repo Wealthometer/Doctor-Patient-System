@@ -64,3 +64,4 @@ public class BillingResponses {
 
     @Data @Builder
     public static class BillingStatsResponse {
+        private long totalInvoices;
