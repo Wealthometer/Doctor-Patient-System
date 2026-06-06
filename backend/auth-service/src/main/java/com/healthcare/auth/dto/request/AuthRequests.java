@@ -35,3 +35,4 @@ public class AuthRequests {
 
     @Data
     public static class LoginRequest {
+        @NotBlank(message = "Username or email is required")
