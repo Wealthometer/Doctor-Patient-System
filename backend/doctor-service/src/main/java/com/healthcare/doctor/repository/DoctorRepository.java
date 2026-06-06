@@ -40,3 +40,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     """)
     Page<Doctor> searchDoctors(@Param("query") String query, Pageable pageable);
 
+    @Query("SELECT DISTINCT d.department FROM Doctor d WHERE d.status = 'ACTIVE' ORDER BY d.department")
