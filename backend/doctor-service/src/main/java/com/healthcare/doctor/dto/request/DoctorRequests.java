@@ -47,3 +47,4 @@ public class DoctorRequests {
         private LocalTime workEndTime;
         private String workDays;
 
+        @Min(1) @Max(50)
