@@ -213,3 +213,4 @@ public class BillingService {
                 .insuranceProvider(i.getInsuranceProvider())
                 .insuranceCoverage(i.getInsuranceCoverage())
                 .status(i.getStatus())
+                .notes(i.getNotes())
