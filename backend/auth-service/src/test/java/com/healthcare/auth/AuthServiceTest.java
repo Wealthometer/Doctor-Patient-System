@@ -131,3 +131,4 @@ class AuthServiceTest {
     @Test
     @DisplayName("Should throw AuthException when credentials are invalid")
     void login_ShouldThrow_WhenInvalidCredentials() {
+        LoginRequest request = new LoginRequest();
