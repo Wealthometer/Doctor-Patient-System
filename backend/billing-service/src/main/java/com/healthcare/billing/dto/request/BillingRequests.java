@@ -30,3 +30,4 @@ public class BillingRequests {
         private List<LineItemRequest> lineItems;
     }
 
+    @Data
