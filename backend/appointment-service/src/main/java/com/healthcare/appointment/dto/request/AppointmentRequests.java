@@ -60,3 +60,4 @@ public class AppointmentRequests {
         private LocalDate startDate;
         private LocalDate endDate;
         private UUID doctorId;
+        private String status;
