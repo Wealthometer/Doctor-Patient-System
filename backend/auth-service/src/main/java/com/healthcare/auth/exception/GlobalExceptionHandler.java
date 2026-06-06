@@ -72,3 +72,4 @@ public class GlobalExceptionHandler {
         log.error("Unexpected error: ", ex);
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(
                 HttpStatus.INTERNAL_SERVER_ERROR, "An unexpected error occurred");
+        pd.setTitle("Internal Server Error");
