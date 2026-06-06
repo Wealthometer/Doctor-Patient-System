@@ -136,3 +136,4 @@ public class BillingService {
                 .build();
         paymentRepository.save(payment);
 
+        BigDecimal newPaid = invoice.getPaidAmount().add(request.getAmount());
