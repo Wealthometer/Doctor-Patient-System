@@ -108,3 +108,4 @@ public class AppointmentController {
     }
 
     @GetMapping("/stats")
+    @PreAuthorize("hasRole('ADMIN')")
