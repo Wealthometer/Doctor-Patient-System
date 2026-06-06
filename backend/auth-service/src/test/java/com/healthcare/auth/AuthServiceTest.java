@@ -176,3 +176,4 @@ class AuthServiceTest {
         RefreshToken storedToken = RefreshToken.builder()
                 .token("validRefreshToken")
                 .user(testUser)
+                .expiryDate(Instant.now().plusSeconds(3600))
