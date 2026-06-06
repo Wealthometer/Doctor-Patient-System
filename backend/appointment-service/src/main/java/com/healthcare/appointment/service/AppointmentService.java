@@ -186,3 +186,4 @@ public class AppointmentService {
                 .build();
     // ── helpers ────────────────────────────────────────────────────────────────
 
+    private AppointmentResponse updateStatus(UUID id, AppointmentStatus status,
