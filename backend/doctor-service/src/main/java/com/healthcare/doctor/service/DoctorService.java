@@ -105,6 +105,7 @@ public class DoctorService {
     public DoctorResponse submitRating(UUID id, RatingRequest request) {
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found: " + id));
 
+        int totalRatings = doctor.getTotalRatings() + 1;
         double newAvg = ((doctor.getAverageRating() * doctor.getTotalRatings()) + request.getRating()) / totalRatings;
         doctor.setTotalRatings(totalRatings);
         doctor.setAverageRating(Math.round(newAvg * 10.0) / 10.0);
