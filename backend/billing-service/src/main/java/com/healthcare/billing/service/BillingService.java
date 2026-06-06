@@ -167,3 +167,4 @@ public class BillingService {
 
         return BillingStatsResponse.builder()
                 .totalInvoices(invoiceRepository.count())
+                .pendingInvoices(invoiceRepository.countByStatus(InvoiceStatus.PENDING))
