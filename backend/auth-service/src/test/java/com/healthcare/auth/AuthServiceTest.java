@@ -124,3 +124,4 @@ class AuthServiceTest {
         AuthResponse response = authService.login(request);
 
         assertThat(response).isNotNull();
+        assertThat(response.getAccessToken()).isNotNull();
