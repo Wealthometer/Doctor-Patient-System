@@ -54,3 +54,4 @@ public class BillingService {
                 .insuranceProvider(request.getInsuranceProvider() != null ? request.getInsuranceProvider() : "Self-pay")
                 .insuranceCoverage(request.getInsuranceCoverage() != null ? request.getInsuranceCoverage() : BigDecimal.ZERO)
                 .notes(request.getNotes())
+                .subtotal(BigDecimal.ZERO)
