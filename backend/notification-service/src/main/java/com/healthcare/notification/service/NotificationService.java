@@ -88,6 +88,7 @@ public class NotificationService {
                 .channel(NotificationChannel.EMAIL)
                 .build();
         sendNotification(req);
+    }
                 .recipientEmail(email)
                 .body(String.format("""
                     
