@@ -37,3 +37,4 @@ public class Invoice {
     private String doctorName;
 
     @Column(nullable = false)
+    private String department;
