@@ -105,3 +105,4 @@ public class AppointmentController {
             @PathVariable UUID id,
             @Valid @RequestBody CancelAppointmentRequest request) {
         return ResponseEntity.ok(appointmentService.cancelAppointment(id, request));
+    }
