@@ -26,3 +26,4 @@ public interface DoctorMapper {
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "userId", ignore = true)
+    @Mapping(target = "doctorCode", ignore = true)
