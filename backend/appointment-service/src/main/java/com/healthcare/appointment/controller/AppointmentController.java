@@ -102,3 +102,4 @@ public class AppointmentController {
     @PatchMapping("/{id}/cancel")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT', 'NURSE')")
     public ResponseEntity<AppointmentResponse> cancel(
+            @PathVariable UUID id,
