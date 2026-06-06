@@ -45,3 +45,4 @@ public class AppointmentRequests {
         private LocalTime endTime;
         private AppointmentType type;
         private String reason;
+        private String notes;
