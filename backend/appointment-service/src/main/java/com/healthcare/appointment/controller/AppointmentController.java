@@ -91,3 +91,4 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.startAppointment(id));
     }
 
+    @PatchMapping("/{id}/complete")
