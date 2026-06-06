@@ -22,3 +22,4 @@ public class DoctorResponses {
         private String lastName;
         private String fullName;
         private String email;
+        private String phone;
