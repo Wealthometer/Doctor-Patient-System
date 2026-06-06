@@ -88,3 +88,4 @@ public class BillingService {
         log.info("Created invoice {} for patient {}", saved.getInvoiceNumber(), saved.getPatientName());
         return toResponse(saved);
     }
+
