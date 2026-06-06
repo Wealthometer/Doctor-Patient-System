@@ -69,3 +69,4 @@ public class DoctorService {
 
     @Transactional(readOnly = true)
     public Page<DoctorResponse> searchDoctors(String query, Pageable pageable) {
+        return doctorRepository.searchDoctors(query, pageable).map(doctorMapper::toResponse);
