@@ -34,3 +34,4 @@ public class InvoiceLineItem {
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal unitPrice;
 
+    @Column(nullable = false, precision = 10, scale = 2)
