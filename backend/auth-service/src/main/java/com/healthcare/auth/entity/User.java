@@ -15,3 +15,4 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "users",
+    uniqueConstraints = {
