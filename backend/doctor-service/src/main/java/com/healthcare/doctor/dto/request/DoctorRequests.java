@@ -18,3 +18,4 @@ public class DoctorRequests {
         private String firstName;
 
         @NotBlank
+        private String lastName;
