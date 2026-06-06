@@ -37,3 +37,4 @@ eureka:
 
 application:
   security:
+    jwt:
