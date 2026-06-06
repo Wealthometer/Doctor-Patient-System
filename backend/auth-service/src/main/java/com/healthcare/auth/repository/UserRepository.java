@@ -28,3 +28,4 @@ public interface UserRepository extends JpaRepository<User, UUID> {
 
     @Modifying
     @Query("UPDATE User u SET u.lastLoginAt = :loginTime WHERE u.id = :userId")
+    void updateLastLoginTime(UUID userId, LocalDateTime loginTime);
