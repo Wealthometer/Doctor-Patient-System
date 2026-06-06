@@ -136,3 +136,4 @@ class AuthServiceTest {
         request.setPassword("wrongpassword");
 
         when(authenticationManager.authenticate(any()))
+                .thenThrow(new BadCredentialsException("Bad credentials"));
