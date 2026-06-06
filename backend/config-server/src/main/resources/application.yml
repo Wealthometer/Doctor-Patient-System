@@ -12,3 +12,4 @@ spring:
   profiles:
     active: native   # Use filesystem configs (swap to 'git' for production)
 
+eureka:
