@@ -15,3 +15,4 @@ public class DoctorResponses {
     @Data
     @Builder
     public static class DoctorResponse {
+        private UUID id;
