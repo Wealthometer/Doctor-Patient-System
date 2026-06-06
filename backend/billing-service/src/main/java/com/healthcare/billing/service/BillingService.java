@@ -185,3 +185,4 @@ public class BillingService {
         if (!overdue.isEmpty()) log.info("Marked {} invoices as overdue", overdue.size());
     }
 
+    private String generateInvoiceNumber(LocalDate date) {
