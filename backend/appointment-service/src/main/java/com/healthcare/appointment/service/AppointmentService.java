@@ -128,3 +128,4 @@ public class AppointmentService {
                     .endTime(slotEnd)
                     .available(!isBooked)
                     .build());
+
