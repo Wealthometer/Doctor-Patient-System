@@ -32,3 +32,4 @@ public class Payment {
     private PaymentMethod method;
 
     @Enumerated(EnumType.STRING)
+    @Builder.Default
