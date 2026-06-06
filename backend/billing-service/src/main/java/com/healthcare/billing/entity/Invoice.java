@@ -48,3 +48,4 @@ public class Invoice {
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal subtotal;
 
+    @Column(nullable = false, precision = 5, scale = 2)
