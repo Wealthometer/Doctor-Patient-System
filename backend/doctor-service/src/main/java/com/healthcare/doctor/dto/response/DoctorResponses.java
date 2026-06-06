@@ -57,6 +57,7 @@ public class DoctorResponses {
 
     @Data
     @Builder
+    public static class DoctorStatsResponse {
         private long totalDoctors;
         private long activeDoctors;
         private long onLeaveDoctors;
