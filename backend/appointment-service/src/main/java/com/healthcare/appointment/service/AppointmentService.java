@@ -27,3 +27,4 @@ import java.util.UUID;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Service
+@RequiredArgsConstructor
