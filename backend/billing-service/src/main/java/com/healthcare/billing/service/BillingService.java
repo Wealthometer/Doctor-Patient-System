@@ -207,3 +207,4 @@ public class BillingService {
                 .subtotal(i.getSubtotal())
                 .taxRate(i.getTaxRate())
                 .taxAmount(i.getTaxAmount())
+                .totalAmount(i.getTotalAmount())
