@@ -54,3 +54,4 @@ public class AuthService {
                 .lastName(request.getLastName())
                 .role(request.getRole())
                 .build();
+
