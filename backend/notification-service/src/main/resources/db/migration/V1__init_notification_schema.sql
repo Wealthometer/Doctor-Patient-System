@@ -19,3 +19,4 @@ CREATE TABLE notifications (
 
 CREATE INDEX idx_notif_recipient_id ON notifications(recipient_id);
 CREATE INDEX idx_notif_status       ON notifications(status);
+CREATE INDEX idx_notif_type         ON notifications(type);
