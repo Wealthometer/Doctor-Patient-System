@@ -21,3 +21,4 @@ public class NotificationService {
     @Async
     public void sendNotification(NotificationRequest request) {
                 .recipientId(request.getRecipientId())
+                .recipientPhone(request.getRecipientPhone())
