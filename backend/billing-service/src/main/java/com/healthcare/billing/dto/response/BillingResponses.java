@@ -32,3 +32,4 @@ public class BillingResponses {
         private BigDecimal totalAmount;
         private BigDecimal paidAmount;
         private BigDecimal balanceDue;
+        private String insuranceProvider;
