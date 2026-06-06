@@ -24,6 +24,7 @@ public class NotificationService {
                 .recipientPhone(request.getRecipientPhone())
                 .body(request.getBody())
                 .channel(request.getChannel() != null ? request.getChannel() : NotificationChannel.EMAIL)
+
             if (notification.getChannel() == NotificationChannel.EMAIL) {
             }
 
