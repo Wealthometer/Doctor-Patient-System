@@ -121,3 +121,4 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
