@@ -55,3 +55,4 @@ public class AppointmentController {
 
     @GetMapping("/doctor/{doctorId}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
+    public ResponseEntity<Page<AppointmentResponse>> getByDoctor(
