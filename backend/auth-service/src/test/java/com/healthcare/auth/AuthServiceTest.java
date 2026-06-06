@@ -76,3 +76,4 @@ class AuthServiceTest {
         when(passwordEncoder.encode(anyString())).thenReturn("encodedPassword");
         when(userRepository.save(any(User.class))).thenReturn(testUser);
         when(jwtService.generateToken(any())).thenReturn("accessToken");
+        when(jwtService.generateRefreshToken(any())).thenReturn("refreshToken");
