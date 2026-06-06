@@ -32,3 +32,4 @@ public class DoctorService {
         if (doctorRepository.existsByUserId(request.getUserId()))
             throw new DoctorAlreadyExistsException("Doctor profile already exists for this user");
         if (doctorRepository.existsByLicenseNumber(request.getLicenseNumber()))
+            throw new DoctorAlreadyExistsException("License number already registered: " + request.getLicenseNumber());
