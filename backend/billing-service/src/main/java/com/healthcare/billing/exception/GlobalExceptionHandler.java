@@ -25,3 +25,4 @@ public class GlobalExceptionHandler {
         return pd;
     }
 
+    @ExceptionHandler(InvalidBillingStateException.class)
