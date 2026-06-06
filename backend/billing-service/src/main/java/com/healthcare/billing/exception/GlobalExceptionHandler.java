@@ -51,3 +51,4 @@ public class GlobalExceptionHandler {
         pd.setProperty("errors", errors);
         pd.setProperty("timestamp", Instant.now());
         return pd;
+    }
