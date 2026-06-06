@@ -93,3 +93,4 @@ public class BillingService {
     public InvoiceResponse getInvoiceById(UUID id) {
         return invoiceRepository.findById(id)
                 .map(this::toResponse)
+                .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found: " + id));
