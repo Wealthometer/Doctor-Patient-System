@@ -15,3 +15,4 @@ public class BillingRequests {
     @Data
     public static class CreateInvoiceRequest {
         @NotNull private UUID patientId;
+        private UUID appointmentId;
