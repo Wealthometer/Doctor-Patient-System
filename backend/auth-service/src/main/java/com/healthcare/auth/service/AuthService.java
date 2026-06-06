@@ -43,3 +43,4 @@ public class AuthService {
             throw new AuthException("Username already taken: " + request.getUsername());
         }
         if (userRepository.existsByEmail(request.getEmail())) {
+            throw new AuthException("Email already registered: " + request.getEmail());
