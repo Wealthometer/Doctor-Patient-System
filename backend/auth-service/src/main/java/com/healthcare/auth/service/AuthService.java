@@ -126,3 +126,4 @@ public class AuthService {
                 .build();
     }
 
+    public void changePassword(UUID userId, ChangePasswordRequest request) {
