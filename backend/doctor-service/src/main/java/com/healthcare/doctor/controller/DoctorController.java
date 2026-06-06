@@ -81,3 +81,4 @@ public class DoctorController {
     public ResponseEntity<List<DoctorSummaryResponse>> getActiveDoctorsByDepartment(@PathVariable String department) {
         return ResponseEntity.ok(doctorService.getActiveDoctorsByDepartment(department));
     }
+
