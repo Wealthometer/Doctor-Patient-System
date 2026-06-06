@@ -28,3 +28,4 @@ public class Appointment {
     @Column(nullable = false)
     private String patientName;
 
+    @Column(nullable = false)
