@@ -17,3 +17,4 @@ CREATE TABLE invoices (
     subtotal             DECIMAL(10,2) NOT NULL DEFAULT 0.00,
     tax_rate             DECIMAL(5,2)  NOT NULL DEFAULT 0.00,
     tax_amount           DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+    total_amount         DECIMAL(10,2) NOT NULL DEFAULT 0.00,
