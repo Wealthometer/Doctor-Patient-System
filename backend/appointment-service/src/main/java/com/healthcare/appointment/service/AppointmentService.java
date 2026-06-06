@@ -191,3 +191,4 @@ public class AppointmentService {
         Appointment a = findAppointment(id);
         validator.accept(a);
         return toResponse(appointmentRepository.save(a));
+    }
