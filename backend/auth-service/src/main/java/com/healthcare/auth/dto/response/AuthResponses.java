@@ -30,3 +30,4 @@ public class AuthResponses {
         private String lastName;
         private Role role;
         private LocalDateTime createdAt;
+    }
