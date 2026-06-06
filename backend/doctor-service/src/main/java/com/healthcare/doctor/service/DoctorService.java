@@ -111,6 +111,7 @@ public class DoctorService {
     }
 
     }
+
     private String generateDoctorCode() {
         long count = doctorRepository.count();
         return "D-" + String.format("%04d", count + 1001);
