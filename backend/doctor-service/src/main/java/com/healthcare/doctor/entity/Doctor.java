@@ -32,3 +32,4 @@ public class Doctor {
     @Column(nullable = false)
     private String firstName;
 
+    @Column(nullable = false)
