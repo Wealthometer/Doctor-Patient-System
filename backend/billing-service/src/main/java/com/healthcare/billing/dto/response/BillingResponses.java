@@ -47,3 +47,4 @@ public class BillingResponses {
         private String description;
         private String serviceCode;
         private Integer quantity;
+        private BigDecimal unitPrice;
