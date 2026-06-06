@@ -64,6 +64,7 @@ public class NotificationService {
     }
 
     // Template helpers for common notification types
+    public void sendAppointmentConfirmation(String email, String patientName,
                                              String doctorName, String dateTime) {
                     
                 .recipientEmail(email)
