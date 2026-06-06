@@ -107,6 +107,7 @@ public class DoctorController {
     }
 
     @PostMapping("/{id}/ratings")
+    @PreAuthorize("hasRole('PATIENT')")
     public ResponseEntity<DoctorResponse> submitRating(
             @PathVariable UUID id,
             @Valid @RequestBody RatingRequest request) {
