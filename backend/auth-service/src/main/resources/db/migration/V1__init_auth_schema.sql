@@ -38,3 +38,4 @@ INSERT INTO users (id, username, email, password, first_name, last_name, role)
 VALUES (
     uuid_generate_v4(),
     'admin',
+    'admin@healthcare.com',
