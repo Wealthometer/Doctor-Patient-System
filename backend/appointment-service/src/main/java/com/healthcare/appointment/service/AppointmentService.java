@@ -34,3 +34,4 @@ public class AppointmentService {
 
     private final AppointmentRepository appointmentRepository;
     private final PatientServiceClient patientServiceClient;
+    private final DoctorServiceClient doctorServiceClient;
