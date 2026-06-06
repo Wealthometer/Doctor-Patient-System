@@ -124,3 +124,4 @@ public class BillingService {
             throw new InvalidBillingStateException("Payment amount exceeds balance due of $" + balance);
         }
 
+        long count = paymentRepository.findByInvoiceId(invoiceId).size() + 1;
