@@ -127,3 +127,4 @@ public class BillingService {
         long count = paymentRepository.findByInvoiceId(invoiceId).size() + 1;
         Payment payment = Payment.builder()
                 .invoice(invoice)
+                .paymentReference("PAY-" + LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"))
