@@ -25,3 +25,4 @@ CREATE TABLE doctors (
     work_days               VARCHAR(100),
     max_daily_appointments  INT DEFAULT 20,
     profile_image_url       VARCHAR(500),
+    status                  VARCHAR(20) NOT NULL DEFAULT 'ACTIVE',
