@@ -20,3 +20,4 @@ public class Notification {
     private UUID recipientId;
 
     @Column(nullable = false)
+    private String recipientEmail;
