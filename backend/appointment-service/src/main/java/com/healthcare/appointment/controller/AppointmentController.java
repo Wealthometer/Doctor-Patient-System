@@ -63,3 +63,4 @@ public class AppointmentController {
 
     @GetMapping("/doctor/{doctorId}/date/{date}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
+    public ResponseEntity<Page<AppointmentResponse>> getDoctorAppointmentsByDate(
