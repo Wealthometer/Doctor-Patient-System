@@ -62,3 +62,4 @@ public class User implements UserDetails {
     private boolean accountNonExpired = true;
 
     @Column(nullable = false)
+    @Builder.Default
