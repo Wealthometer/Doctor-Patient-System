@@ -84,3 +84,4 @@ public class BillingController {
         return ResponseEntity.ok(billingService.cancelInvoice(id));
     }
 
+    @GetMapping("/stats")
