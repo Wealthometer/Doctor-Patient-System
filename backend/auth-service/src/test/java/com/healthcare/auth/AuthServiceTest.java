@@ -61,3 +61,4 @@ class AuthServiceTest {
     }
 
     @Test
+    @DisplayName("Should register a new user successfully")
