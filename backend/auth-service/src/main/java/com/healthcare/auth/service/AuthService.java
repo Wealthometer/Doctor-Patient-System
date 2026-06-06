@@ -148,3 +148,4 @@ public class AuthService {
                 .message("Logged out successfully")
                 .success(true)
                 .build();
+    }
