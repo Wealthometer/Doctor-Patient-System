@@ -19,3 +19,4 @@ spring:
       ddl-auto: validate
     show-sql: false
     properties:
+      hibernate:
