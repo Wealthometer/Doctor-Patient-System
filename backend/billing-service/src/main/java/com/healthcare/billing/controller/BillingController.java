@@ -90,3 +90,4 @@ public class BillingController {
     public ResponseEntity<BillingStatsResponse> getStats() {
         return ResponseEntity.ok(billingService.getStats());
     }
+}
