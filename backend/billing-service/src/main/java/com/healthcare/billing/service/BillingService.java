@@ -209,3 +209,4 @@ public class BillingService {
                 .taxAmount(i.getTaxAmount())
                 .totalAmount(i.getTotalAmount())
                 .paidAmount(i.getPaidAmount())
+                .balanceDue(balance)
