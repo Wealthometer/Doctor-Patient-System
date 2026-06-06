@@ -20,3 +20,4 @@ public interface RefreshTokenRepository extends JpaRepository<RefreshToken, UUID
     void revokeAllUserTokens(User user);
 
     @Modifying
+    @Query("DELETE FROM RefreshToken r WHERE r.user = :user AND r.revoked = true")
