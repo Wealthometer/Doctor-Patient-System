@@ -15,3 +15,4 @@ CREATE TABLE notifications (
     error_message    TEXT,
     sent_at          TIMESTAMP,
     created_at       TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
