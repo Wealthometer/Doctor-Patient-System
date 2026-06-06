@@ -74,3 +74,4 @@ management:
     circuitbreakers:
       enabled: true
 
+springdoc:
