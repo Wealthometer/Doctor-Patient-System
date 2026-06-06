@@ -39,3 +39,4 @@ public class AppointmentService {
 
     public AppointmentResponse bookAppointment(BookAppointmentRequest request) {
         // Validate no time conflicts
+        List<Appointment> conflicts = appointmentRepository.findConflictingAppointments(
