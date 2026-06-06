@@ -25,3 +25,4 @@ CREATE TABLE refresh_tokens (
     user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     expiry_date TIMESTAMP NOT NULL,
     revoked BOOLEAN NOT NULL DEFAULT false
+);
