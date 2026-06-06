@@ -23,3 +23,4 @@ public class Payment {
 
     @Column(nullable = false, unique = true)
     private String paymentReference; // PAY-20260601-0001
+
