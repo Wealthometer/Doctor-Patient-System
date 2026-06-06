@@ -37,3 +37,4 @@ public class JwtService {
         return UUID.fromString(id);
     }
 
+    public String extractRole(String token) {
