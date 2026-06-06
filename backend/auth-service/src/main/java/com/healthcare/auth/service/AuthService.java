@@ -96,3 +96,4 @@ public class AuthService {
             throw new AuthException("Refresh token has expired");
         }
 
+        User user = storedToken.getUser();
