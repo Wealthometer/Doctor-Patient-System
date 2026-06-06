@@ -15,3 +15,4 @@ public interface PatientServiceClient {
     PatientDto getPatientById(@PathVariable UUID id);
 
     @Data
+    @Builder
