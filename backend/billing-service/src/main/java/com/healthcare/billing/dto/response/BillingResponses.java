@@ -17,3 +17,4 @@ public class BillingResponses {
     @Data @Builder
     public static class InvoiceResponse {
         private UUID id;
+        private String invoiceNumber;
