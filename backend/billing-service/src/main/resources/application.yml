@@ -53,3 +53,4 @@ management:
         include: health,info,metrics,prometheus
 
 springdoc:
+  api-docs:
