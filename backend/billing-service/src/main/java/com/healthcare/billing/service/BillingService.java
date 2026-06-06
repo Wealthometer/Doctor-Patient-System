@@ -119,3 +119,4 @@ public class BillingService {
             throw new InvalidBillingStateException("Cannot accept payment for a " + invoice.getStatus() + " invoice");
         }
 
+        BigDecimal balance = invoice.getTotalAmount().subtract(invoice.getPaidAmount());
