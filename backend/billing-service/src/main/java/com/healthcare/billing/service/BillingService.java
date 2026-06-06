@@ -101,3 +101,4 @@ public class BillingService {
         return invoiceRepository.findByPatientId(patientId, pageable).map(this::toResponse);
     }
 
+    @Transactional(readOnly = true)
