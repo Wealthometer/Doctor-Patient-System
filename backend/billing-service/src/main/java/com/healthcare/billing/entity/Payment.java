@@ -33,3 +33,4 @@ public class Payment {
 
     @Enumerated(EnumType.STRING)
     @Builder.Default
+    private PaymentStatus status = PaymentStatus.COMPLETED;
