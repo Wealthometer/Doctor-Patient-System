@@ -57,3 +57,4 @@ public class BillingResponses {
         private String paymentReference;
         private BigDecimal amount;
         private PaymentMethod method;
+        private PaymentStatus status;
