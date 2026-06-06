@@ -136,3 +136,4 @@ public class AppointmentService {
 
     public AppointmentResponse confirmAppointment(UUID id) {
         return updateStatus(id, AppointmentStatus.CONFIRMED, a -> {
+            if (a.getStatus() != AppointmentStatus.SCHEDULED)
