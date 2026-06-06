@@ -35,3 +35,4 @@ public class Payment {
     @Builder.Default
     private PaymentStatus status = PaymentStatus.COMPLETED;
 
+    private String transactionId;
