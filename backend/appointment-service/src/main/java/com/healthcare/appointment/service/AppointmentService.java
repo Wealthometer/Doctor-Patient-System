@@ -119,3 +119,4 @@ public class AppointmentService {
         while (current.plusMinutes(30).isBefore(end) || current.plusMinutes(30).equals(end)) {
             LocalTime slotEnd = current.plusMinutes(30);
             final LocalTime slotStart = current;
+
