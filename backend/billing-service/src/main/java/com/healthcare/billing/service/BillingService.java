@@ -155,3 +155,4 @@ public class BillingService {
         if (invoice.getStatus() == InvoiceStatus.PAID)
             throw new InvalidBillingStateException("Cannot cancel a PAID invoice");
         invoice.setStatus(InvoiceStatus.CANCELLED);
+        return toResponse(invoiceRepository.save(invoice));
