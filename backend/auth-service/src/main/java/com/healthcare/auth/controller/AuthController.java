@@ -67,3 +67,4 @@ public class AuthController {
                 .message("Password changed successfully")
                 .success(true)
                 .build());
+    }
