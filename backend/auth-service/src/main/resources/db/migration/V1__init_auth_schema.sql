@@ -39,3 +39,4 @@ VALUES (
     uuid_generate_v4(),
     'admin',
     'admin@healthcare.com',
+    '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LeulkM7yDKZf/bBuy',
