@@ -43,3 +43,4 @@ public class Notification {
     private NotificationStatus status = NotificationStatus.PENDING;
 
     private String errorMessage;
+
