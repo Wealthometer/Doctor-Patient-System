@@ -22,3 +22,4 @@ public class Payment {
     private Invoice invoice;
 
     @Column(nullable = false, unique = true)
+    private String paymentReference; // PAY-20260601-0001
