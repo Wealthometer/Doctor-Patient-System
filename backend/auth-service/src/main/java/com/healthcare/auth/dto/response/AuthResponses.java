@@ -12,3 +12,4 @@ public class AuthResponses {
     @Data
     @Builder
     public static class AuthResponse {
+        private String accessToken;
