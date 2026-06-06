@@ -81,3 +81,4 @@ public class DoctorService {
     public Page<DoctorResponse> getDoctorsBySpecialization(String specialization, Pageable pageable) {
         return doctorRepository.findBySpecialization(specialization, pageable).map(doctorMapper::toResponse);
     }
+
