@@ -85,6 +85,7 @@ public class NotificationService {
                     HealthCare+ Team
                     """, patientName, doctorName, dateTime))
                 .type(NotificationType.APPOINTMENT_CONFIRMED)
+                .channel(NotificationChannel.EMAIL)
                 .recipientEmail(email)
                 .body(String.format("""
                     
