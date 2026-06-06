@@ -169,3 +169,4 @@ public class AuthService {
                         .id(user.getId())
                         .username(user.getUsername())
                         .email(user.getEmail())
+                        .firstName(user.getFirstName())
