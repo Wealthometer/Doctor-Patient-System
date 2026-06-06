@@ -43,6 +43,7 @@ public class DoctorResponses {
         private LocalDateTime updatedAt;
     }
 
+        private long totalDoctors;
         private long activeDoctors;
         private long onLeaveDoctors;
         private List<String> departments;
