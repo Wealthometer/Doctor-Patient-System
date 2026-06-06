@@ -38,3 +38,4 @@ CREATE TABLE invoice_line_items (
 );
 
 CREATE TABLE payments (
+    id                UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
