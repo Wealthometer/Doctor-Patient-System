@@ -25,3 +25,4 @@ public class BillingRequests {
         @NotNull @DecimalMin("0.0") private BigDecimal taxRate;
         private String insuranceProvider;
         @DecimalMin("0.0") private BigDecimal insuranceCoverage;
+        private String notes;
