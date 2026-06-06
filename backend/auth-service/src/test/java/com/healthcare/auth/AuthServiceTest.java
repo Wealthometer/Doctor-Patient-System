@@ -153,3 +153,4 @@ class AuthServiceTest {
         TokenValidationResponse response = authService.validateToken("validToken");
 
         assertThat(response.isValid()).isTrue();
+        assertThat(response.getUsername()).isEqualTo("testuser");
