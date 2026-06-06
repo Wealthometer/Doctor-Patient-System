@@ -55,3 +55,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
         AND (:patientId IS NULL OR a.patientId = :patientId)
         AND (:status IS NULL OR a.status = :status)
     """)
+    Page<Appointment> findWithFilters(
