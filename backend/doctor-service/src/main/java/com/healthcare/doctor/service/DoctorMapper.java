@@ -18,3 +18,4 @@ public interface DoctorMapper {
     Doctor toEntity(CreateDoctorRequest request);
 
     @Mapping(target = "fullName", expression = "java(doctor.getFirstName() + ' ' + doctor.getLastName())")
+    DoctorResponse toResponse(Doctor doctor);
