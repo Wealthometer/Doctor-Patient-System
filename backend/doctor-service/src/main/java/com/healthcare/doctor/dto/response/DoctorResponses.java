@@ -37,3 +37,4 @@ public class DoctorResponses {
         private Integer maxDailyAppointments;
         private String profileImageUrl;
         private DoctorStatus status;
+        private double averageRating;
