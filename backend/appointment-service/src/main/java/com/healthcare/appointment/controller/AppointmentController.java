@@ -109,3 +109,4 @@ public class AppointmentController {
 
     @GetMapping("/stats")
     @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<AppointmentStatsResponse> getStats() {
