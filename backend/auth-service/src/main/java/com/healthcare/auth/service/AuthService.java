@@ -158,3 +158,4 @@ public class AuthService {
                 .token(refreshTokenStr)
                 .user(user)
                 .expiryDate(Instant.now().plusMillis(refreshTokenExpiration))
+                .build();
