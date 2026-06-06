@@ -141,3 +141,4 @@ public class AuthService {
     }
 
     public MessageResponse logout(UUID userId) {
+        User user = userRepository.findById(userId)
