@@ -149,3 +149,4 @@ public class BillingService {
         return toResponse(invoiceRepository.save(invoice));
     }
 
+        Invoice invoice = invoiceRepository.findById(id)
