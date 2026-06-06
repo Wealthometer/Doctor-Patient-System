@@ -69,3 +69,4 @@ public class JwtService {
                 .signWith(getSignInKey())
                 .compact();
     }
+
