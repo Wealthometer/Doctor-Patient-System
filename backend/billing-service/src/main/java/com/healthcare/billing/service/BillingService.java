@@ -82,3 +82,4 @@ public class BillingService {
 
         invoice.setSubtotal(subtotal);
         invoice.setTaxAmount(taxAmount);
+        invoice.setTotalAmount(total);
