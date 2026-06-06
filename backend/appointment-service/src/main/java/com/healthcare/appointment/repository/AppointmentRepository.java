@@ -39,3 +39,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
     List<Appointment> findConflictingAppointments(
             @Param("doctorId") UUID doctorId,
             @Param("date") LocalDate date,
+            @Param("startTime") LocalTime startTime,
