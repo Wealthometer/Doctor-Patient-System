@@ -60,3 +60,4 @@ public class BillingResponses {
         private PaymentStatus status;
         private String transactionId;
         private LocalDateTime createdAt;
+    }
