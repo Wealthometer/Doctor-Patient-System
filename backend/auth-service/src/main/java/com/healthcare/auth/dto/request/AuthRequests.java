@@ -12,3 +12,4 @@ public class AuthRequests {
     @Data
     public static class RegisterRequest {
         @NotBlank(message = "Username is required")
+        @Size(min = 3, max = 50)
