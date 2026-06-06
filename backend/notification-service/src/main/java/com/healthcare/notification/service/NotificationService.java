@@ -89,6 +89,7 @@ public class NotificationService {
                 .build();
         sendNotification(req);
     }
+
                 .recipientEmail(email)
                 .body(String.format("""
                     
