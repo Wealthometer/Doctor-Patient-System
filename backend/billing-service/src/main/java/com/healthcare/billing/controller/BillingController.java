@@ -40,3 +40,4 @@ public class BillingController {
     @Operation(summary = "Get invoice by ID")
     public ResponseEntity<InvoiceResponse> getInvoiceById(@PathVariable UUID id) {
         return ResponseEntity.ok(billingService.getInvoiceById(id));
+    }
