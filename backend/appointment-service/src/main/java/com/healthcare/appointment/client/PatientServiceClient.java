@@ -26,3 +26,4 @@ public interface PatientServiceClient {
     }
 
     class PatientServiceFallback implements PatientServiceClient {
+        @Override
