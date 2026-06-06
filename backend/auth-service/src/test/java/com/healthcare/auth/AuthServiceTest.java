@@ -99,3 +99,4 @@ class AuthServiceTest {
         request.setRole(Role.PATIENT);
 
         when(userRepository.existsByUsername("existinguser")).thenReturn(true);
+
