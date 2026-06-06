@@ -146,3 +146,4 @@ public class AppointmentService {
         return updateStatus(id, AppointmentStatus.IN_PROGRESS, a -> {
             if (a.getStatus() != AppointmentStatus.CONFIRMED && a.getStatus() != AppointmentStatus.SCHEDULED)
                 throw new InvalidAppointmentStateException("Appointment must be SCHEDULED or CONFIRMED to start");
+        });
