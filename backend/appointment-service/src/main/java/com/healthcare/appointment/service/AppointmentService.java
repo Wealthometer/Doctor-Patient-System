@@ -111,3 +111,4 @@ public class AppointmentService {
         LocalTime end = doctor.getWorkEndTime() != null ? doctor.getWorkEndTime() : LocalTime.of(17, 0);
 
         List<Appointment> bookedSlots = appointmentRepository
+                .findByDoctorIdAndAppointmentDateAndStatusNot(doctorId, date, AppointmentStatus.CANCELLED);
