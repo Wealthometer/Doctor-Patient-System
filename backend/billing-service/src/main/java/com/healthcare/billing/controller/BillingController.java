@@ -79,3 +79,4 @@ public class BillingController {
 
     @PatchMapping("/invoices/{id}/cancel")
     @PreAuthorize("hasRole('ADMIN')")
+    @Operation(summary = "Cancel an invoice")
