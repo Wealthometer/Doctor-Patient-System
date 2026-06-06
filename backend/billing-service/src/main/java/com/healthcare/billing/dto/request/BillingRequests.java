@@ -39,3 +39,4 @@ public class BillingRequests {
     }
 
     @Data
+    public static class RecordPaymentRequest {
