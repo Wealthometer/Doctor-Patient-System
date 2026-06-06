@@ -159,3 +159,4 @@ class AuthServiceTest {
 
     @Test
     @DisplayName("Should return invalid for expired token")
+    void validateToken_ShouldReturnInvalid_WhenTokenExpired() {
