@@ -171,3 +171,4 @@ public class AppointmentService {
         appointment.setStatus(AppointmentStatus.CANCELLED);
         appointment.setCancellationReason(request.getCancellationReason());
         appointment.setCancelledAt(LocalDateTime.now());
+        log.info("Appointment {} cancelled: {}", appointment.getAppointmentNumber(), request.getCancellationReason());
