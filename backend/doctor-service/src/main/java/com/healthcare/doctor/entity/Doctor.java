@@ -65,3 +65,4 @@ public class Doctor {
 
     private LocalTime workEndTime;
 
+    @Column(length = 100)
