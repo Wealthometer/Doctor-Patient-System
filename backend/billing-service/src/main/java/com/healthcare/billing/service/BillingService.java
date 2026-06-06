@@ -31,3 +31,4 @@ import java.util.UUID;
 public class BillingService {
 
     private final InvoiceRepository invoiceRepository;
+    private final PaymentRepository paymentRepository;
