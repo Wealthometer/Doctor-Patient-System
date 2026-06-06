@@ -27,3 +27,4 @@ import java.util.UUID;
 @Tag(name = "Doctors", description = "Doctor management APIs")
 public class DoctorController {
 
+    private final DoctorService doctorService;
