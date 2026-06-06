@@ -64,3 +64,4 @@ public class DoctorService {
 
     @Transactional(readOnly = true)
     public Page<DoctorResponse> getAllDoctors(Pageable pageable) {
+        return doctorRepository.findAll(pageable).map(doctorMapper::toResponse);
