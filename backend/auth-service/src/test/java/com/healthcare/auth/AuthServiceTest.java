@@ -149,3 +149,4 @@ class AuthServiceTest {
         when(jwtService.isTokenValid("validToken")).thenReturn(true);
         when(jwtService.extractUsername("validToken")).thenReturn("testuser");
         when(userRepository.findByUsername("testuser")).thenReturn(Optional.of(testUser));
+
