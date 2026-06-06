@@ -46,3 +46,4 @@ public class User implements UserDetails {
     private String lastName;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
