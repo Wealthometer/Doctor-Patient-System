@@ -97,3 +97,4 @@ public class AppointmentController {
             @PathVariable UUID id,
             @RequestBody UpdateAppointmentRequest request) {
         return ResponseEntity.ok(appointmentService.completeAppointment(id, request));
+    }
