@@ -167,3 +167,4 @@ public class AuthService {
                 .expiresIn(jwtService.getJwtExpiration())
                 .user(UserInfo.builder()
                         .id(user.getId())
+                        .username(user.getUsername())
