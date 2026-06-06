@@ -70,3 +70,4 @@ public class Invoice {
     private BigDecimal insuranceCoverage = BigDecimal.ZERO;
 
     @Enumerated(EnumType.STRING)
+    @Builder.Default
