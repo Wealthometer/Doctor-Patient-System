@@ -46,3 +46,4 @@ public class AppointmentResponses {
         private long todayAppointments;
         private long scheduledAppointments;
         private long completedAppointments;
+        private long cancelledAppointments;
