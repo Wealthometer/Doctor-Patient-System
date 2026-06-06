@@ -24,3 +24,4 @@ CREATE TABLE invoices (
     status               VARCHAR(20)   NOT NULL DEFAULT 'PENDING',
     notes                TEXT,
     created_at           TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at           TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
