@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                .channel(NotificationChannel.EMAIL)
                 .build();
         sendNotification(req);
     }
