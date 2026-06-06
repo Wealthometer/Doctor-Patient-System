@@ -57,5 +57,6 @@ public class DoctorController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<Page<DoctorResponse>> getAllDoctors(
             @PageableDefault(size = 20, sort = "lastName") Pageable pageable) {
+        return ResponseEntity.ok(doctorService.getAllDoctors(pageable));
     }
 
