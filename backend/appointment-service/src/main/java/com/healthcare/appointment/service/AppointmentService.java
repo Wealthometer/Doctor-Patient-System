@@ -138,3 +138,4 @@ public class AppointmentService {
         return updateStatus(id, AppointmentStatus.CONFIRMED, a -> {
             if (a.getStatus() != AppointmentStatus.SCHEDULED)
                 throw new InvalidAppointmentStateException("Can only confirm SCHEDULED appointments");
+            a.setConfirmedAt(LocalDateTime.now());
