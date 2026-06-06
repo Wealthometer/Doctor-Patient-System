@@ -155,3 +155,4 @@ public class AppointmentService {
             throw new InvalidAppointmentStateException("Appointment must be IN_PROGRESS to complete");
 
         appointment.setStatus(AppointmentStatus.COMPLETED);
+        appointment.setCompletedAt(LocalDateTime.now());
