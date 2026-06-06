@@ -19,3 +19,4 @@ import java.io.IOException;
 
 @Component
 @RequiredArgsConstructor
+@Slf4j
