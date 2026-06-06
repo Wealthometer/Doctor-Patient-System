@@ -116,4 +116,5 @@
       <artifactId>h2</artifactId>
       <scope>test</scope>
     </dependency>
+      <dependency>
       <groupId>org.springframework.boot</groupId>
