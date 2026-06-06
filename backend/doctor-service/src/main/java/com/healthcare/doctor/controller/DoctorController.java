@@ -77,3 +77,4 @@ public class DoctorController {
     }
 
     @GetMapping("/department/{department}/active")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
