@@ -9,3 +9,4 @@ import org.mapstruct.*;
 public interface DoctorMapper {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "doctorCode", ignore = true)
