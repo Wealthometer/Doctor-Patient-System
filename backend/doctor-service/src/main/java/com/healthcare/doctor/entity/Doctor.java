@@ -76,3 +76,4 @@ public class Doctor {
     @Builder.Default
     private DoctorStatus status = DoctorStatus.ACTIVE;
 
+    @Column(nullable = false)
