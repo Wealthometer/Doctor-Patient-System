@@ -62,3 +62,4 @@ public class BillingService {
         for (var itemReq : request.getLineItems()) {
             BigDecimal lineTotal = itemReq.getUnitPrice()
                     .multiply(BigDecimal.valueOf(itemReq.getQuantity() != null ? itemReq.getQuantity() : 1));
+            subtotal = subtotal.add(lineTotal);
