@@ -196,3 +196,4 @@ public class AppointmentService {
         return appointmentRepository.findById(id)
                 .orElseThrow(() -> new AppointmentNotFoundException("Appointment not found: " + id));
     }
+
