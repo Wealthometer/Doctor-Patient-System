@@ -52,3 +52,4 @@ class AuthServiceTest {
         testUser = User.builder()
                 .id(UUID.randomUUID())
                 .username("testuser")
+                .email("test@example.com")
