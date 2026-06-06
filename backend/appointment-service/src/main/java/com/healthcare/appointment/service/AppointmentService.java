@@ -103,3 +103,4 @@ public class AppointmentService {
         return appointmentRepository.findByDoctorIdAndAppointmentDate(doctorId, date, pageable).map(this::toResponse);
     }
 
+    @Transactional(readOnly = true)
