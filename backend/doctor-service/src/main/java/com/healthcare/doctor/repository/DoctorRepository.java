@@ -26,3 +26,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     boolean existsByLicenseNumber(String licenseNumber);
 
     Page<Doctor> findByDepartment(String department, Pageable pageable);
+    Page<Doctor> findBySpecialization(String specialization, Pageable pageable);
