@@ -192,3 +192,4 @@ public class AppointmentService {
         validator.accept(a);
         return toResponse(appointmentRepository.save(a));
     }
+
