@@ -110,6 +110,7 @@ public class DoctorService {
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
 
+    }
     private String generateDoctorCode() {
         long count = doctorRepository.count();
         return "D-" + String.format("%04d", count + 1001);
