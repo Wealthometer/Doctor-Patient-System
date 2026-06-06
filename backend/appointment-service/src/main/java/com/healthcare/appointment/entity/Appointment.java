@@ -51,3 +51,4 @@ public class Appointment {
     private AppointmentStatus status = AppointmentStatus.SCHEDULED;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
