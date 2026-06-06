@@ -62,3 +62,4 @@ public class AppointmentService {
         Appointment appointment = Appointment.builder()
                 .appointmentNumber(generateAppointmentNumber(request.getAppointmentDate()))
                 .patientId(request.getPatientId())
+                .patientName(patientDto.getFirstName() + " " + patientDto.getLastName())
