@@ -24,3 +24,4 @@ public class Doctor {
     private UUID id;
 
     @Column(nullable = false, unique = true)
+    private UUID userId;
