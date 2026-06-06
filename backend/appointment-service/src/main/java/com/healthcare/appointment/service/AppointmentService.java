@@ -71,3 +71,4 @@ public class AppointmentService {
                 .endTime(request.getEndTime())
                 .type(request.getType())
                 .reason(request.getReason())
+                .status(AppointmentStatus.SCHEDULED)
