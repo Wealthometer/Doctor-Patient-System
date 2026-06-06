@@ -219,3 +219,4 @@ public class BillingService {
                         .serviceCode(li.getServiceCode()).quantity(li.getQuantity())
                         .unitPrice(li.getUnitPrice()).totalPrice(li.getTotalPrice()).build()).toList())
                 .payments(i.getPayments().stream().map(p -> PaymentResponse.builder()
+                        .id(p.getId()).paymentReference(p.getPaymentReference())
