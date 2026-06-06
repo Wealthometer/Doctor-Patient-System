@@ -40,3 +40,4 @@ public class DoctorService {
         log.info("Created doctor: {} ({})", saved.getDoctorCode(), saved.getEmail());
         return doctorMapper.toResponse(saved);
     }
+
