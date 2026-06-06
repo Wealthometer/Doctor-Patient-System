@@ -50,3 +50,4 @@ public class GlobalExceptionHandler {
         pd.setTitle("Forbidden");
         pd.setProperty("timestamp", Instant.now());
         return pd;
+    }
