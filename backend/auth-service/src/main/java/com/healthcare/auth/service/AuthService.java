@@ -85,3 +85,4 @@ public class AuthService {
         return buildAuthResponse(user);
     }
 
+    public AuthResponse refreshToken(RefreshTokenRequest request) {
