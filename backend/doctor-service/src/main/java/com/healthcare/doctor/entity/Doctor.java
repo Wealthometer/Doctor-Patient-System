@@ -57,3 +57,4 @@ public class Doctor {
 
     private String qualifications;
 
+    private Integer yearsOfExperience;
