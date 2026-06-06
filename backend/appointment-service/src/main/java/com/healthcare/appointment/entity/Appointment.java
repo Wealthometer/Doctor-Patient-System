@@ -66,3 +66,4 @@ public class Appointment {
     private String cancellationReason;
 
     private LocalDateTime cancelledAt;
+
