@@ -220,3 +220,4 @@ public class BillingService {
                         .unitPrice(li.getUnitPrice()).totalPrice(li.getTotalPrice()).build()).toList())
                 .payments(i.getPayments().stream().map(p -> PaymentResponse.builder()
                         .id(p.getId()).paymentReference(p.getPaymentReference())
+                        .amount(p.getAmount()).method(p.getMethod()).status(p.getStatus())
