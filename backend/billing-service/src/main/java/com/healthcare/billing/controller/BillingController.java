@@ -41,3 +41,4 @@ public class BillingController {
     public ResponseEntity<InvoiceResponse> getInvoiceById(@PathVariable UUID id) {
         return ResponseEntity.ok(billingService.getInvoiceById(id));
     }
+
