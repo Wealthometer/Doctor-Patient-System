@@ -87,3 +87,4 @@ public class AppointmentService {
                 .map(this::toResponse)
                 .orElseThrow(() -> new AppointmentNotFoundException("Appointment not found: " + id));
     }
+
