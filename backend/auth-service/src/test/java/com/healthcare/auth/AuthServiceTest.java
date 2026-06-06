@@ -59,3 +59,4 @@ class AuthServiceTest {
                 .role(Role.PATIENT)
                 .build();
     }
+
