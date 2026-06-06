@@ -47,3 +47,4 @@ public class BillingService {
                 .appointmentNumber(request.getAppointmentNumber())
                 .doctorId(request.getDoctorId())
                 .doctorName(request.getDoctorName())
+                .department(request.getDepartment())
