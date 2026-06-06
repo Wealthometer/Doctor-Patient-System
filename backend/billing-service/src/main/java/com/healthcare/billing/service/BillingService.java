@@ -67,3 +67,4 @@ public class BillingService {
             InvoiceLineItem item = InvoiceLineItem.builder()
                     .invoice(invoice)
                     .description(itemReq.getDescription())
+                    .serviceCode(itemReq.getServiceCode())
