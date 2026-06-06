@@ -55,3 +55,4 @@ public class Doctor {
     @Column(columnDefinition = "TEXT")
     private String bio;
 
+    private String qualifications;
