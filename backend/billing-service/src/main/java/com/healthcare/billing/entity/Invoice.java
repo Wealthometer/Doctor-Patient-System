@@ -26,3 +26,4 @@ public class Invoice {
 
     @Column(nullable = false)
     private UUID patientId;
+
