@@ -97,3 +97,4 @@ public class DoctorController {
             @Valid @RequestBody UpdateDoctorRequest request) {
         return ResponseEntity.ok(doctorService.updateDoctor(id, request));
     }
+    @PatchMapping("/{id}/status")
