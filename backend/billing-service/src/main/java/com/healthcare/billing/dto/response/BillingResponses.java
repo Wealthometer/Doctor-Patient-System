@@ -45,3 +45,4 @@ public class BillingResponses {
     public static class LineItemResponse {
         private UUID id;
         private String description;
+        private String serviceCode;
