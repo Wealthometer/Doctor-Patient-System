@@ -79,6 +79,7 @@ public class NotificationService {
                     
                     Please arrive 15 minutes early. Bring any previous medical records.
                     
+                    To cancel or reschedule, please log into your portal.
                 .recipientEmail(email)
                 .body(String.format("""
                     
