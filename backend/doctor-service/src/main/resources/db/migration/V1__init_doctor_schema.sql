@@ -7,3 +7,4 @@ CREATE TYPE doctor_status AS ENUM ('ACTIVE', 'INACTIVE', 'ON_LEAVE', 'SUSPENDED'
 CREATE TABLE doctors (
     id                      UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     user_id                 UUID NOT NULL UNIQUE,
+    doctor_code             VARCHAR(20) NOT NULL UNIQUE,
