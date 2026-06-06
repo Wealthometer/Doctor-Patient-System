@@ -85,3 +85,4 @@ public class Doctor {
     private int totalRatings = 0;
 
     @CreationTimestamp
+    @Column(updatable = false)
