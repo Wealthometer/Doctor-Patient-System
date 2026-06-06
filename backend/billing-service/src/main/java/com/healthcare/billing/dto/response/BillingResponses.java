@@ -68,3 +68,4 @@ public class BillingResponses {
         private long pendingInvoices;
         private long overdueInvoices;
         private long paidInvoices;
+        private BigDecimal totalRevenue;
