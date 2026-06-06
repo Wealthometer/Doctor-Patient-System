@@ -14,3 +14,4 @@ import java.util.UUID;
 public class InvoiceLineItem {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
