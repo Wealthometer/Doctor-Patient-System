@@ -31,3 +31,4 @@ public class BillingController {
     @PostMapping("/invoices")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
     @Operation(summary = "Create a new invoice")
+    public ResponseEntity<InvoiceResponse> createInvoice(@Valid @RequestBody CreateInvoiceRequest request) {
