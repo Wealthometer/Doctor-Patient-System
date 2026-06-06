@@ -19,3 +19,4 @@ import java.util.UUID;
 @Builder
 public class Doctor {
 
+    @Id
