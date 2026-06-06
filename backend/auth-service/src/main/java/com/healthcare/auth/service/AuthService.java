@@ -156,3 +156,4 @@ public class AuthService {
 
         RefreshToken refreshToken = RefreshToken.builder()
                 .token(refreshTokenStr)
+                .user(user)
