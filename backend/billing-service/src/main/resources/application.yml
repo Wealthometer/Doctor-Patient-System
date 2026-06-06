@@ -40,3 +40,4 @@ application:
 feign:
   circuitbreaker:
     enabled: true
+  client:
