@@ -34,3 +34,4 @@ public class DoctorResponses {
         private LocalTime workStartTime;
         private LocalTime workEndTime;
         private String workDays;
+        private Integer maxDailyAppointments;
