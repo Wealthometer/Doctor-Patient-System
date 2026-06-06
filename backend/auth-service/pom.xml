@@ -69,3 +69,4 @@
       <artifactId>jjwt-api</artifactId>
       <version>${jjwt.version}</version>
     </dependency>
+    <dependency>
