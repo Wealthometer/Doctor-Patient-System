@@ -38,3 +38,4 @@ public class BillingController {
     @GetMapping("/invoices/{id}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
     @Operation(summary = "Get invoice by ID")
+    public ResponseEntity<InvoiceResponse> getInvoiceById(@PathVariable UUID id) {
