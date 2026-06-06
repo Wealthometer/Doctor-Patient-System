@@ -72,3 +72,4 @@ class AuthServiceTest {
         request.setRole(Role.PATIENT);
 
         when(userRepository.existsByUsername("newuser")).thenReturn(false);
+        when(userRepository.existsByEmail("new@example.com")).thenReturn(false);
