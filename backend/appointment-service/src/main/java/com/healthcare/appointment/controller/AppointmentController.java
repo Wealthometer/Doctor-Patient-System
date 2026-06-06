@@ -24,3 +24,4 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/v1/appointments")
 @RequiredArgsConstructor
+@SecurityRequirement(name = "bearerAuth")
