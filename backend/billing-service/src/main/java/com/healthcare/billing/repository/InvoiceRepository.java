@@ -32,3 +32,4 @@ public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
     BigDecimal sumOutstandingBalance();
 
     long countByStatus(InvoiceStatus status);
+}
