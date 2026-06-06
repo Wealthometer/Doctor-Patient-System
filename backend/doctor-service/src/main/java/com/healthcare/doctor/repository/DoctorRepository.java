@@ -47,3 +47,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     List<String> findAllActiveSpecializations();
 
     long countByStatus(DoctorStatus status);
+}
