@@ -34,3 +34,4 @@ public class BillingController {
     public ResponseEntity<InvoiceResponse> createInvoice(@Valid @RequestBody CreateInvoiceRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(billingService.createInvoice(request));
     }
+
