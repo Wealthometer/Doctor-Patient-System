@@ -76,3 +76,4 @@ public class User implements UserDetails {
     private LocalDateTime lastLoginAt;
 
     @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
