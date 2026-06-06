@@ -76,3 +76,4 @@ public class DoctorService {
     public Page<DoctorResponse> getDoctorsByDepartment(String department, Pageable pageable) {
         return doctorRepository.findByDepartment(department, pageable).map(doctorMapper::toResponse);
     }
+
