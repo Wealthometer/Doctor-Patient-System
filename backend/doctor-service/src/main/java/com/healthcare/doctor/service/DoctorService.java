@@ -37,3 +37,4 @@ public class DoctorService {
         Doctor doctor = doctorMapper.toEntity(request);
         doctor.setDoctorCode(generateDoctorCode());
         Doctor saved = doctorRepository.save(doctor);
+        log.info("Created doctor: {} ({})", saved.getDoctorCode(), saved.getEmail());
