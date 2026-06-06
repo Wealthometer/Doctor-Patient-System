@@ -28,3 +28,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
     List<Appointment> findByDoctorIdAndAppointmentDateAndStatusNot(
             UUID doctorId, LocalDate date, AppointmentStatus status);
 
+    List<Appointment> findByPatientIdAndStatusIn(UUID patientId, List<AppointmentStatus> statuses);
