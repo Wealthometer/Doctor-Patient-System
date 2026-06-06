@@ -66,3 +66,4 @@ public class BillingResponses {
     public static class BillingStatsResponse {
         private long totalInvoices;
         private long pendingInvoices;
+        private long overdueInvoices;
