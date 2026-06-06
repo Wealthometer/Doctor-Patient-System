@@ -82,3 +82,4 @@ public class AuthService {
         refreshTokenRepository.deleteRevokedTokensByUser(user);
 
         log.info("User logged in: {}", user.getUsername());
+        return buildAuthResponse(user);
