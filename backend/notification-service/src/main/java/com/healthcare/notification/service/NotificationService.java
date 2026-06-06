@@ -25,4 +25,5 @@ public class NotificationService {
                 .body(request.getBody())
                 .channel(request.getChannel() != null ? request.getChannel() : NotificationChannel.EMAIL)
             if (notification.getChannel() == NotificationChannel.EMAIL) {
+            }
 
