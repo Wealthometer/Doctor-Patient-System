@@ -75,3 +75,4 @@ public class AppointmentController {
     @Operation(summary = "Get available time slots for a doctor on a specific date")
     public ResponseEntity<List<AvailableSlot>> getAvailableSlots(
             @PathVariable UUID doctorId,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
