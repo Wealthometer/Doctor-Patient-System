@@ -90,3 +90,4 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.getDoctorsBySpecialization(specialization, pageable));
     }
 
+    @PutMapping("/{id}")
