@@ -38,3 +38,4 @@ public class DoctorResponses {
         private String profileImageUrl;
         private DoctorStatus status;
         private double averageRating;
+        private int totalRatings;
