@@ -20,3 +20,4 @@ public class DoctorRequests {
         @NotBlank
         private String lastName;
 
+        @NotBlank @Email
