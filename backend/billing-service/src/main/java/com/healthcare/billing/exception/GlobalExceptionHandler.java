@@ -30,3 +30,4 @@ public class GlobalExceptionHandler {
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.CONFLICT, ex.getMessage());
         pd.setTitle("Invalid Billing State");
         pd.setProperty("timestamp", Instant.now());
+        return pd;
