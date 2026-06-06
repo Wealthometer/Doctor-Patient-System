@@ -15,4 +15,5 @@ public class AppointmentRequests {
         @NotNull(message = "Patient ID is required")
         private UUID patientId;
 
+        @NotNull(message = "Doctor ID is required")
         @NotNull(message = "Start time is required")
