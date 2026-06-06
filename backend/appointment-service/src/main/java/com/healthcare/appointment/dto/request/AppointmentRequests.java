@@ -29,3 +29,4 @@ public class AppointmentRequests {
         private LocalTime endTime;
 
         @NotNull(message = "Appointment type is required")
+        private AppointmentType type;
