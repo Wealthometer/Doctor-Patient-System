@@ -48,3 +48,4 @@ public class BillingService {
                 .doctorId(request.getDoctorId())
                 .doctorName(request.getDoctorName())
                 .department(request.getDepartment())
+                .invoiceDate(request.getInvoiceDate())
