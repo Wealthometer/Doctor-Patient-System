@@ -37,3 +37,4 @@ public class Notification {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private NotificationChannel channel;
+
