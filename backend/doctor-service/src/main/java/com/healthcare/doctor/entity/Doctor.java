@@ -21,3 +21,4 @@ public class Doctor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
