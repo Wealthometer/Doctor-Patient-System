@@ -30,3 +30,4 @@ public class AppointmentController {
 
     private final AppointmentService appointmentService;
 
+    @PostMapping
