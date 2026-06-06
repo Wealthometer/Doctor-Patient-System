@@ -6,3 +6,4 @@ spring:
     name: discovery-service
   security:
     user:
+      name: ${EUREKA_USERNAME:eureka}
