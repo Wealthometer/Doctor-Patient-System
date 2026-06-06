@@ -144,3 +144,4 @@ public class AuthService {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
         refreshTokenRepository.revokeAllUserTokens(user);
+        return MessageResponse.builder()
