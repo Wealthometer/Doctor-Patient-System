@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                    Regards,
                     HealthCare+ Billing Team
                     """, patientName, invoiceNumber, amount, dueDate))
                 .type(NotificationType.BILLING_INVOICE)
