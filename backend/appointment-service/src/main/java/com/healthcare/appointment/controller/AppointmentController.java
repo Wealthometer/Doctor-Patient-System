@@ -56,3 +56,4 @@ public class AppointmentController {
     @GetMapping("/doctor/{doctorId}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     public ResponseEntity<Page<AppointmentResponse>> getByDoctor(
+            @PageableDefault(size = 20, sort = "appointmentDate") Pageable pageable) {
