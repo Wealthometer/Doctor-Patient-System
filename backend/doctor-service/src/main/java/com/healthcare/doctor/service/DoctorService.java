@@ -99,3 +99,4 @@ public class DoctorService {
         Doctor doctor = doctorRepository.findById(id)
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found: " + id));
         doctor.setStatus(status);
+        log.info("Doctor {} status updated to {}", doctor.getDoctorCode(), status);
