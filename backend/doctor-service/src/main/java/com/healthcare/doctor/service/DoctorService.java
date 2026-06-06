@@ -109,6 +109,7 @@ public class DoctorService {
         doctor.setAverageRating(Math.round(newAvg * 10.0) / 10.0);
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
+        long count = doctorRepository.count();
         return "D-" + String.format("%04d", count + 1001);
     }
 }
