@@ -69,3 +69,4 @@ public class BillingController {
     }
 
     @PostMapping("/invoices/{id}/payments")
+    @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT')")
