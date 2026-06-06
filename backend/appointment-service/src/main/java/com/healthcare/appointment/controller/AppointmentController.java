@@ -31,3 +31,4 @@ public class AppointmentController {
     private final AppointmentService appointmentService;
 
     @PostMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT', 'DOCTOR', 'NURSE')")
