@@ -49,3 +49,4 @@ public class AuthRequests {
     }
 
     @Data
+    public static class ChangePasswordRequest {
