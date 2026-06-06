@@ -5,3 +5,4 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
+import java.math.BigDecimal;
