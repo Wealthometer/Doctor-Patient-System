@@ -107,3 +107,4 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.cancelAppointment(id, request));
     }
 
+    @GetMapping("/stats")
