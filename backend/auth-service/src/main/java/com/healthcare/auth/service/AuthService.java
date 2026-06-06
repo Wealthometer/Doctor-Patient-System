@@ -77,3 +77,4 @@ public class AuthService {
                 request.getUsernameOrEmail(), request.getUsernameOrEmail()
         ).orElseThrow(() -> new UsernameNotFoundException("User not found"));
 
+        userRepository.updateLastLoginTime(user.getId(), LocalDateTime.now());
