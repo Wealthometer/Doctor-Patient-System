@@ -43,3 +43,4 @@ public class AuthRequests {
     }
 
     @Data
+    public static class RefreshTokenRequest {
