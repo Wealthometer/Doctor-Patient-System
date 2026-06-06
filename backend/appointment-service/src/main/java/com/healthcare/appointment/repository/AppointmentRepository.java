@@ -48,3 +48,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
     """)
     List<Appointment> findByDate(@Param("date") LocalDate date);
 
+    @Query("""
