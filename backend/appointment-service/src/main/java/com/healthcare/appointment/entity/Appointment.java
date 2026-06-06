@@ -68,3 +68,4 @@ public class Appointment {
     private LocalDateTime cancelledAt;
 
     private LocalDateTime confirmedAt;
+
