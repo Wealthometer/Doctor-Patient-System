@@ -105,3 +105,4 @@ public class DoctorService {
     public DoctorResponse submitRating(UUID id, RatingRequest request) {
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found: " + id));
 
+        double newAvg = ((doctor.getAverageRating() * doctor.getTotalRatings()) + request.getRating()) / totalRatings;
