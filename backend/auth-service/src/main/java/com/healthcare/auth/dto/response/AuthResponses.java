@@ -20,3 +20,4 @@ public class AuthResponses {
         private UserInfo user;
     }
 
+    @Data
