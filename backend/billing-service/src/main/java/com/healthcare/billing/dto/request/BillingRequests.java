@@ -19,3 +19,4 @@ public class BillingRequests {
         private String appointmentNumber;
         private UUID doctorId;
         private String doctorName;
+        @NotBlank private String department;
