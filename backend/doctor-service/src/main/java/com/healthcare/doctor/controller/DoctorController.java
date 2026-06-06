@@ -69,5 +69,6 @@ public class DoctorController {
     }
 
     @GetMapping("/department/{department}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<Page<DoctorResponse>> getByDepartment(
             @PathVariable String department,
