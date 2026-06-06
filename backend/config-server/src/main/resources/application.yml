@@ -7,3 +7,4 @@ spring:
   cloud:
     config:
       server:
+        native:
