@@ -36,3 +36,4 @@ public class AppointmentResponses {
         private LocalDateTime confirmedAt;
         private LocalDateTime completedAt;
         private LocalDateTime createdAt;
+        private LocalDateTime updatedAt;
