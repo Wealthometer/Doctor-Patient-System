@@ -1,1 +1,2 @@
 -- V1__init_appointment_schema.sql
+
