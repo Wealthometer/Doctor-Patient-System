@@ -43,3 +43,4 @@ public class AppointmentService {
                 request.getDoctorId(), request.getAppointmentDate(),
                 request.getStartTime(), request.getEndTime());
 
+        if (!conflicts.isEmpty()) {
