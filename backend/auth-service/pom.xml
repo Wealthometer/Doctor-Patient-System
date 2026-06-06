@@ -145,3 +145,4 @@
           </excludes>
         </configuration>
       </plugin>
+    </plugins>
