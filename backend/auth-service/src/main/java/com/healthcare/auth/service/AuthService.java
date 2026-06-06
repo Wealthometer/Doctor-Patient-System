@@ -60,3 +60,4 @@ public class AuthService {
 
         return buildAuthResponse(user);
     }
+
