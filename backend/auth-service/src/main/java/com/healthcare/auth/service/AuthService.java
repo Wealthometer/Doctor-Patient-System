@@ -73,3 +73,4 @@ public class AuthService {
             throw new AuthException("Invalid credentials");
         }
 
+        User user = userRepository.findByUsernameOrEmail(
