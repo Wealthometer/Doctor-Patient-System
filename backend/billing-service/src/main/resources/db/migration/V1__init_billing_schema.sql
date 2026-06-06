@@ -37,3 +37,4 @@ CREATE TABLE invoice_line_items (
     total_price  DECIMAL(10,2) NOT NULL
 );
 
+CREATE TABLE payments (
