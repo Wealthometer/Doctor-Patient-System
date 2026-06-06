@@ -65,3 +65,4 @@ class AuthServiceTest {
     void register_ShouldCreateUser_WhenValidRequest() {
         RegisterRequest request = new RegisterRequest();
         request.setUsername("newuser");
+        request.setEmail("new@example.com");
