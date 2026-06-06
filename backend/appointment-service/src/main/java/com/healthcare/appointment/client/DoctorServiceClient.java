@@ -21,3 +21,4 @@ public interface DoctorServiceClient {
         private UUID id;
         private String doctorCode;
         private String firstName;
+        private String lastName;
