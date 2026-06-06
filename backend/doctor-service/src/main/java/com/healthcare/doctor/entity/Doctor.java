@@ -49,4 +49,5 @@ public class Doctor {
 
     @Column(nullable = false)
     private String licenseNumber;
+
     private LocalDate licenseExpiryDate;
