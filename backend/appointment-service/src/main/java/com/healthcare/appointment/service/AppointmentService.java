@@ -151,3 +151,4 @@ public class AppointmentService {
 
     public AppointmentResponse completeAppointment(UUID id, UpdateAppointmentRequest request) {
         Appointment appointment = findAppointment(id);
+        if (appointment.getStatus() != AppointmentStatus.IN_PROGRESS)
