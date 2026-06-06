@@ -217,6 +217,7 @@ public class AppointmentService {
                 .cancellationReason(a.getCancellationReason())
                 .cancelledAt(a.getCancelledAt())
                 .confirmedAt(a.getConfirmedAt())
+                .completedAt(a.getCompletedAt())
                 .createdAt(a.getCreatedAt())
                 .updatedAt(a.getUpdatedAt())
                 .build();
