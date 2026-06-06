@@ -18,3 +18,4 @@ public class BillingResponses {
     public static class InvoiceResponse {
         private UUID id;
         private String invoiceNumber;
+        private UUID patientId;
