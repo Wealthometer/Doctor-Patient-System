@@ -54,3 +54,4 @@ class AuthServiceTest {
                 .username("testuser")
                 .email("test@example.com")
                 .password("encodedPassword")
+                .firstName("Test")
