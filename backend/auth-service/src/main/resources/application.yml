@@ -4,3 +4,4 @@ server:
 spring:
   application:
     name: auth-service
+  config:
