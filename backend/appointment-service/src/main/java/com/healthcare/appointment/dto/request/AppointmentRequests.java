@@ -12,4 +12,5 @@ public class AppointmentRequests {
 
     @Data
     public static class BookAppointmentRequest {
+        @NotNull(message = "Patient ID is required")
         @NotNull(message = "Start time is required")
