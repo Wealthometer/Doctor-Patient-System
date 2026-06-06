@@ -17,3 +17,4 @@ public class Notification {
     private UUID id;
 
     @Column(nullable = false)
+    private UUID recipientId;
