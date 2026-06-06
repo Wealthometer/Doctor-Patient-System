@@ -82,3 +82,4 @@ public class AppointmentService {
     }
 
     @Transactional(readOnly = true)
+    public AppointmentResponse getAppointmentById(UUID id) {
