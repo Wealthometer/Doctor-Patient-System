@@ -68,3 +68,4 @@ public class AuthService {
                             request.getUsernameOrEmail(),
                             request.getPassword()
                     )
+            );
