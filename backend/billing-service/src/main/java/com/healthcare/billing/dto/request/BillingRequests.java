@@ -42,3 +42,4 @@ public class BillingRequests {
     public static class RecordPaymentRequest {
         @NotNull @DecimalMin("0.01") private BigDecimal amount;
         @NotNull private PaymentMethod method;
+        private String transactionId;
