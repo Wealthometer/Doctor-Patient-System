@@ -6,3 +6,4 @@ spring:
     name: appointment-service
   config:
     import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
+  datasource:
