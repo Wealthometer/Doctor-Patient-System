@@ -42,3 +42,4 @@ public class BillingController {
         return ResponseEntity.ok(billingService.getInvoiceById(id));
     }
 
+    @GetMapping("/invoices")
