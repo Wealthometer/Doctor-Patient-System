@@ -10,3 +10,4 @@ application:
 
 eureka:
   client:
+    service-url:
