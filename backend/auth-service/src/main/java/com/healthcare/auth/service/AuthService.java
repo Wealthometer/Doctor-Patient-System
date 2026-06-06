@@ -69,3 +69,4 @@ public class AuthService {
                             request.getPassword()
                     )
             );
+        } catch (BadCredentialsException e) {
