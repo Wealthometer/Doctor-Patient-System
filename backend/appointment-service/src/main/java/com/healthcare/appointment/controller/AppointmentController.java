@@ -65,3 +65,4 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     public ResponseEntity<Page<AppointmentResponse>> getDoctorAppointmentsByDate(
             @PathVariable UUID doctorId,
+            @PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date,
