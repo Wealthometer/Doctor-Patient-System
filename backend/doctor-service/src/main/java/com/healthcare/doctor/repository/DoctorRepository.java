@@ -21,3 +21,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     Optional<Doctor> findByEmail(String email);
     Optional<Doctor> findByLicenseNumber(String licenseNumber);
 
+    boolean existsByEmail(String email);
