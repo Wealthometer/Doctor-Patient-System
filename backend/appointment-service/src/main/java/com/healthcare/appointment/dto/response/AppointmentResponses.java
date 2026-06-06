@@ -5,3 +5,4 @@ import com.healthcare.appointment.entity.AppointmentType;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDate;
