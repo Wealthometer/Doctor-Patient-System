@@ -19,3 +19,4 @@ public class AuthRequests {
         @Email(message = "Invalid email format")
         private String email;
 
+        @NotBlank(message = "Password is required")
