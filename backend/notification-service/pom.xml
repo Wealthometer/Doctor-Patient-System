@@ -136,3 +136,4 @@
   </dependencyManagement>
 
   <build>
+    <plugins>
