@@ -14,3 +14,4 @@ import java.util.UUID;
 
 public class BillingResponses {
 
+    @Data @Builder
