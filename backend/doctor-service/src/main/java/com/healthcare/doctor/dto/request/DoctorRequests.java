@@ -30,3 +30,4 @@ public class DoctorRequests {
         private String specialization;
 
         @NotBlank(message = "Department is required")
+        private String department;
