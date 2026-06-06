@@ -106,3 +106,4 @@ public class BillingService {
         return invoiceRepository.findAll(pageable).map(this::toResponse);
     }
 
+    @Transactional(readOnly = true)
