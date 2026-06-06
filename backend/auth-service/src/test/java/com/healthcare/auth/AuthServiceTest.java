@@ -113,3 +113,4 @@ class AuthServiceTest {
         request.setPassword("Password@123");
 
         when(authenticationManager.authenticate(any())).thenReturn(
+                new UsernamePasswordAuthenticationToken("testuser", "Password@123"));
