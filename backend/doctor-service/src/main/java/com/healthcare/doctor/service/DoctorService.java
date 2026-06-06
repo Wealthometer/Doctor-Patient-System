@@ -110,6 +110,7 @@ public class DoctorService {
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
 
+                .onLeaveDoctors(doctorRepository.countByStatus(DoctorStatus.ON_LEAVE))
                 .specializations(doctorRepository.findAllActiveSpecializations())
     }
 
