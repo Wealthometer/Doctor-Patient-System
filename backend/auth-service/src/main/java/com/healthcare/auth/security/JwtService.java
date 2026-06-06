@@ -86,3 +86,4 @@ public class JwtService {
             return !isTokenExpired(token);
         } catch (JwtException e) {
             log.warn("JWT validation failed: {}", e.getMessage());
+            return false;
