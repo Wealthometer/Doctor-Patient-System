@@ -61,3 +61,4 @@ resilience4j:
         registerHealthIndicator: true
         slidingWindowSize: 10
         minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
