@@ -85,3 +85,4 @@ public class BillingService {
         invoice.setTotalAmount(total);
 
         Invoice saved = invoiceRepository.save(invoice);
+        log.info("Created invoice {} for patient {}", saved.getInvoiceNumber(), saved.getPatientName());
