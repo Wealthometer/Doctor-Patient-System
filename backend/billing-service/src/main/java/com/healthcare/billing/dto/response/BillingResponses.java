@@ -41,3 +41,4 @@ public class BillingResponses {
         private LocalDateTime createdAt;
     }
 
+    @Data @Builder
