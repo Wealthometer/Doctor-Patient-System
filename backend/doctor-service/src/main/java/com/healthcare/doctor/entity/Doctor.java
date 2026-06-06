@@ -30,3 +30,4 @@ public class Doctor {
     private String doctorCode; // e.g. D-1001
 
     @Column(nullable = false)
+    private String firstName;
