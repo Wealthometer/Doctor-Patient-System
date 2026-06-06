@@ -9,3 +9,4 @@ import com.healthcare.doctor.exception.DoctorNotFoundException;
 import com.healthcare.doctor.repository.DoctorRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
