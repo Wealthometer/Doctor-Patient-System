@@ -48,3 +48,4 @@ public class DoctorRequests {
         private String workDays;
 
         @Min(1) @Max(50)
+        private Integer maxDailyAppointments;
