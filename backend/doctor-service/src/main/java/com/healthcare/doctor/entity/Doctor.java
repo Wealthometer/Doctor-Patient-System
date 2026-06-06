@@ -72,3 +72,4 @@ public class Doctor {
 
     private String profileImageUrl;
 
+    @Enumerated(EnumType.STRING)
