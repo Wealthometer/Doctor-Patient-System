@@ -162,3 +162,4 @@ public class AuthService {
         refreshTokenRepository.save(refreshToken);
 
         return AuthResponse.builder()
+                .accessToken(accessToken)
