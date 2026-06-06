@@ -66,3 +66,4 @@ public class AppointmentController {
     public ResponseEntity<Page<AppointmentResponse>> getDoctorAppointmentsByDate(
             @PathVariable UUID doctorId,
             @PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date,
+            @PageableDefault(size = 50, sort = "startTime") Pageable pageable) {
