@@ -91,6 +91,7 @@ public class NotificationService {
     }
 
     public void sendPrescriptionIssuedNotification(String email, String patientName,
+                                                    String doctorName, String rxNumber) {
                 .recipientEmail(email)
                 .body(String.format("""
                     
