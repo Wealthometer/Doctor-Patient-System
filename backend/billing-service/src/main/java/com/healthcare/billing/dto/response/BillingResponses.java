@@ -72,3 +72,4 @@ public class BillingResponses {
         private BigDecimal outstandingBalance;
         private BigDecimal monthlyRevenue;
     }
+}
