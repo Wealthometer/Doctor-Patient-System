@@ -12,3 +12,4 @@ import java.util.UUID;
 public class NotificationRequest {
     private UUID recipientId;
     private String recipientEmail;
+    private String recipientPhone;
