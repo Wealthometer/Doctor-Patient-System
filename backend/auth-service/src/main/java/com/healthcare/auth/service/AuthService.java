@@ -109,3 +109,4 @@ public class AuthService {
             return TokenValidationResponse.builder().valid(false).build();
         }
 
+        String username = jwtService.extractUsername(token);
