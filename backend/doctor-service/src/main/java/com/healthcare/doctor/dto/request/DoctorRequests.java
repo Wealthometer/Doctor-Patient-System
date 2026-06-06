@@ -32,3 +32,4 @@ public class DoctorRequests {
         @NotBlank(message = "Department is required")
         private String department;
 
+        @NotBlank(message = "License number is required")
