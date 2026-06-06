@@ -53,3 +53,4 @@ public class AppointmentService {
                 request.getDoctorId(), request.getAppointmentDate());
 
         var doctorDto = doctorServiceClient.getDoctorById(request.getDoctorId());
+        if (doctorDto.getMaxDailyAppointments() != null && todayCount >= doctorDto.getMaxDailyAppointments()) {
