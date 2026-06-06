@@ -21,3 +21,4 @@ CREATE TABLE doctors (
     years_of_experience     INT,
     consultation_fee        VARCHAR(50),
     work_start_time         TIME,
+    work_end_time           TIME,
