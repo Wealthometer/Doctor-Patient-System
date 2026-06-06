@@ -57,3 +57,4 @@ public class AppointmentService {
             throw new AppointmentConflictException("Doctor has reached maximum daily appointments");
         }
 
+        var patientDto = patientServiceClient.getPatientById(request.getPatientId());
