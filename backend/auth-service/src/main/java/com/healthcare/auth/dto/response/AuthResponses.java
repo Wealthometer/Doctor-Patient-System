@@ -19,3 +19,4 @@ public class AuthResponses {
         private long expiresIn;
         private UserInfo user;
     }
+
