@@ -2,3 +2,4 @@
 
 application:
   security:
+    jwt:
