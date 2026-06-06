@@ -163,3 +163,4 @@ public class AuthService {
 
         return AuthResponse.builder()
                 .accessToken(accessToken)
+                .refreshToken(refreshTokenStr)
