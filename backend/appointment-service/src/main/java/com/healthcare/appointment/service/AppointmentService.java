@@ -157,3 +157,4 @@ public class AppointmentService {
         appointment.setStatus(AppointmentStatus.COMPLETED);
         appointment.setCompletedAt(LocalDateTime.now());
         if (request.getDiagnosisSummary() != null) appointment.setDiagnosisSummary(request.getDiagnosisSummary());
+        if (request.getNotes() != null) appointment.setNotes(request.getNotes());
