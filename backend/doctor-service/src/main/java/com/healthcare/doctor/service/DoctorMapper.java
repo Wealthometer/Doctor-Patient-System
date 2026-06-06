@@ -10,3 +10,4 @@ public interface DoctorMapper {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "doctorCode", ignore = true)
+    @Mapping(target = "status", ignore = true)
