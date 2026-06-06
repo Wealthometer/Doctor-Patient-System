@@ -58,3 +58,4 @@ public class AuthController {
 
     @PutMapping("/change-password")
     @SecurityRequirement(name = "bearerAuth")
+    @Operation(summary = "Change password")
