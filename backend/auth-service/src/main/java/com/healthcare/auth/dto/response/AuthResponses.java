@@ -9,3 +9,4 @@ import java.util.UUID;
 
 public class AuthResponses {
 
+    @Data
