@@ -44,3 +44,4 @@ public class AuthRequests {
 
     @Data
     public static class RefreshTokenRequest {
+        @NotBlank(message = "Refresh token is required")
