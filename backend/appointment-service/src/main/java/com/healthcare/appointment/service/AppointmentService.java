@@ -141,3 +141,4 @@ public class AppointmentService {
             a.setConfirmedAt(LocalDateTime.now());
         });
     }
+
