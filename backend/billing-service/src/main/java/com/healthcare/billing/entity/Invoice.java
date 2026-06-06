@@ -59,3 +59,4 @@ public class Invoice {
     private BigDecimal totalAmount;
 
     @Column(precision = 10, scale = 2)
+    @Builder.Default
