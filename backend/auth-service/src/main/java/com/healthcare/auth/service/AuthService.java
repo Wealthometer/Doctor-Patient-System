@@ -134,3 +134,4 @@ public class AuthService {
             throw new AuthException("Current password is incorrect");
         }
 
+        user.setPassword(passwordEncoder.encode(request.getNewPassword()));
