@@ -174,3 +174,4 @@ public class BillingService {
                 .outstandingBalance(outstanding != null ? outstanding : BigDecimal.ZERO)
                 .build();
     }
+
