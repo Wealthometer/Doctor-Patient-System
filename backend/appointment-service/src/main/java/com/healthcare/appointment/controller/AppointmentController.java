@@ -49,3 +49,4 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<Page<AppointmentResponse>> getByPatient(
             @PathVariable UUID patientId,
+            @PageableDefault(size = 20, sort = "appointmentDate") Pageable pageable) {
