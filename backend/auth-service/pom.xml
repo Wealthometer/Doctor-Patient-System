@@ -20,3 +20,4 @@
     <jjwt.version>0.12.3</jjwt.version>
     <mapstruct.version>1.5.5.Final</mapstruct.version>
   </properties>
+
