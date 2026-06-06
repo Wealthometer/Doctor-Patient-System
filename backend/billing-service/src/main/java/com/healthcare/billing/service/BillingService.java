@@ -111,3 +111,4 @@ public class BillingService {
         return invoiceRepository.findByStatus(status, pageable).map(this::toResponse);
     }
 
+    public InvoiceResponse recordPayment(UUID invoiceId, RecordPaymentRequest request) {
