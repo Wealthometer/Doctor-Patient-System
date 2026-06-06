@@ -80,3 +80,4 @@ public class AppointmentService {
                 saved.getAppointmentNumber(), patientDto.getFirstName(), doctorDto.getFirstName());
         return toResponse(saved);
     }
+
