@@ -46,3 +46,4 @@ public class BillingResponses {
         private UUID id;
         private String description;
         private String serviceCode;
+        private Integer quantity;
