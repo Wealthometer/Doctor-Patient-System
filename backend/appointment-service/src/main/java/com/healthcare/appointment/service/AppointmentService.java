@@ -181,3 +181,4 @@ public class AppointmentService {
                 .totalAppointments(appointmentRepository.count())
                 .todayAppointments(appointmentRepository.countByAppointmentDate(LocalDate.now()))
                 .scheduledAppointments(appointmentRepository.countByStatus(AppointmentStatus.SCHEDULED))
+                .completedAppointments(appointmentRepository.countByStatus(AppointmentStatus.COMPLETED))
