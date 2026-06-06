@@ -30,3 +30,4 @@ public class Invoice {
     @Column(nullable = false)
     private String patientName;
 
+    private UUID appointmentId;
