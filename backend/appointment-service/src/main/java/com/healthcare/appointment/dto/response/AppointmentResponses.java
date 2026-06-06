@@ -50,3 +50,4 @@ public class AppointmentResponses {
         private Map<String, Long> byDepartment;
     }
 
+    @Data
