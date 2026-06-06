@@ -15,3 +15,4 @@ CREATE TABLE doctors (
     specialization          VARCHAR(200) NOT NULL,
     department              VARCHAR(200) NOT NULL,
     license_number          VARCHAR(100) NOT NULL UNIQUE,
+    license_expiry_date     DATE,
