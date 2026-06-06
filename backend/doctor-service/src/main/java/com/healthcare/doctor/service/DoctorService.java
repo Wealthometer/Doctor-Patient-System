@@ -110,6 +110,7 @@ public class DoctorService {
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     }
 
+    @Transactional(readOnly = true)
     public DoctorStatsResponse getStats() {
         return DoctorStatsResponse.builder()
                 .totalDoctors(doctorRepository.count())
