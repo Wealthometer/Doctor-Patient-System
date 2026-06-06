@@ -32,3 +32,4 @@ public class User implements UserDetails {
 
     @Column(nullable = false, unique = true)
     private String username;
+
