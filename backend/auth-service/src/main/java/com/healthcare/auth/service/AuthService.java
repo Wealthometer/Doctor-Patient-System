@@ -91,3 +91,4 @@ public class AuthService {
 
         if (storedToken.isRevoked()) {
             throw new AuthException("Refresh token has been revoked");
+        }
