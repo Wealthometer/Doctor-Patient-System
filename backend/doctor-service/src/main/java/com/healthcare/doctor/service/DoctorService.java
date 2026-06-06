@@ -59,3 +59,4 @@ public class DoctorService {
     public DoctorResponse getDoctorByCode(String code) {
         return doctorRepository.findByDoctorCode(code)
                 .map(doctorMapper::toResponse)
+                .orElseThrow(() -> new DoctorNotFoundException("Doctor not found with code: " + code));
