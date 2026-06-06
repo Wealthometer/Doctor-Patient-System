@@ -23,3 +23,4 @@ public class AppointmentResponses {
         private UUID doctorId;
         private String doctorName;
         private String department;
+        private LocalDate appointmentDate;
