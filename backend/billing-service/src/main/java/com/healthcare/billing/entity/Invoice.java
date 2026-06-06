@@ -73,3 +73,4 @@ public class Invoice {
     @Builder.Default
     private InvoiceStatus status = InvoiceStatus.PENDING;
 
+    private String notes;
