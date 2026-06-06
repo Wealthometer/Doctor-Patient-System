@@ -30,3 +30,4 @@ public class DoctorResponses {
         private String bio;
         private String qualifications;
         private Integer yearsOfExperience;
+        private String consultationFee;
