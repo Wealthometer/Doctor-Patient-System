@@ -143,3 +143,4 @@ public class AppointmentService {
     }
 
     public AppointmentResponse startAppointment(UUID id) {
+        return updateStatus(id, AppointmentStatus.IN_PROGRESS, a -> {
