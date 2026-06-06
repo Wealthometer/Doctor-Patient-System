@@ -97,3 +97,4 @@ public class AuthService {
         }
 
         User user = storedToken.getUser();
+        storedToken.setRevoked(true);
