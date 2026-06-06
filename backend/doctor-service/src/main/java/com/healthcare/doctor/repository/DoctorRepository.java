@@ -23,3 +23,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
 
     boolean existsByEmail(String email);
     boolean existsByUserId(UUID userId);
+    boolean existsByLicenseNumber(String licenseNumber);
