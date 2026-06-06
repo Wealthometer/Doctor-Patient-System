@@ -129,3 +129,4 @@ public class AppointmentService {
                     .available(!isBooked)
                     .build());
 
+            current = slotEnd;
