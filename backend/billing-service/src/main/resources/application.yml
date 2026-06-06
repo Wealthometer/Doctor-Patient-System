@@ -33,3 +33,4 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
 
 application:
+  security:
