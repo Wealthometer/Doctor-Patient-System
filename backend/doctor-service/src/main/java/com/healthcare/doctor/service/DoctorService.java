@@ -50,3 +50,4 @@ public class DoctorService {
 
     @Transactional(readOnly = true)
     public DoctorResponse getDoctorByUserId(UUID userId) {
+        return doctorRepository.findByUserId(userId)
