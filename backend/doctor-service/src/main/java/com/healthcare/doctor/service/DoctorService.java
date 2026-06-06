@@ -71,3 +71,4 @@ public class DoctorService {
     public Page<DoctorResponse> searchDoctors(String query, Pageable pageable) {
         return doctorRepository.searchDoctors(query, pageable).map(doctorMapper::toResponse);
     }
+
