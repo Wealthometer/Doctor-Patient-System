@@ -30,3 +30,4 @@ public class AuthController {
     }
 
     @PostMapping("/login")
+    @Operation(summary = "Login with credentials")
