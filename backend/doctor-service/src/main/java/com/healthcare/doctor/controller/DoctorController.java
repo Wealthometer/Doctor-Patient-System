@@ -40,3 +40,4 @@ public class DoctorController {
     public ResponseEntity<DoctorResponse> getDoctorById(@PathVariable UUID id) {
         return ResponseEntity.ok(doctorService.getDoctorById(id));
     }
+
