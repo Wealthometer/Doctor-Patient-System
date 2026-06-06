@@ -134,3 +134,4 @@ public class BillingService {
                 .transactionId(request.getTransactionId())
                 .notes(request.getNotes())
                 .build();
+        paymentRepository.save(payment);
