@@ -139,3 +139,4 @@ public class BillingService {
         BigDecimal newPaid = invoice.getPaidAmount().add(request.getAmount());
         invoice.setPaidAmount(newPaid);
 
+        if (newPaid.compareTo(invoice.getTotalAmount()) >= 0) {
