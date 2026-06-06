@@ -9,3 +9,4 @@ public enum NotificationType {
     PRESCRIPTION_EXPIRY,
     BILLING_INVOICE,
     PAYMENT_RECEIVED,
+    GENERAL
