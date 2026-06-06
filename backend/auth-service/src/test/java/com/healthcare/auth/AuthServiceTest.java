@@ -96,3 +96,4 @@ class AuthServiceTest {
         request.setPassword("Password@123");
         request.setFirstName("Test");
         request.setLastName("User");
+        request.setRole(Role.PATIENT);
