@@ -18,3 +18,4 @@ public class AppointmentResponses {
     public static class AppointmentResponse {
         private UUID id;
         private String appointmentNumber;
+        private UUID patientId;
