@@ -15,3 +15,4 @@ public class AuthRequests {
         @Size(min = 3, max = 50)
         private String username;
 
+        @NotBlank(message = "Email is required")
