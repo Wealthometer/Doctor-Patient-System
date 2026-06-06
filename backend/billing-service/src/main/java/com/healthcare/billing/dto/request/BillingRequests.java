@@ -23,3 +23,4 @@ public class BillingRequests {
         @NotNull private LocalDate invoiceDate;
         @NotNull private LocalDate dueDate;
         @NotNull @DecimalMin("0.0") private BigDecimal taxRate;
+        private String insuranceProvider;
