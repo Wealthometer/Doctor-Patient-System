@@ -45,3 +45,4 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.getAppointmentById(id));
     }
 
+    @GetMapping("/patient/{patientId}")
