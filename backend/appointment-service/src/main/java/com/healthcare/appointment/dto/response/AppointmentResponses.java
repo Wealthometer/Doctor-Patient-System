@@ -55,3 +55,4 @@ public class AppointmentResponses {
     public static class AvailableSlot {
         private LocalTime startTime;
         private LocalTime endTime;
+        private boolean available;
