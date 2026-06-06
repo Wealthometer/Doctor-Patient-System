@@ -72,6 +72,7 @@ public class NotificationService {
                 .body(String.format("""
                     Dear %s,
                     
+                    Your appointment has been confirmed.
                 .recipientEmail(email)
                 .body(String.format("""
                     
