@@ -55,3 +55,4 @@ public class AuthService {
                 .role(request.getRole())
                 .build();
 
+        userRepository.save(user);
