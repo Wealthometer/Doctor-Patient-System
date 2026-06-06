@@ -65,3 +65,4 @@ public class AuthController {
         authService.changePassword(user.getId(), request);
         return ResponseEntity.ok(MessageResponse.builder()
                 .message("Password changed successfully")
+                .success(true)
