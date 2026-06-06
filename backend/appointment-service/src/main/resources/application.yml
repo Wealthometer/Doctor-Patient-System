@@ -82,3 +82,4 @@ springdoc:
 
 logging:
   level:
+    com.healthcare.appointment: DEBUG
