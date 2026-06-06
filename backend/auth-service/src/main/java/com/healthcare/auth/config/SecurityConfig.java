@@ -45,3 +45,4 @@ public class SecurityConfig {
                 ).permitAll()
                 .anyRequest().authenticated()
             )
+            .sessionManagement(session ->
