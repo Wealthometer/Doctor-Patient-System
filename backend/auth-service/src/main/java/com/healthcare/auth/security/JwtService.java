@@ -100,3 +100,4 @@ public class JwtService {
 
     private Claims extractAllClaims(String token) {
         return Jwts.parser()
+                .verifyWith(getSignInKey())
