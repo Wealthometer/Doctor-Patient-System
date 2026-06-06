@@ -26,3 +26,4 @@ public class BillingResponses {
         private String department;
         private LocalDate invoiceDate;
         private LocalDate dueDate;
+        private BigDecimal subtotal;
