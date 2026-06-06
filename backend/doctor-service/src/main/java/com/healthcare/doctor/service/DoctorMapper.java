@@ -8,3 +8,4 @@ import org.mapstruct.*;
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface DoctorMapper {
 
+    @Mapping(target = "id", ignore = true)
