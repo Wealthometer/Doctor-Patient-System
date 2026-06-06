@@ -41,5 +41,6 @@ public class NotificationService {
         } catch (Exception e) {
             notification.setStatus(NotificationStatus.FAILED);
             notification.setErrorMessage(e.getMessage());
+            log.error("Failed to send notification to {}: {}", request.getRecipientEmail(), e.getMessage());
         }
 
