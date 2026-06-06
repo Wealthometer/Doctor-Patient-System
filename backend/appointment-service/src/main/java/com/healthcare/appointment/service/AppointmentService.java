@@ -115,3 +115,4 @@ public class AppointmentService {
 
         List<AvailableSlot> slots = new ArrayList<>();
         LocalTime current = start;
+
