@@ -104,3 +104,4 @@ class AuthServiceTest {
                 .isInstanceOf(AuthException.class)
                 .hasMessageContaining("Username already taken");
     }
+
