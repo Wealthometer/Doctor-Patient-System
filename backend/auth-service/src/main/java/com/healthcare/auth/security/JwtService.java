@@ -66,3 +66,4 @@ public class JwtService {
                 .subject(user.getUsername())
                 .issuedAt(new Date(System.currentTimeMillis()))
                 .expiration(new Date(System.currentTimeMillis() + expiration))
+                .signWith(getSignInKey())
