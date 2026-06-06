@@ -34,3 +34,4 @@ public class AuthResponses {
 
     @Data
     @Builder
+    public static class TokenValidationResponse {
