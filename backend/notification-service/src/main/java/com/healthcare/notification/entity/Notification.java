@@ -39,3 +39,4 @@ public class Notification {
     private NotificationChannel channel;
 
     @Enumerated(EnumType.STRING)
+    @Builder.Default
