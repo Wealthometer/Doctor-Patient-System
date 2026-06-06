@@ -21,3 +21,4 @@ public class BillingResponses {
         private UUID patientId;
         private String patientName;
         private UUID appointmentId;
+        private String appointmentNumber;
