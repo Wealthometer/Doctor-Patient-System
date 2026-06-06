@@ -19,3 +19,4 @@ CREATE TABLE users (
     last_login_at TIMESTAMP
 );
 
+CREATE TABLE refresh_tokens (
