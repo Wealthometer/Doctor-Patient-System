@@ -170,3 +170,4 @@ public class AppointmentService {
 
         appointment.setStatus(AppointmentStatus.CANCELLED);
         appointment.setCancellationReason(request.getCancellationReason());
+        appointment.setCancelledAt(LocalDateTime.now());
