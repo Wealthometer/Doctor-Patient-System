@@ -28,3 +28,4 @@ public class GlobalExceptionHandler {
         return pd;
     }
 
+    @ExceptionHandler(UsernameNotFoundException.class)
