@@ -197,3 +197,4 @@ public class BillingService {
                 .id(i.getId())
                 .invoiceNumber(i.getInvoiceNumber())
                 .patientId(i.getPatientId())
+                .patientName(i.getPatientName())
