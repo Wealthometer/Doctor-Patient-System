@@ -30,3 +30,4 @@ public class Appointment {
 
     @Column(nullable = false)
     private UUID doctorId;
+
