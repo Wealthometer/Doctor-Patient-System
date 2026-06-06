@@ -146,3 +146,4 @@ public class AuthService {
         refreshTokenRepository.revokeAllUserTokens(user);
         return MessageResponse.builder()
                 .message("Logged out successfully")
+                .success(true)
