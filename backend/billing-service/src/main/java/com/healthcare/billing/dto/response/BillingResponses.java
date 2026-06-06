@@ -25,3 +25,4 @@ public class BillingResponses {
         private String doctorName;
         private String department;
         private LocalDate invoiceDate;
+        private LocalDate dueDate;
