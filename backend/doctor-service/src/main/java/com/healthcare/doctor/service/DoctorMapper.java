@@ -17,3 +17,4 @@ public interface DoctorMapper {
     @Mapping(target = "updatedAt", ignore = true)
     Doctor toEntity(CreateDoctorRequest request);
 
+    @Mapping(target = "fullName", expression = "java(doctor.getFirstName() + ' ' + doctor.getLastName())")
