@@ -72,3 +72,4 @@ public class DoctorController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<Page<DoctorResponse>> getByDepartment(
             @PathVariable String department,
+        return ResponseEntity.ok(doctorService.getDoctorsByDepartment(department, pageable));
