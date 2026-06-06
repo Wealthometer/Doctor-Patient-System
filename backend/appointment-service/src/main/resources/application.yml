@@ -72,3 +72,4 @@ management:
         include: health,info,metrics,prometheus
   health:
     circuitbreakers:
+      enabled: true
