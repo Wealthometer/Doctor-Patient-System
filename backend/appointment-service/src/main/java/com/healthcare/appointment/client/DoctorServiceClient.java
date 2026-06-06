@@ -35,3 +35,4 @@ public interface DoctorServiceClient {
         @Override
         public DoctorDto getDoctorById(UUID id) {
             return DoctorDto.builder()
+                    .id(id)
