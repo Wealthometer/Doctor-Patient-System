@@ -11,3 +11,4 @@ CREATE TABLE notifications (
     body             TEXT NOT NULL,
     type             VARCHAR(50) NOT NULL,
     channel          VARCHAR(20) NOT NULL DEFAULT 'EMAIL',
+    status           VARCHAR(20) NOT NULL DEFAULT 'PENDING',
