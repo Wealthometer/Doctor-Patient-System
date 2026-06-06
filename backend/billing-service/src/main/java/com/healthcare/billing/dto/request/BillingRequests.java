@@ -38,3 +38,4 @@ public class BillingRequests {
         @NotNull @DecimalMin("0.01") private BigDecimal unitPrice;
     }
 
+    @Data
