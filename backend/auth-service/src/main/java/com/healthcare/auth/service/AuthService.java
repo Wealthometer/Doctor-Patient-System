@@ -35,3 +35,4 @@ public class AuthService {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
 
+    @Value("${application.security.jwt.refresh-token.expiration}")
