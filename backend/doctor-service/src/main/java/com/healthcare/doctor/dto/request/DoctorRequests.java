@@ -13,3 +13,4 @@ public class DoctorRequests {
     public static class CreateDoctorRequest {
         @NotNull
         private UUID userId;
+
