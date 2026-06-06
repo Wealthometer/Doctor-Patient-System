@@ -169,3 +169,4 @@ public class BillingService {
                 .totalInvoices(invoiceRepository.count())
                 .pendingInvoices(invoiceRepository.countByStatus(InvoiceStatus.PENDING))
                 .overdueInvoices(invoiceRepository.countByStatus(InvoiceStatus.OVERDUE))
+                .paidInvoices(invoiceRepository.countByStatus(InvoiceStatus.PAID))
