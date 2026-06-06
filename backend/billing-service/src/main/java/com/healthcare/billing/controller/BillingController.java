@@ -60,3 +60,4 @@ public class BillingController {
     }
 
     @GetMapping("/invoices/status/{status}")
+    @PreAuthorize("hasRole('ADMIN')")
