@@ -56,3 +56,4 @@ public class BillingController {
     public ResponseEntity<Page<InvoiceResponse>> getPatientInvoices(
             @PathVariable UUID patientId,
             @PageableDefault(size = 20, sort = "invoiceDate") Pageable pageable) {
+        return ResponseEntity.ok(billingService.getPatientInvoices(patientId, pageable));
