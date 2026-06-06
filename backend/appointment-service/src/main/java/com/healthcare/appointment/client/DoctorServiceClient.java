@@ -16,3 +16,4 @@ public interface DoctorServiceClient {
     DoctorDto getDoctorById(@PathVariable UUID id);
 
     @Data
+    @Builder
