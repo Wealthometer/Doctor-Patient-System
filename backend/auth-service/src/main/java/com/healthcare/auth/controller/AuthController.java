@@ -42,3 +42,4 @@ public class AuthController {
     }
 
     @GetMapping("/validate")
+    @Operation(summary = "Validate JWT token (used by API Gateway)")
