@@ -15,3 +15,4 @@ public class NotificationRequest {
     private String recipientPhone;
     private String subject;
     private String body;
+    private NotificationType type;
