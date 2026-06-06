@@ -98,6 +98,7 @@ public class NotificationService {
                 .body(String.format("""
                     Dear %s,
                     
+                    Dr. %s has issued a new prescription (%s) for you.
     }
 
     }
