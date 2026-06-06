@@ -76,3 +76,4 @@ public class BillingController {
             @Valid @RequestBody RecordPaymentRequest request) {
         return ResponseEntity.ok(billingService.recordPayment(id, request));
     }
+
