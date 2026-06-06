@@ -193,6 +193,7 @@ public class AppointmentService {
         return toResponse(appointmentRepository.save(a));
     }
 
+    private Appointment findAppointment(UUID id) {
         return appointmentRepository.findById(id)
                 .orElseThrow(() -> new AppointmentNotFoundException("Appointment not found: " + id));
     }
