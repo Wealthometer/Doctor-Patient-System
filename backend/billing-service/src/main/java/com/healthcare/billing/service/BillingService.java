@@ -100,3 +100,4 @@ public class BillingService {
     public Page<InvoiceResponse> getPatientInvoices(UUID patientId, Pageable pageable) {
         return invoiceRepository.findByPatientId(patientId, pageable).map(this::toResponse);
     }
+
