@@ -39,3 +39,4 @@ public class BillingController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
     @Operation(summary = "Get invoice by ID")
     public ResponseEntity<InvoiceResponse> getInvoiceById(@PathVariable UUID id) {
+        return ResponseEntity.ok(billingService.getInvoiceById(id));
