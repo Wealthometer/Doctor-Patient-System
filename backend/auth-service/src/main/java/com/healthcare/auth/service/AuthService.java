@@ -78,3 +78,4 @@ public class AuthService {
         ).orElseThrow(() -> new UsernameNotFoundException("User not found"));
 
         userRepository.updateLastLoginTime(user.getId(), LocalDateTime.now());
+        refreshTokenRepository.revokeAllUserTokens(user);
