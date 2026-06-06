@@ -70,3 +70,4 @@ public class DoctorRequests {
         private String workDays;
         private Integer maxDailyAppointments;
         private String profileImageUrl;
+    }
