@@ -44,3 +44,4 @@ public class AppointmentResponses {
     public static class AppointmentStatsResponse {
         private long totalAppointments;
         private long todayAppointments;
+        private long scheduledAppointments;
