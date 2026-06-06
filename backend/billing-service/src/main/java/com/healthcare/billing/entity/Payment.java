@@ -39,3 +39,4 @@ public class Payment {
     private String notes;
 
     @CreationTimestamp
+    @Column(updatable = false)
