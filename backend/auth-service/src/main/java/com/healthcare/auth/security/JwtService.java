@@ -111,3 +111,4 @@ public class JwtService {
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
+    public long getJwtExpiration() {
