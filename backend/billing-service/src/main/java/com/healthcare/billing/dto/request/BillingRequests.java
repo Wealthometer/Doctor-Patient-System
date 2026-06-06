@@ -20,3 +20,4 @@ public class BillingRequests {
         private UUID doctorId;
         private String doctorName;
         @NotBlank private String department;
+        @NotNull private LocalDate invoiceDate;
