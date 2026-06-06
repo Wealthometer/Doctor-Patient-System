@@ -195,3 +195,4 @@ public class BillingService {
         BigDecimal balance = i.getTotalAmount().subtract(i.getPaidAmount()).max(BigDecimal.ZERO);
         return InvoiceResponse.builder()
                 .id(i.getId())
+                .invoiceNumber(i.getInvoiceNumber())
