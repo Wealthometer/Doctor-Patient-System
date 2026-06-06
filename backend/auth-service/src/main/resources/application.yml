@@ -32,3 +32,4 @@ eureka:
     service-url:
       defaultZone: http://${EUREKA_USERNAME:eureka}:${EUREKA_PASSWORD:eureka-secret}@${EUREKA_HOST:localhost}:8761/eureka/
   instance:
+    prefer-ip-address: true
