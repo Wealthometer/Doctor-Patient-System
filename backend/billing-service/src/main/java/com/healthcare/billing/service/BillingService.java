@@ -55,3 +55,4 @@ public class BillingService {
                 .insuranceCoverage(request.getInsuranceCoverage() != null ? request.getInsuranceCoverage() : BigDecimal.ZERO)
                 .notes(request.getNotes())
                 .subtotal(BigDecimal.ZERO)
+                .taxAmount(BigDecimal.ZERO)
