@@ -6,3 +6,4 @@ spring:
     name: config-server
   cloud:
     config:
+      server:
