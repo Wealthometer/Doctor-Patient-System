@@ -12,3 +12,4 @@ import java.util.UUID;
 @Table(name = "payments")
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class Payment {
+
