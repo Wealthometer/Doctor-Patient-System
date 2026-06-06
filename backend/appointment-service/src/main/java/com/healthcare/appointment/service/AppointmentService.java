@@ -78,3 +78,4 @@ public class AppointmentService {
         Appointment saved = appointmentRepository.save(appointment);
         log.info("Booked appointment: {} for patient {} with doctor {}",
                 saved.getAppointmentNumber(), patientDto.getFirstName(), doctorDto.getFirstName());
+        return toResponse(saved);
