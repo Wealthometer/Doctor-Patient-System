@@ -52,3 +52,4 @@ public class AuthRequests {
     public static class ChangePasswordRequest {
         @NotBlank(message = "Current password is required")
         private String currentPassword;
+
