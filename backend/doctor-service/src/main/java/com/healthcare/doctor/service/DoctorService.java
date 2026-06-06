@@ -38,3 +38,4 @@ public class DoctorService {
         doctor.setDoctorCode(generateDoctorCode());
         Doctor saved = doctorRepository.save(doctor);
         log.info("Created doctor: {} ({})", saved.getDoctorCode(), saved.getEmail());
+        return doctorMapper.toResponse(saved);
