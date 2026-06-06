@@ -40,3 +40,4 @@ public class BillingRequests {
 
     @Data
     public static class RecordPaymentRequest {
+        @NotNull @DecimalMin("0.01") private BigDecimal amount;
