@@ -46,6 +46,7 @@ public class NotificationService {
             notification.setErrorMessage(e.getMessage());
             log.error("Failed to send notification to {}: {}", request.getRecipientEmail(), e.getMessage());
         }
+    }
     private void sendEmail(Notification notification) {
     }
 
