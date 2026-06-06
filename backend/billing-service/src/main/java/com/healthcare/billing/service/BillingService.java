@@ -164,3 +164,4 @@ public class BillingService {
         BigDecimal monthlyRevenue = invoiceRepository.sumPaidAmountBetween(
                 currentMonth.atDay(1), currentMonth.atEndOfMonth());
         BigDecimal outstanding = invoiceRepository.sumOutstandingBalance();
+
