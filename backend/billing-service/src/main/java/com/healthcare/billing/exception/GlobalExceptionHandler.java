@@ -27,3 +27,4 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(InvalidBillingStateException.class)
     public ProblemDetail handleInvalidState(InvalidBillingStateException ex) {
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.CONFLICT, ex.getMessage());
