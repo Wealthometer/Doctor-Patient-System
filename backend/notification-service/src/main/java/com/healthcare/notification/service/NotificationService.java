@@ -33,6 +33,7 @@ public class NotificationService {
 
         try {
             if (notification.getChannel() == NotificationChannel.EMAIL) {
+                sendEmail(notification);
             } else if (notification.getChannel() == NotificationChannel.SMS) {
             }
             notification.setSentAt(LocalDateTime.now());
