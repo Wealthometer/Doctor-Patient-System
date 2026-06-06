@@ -41,3 +41,4 @@ public class Notification {
     @Enumerated(EnumType.STRING)
     @Builder.Default
     private NotificationStatus status = NotificationStatus.PENDING;
+
