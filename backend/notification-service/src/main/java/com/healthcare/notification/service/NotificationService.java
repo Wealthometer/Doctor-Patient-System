@@ -54,6 +54,7 @@ public class NotificationService {
         message.setTo(notification.getRecipientEmail());
         message.setSubject(notification.getSubject());
         message.setText(notification.getBody());
+        message.setFrom("noreply@healthcare.com");
         mailSender.send(message);
     }
 
