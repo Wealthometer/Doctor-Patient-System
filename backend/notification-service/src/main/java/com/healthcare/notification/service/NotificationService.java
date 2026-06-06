@@ -53,3 +53,4 @@ public class NotificationService {
         mailSender.send(message);
     }
 
+        // Integration point for SMS provider (Twilio, AWS SNS, etc.)
