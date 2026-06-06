@@ -36,3 +36,4 @@ public class BillingController {
     }
 
     @GetMapping("/invoices/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
