@@ -21,4 +21,5 @@ CREATE TABLE appointments (
     cancellation_reason  VARCHAR(500),
     cancelled_at         TIMESTAMP,
     confirmed_at         TIMESTAMP,
+    completed_at         TIMESTAMP,
 CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
