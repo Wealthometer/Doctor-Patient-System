@@ -65,3 +65,4 @@ public class AuthService {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
+                            request.getUsernameOrEmail(),
