@@ -66,3 +66,4 @@ public class DoctorRequests {
         private Integer yearsOfExperience;
         private String consultationFee;
         private LocalTime workStartTime;
+        private LocalTime workEndTime;
