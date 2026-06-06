@@ -77,3 +77,4 @@ public class BillingController {
         return ResponseEntity.ok(billingService.recordPayment(id, request));
     }
 
+    @PatchMapping("/invoices/{id}/cancel")
