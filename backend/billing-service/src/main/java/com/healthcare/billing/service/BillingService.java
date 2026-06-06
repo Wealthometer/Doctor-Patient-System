@@ -202,3 +202,4 @@ public class BillingService {
                 .appointmentNumber(i.getAppointmentNumber())
                 .doctorName(i.getDoctorName())
                 .department(i.getDepartment())
+                .invoiceDate(i.getInvoiceDate())
