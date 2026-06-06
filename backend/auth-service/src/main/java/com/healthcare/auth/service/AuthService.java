@@ -89,3 +89,4 @@ public class AuthService {
         RefreshToken storedToken = refreshTokenRepository.findByToken(request.getRefreshToken())
                 .orElseThrow(() -> new AuthException("Refresh token not found"));
 
+        if (storedToken.isRevoked()) {
