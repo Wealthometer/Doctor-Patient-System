@@ -53,3 +53,4 @@ public class Doctor {
     private LocalDate licenseExpiryDate;
 
     @Column(columnDefinition = "TEXT")
+    private String bio;
