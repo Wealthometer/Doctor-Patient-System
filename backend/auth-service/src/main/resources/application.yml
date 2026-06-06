@@ -23,3 +23,4 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
   flyway:
+    enabled: true
