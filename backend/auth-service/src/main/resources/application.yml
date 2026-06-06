@@ -60,3 +60,4 @@ springdoc:
 
 logging:
   level:
+    com.healthcare.auth: DEBUG
