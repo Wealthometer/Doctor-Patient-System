@@ -81,3 +81,4 @@ public class AppointmentService {
         return toResponse(saved);
     }
 
+    @Transactional(readOnly = true)
