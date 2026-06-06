@@ -15,3 +15,4 @@
   <name>config-server</name>
 
   <properties>
+    <java.version>21</java.version>
