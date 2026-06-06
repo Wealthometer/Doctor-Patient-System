@@ -80,3 +80,4 @@ public class BillingService {
         BigDecimal total = subtotal.add(taxAmount).subtract(invoice.getInsuranceCoverage())
                 .max(BigDecimal.ZERO);
 
+        invoice.setSubtotal(subtotal);
