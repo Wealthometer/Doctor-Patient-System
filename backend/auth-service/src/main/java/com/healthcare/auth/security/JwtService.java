@@ -60,3 +60,4 @@ public class JwtService {
         return buildToken(new HashMap<>(), user, refreshExpiration);
     }
 
+    private String buildToken(Map<String, Object> extraClaims, User user, long expiration) {
