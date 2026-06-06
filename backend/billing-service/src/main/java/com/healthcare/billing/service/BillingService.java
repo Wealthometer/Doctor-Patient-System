@@ -40,3 +40,4 @@ public class BillingService {
         // Build line items and calculate subtotal
         BigDecimal subtotal = BigDecimal.ZERO;
         Invoice invoice = Invoice.builder()
+                .invoiceNumber(generateInvoiceNumber(request.getInvoiceDate()))
