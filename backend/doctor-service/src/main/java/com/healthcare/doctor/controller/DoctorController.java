@@ -82,3 +82,4 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.getActiveDoctorsByDepartment(department));
     }
 
+    @GetMapping("/specialization/{specialization}")
