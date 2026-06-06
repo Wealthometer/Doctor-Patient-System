@@ -36,3 +36,4 @@ public class DoctorResponses {
         private String workDays;
         private Integer maxDailyAppointments;
         private String profileImageUrl;
+        private DoctorStatus status;
