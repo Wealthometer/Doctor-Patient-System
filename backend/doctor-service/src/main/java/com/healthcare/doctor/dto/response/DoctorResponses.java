@@ -43,6 +43,7 @@ public class DoctorResponses {
         private LocalDateTime updatedAt;
     }
 
+
     @Builder
         private long totalDoctors;
         private long activeDoctors;
