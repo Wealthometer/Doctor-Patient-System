@@ -36,3 +36,4 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
 
     @Value("${application.security.jwt.refresh-token.expiration}")
+    private long refreshTokenExpiration;
