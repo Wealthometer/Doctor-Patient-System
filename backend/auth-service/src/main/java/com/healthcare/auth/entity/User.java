@@ -75,3 +75,4 @@ public class User implements UserDetails {
     @Column
     private LocalDateTime lastLoginAt;
 
+    @Override
