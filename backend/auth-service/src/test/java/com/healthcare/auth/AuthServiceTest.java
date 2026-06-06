@@ -174,3 +174,4 @@ class AuthServiceTest {
         request.setRefreshToken("validRefreshToken");
 
         RefreshToken storedToken = RefreshToken.builder()
+                .token("validRefreshToken")
