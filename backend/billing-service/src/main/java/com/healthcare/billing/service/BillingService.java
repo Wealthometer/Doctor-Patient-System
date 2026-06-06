@@ -51,3 +51,4 @@ public class BillingService {
                 .invoiceDate(request.getInvoiceDate())
                 .dueDate(request.getDueDate())
                 .taxRate(request.getTaxRate() != null ? request.getTaxRate() : BigDecimal.ZERO)
+                .insuranceProvider(request.getInsuranceProvider() != null ? request.getInsuranceProvider() : "Self-pay")
