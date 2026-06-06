@@ -43,3 +43,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     @Query("SELECT DISTINCT d.department FROM Doctor d WHERE d.status = 'ACTIVE' ORDER BY d.department")
     List<String> findAllActiveDepartments();
 
+    @Query("SELECT DISTINCT d.specialization FROM Doctor d WHERE d.status = 'ACTIVE' ORDER BY d.specialization")
