@@ -157,3 +157,4 @@ class AuthServiceTest {
         assertThat(response.getRole()).isEqualTo(Role.PATIENT);
     }
 
+    @Test
