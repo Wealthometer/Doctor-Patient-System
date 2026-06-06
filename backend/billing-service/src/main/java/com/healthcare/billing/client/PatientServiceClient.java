@@ -16,4 +16,5 @@ public interface PatientServiceClient {
 
     @Data @Builder
     class PatientDto {
+        private UUID id;
         private String firstName;
