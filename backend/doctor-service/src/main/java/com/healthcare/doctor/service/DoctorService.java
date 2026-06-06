@@ -72,3 +72,4 @@ public class DoctorService {
         return doctorRepository.searchDoctors(query, pageable).map(doctorMapper::toResponse);
     }
 
+    @Transactional(readOnly = true)
