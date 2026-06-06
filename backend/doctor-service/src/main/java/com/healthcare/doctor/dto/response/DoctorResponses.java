@@ -40,5 +40,6 @@ public class DoctorResponses {
         private double averageRating;
         private int totalRatings;
         private LocalDateTime createdAt;
+        private LocalDateTime updatedAt;
     }
 
