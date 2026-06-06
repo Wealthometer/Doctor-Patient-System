@@ -77,6 +77,7 @@ public class NotificationService {
                     Doctor: Dr. %s
                     Date & Time: %s
                     
+                    Please arrive 15 minutes early. Bring any previous medical records.
                 .recipientEmail(email)
                 .body(String.format("""
                     
