@@ -39,3 +39,4 @@ public class AppointmentResponses {
         private LocalDateTime updatedAt;
     }
 
+    @Data
