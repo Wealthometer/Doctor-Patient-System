@@ -173,3 +173,4 @@ public class AuthService {
                         .lastName(user.getLastName())
                         .role(user.getRole())
                         .createdAt(user.getCreatedAt())
+                        .build())
