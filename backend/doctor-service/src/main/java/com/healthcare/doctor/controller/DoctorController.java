@@ -105,4 +105,5 @@ public class DoctorController {
             @RequestParam DoctorStatus status) {
         return ResponseEntity.ok(doctorService.updateDoctorStatus(id, status));
     }
+
     @PostMapping("/{id}/ratings")
