@@ -112,3 +112,4 @@ public class BillingService {
     }
 
     public InvoiceResponse recordPayment(UUID invoiceId, RecordPaymentRequest request) {
+        Invoice invoice = invoiceRepository.findById(invoiceId)
