@@ -65,3 +65,4 @@ public class Invoice {
     @Column(nullable = false)
     private String insuranceProvider;
 
+    @Column(precision = 10, scale = 2)
