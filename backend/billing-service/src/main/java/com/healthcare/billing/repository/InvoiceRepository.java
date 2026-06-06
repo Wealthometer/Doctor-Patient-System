@@ -30,3 +30,4 @@ public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
 
     @Query("SELECT SUM(i.totalAmount - i.paidAmount) FROM Invoice i WHERE i.status IN ('PENDING','PARTIALLY_PAID','OVERDUE')")
     BigDecimal sumOutstandingBalance();
+
