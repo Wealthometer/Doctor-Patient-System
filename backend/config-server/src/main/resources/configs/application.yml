@@ -24,3 +24,4 @@ management:
     health:
       show-details: always
 
+spring:
