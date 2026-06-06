@@ -120,3 +120,4 @@ public class AuthService {
         return TokenValidationResponse.builder()
                 .valid(true)
                 .userId(user.getId())
+                .username(user.getUsername())
