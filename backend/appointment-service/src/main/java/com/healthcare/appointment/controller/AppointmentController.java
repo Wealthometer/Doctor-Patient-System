@@ -39,3 +39,4 @@ public class AppointmentController {
                 .body(appointmentService.bookAppointment(request));
     }
 
+    @GetMapping("/{id}")
