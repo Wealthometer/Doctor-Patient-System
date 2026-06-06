@@ -23,3 +23,4 @@ public class JwtService {
     private String secretKey;
 
     @Value("${application.security.jwt.expiration}")
+    private long jwtExpiration;
