@@ -10,3 +10,4 @@ CREATE TABLE appointments (
     doctor_id            UUID NOT NULL,
     doctor_name          VARCHAR(200) NOT NULL,
     department           VARCHAR(200) NOT NULL,
+    appointment_date     DATE NOT NULL,
