@@ -34,3 +34,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
         SELECT a FROM Appointment a WHERE a.doctorId = :doctorId
         AND a.appointmentDate = :date
         AND a.status NOT IN ('CANCELLED', 'NO_SHOW')
+        AND ((a.startTime < :endTime AND a.endTime > :startTime))
