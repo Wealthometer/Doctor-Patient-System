@@ -161,3 +161,4 @@ public class BillingService {
     @Transactional(readOnly = true)
     public BillingStatsResponse getStats() {
         YearMonth currentMonth = YearMonth.now();
+        BigDecimal monthlyRevenue = invoiceRepository.sumPaidAmountBetween(
