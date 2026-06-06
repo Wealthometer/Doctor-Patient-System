@@ -83,3 +83,4 @@ public class BillingController {
     public ResponseEntity<InvoiceResponse> cancelInvoice(@PathVariable UUID id) {
         return ResponseEntity.ok(billingService.cancelInvoice(id));
     }
+
