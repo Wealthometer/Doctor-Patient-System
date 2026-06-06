@@ -70,3 +70,4 @@ public class JwtService {
                 .compact();
     }
 
+    public boolean isTokenValid(String token, User user) {
