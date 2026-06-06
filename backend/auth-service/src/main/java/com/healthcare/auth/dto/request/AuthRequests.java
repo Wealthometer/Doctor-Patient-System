@@ -50,3 +50,4 @@ public class AuthRequests {
 
     @Data
     public static class ChangePasswordRequest {
+        @NotBlank(message = "Current password is required")
