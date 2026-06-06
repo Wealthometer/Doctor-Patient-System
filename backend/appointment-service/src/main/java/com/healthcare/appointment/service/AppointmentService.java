@@ -175,3 +175,4 @@ public class AppointmentService {
         return toResponse(appointmentRepository.save(appointment));
     }
 
+    @Transactional(readOnly = true)
