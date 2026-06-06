@@ -70,3 +70,4 @@ public class User implements UserDetails {
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
+    private LocalDateTime updatedAt;
