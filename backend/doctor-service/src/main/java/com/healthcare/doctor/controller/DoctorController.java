@@ -55,3 +55,4 @@ public class DoctorController {
 
     @GetMapping
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
+            @PageableDefault(size = 20, sort = "lastName") Pageable pageable) {
