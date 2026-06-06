@@ -29,3 +29,4 @@ CREATE TABLE appointments (
 CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
 CREATE INDEX idx_appt_doctor_id     ON appointments(doctor_id);
 CREATE INDEX idx_appt_date          ON appointments(appointment_date);
+CREATE INDEX idx_appt_status        ON appointments(status);
