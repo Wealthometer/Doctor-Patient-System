@@ -57,3 +57,4 @@ public class BillingService {
                 .subtotal(BigDecimal.ZERO)
                 .taxAmount(BigDecimal.ZERO)
                 .totalAmount(BigDecimal.ZERO)
+                .build();
