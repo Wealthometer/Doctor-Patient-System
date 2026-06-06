@@ -190,6 +190,7 @@ public class AppointmentService {
                                              java.util.function.Consumer<Appointment> validator) {
         Appointment a = findAppointment(id);
         validator.accept(a);
+        a.setStatus(status);
         return toResponse(appointmentRepository.save(a));
     }
 
