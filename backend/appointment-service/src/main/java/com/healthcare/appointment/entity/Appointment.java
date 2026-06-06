@@ -38,3 +38,4 @@ public class Appointment {
     private String department;
 
     @Column(nullable = false)
+    private LocalDate appointmentDate;
