@@ -71,3 +71,4 @@ public class BillingService {
                     .quantity(itemReq.getQuantity() != null ? itemReq.getQuantity() : 1)
                     .unitPrice(itemReq.getUnitPrice())
                     .totalPrice(lineTotal)
+                    .build();
