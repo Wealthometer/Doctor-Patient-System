@@ -27,3 +27,4 @@ public interface DoctorMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "userId", ignore = true)
     @Mapping(target = "doctorCode", ignore = true)
+    @Mapping(target = "email", ignore = true)
