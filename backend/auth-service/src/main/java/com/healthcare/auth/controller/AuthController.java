@@ -54,3 +54,4 @@ public class AuthController {
     @Operation(summary = "Logout - revoke refresh tokens")
     public ResponseEntity<MessageResponse> logout(@AuthenticationPrincipal User user) {
         return ResponseEntity.ok(authService.logout(user.getId()));
+    }
