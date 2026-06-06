@@ -35,3 +35,4 @@ public class BillingRequests {
         @NotBlank private String description;
         @NotBlank private String serviceCode;
         @Min(1) private Integer quantity;
+        @NotNull @DecimalMin("0.01") private BigDecimal unitPrice;
