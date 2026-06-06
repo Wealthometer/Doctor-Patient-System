@@ -178,3 +178,4 @@ public class BillingService {
     // Mark overdue invoices daily at 1 AM
     @Scheduled(cron = "0 0 1 * * *")
     public void markOverdueInvoices() {
+        List<Invoice> overdue = invoiceRepository.findByStatusAndDueDateBefore(
