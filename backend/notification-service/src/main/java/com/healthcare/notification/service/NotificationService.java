@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+    public void sendBillingInvoice(String email, String patientName,
                                    String invoiceNumber, String amount, String dueDate) {
         NotificationRequest req = NotificationRequest.builder()
                 .recipientEmail(email)
