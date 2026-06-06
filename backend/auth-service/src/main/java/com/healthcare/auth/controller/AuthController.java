@@ -49,3 +49,4 @@ public class AuthController {
         return ResponseEntity.ok(authService.validateToken(token));
     }
 
+    @PostMapping("/logout")
