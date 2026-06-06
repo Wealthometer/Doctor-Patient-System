@@ -30,3 +30,4 @@ import java.util.concurrent.atomic.AtomicLong;
 @RequiredArgsConstructor
 @Slf4j
 @Transactional
+public class AppointmentService {
