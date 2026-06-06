@@ -90,3 +90,4 @@ public class AuthService {
                 .orElseThrow(() -> new AuthException("Refresh token not found"));
 
         if (storedToken.isRevoked()) {
+            throw new AuthException("Refresh token has been revoked");
