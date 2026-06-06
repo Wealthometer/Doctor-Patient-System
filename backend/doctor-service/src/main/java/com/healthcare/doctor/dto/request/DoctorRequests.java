@@ -72,3 +72,4 @@ public class DoctorRequests {
         private String profileImageUrl;
     }
 
+    @Data
