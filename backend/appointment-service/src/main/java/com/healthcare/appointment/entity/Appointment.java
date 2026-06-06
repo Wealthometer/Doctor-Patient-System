@@ -63,3 +63,4 @@ public class Appointment {
     @Column(columnDefinition = "TEXT")
     private String diagnosisSummary;
 
+    private String cancellationReason;
