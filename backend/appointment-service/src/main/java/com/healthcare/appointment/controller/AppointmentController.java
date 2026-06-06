@@ -103,3 +103,4 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT', 'NURSE')")
     public ResponseEntity<AppointmentResponse> cancel(
             @PathVariable UUID id,
+            @Valid @RequestBody CancelAppointmentRequest request) {
