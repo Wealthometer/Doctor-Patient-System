@@ -27,3 +27,4 @@ public class DoctorResponses {
         private String department;
         private String licenseNumber;
         private LocalDate licenseExpiryDate;
+        private String bio;
