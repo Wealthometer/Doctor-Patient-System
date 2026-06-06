@@ -133,3 +133,4 @@ public class BillingService {
                 .method(request.getMethod())
                 .transactionId(request.getTransactionId())
                 .notes(request.getNotes())
+                .build();
