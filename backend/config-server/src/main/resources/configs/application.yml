@@ -34,3 +34,4 @@ spring:
       hibernate:
         jdbc:
           batch_size: 20
+        order_inserts: true
