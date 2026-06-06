@@ -50,3 +50,4 @@ public class GlobalExceptionHandler {
         pd.setTitle("Validation Error");
         pd.setProperty("errors", errors);
         pd.setProperty("timestamp", Instant.now());
+        return pd;
