@@ -71,3 +71,4 @@ public class Invoice {
 
     @Enumerated(EnumType.STRING)
     @Builder.Default
+    private InvoiceStatus status = InvoiceStatus.PENDING;
