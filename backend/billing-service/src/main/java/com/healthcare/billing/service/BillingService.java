@@ -96,3 +96,4 @@ public class BillingService {
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found: " + id));
     }
 
+    @Transactional(readOnly = true)
