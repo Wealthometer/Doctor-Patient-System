@@ -64,3 +64,4 @@ public class JwtService {
         return Jwts.builder()
                 .claims(extraClaims)
                 .subject(user.getUsername())
+                .issuedAt(new Date(System.currentTimeMillis()))
