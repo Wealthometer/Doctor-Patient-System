@@ -54,3 +54,4 @@ public class AppointmentResponses {
     @Builder
     public static class AvailableSlot {
         private LocalTime startTime;
+        private LocalTime endTime;
