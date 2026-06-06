@@ -59,3 +59,4 @@ springdoc:
     path: /swagger-ui.html
 
 logging:
+  level:
