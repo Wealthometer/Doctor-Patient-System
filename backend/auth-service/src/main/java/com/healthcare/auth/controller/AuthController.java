@@ -21,3 +21,4 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "Authentication", description = "Auth management APIs")
 public class AuthController {
 
+    private final AuthService authService;
