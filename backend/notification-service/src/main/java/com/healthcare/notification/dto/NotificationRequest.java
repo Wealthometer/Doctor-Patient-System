@@ -16,3 +16,4 @@ public class NotificationRequest {
     private String subject;
     private String body;
     private NotificationType type;
+    private NotificationChannel channel;
