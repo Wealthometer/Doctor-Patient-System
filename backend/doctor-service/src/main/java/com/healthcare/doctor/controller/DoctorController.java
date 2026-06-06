@@ -107,5 +107,6 @@ public class DoctorController {
     }
 
     @PostMapping("/{id}/ratings")
+    public ResponseEntity<DoctorResponse> submitRating(
             @PathVariable UUID id,
             @Valid @RequestBody RatingRequest request) {
