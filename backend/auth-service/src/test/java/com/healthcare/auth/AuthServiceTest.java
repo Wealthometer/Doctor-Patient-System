@@ -170,3 +170,4 @@ class AuthServiceTest {
     @Test
     @DisplayName("Should refresh token when valid refresh token provided")
     void refreshToken_ShouldReturnNewTokens_WhenValidRefreshToken() {
+        RefreshTokenRequest request = new RefreshTokenRequest();
