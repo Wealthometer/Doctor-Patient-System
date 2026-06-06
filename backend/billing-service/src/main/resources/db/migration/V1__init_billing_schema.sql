@@ -49,3 +49,4 @@ CREATE TABLE payments (
     created_at        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE INDEX idx_invoices_patient_id ON invoices(patient_id);
