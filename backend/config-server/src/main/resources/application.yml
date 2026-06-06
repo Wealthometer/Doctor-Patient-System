@@ -20,3 +20,4 @@ eureka:
     prefer-ip-address: true
 
 management:
+  endpoints:
