@@ -35,6 +35,7 @@ public class NotificationService {
             if (notification.getChannel() == NotificationChannel.EMAIL) {
                 sendEmail(notification);
             } else if (notification.getChannel() == NotificationChannel.SMS) {
+                sendSms(notification);
             }
             notification.setSentAt(LocalDateTime.now());
         } catch (Exception e) {
