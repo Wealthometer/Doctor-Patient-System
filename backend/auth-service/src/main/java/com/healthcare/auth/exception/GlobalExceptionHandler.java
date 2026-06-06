@@ -33,3 +33,4 @@ public class GlobalExceptionHandler {
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, ex.getMessage());
         pd.setTitle("User Not Found");
         pd.setProperty("timestamp", Instant.now());
+        return pd;
