@@ -80,3 +80,4 @@ public class AuthController {
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
                 .role(user.getRole())
+                .createdAt(user.getCreatedAt())
