@@ -49,3 +49,4 @@ public class AppointmentRequests {
         private String diagnosisSummary;
     }
 
+    @Data
