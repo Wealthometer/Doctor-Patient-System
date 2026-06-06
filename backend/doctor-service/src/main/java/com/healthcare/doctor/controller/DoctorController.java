@@ -38,3 +38,4 @@ public class DoctorController {
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<DoctorResponse> getDoctorById(@PathVariable UUID id) {
+        return ResponseEntity.ok(doctorService.getDoctorById(id));
