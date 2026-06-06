@@ -51,3 +51,4 @@ public class AuthController {
 
     @PostMapping("/logout")
     @SecurityRequirement(name = "bearerAuth")
+    @Operation(summary = "Logout - revoke refresh tokens")
