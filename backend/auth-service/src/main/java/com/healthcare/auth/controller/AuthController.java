@@ -39,3 +39,4 @@ public class AuthController {
     @Operation(summary = "Refresh access token")
     public ResponseEntity<AuthResponse> refreshToken(@Valid @RequestBody RefreshTokenRequest request) {
         return ResponseEntity.ok(authService.refreshToken(request));
+    }
