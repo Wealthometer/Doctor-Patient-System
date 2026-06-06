@@ -51,3 +51,4 @@
       <artifactId>spring-cloud-starter-config</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.postgresql</groupId>
