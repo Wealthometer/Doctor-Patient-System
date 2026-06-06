@@ -72,3 +72,4 @@ public class BillingService {
                     .unitPrice(itemReq.getUnitPrice())
                     .totalPrice(lineTotal)
                     .build();
+            invoice.getLineItems().add(item);
