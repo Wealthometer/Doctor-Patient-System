@@ -53,4 +53,5 @@ public class GlobalExceptionHandler {
         return pd;
     }
 
+    @ExceptionHandler(Exception.class)
     public ProblemDetail handleGeneric(Exception ex) {
