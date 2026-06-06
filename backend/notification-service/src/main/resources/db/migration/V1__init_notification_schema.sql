@@ -13,3 +13,4 @@ CREATE TABLE notifications (
     channel          VARCHAR(20) NOT NULL DEFAULT 'EMAIL',
     status           VARCHAR(20) NOT NULL DEFAULT 'PENDING',
     error_message    TEXT,
+    sent_at          TIMESTAMP,
