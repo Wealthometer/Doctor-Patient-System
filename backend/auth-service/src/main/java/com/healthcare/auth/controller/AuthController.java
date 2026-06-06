@@ -72,3 +72,4 @@ public class AuthController {
     @GetMapping("/me")
     @SecurityRequirement(name = "bearerAuth")
     @Operation(summary = "Get current user info")
+    public ResponseEntity<UserInfo> getCurrentUser(@AuthenticationPrincipal User user) {
