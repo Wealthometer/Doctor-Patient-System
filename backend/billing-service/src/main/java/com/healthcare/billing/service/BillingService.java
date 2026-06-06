@@ -81,3 +81,4 @@ public class BillingService {
                 .max(BigDecimal.ZERO);
 
         invoice.setSubtotal(subtotal);
+        invoice.setTaxAmount(taxAmount);
