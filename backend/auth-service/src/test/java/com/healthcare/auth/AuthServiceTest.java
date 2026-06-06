@@ -162,3 +162,4 @@ class AuthServiceTest {
     void validateToken_ShouldReturnInvalid_WhenTokenExpired() {
         when(jwtService.isTokenValid("expiredToken")).thenReturn(false);
 
+        TokenValidationResponse response = authService.validateToken("expiredToken");
