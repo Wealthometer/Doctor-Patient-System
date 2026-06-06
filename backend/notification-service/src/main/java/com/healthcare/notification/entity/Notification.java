@@ -11,3 +11,4 @@ import java.util.UUID;
 @Table(name = "notifications")
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class Notification {
+
