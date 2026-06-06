@@ -43,6 +43,7 @@ public class DoctorResponses {
         private LocalDateTime updatedAt;
     }
 
+        private String doctorCode;
         private String fullName;
         private String specialization;
         private String department;
