@@ -6,3 +6,4 @@ import com.healthcare.doctor.entity.Doctor;
 import org.mapstruct.*;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+public interface DoctorMapper {
