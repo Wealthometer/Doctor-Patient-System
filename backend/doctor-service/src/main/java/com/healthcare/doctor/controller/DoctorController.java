@@ -42,3 +42,4 @@ public class DoctorController {
     }
 
     @GetMapping("/user/{userId}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
