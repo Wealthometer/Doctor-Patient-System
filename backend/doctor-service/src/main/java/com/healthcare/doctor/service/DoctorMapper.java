@@ -5,3 +5,4 @@ import com.healthcare.doctor.dto.response.DoctorResponses.*;
 import com.healthcare.doctor.entity.Doctor;
 import org.mapstruct.*;
 
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
