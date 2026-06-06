@@ -70,3 +70,4 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.getDoctorAppointmentsByDate(doctorId, date, pageable));
     }
 
+    @GetMapping("/doctor/{doctorId}/slots")
