@@ -23,3 +23,4 @@ public interface DoctorMapper {
     @Mapping(target = "fullName", expression = "java(doctor.getFirstName() + ' ' + doctor.getLastName())")
     DoctorSummaryResponse toSummary(Doctor doctor);
 
+    @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
