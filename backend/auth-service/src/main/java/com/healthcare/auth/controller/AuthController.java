@@ -24,3 +24,4 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/register")
+    @Operation(summary = "Register a new user")
