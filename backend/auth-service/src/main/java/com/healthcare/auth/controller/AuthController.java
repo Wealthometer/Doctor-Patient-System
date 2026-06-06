@@ -56,3 +56,4 @@ public class AuthController {
         return ResponseEntity.ok(authService.logout(user.getId()));
     }
 
+    @PutMapping("/change-password")
