@@ -20,3 +20,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return userRepository.findByUsernameOrEmail(usernameOrEmail, usernameOrEmail)
                 .orElseThrow(() ->
                         new UsernameNotFoundException("User not found with username or email: " + usernameOrEmail)
+                );
