@@ -65,3 +65,4 @@ resilience4j:
         waitDurationInOpenState: 10s
         failureRateThreshold: 50
 
+management:
