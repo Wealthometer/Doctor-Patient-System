@@ -62,3 +62,4 @@ public class JwtService {
 
     private String buildToken(Map<String, Object> extraClaims, User user, long expiration) {
         return Jwts.builder()
+                .claims(extraClaims)
