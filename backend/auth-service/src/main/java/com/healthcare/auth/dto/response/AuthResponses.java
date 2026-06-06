@@ -18,3 +18,4 @@ public class AuthResponses {
         private String tokenType = "Bearer";
         private long expiresIn;
         private UserInfo user;
+    }
