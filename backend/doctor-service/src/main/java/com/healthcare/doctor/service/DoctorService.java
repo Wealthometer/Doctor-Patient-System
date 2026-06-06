@@ -61,3 +61,4 @@ public class DoctorService {
                 .map(doctorMapper::toResponse)
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found with code: " + code));
     }
+
