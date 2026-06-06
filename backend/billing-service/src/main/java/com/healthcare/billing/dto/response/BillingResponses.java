@@ -39,3 +39,4 @@ public class BillingResponses {
         private List<LineItemResponse> lineItems;
         private List<PaymentResponse> payments;
         private LocalDateTime createdAt;
+    }
