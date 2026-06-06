@@ -38,3 +38,4 @@ public class Invoice {
 
     @Column(nullable = false)
     private String department;
+
