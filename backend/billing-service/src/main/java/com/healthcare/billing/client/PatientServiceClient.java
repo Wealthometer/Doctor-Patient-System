@@ -29,3 +29,4 @@ public interface PatientServiceClient {
             return PatientDto.builder().id(id).firstName("Unknown").lastName("Patient").build();
         }
     }
+}
