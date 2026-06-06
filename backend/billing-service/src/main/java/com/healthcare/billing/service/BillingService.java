@@ -165,3 +165,4 @@ public class BillingService {
                 currentMonth.atDay(1), currentMonth.atEndOfMonth());
         BigDecimal outstanding = invoiceRepository.sumOutstandingBalance();
 
+        return BillingStatsResponse.builder()
