@@ -188,3 +188,4 @@ public class AppointmentService {
 
     private AppointmentResponse updateStatus(UUID id, AppointmentStatus status,
                                              java.util.function.Consumer<Appointment> validator) {
+        Appointment a = findAppointment(id);
