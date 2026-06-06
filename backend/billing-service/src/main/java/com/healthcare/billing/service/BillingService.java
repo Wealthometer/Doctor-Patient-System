@@ -43,3 +43,4 @@ public class BillingService {
                 .invoiceNumber(generateInvoiceNumber(request.getInvoiceDate()))
                 .patientId(request.getPatientId())
                 .patientName(patient.getFirstName() + " " + patient.getLastName())
+                .appointmentId(request.getAppointmentId())
