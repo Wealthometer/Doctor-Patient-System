@@ -74,3 +74,4 @@ public class AppointmentService {
                 .notes(request.getNotes())
                 .status(AppointmentStatus.SCHEDULED)
                 .build();
+
