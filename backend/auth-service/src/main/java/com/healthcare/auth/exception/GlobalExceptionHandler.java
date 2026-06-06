@@ -36,3 +36,4 @@ public class GlobalExceptionHandler {
         return pd;
     }
 
+    @ExceptionHandler(BadCredentialsException.class)
