@@ -76,3 +76,4 @@ public class DoctorRequests {
     public static class RatingRequest {
         @NotNull @Min(1) @Max(5)
         private Integer rating;
+        private String comment;
