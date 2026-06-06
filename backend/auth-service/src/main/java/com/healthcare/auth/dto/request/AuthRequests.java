@@ -24,3 +24,4 @@ public class AuthRequests {
         private String password;
 
         @NotBlank(message = "First name is required")
+        private String firstName;
