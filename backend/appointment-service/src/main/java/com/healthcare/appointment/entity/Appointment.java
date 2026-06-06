@@ -41,3 +41,4 @@ public class Appointment {
     private LocalDate appointmentDate;
 
     @Column(nullable = false)
+    private LocalTime startTime;
