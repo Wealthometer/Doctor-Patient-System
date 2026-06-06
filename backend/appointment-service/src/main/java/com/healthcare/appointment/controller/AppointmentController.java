@@ -44,3 +44,4 @@ public class AppointmentController {
     public ResponseEntity<AppointmentResponse> getById(@PathVariable UUID id) {
         return ResponseEntity.ok(appointmentService.getAppointmentById(id));
     }
+
