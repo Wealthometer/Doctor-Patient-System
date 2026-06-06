@@ -6,3 +6,4 @@ CREATE TABLE appointments (
     id                   UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     appointment_number   VARCHAR(30) NOT NULL UNIQUE,
     patient_id           UUID NOT NULL,
+    patient_name         VARCHAR(200) NOT NULL,
