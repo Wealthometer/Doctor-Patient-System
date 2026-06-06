@@ -104,6 +104,7 @@ public class NotificationService {
                     and take your medications as prescribed.
                     
                     Regards,
+                    HealthCare+ Team
     }
 
     }
