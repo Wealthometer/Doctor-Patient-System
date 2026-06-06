@@ -60,3 +60,4 @@ public class AuthController {
     @SecurityRequirement(name = "bearerAuth")
     @Operation(summary = "Change password")
     public ResponseEntity<MessageResponse> changePassword(
+            @AuthenticationPrincipal User user,
