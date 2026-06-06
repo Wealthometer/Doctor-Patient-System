@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                                   String invoiceNumber, String amount, String dueDate) {
         NotificationRequest req = NotificationRequest.builder()
                 .recipientEmail(email)
                 .subject("Invoice " + invoiceNumber + " - HealthCare+")
