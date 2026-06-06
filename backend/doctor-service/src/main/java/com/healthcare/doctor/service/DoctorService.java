@@ -86,3 +86,4 @@ public class DoctorService {
     public List<DoctorSummaryResponse> getActiveDoctorsByDepartment(String department) {
         return doctorRepository.findByDepartmentAndStatus(department, DoctorStatus.ACTIVE)
                 .stream().map(doctorMapper::toSummary).toList();
+    }
