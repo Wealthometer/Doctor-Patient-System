@@ -9,3 +9,4 @@ import java.util.UUID;
 
 @Data
 @Builder
+public class NotificationRequest {
