@@ -31,3 +31,4 @@ public class AuthController {
 
     @PostMapping("/login")
     @Operation(summary = "Login with credentials")
+        return ResponseEntity.ok(authService.login(request));
