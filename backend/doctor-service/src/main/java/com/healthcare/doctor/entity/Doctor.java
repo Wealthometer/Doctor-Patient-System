@@ -59,3 +59,4 @@ public class Doctor {
 
     private Integer yearsOfExperience;
 
+    private String consultationFee;
