@@ -179,3 +179,4 @@ public class AppointmentService {
     public AppointmentStatsResponse getStats() {
         return AppointmentStatsResponse.builder()
                 .totalAppointments(appointmentRepository.count())
+                .todayAppointments(appointmentRepository.countByAppointmentDate(LocalDate.now()))
