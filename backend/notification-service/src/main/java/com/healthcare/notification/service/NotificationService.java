@@ -15,3 +15,4 @@ import java.time.LocalDateTime;
 
 @Service
 @RequiredArgsConstructor
+public class NotificationService {
