@@ -34,3 +34,4 @@ CREATE TABLE invoice_line_items (
     service_code VARCHAR(50)  NOT NULL,
     quantity     INT          NOT NULL DEFAULT 1,
     unit_price   DECIMAL(10,2) NOT NULL,
+    total_price  DECIMAL(10,2) NOT NULL
