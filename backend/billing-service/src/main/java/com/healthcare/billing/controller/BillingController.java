@@ -26,3 +26,4 @@ import java.util.UUID;
 @Tag(name = "Billing", description = "Billing and invoice management APIs")
 public class BillingController {
 
+    private final BillingService billingService;
