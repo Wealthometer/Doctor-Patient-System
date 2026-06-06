@@ -18,6 +18,7 @@ import java.time.LocalDateTime;
 @Slf4j
 public class NotificationService {
     private final JavaMailSender mailSender;
+
     @Async
     public void sendNotification(NotificationRequest request) {
                 .recipientId(request.getRecipientId())
