@@ -178,3 +178,4 @@ class AuthServiceTest {
                 .user(testUser)
                 .expiryDate(Instant.now().plusSeconds(3600))
                 .revoked(false)
+                .build();
