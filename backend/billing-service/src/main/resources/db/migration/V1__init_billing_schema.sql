@@ -43,3 +43,4 @@ CREATE TABLE payments (
     payment_reference VARCHAR(30)   NOT NULL UNIQUE,
     amount            DECIMAL(10,2) NOT NULL,
     method            VARCHAR(20)   NOT NULL,
+    status            VARCHAR(20)   NOT NULL DEFAULT 'COMPLETED',
