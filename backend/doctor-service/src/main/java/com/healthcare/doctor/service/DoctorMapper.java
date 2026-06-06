@@ -29,3 +29,4 @@ public interface DoctorMapper {
     @Mapping(target = "doctorCode", ignore = true)
     @Mapping(target = "email", ignore = true)
     @Mapping(target = "licenseNumber", ignore = true)
+    @Mapping(target = "status", ignore = true)
