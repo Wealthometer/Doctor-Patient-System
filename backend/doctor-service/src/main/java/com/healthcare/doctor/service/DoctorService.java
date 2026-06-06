@@ -26,3 +26,4 @@ public class DoctorService {
     private final DoctorRepository doctorRepository;
     private final DoctorMapper doctorMapper;
 
+    public DoctorResponse createDoctor(CreateDoctorRequest request) {
