@@ -14,3 +14,4 @@ import java.util.UUID;
 public class AppointmentResponses {
 
     @Data
+    @Builder
