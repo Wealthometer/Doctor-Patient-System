@@ -175,3 +175,4 @@ public class AuthService {
                         .createdAt(user.getCreatedAt())
                         .build())
                 .build();
+    }
