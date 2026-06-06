@@ -13,3 +13,4 @@ public interface DoctorMapper {
     @Mapping(target = "status", ignore = true)
     @Mapping(target = "averageRating", ignore = true)
     @Mapping(target = "totalRatings", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
