@@ -36,3 +36,4 @@ public class AppointmentController {
     public ResponseEntity<AppointmentResponse> bookAppointment(
             @Valid @RequestBody BookAppointmentRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED)
+                .body(appointmentService.bookAppointment(request));
