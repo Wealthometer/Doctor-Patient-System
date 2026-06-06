@@ -158,3 +158,4 @@ public class BillingService {
         return toResponse(invoiceRepository.save(invoice));
     }
 
+    @Transactional(readOnly = true)
