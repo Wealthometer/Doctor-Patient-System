@@ -64,3 +64,4 @@ public class Appointment {
     private String diagnosisSummary;
 
     private String cancellationReason;
+
