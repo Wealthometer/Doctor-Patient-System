@@ -42,3 +42,4 @@ public class DoctorRequests {
         @Min(0) @Max(60)
         private Integer yearsOfExperience;
 
+        private String consultationFee;
