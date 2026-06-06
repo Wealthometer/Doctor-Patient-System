@@ -33,3 +33,4 @@ management:
 logging:
   level:
     com.netflix.eureka: WARN
+    com.netflix.discovery: WARN
