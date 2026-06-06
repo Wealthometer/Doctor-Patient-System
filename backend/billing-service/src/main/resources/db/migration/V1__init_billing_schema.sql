@@ -14,3 +14,4 @@ CREATE TABLE invoices (
     department           VARCHAR(200) NOT NULL,
     invoice_date         DATE NOT NULL,
     due_date             DATE NOT NULL,
+    subtotal             DECIMAL(10,2) NOT NULL DEFAULT 0.00,
