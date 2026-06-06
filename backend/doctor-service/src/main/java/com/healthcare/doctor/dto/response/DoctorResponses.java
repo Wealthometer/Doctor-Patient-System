@@ -24,3 +24,4 @@ public class DoctorResponses {
         private String email;
         private String phone;
         private String specialization;
+        private String department;
