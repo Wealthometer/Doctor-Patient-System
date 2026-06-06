@@ -47,3 +47,4 @@ public class Appointment {
     private LocalTime endTime;
 
     @Enumerated(EnumType.STRING)
+    @Builder.Default
