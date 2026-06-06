@@ -61,3 +61,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
             @Param("doctorId") UUID doctorId,
             @Param("patientId") UUID patientId,
             @Param("status") AppointmentStatus status,
+            Pageable pageable);
