@@ -60,3 +60,4 @@ public class GlobalExceptionHandler {
         pd.setTitle("Internal Server Error");
         pd.setProperty("timestamp", Instant.now());
         return pd;
+    }
