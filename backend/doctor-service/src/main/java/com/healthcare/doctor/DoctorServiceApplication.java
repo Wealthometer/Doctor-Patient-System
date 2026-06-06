@@ -10,3 +10,4 @@ public class DoctorServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(DoctorServiceApplication.class, args);
     }
+}
