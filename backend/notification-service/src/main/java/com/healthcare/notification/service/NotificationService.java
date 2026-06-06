@@ -86,6 +86,7 @@ public class NotificationService {
                     """, patientName, doctorName, dateTime))
                 .type(NotificationType.APPOINTMENT_CONFIRMED)
                 .channel(NotificationChannel.EMAIL)
+                .build();
                 .recipientEmail(email)
                 .body(String.format("""
                     
