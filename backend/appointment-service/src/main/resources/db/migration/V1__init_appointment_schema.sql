@@ -12,3 +12,4 @@ CREATE TABLE appointments (
     department           VARCHAR(200) NOT NULL,
     appointment_date     DATE NOT NULL,
     start_time           TIME NOT NULL,
+    end_time             TIME NOT NULL,
