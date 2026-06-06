@@ -89,3 +89,4 @@ class AuthServiceTest {
 
     @Test
     @DisplayName("Should throw exception when username is taken")
+    void register_ShouldThrow_WhenUsernameExists() {
