@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                .body(String.format("""
                     Dear %s,
                     
                     A new invoice has been generated for your recent visit.
