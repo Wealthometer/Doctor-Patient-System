@@ -41,3 +41,4 @@ public class AppointmentService {
         // Validate no time conflicts
         List<Appointment> conflicts = appointmentRepository.findConflictingAppointments(
                 request.getDoctorId(), request.getAppointmentDate(),
+                request.getStartTime(), request.getEndTime());
