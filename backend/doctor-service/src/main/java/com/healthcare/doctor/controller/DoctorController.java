@@ -41,3 +41,4 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.getDoctorById(id));
     }
 
+    @GetMapping("/user/{userId}")
