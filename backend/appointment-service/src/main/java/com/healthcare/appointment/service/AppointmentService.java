@@ -183,3 +183,4 @@ public class AppointmentService {
                 .scheduledAppointments(appointmentRepository.countByStatus(AppointmentStatus.SCHEDULED))
                 .completedAppointments(appointmentRepository.countByStatus(AppointmentStatus.COMPLETED))
                 .cancelledAppointments(appointmentRepository.countByStatus(AppointmentStatus.CANCELLED))
+                .build();
