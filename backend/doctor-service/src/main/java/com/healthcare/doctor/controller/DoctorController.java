@@ -47,3 +47,4 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.getDoctorByUserId(userId));
     }
 
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
