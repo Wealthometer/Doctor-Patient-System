@@ -57,3 +57,4 @@ public class JwtService {
     }
 
     public String generateRefreshToken(User user) {
+        return buildToken(new HashMap<>(), user, refreshExpiration);
