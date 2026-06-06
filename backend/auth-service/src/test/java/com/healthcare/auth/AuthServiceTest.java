@@ -129,3 +129,4 @@ class AuthServiceTest {
     }
 
     @Test
+    @DisplayName("Should throw AuthException when credentials are invalid")
