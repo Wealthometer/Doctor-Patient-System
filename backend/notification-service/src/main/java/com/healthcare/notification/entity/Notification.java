@@ -44,3 +44,4 @@ public class Notification {
 
     private String errorMessage;
 
+    private LocalDateTime sentAt;
