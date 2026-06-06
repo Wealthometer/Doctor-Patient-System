@@ -53,3 +53,4 @@ CREATE INDEX idx_invoices_patient_id ON invoices(patient_id);
 CREATE INDEX idx_invoices_status     ON invoices(status);
 CREATE INDEX idx_invoices_date       ON invoices(invoice_date);
 CREATE INDEX idx_invoices_due_date   ON invoices(due_date);
+CREATE INDEX idx_payments_invoice_id ON payments(invoice_id);
