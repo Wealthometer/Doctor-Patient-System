@@ -97,3 +97,4 @@
       <version>${mapstruct.version}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
