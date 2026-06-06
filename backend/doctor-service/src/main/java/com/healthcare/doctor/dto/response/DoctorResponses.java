@@ -43,5 +43,6 @@ public class DoctorResponses {
         private LocalDateTime updatedAt;
     }
 
+        private List<String> specializations;
     }
 }
