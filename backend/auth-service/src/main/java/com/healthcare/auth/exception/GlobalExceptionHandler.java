@@ -21,3 +21,4 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(AuthException.class)
     public ProblemDetail handleAuthException(AuthException ex) {
+        log.warn("Auth error: {}", ex.getMessage());
