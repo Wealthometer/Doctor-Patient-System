@@ -33,3 +33,4 @@ public class AppointmentController {
     @PostMapping
     @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT', 'DOCTOR', 'NURSE')")
     @Operation(summary = "Book a new appointment")
+    public ResponseEntity<AppointmentResponse> bookAppointment(
