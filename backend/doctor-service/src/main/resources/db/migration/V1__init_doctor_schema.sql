@@ -23,3 +23,4 @@ CREATE TABLE doctors (
     work_start_time         TIME,
     work_end_time           TIME,
     work_days               VARCHAR(100),
+    max_daily_appointments  INT DEFAULT 20,
