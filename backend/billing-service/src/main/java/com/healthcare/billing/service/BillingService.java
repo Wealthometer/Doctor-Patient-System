@@ -151,3 +151,4 @@ public class BillingService {
 
     public InvoiceResponse cancelInvoice(UUID id) {
         Invoice invoice = invoiceRepository.findById(id)
+                .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found: " + id));
