@@ -89,3 +89,4 @@ public class Invoice {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+}
