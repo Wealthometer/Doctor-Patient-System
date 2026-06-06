@@ -32,3 +32,4 @@ public class AuthResponses {
         private LocalDateTime createdAt;
     }
 
+    @Data
