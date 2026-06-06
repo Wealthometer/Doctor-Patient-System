@@ -154,3 +154,4 @@ public class AppointmentService {
         if (appointment.getStatus() != AppointmentStatus.IN_PROGRESS)
             throw new InvalidAppointmentStateException("Appointment must be IN_PROGRESS to complete");
 
+        appointment.setStatus(AppointmentStatus.COMPLETED);
