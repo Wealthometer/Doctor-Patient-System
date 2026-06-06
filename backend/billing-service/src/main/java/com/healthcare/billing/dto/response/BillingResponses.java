@@ -27,3 +27,4 @@ public class BillingResponses {
         private LocalDate invoiceDate;
         private LocalDate dueDate;
         private BigDecimal subtotal;
+        private BigDecimal taxRate;
