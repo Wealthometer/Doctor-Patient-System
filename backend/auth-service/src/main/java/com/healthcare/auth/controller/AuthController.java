@@ -63,3 +63,4 @@ public class AuthController {
             @AuthenticationPrincipal User user,
             @Valid @RequestBody ChangePasswordRequest request) {
         authService.changePassword(user.getId(), request);
+        return ResponseEntity.ok(MessageResponse.builder()
