@@ -106,3 +106,4 @@ public class AppointmentController {
             @Valid @RequestBody CancelAppointmentRequest request) {
         return ResponseEntity.ok(appointmentService.cancelAppointment(id, request));
     }
+
