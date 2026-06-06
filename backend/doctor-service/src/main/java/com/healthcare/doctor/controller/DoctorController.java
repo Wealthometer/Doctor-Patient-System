@@ -116,3 +116,4 @@ public class DoctorController {
 
     @GetMapping("/stats")
     @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<DoctorStatsResponse> getStats() {
