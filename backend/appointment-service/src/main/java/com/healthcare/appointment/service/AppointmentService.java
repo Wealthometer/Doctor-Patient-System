@@ -70,3 +70,4 @@ public class AppointmentService {
                 .startTime(request.getStartTime())
                 .endTime(request.getEndTime())
                 .type(request.getType())
+                .reason(request.getReason())
