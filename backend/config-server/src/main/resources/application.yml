@@ -9,3 +9,4 @@ spring:
       server:
         native:
           search-locations: classpath:/configs
+  profiles:
