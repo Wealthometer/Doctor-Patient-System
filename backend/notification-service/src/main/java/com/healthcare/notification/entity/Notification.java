@@ -18,3 +18,4 @@ public class Notification {
 
     @Column(nullable = false)
     private UUID recipientId;
+
