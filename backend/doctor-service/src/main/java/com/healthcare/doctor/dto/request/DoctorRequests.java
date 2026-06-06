@@ -28,3 +28,4 @@ public class DoctorRequests {
 
         @NotBlank(message = "Specialization is required")
         private String specialization;
+
