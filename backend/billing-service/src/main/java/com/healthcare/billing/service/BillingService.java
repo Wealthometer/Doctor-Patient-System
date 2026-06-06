@@ -153,3 +153,4 @@ public class BillingService {
         Invoice invoice = invoiceRepository.findById(id)
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found: " + id));
         if (invoice.getStatus() == InvoiceStatus.PAID)
+            throw new InvalidBillingStateException("Cannot cancel a PAID invoice");
