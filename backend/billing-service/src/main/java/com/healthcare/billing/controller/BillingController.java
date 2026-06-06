@@ -53,3 +53,4 @@ public class BillingController {
     @GetMapping("/invoices/patient/{patientId}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
     @Operation(summary = "Get invoices for a patient")
+    public ResponseEntity<Page<InvoiceResponse>> getPatientInvoices(
