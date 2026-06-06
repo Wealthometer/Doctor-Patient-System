@@ -35,3 +35,4 @@ public interface DoctorMapper {
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "updatedAt", ignore = true)
     void updateEntity(UpdateDoctorRequest request, @MappingTarget Doctor doctor);
+}
