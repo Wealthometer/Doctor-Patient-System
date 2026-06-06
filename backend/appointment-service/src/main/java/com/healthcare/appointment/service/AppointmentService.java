@@ -33,3 +33,4 @@ import java.util.concurrent.atomic.AtomicLong;
 public class AppointmentService {
 
     private final AppointmentRepository appointmentRepository;
+    private final PatientServiceClient patientServiceClient;
