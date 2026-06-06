@@ -20,3 +20,4 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @Tag(name = "Authentication", description = "Auth management APIs")
 public class AuthController {
+
