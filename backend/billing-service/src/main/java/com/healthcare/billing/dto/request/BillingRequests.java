@@ -21,3 +21,4 @@ public class BillingRequests {
         private String doctorName;
         @NotBlank private String department;
         @NotNull private LocalDate invoiceDate;
+        @NotNull private LocalDate dueDate;
