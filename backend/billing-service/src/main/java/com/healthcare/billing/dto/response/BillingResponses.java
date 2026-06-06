@@ -55,3 +55,4 @@ public class BillingResponses {
     public static class PaymentResponse {
         private UUID id;
         private String paymentReference;
+        private BigDecimal amount;
