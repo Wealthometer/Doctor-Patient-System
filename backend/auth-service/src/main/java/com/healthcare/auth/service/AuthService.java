@@ -153,3 +153,4 @@ public class AuthService {
     private AuthResponse buildAuthResponse(User user) {
         String accessToken = jwtService.generateToken(user);
         String refreshTokenStr = jwtService.generateRefreshToken(user);
+
