@@ -31,6 +31,7 @@ public class NotificationService {
                 .channel(request.getChannel() != null ? request.getChannel() : NotificationChannel.EMAIL)
                 .build();
 
+        try {
             if (notification.getChannel() == NotificationChannel.EMAIL) {
             } else if (notification.getChannel() == NotificationChannel.SMS) {
             }
