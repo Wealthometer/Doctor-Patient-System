@@ -46,3 +46,4 @@ public class AppointmentService {
         if (!conflicts.isEmpty()) {
             throw new AppointmentConflictException(
                     "Doctor already has an appointment at this time slot");
+        }
