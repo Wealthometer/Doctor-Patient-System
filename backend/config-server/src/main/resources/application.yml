@@ -26,3 +26,4 @@ management:
         include: health,info,refresh
 
 logging:
+  level:
