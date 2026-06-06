@@ -36,3 +36,4 @@ public class Invoice {
     private UUID doctorId;
     private String doctorName;
 
+    @Column(nullable = false)
