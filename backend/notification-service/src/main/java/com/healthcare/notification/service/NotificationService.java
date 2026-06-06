@@ -17,3 +17,4 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 @Slf4j
 public class NotificationService {
+    private final JavaMailSender mailSender;
