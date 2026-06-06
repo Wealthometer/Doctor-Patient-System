@@ -67,6 +67,7 @@ public class NotificationService {
     public void sendAppointmentConfirmation(String email, String patientName,
                                              String doctorName, String dateTime) {
         NotificationRequest req = NotificationRequest.builder()
+                .recipientEmail(email)
                     
                 .recipientEmail(email)
                 .body(String.format("""
