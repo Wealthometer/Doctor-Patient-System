@@ -15,3 +15,4 @@ public class InvoiceLineItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
