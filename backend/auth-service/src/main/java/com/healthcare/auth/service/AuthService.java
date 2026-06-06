@@ -140,3 +140,4 @@ public class AuthService {
         log.info("Password changed for user: {}", user.getUsername());
     }
 
+    public MessageResponse logout(UUID userId) {
