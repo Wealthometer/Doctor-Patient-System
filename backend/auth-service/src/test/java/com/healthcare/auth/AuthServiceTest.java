@@ -106,3 +106,4 @@ class AuthServiceTest {
     }
 
     @Test
+    @DisplayName("Should login successfully with valid credentials")
