@@ -75,3 +75,4 @@ public class AuthController {
     public ResponseEntity<UserInfo> getCurrentUser(@AuthenticationPrincipal User user) {
         return ResponseEntity.ok(UserInfo.builder()
                 .id(user.getId())
+                .username(user.getUsername())
