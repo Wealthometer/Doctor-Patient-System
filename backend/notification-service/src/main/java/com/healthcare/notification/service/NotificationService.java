@@ -105,6 +105,7 @@ public class NotificationService {
                     
                     Regards,
                     HealthCare+ Team
+                    """, patientName, doctorName, rxNumber))
     }
 
     }
