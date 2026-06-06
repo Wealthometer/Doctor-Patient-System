@@ -119,3 +119,4 @@ public class DoctorController {
     public ResponseEntity<DoctorStatsResponse> getStats() {
         return ResponseEntity.ok(doctorService.getStats());
     }
+}
