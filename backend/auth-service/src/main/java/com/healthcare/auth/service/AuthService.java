@@ -86,3 +86,4 @@ public class AuthService {
     }
 
     public AuthResponse refreshToken(RefreshTokenRequest request) {
+        RefreshToken storedToken = refreshTokenRepository.findByToken(request.getRefreshToken())
