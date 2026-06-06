@@ -92,3 +92,4 @@ public class BillingService {
     @Transactional(readOnly = true)
     public InvoiceResponse getInvoiceById(UUID id) {
         return invoiceRepository.findById(id)
+                .map(this::toResponse)
