@@ -105,3 +105,4 @@ public class BillingService {
     public Page<InvoiceResponse> getAllInvoices(Pageable pageable) {
         return invoiceRepository.findAll(pageable).map(this::toResponse);
     }
+
