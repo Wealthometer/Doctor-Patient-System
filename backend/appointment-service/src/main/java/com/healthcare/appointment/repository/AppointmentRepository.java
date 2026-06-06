@@ -46,3 +46,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
         SELECT a FROM Appointment a WHERE a.appointmentDate = :date
         AND a.status NOT IN ('CANCELLED', 'NO_SHOW')
     """)
+    List<Appointment> findByDate(@Param("date") LocalDate date);
