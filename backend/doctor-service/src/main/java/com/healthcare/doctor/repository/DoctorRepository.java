@@ -28,3 +28,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     Page<Doctor> findByDepartment(String department, Pageable pageable);
     Page<Doctor> findBySpecialization(String specialization, Pageable pageable);
     Page<Doctor> findByStatus(DoctorStatus status, Pageable pageable);
+    List<Doctor> findByDepartmentAndStatus(String department, DoctorStatus status);
