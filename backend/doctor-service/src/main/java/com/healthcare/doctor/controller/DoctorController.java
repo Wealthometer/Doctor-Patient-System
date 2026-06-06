@@ -92,3 +92,5 @@ public class DoctorController {
 
     @PutMapping("/{id}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<DoctorResponse> updateDoctor(
+            @PathVariable UUID id,
