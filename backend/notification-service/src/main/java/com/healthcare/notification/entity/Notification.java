@@ -21,3 +21,4 @@ public class Notification {
 
     @Column(nullable = false)
     private String recipientEmail;
+
