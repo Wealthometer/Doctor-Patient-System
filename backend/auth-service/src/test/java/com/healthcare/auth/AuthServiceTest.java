@@ -60,3 +60,4 @@ class AuthServiceTest {
                 .build();
     }
 
+    @Test
