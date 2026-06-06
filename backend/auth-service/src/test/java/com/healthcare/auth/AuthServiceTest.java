@@ -141,3 +141,4 @@ class AuthServiceTest {
         assertThatThrownBy(() -> authService.login(request))
                 .isInstanceOf(AuthException.class)
                 .hasMessage("Invalid credentials");
+    }
