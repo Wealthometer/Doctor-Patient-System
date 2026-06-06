@@ -43,6 +43,7 @@ public class DoctorResponses {
         private LocalDateTime updatedAt;
     }
 
+    @Builder
     public static class DoctorSummaryResponse {
         private String doctorCode;
         private String fullName;
