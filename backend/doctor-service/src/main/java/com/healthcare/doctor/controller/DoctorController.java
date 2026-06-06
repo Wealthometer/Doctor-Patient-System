@@ -30,3 +30,4 @@ public class DoctorController {
     private final DoctorService doctorService;
 
     @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
