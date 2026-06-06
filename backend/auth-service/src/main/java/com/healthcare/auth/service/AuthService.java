@@ -133,3 +133,4 @@ public class AuthService {
         if (!passwordEncoder.matches(request.getCurrentPassword(), user.getPassword())) {
             throw new AuthException("Current password is incorrect");
         }
+
