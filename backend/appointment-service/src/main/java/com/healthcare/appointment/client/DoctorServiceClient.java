@@ -32,3 +32,4 @@ public interface DoctorServiceClient {
     }
 
     class DoctorServiceFallback implements DoctorServiceClient {
+        @Override
