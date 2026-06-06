@@ -103,3 +103,4 @@ public class DoctorController {
     public ResponseEntity<DoctorResponse> updateDoctorStatus(
             @PathVariable UUID id,
         return ResponseEntity.ok(doctorService.updateDoctorStatus(id, status));
+    }
