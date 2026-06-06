@@ -52,3 +52,4 @@ public class DoctorService {
     public DoctorResponse getDoctorByUserId(UUID userId) {
         return doctorRepository.findByUserId(userId)
                 .map(doctorMapper::toResponse)
+                .orElseThrow(() -> new DoctorNotFoundException("Doctor not found for userId: " + userId));
