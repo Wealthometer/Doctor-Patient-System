@@ -34,3 +34,4 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT', 'DOCTOR', 'NURSE')")
     @Operation(summary = "Book a new appointment")
     public ResponseEntity<AppointmentResponse> bookAppointment(
+            @Valid @RequestBody BookAppointmentRequest request) {
