@@ -19,3 +19,4 @@ import java.util.UUID;
         @UniqueConstraint(columnNames = "email"),
         @UniqueConstraint(columnNames = "username")
     })
+@Getter
