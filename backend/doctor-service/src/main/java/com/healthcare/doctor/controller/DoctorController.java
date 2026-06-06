@@ -79,3 +79,4 @@ public class DoctorController {
     @GetMapping("/department/{department}/active")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<List<DoctorSummaryResponse>> getActiveDoctorsByDepartment(@PathVariable String department) {
+        return ResponseEntity.ok(doctorService.getActiveDoctorsByDepartment(department));
