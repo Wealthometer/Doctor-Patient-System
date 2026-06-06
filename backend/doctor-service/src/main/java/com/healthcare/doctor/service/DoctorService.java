@@ -30,3 +30,4 @@ public class DoctorService {
         if (doctorRepository.existsByEmail(request.getEmail()))
             throw new DoctorAlreadyExistsException("Doctor with email already exists: " + request.getEmail());
         if (doctorRepository.existsByUserId(request.getUserId()))
+            throw new DoctorAlreadyExistsException("Doctor profile already exists for this user");
