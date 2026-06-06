@@ -8,3 +8,4 @@ import com.healthcare.auth.exception.AuthException;
 import com.healthcare.auth.repository.RefreshTokenRepository;
 import com.healthcare.auth.repository.UserRepository;
 import com.healthcare.auth.security.JwtService;
+import lombok.RequiredArgsConstructor;
