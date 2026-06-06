@@ -81,3 +81,4 @@ class AuthServiceTest {
         when(refreshTokenRepository.save(any())).thenReturn(mock(RefreshToken.class));
 
         AuthResponse response = authService.register(request);
+
