@@ -38,3 +38,4 @@ public class BillingService {
         var patient = patientServiceClient.getPatientById(request.getPatientId());
 
         // Build line items and calculate subtotal
+        BigDecimal subtotal = BigDecimal.ZERO;
