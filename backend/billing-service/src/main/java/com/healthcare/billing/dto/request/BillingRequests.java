@@ -13,3 +13,4 @@ import java.util.UUID;
 public class BillingRequests {
 
     @Data
+    public static class CreateInvoiceRequest {
