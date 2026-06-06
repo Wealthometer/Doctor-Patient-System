@@ -138,3 +138,4 @@ public class AuthService {
         userRepository.save(user);
         refreshTokenRepository.revokeAllUserTokens(user);
         log.info("Password changed for user: {}", user.getUsername());
+    }
