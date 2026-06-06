@@ -37,3 +37,4 @@ public interface DoctorServiceClient {
             return DoctorDto.builder()
                     .id(id)
                     .firstName("Unknown")
+                    .lastName("Doctor")
