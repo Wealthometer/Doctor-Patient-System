@@ -23,3 +23,4 @@ import java.util.UUID;
 @Transactional
 public class DoctorService {
 
+    private final DoctorRepository doctorRepository;
