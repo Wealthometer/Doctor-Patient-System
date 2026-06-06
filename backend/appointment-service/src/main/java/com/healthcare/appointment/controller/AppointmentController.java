@@ -89,3 +89,4 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     public ResponseEntity<AppointmentResponse> start(@PathVariable UUID id) {
         return ResponseEntity.ok(appointmentService.startAppointment(id));
+    }
