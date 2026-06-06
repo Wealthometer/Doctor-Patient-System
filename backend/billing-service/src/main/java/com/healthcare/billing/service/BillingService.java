@@ -221,3 +221,4 @@ public class BillingService {
                 .payments(i.getPayments().stream().map(p -> PaymentResponse.builder()
                         .id(p.getId()).paymentReference(p.getPaymentReference())
                         .amount(p.getAmount()).method(p.getMethod()).status(p.getStatus())
+                        .transactionId(p.getTransactionId()).createdAt(p.getCreatedAt()).build()).toList())
