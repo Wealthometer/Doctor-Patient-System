@@ -90,3 +90,4 @@ public class DoctorService {
 
     public DoctorResponse updateDoctor(UUID id, UpdateDoctorRequest request) {
         Doctor doctor = doctorRepository.findById(id)
+                .orElseThrow(() -> new DoctorNotFoundException("Doctor not found: " + id));
