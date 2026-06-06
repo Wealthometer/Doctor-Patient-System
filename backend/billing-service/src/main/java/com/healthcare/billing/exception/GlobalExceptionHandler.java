@@ -58,3 +58,4 @@ public class GlobalExceptionHandler {
         log.error("Unexpected error:", ex);
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.INTERNAL_SERVER_ERROR, "Unexpected error");
         pd.setTitle("Internal Server Error");
+        pd.setProperty("timestamp", Instant.now());
