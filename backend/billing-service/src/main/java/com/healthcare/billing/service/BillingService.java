@@ -34,3 +34,4 @@ public class BillingService {
     private final PaymentRepository paymentRepository;
     private final PatientServiceClient patientServiceClient;
 
+    public InvoiceResponse createInvoice(CreateInvoiceRequest request) {
