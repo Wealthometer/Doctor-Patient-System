@@ -166,3 +166,4 @@ public class AppointmentService {
         Appointment appointment = findAppointment(id);
         if (appointment.getStatus() == AppointmentStatus.COMPLETED ||
                 appointment.getStatus() == AppointmentStatus.CANCELLED)
+            throw new InvalidAppointmentStateException("Cannot cancel a " + appointment.getStatus() + " appointment");
