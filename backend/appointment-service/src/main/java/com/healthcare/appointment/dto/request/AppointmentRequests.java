@@ -37,3 +37,4 @@ public class AppointmentRequests {
 
         private String notes;
     }
+
