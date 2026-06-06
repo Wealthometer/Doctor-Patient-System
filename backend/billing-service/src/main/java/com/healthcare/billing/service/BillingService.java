@@ -89,3 +89,4 @@ public class BillingService {
         return toResponse(saved);
     }
 
+    @Transactional(readOnly = true)
