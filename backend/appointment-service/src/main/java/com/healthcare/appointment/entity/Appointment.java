@@ -77,3 +77,4 @@ public class Appointment {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+}
