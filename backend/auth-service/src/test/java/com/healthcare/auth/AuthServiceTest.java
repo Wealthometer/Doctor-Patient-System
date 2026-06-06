@@ -83,3 +83,4 @@ class AuthServiceTest {
         AuthResponse response = authService.register(request);
 
         assertThat(response).isNotNull();
+        assertThat(response.getAccessToken()).isEqualTo("accessToken");
