@@ -10,3 +10,4 @@ import lombok.Data;
 public class AuthRequests {
 
     @Data
+    public static class RegisterRequest {
