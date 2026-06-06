@@ -10,3 +10,4 @@ CREATE TABLE users (
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
     role VARCHAR(20) NOT NULL CHECK (role IN ('ADMIN','DOCTOR','PATIENT','NURSE')),
+    enabled BOOLEAN NOT NULL DEFAULT true,
