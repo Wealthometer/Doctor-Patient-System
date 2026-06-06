@@ -38,3 +38,4 @@ public class Doctor {
     @Column(nullable = false, unique = true)
     private String email;
 
+    @Column(nullable = false)
