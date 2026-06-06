@@ -46,3 +46,4 @@ public class Notification {
 
     private LocalDateTime sentAt;
 
+    @CreationTimestamp
