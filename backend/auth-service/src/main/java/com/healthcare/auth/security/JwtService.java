@@ -32,3 +32,4 @@ public class JwtService {
         return extractClaim(token, Claims::getSubject);
     }
 
+    public UUID extractUserId(String token) {
