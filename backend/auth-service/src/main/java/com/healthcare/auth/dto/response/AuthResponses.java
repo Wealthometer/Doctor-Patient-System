@@ -13,3 +13,4 @@ public class AuthResponses {
     @Builder
     public static class AuthResponse {
         private String accessToken;
+        private String refreshToken;
