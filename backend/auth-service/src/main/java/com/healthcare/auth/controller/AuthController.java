@@ -44,3 +44,4 @@ public class AuthController {
     @GetMapping("/validate")
     @Operation(summary = "Validate JWT token (used by API Gateway)")
     public ResponseEntity<TokenValidationResponse> validateToken(
+            @RequestHeader("Authorization") String authHeader) {
