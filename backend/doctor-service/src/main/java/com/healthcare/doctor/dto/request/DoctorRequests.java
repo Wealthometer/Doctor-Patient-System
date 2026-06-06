@@ -22,3 +22,4 @@ public class DoctorRequests {
 
         @NotBlank @Email
         private String email;
+
