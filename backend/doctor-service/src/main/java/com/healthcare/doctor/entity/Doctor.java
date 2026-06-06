@@ -70,3 +70,4 @@ public class Doctor {
 
     private Integer maxDailyAppointments;
 
+    private String profileImageUrl;
