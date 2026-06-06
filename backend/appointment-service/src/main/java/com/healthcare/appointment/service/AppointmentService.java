@@ -209,4 +209,5 @@ public class AppointmentService {
     private AppointmentResponse toResponse(Appointment a) {
         return AppointmentResponse.builder()
                 .id(a.getId())
+                .patientId(a.getPatientId())
     }
