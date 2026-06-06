@@ -97,3 +97,4 @@ public class BillingService {
     }
 
     @Transactional(readOnly = true)
+    public Page<InvoiceResponse> getPatientInvoices(UUID patientId, Pageable pageable) {
