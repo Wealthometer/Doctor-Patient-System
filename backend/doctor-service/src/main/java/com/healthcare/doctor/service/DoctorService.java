@@ -87,3 +87,4 @@ public class DoctorService {
         return doctorRepository.findByDepartmentAndStatus(department, DoctorStatus.ACTIVE)
                 .stream().map(doctorMapper::toSummary).toList();
     }
+
