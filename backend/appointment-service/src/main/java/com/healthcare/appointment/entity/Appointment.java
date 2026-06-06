@@ -70,3 +70,4 @@ public class Appointment {
     private LocalDateTime confirmedAt;
 
     private LocalDateTime completedAt;
+
