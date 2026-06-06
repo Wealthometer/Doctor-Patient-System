@@ -14,3 +14,4 @@ WORKDIR /app
 # Non-root user for security
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
+
