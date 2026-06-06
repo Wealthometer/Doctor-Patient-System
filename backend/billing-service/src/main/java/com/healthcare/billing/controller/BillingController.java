@@ -23,3 +23,4 @@ import java.util.UUID;
 @RequestMapping("/api/v1/billing")
 @RequiredArgsConstructor
 @SecurityRequirement(name = "bearerAuth")
+@Tag(name = "Billing", description = "Billing and invoice management APIs")
