@@ -24,6 +24,7 @@ public class NotificationService {
     public void sendNotification(NotificationRequest request) {
         Notification notification = Notification.builder()
                 .recipientId(request.getRecipientId())
+                .recipientEmail(request.getRecipientEmail())
                 .recipientPhone(request.getRecipientPhone())
                 .body(request.getBody())
                 .channel(request.getChannel() != null ? request.getChannel() : NotificationChannel.EMAIL)
