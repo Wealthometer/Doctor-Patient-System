@@ -187,3 +187,4 @@ public class BillingService {
 
     private String generateInvoiceNumber(LocalDate date) {
         String datePart = date.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+        long count = invoiceRepository.count() + 1;
