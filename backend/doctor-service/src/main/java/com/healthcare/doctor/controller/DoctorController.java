@@ -114,3 +114,4 @@ public class DoctorController {
         return ResponseEntity.ok(doctorService.submitRating(id, request));
     }
 
+    @GetMapping("/stats")
