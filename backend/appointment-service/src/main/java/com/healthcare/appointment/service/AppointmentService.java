@@ -174,3 +174,4 @@ public class AppointmentService {
         log.info("Appointment {} cancelled: {}", appointment.getAppointmentNumber(), request.getCancellationReason());
         return toResponse(appointmentRepository.save(appointment));
     }
+
