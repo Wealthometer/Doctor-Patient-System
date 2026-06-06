@@ -113,3 +113,4 @@ public class AppointmentService {
         List<Appointment> bookedSlots = appointmentRepository
                 .findByDoctorIdAndAppointmentDateAndStatusNot(doctorId, date, AppointmentStatus.CANCELLED);
 
+        List<AvailableSlot> slots = new ArrayList<>();
