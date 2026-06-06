@@ -43,3 +43,4 @@ public class DoctorController {
 
     @GetMapping("/user/{userId}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<DoctorResponse> getDoctorByUserId(@PathVariable UUID userId) {
