@@ -48,3 +48,4 @@ public class AppointmentService {
                     "Doctor already has an appointment at this time slot");
         }
 
+        // Check daily appointment limit
