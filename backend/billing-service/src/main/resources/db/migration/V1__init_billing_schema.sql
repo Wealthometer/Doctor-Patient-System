@@ -47,3 +47,4 @@ CREATE TABLE payments (
     transaction_id    VARCHAR(200),
     notes             TEXT,
     created_at        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
