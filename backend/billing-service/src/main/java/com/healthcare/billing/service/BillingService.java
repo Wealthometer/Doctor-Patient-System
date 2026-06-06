@@ -131,3 +131,4 @@ public class BillingService {
                         + "-" + String.format("%04d", count))
                 .amount(request.getAmount())
                 .method(request.getMethod())
+                .transactionId(request.getTransactionId())
