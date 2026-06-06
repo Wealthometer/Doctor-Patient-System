@@ -50,3 +50,4 @@ public class BillingService {
                 .department(request.getDepartment())
                 .invoiceDate(request.getInvoiceDate())
                 .dueDate(request.getDueDate())
+                .taxRate(request.getTaxRate() != null ? request.getTaxRate() : BigDecimal.ZERO)
