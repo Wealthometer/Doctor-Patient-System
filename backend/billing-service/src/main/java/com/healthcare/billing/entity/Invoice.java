@@ -43,3 +43,4 @@ public class Invoice {
     private LocalDate invoiceDate;
 
     @Column(nullable = false)
+    private LocalDate dueDate;
