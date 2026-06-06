@@ -143,3 +143,4 @@ class AuthServiceTest {
                 .hasMessage("Invalid credentials");
     }
 
+    @Test
