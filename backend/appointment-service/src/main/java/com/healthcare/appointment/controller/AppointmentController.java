@@ -28,3 +28,4 @@ import java.util.UUID;
 @Tag(name = "Appointments", description = "Appointment management APIs")
 public class AppointmentController {
 
+    private final AppointmentService appointmentService;
