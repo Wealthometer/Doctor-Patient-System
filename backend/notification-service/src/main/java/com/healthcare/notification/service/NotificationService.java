@@ -101,6 +101,7 @@ public class NotificationService {
                     Dr. %s has issued a new prescription (%s) for you.
                     
                     Please log into your HealthCare+ portal to view the details
+                    and take your medications as prescribed.
     }
 
     }
