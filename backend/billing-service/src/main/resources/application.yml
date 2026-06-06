@@ -25,3 +25,4 @@ spring:
     locations: classpath:db/migration
 
 eureka:
+  client:
