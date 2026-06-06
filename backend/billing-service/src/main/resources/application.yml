@@ -47,3 +47,4 @@ feign:
         readTimeout: 5000
 
 management:
+  endpoints:
