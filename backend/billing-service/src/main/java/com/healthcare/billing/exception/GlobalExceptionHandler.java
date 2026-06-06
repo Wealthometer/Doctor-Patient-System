@@ -19,3 +19,4 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(InvoiceNotFoundException.class)
     public ProblemDetail handleNotFound(InvoiceNotFoundException ex) {
+        ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, ex.getMessage());
