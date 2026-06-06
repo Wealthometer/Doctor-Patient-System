@@ -88,3 +88,4 @@ public class Invoice {
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
+    private LocalDateTime updatedAt;
