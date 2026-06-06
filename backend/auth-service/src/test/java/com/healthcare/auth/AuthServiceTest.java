@@ -139,3 +139,4 @@ class AuthServiceTest {
                 .thenThrow(new BadCredentialsException("Bad credentials"));
 
         assertThatThrownBy(() -> authService.login(request))
+                .isInstanceOf(AuthException.class)
