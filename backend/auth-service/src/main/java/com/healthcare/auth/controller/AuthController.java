@@ -25,3 +25,4 @@ public class AuthController {
 
     @PostMapping("/register")
     @Operation(summary = "Register a new user")
+    public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
