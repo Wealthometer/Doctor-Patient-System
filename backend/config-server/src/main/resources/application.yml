@@ -10,3 +10,4 @@ spring:
         native:
           search-locations: classpath:/configs
   profiles:
+    active: native   # Use filesystem configs (swap to 'git' for production)
