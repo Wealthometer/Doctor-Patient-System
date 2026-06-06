@@ -12,3 +12,4 @@
   <groupId>com.healthcare</groupId>
   <artifactId>config-server</artifactId>
   <version>1.0.0</version>
+  <name>config-server</name>
