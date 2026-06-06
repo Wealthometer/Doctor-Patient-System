@@ -87,3 +87,4 @@ public class AppointmentController {
 
     @PatchMapping("/{id}/start")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
+    public ResponseEntity<AppointmentResponse> start(@PathVariable UUID id) {
