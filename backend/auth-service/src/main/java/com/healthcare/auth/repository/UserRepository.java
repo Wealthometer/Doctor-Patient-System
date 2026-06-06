@@ -27,3 +27,4 @@ public interface UserRepository extends JpaRepository<User, UUID> {
     long countByRole(Role role);
 
     @Modifying
+    @Query("UPDATE User u SET u.lastLoginAt = :loginTime WHERE u.id = :userId")
