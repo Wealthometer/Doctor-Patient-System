@@ -41,3 +41,4 @@ public class JwtService {
         return extractClaim(token, claims -> claims.get("role", String.class));
     }
 
+    public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
