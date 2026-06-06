@@ -25,3 +25,4 @@ public class Notification {
     private String recipientPhone;
 
     @Column(nullable = false)
+    private String subject;
