@@ -88,3 +88,4 @@ public class Doctor {
     @Column(updatable = false)
     private LocalDateTime createdAt;
 
+    @UpdateTimestamp
