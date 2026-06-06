@@ -7,3 +7,4 @@ application:
       expiration: 900000
       refresh-token:
         expiration: 604800000
+
