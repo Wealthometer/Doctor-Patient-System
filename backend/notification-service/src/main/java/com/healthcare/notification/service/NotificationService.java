@@ -96,6 +96,7 @@ public class NotificationService {
                 .recipientEmail(email)
                 .subject("New Prescription Issued - " + rxNumber)
                 .body(String.format("""
+                    Dear %s,
                     
     }
 
