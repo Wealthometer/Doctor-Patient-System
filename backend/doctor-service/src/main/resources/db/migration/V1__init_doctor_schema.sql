@@ -20,3 +20,4 @@ CREATE TABLE doctors (
     qualifications          VARCHAR(500),
     years_of_experience     INT,
     consultation_fee        VARCHAR(50),
+    work_start_time         TIME,
