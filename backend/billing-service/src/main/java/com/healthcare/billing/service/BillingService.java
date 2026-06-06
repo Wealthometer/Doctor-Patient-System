@@ -60,3 +60,4 @@ public class BillingService {
                 .build();
 
         for (var itemReq : request.getLineItems()) {
+            BigDecimal lineTotal = itemReq.getUnitPrice()
