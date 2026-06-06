@@ -84,3 +84,4 @@ public class JwtService {
         try {
             extractAllClaims(token);
             return !isTokenExpired(token);
+        } catch (JwtException e) {
