@@ -103,6 +103,7 @@ public class NotificationService {
                     Please log into your HealthCare+ portal to view the details
                     and take your medications as prescribed.
                     
+                    Regards,
     }
 
     }
