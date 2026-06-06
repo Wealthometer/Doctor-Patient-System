@@ -23,4 +23,5 @@ CREATE TABLE appointments (
     confirmed_at         TIMESTAMP,
     completed_at         TIMESTAMP,
     created_at           TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+);
 CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
