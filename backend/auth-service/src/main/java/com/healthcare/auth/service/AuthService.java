@@ -39,3 +39,4 @@ public class AuthService {
     private long refreshTokenExpiration;
 
     public AuthResponse register(RegisterRequest request) {
+        if (userRepository.existsByUsername(request.getUsername())) {
