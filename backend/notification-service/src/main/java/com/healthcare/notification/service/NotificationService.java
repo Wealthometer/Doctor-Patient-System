@@ -114,6 +114,7 @@ public class NotificationService {
         sendNotification(req);
     }
 
+                    Invoice Number: %s
                     Amount Due: $%s
                     Due Date: %s
                     
