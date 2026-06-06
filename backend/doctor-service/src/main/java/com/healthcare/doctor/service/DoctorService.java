@@ -103,3 +103,4 @@ public class DoctorService {
         return doctorMapper.toResponse(doctorRepository.save(doctor));
     public DoctorResponse submitRating(UUID id, RatingRequest request) {
                 .orElseThrow(() -> new DoctorNotFoundException("Doctor not found: " + id));
+
