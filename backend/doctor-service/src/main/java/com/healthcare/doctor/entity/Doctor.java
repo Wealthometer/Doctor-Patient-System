@@ -81,3 +81,4 @@ public class Doctor {
     private double averageRating = 0.0;
 
     @Column(nullable = false)
+    @Builder.Default
