@@ -38,3 +38,4 @@ public class AppointmentResponses {
         private LocalDateTime createdAt;
         private LocalDateTime updatedAt;
     }
+
