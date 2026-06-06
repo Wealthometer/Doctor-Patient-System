@@ -84,3 +84,4 @@ public class Doctor {
     @Builder.Default
     private int totalRatings = 0;
 
+    @CreationTimestamp
