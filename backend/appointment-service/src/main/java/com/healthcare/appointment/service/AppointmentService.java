@@ -165,3 +165,4 @@ public class AppointmentService {
     public AppointmentResponse cancelAppointment(UUID id, CancelAppointmentRequest request) {
         Appointment appointment = findAppointment(id);
         if (appointment.getStatus() == AppointmentStatus.COMPLETED ||
+                appointment.getStatus() == AppointmentStatus.CANCELLED)
