@@ -47,3 +47,4 @@ public class AuthService {
         }
 
         User user = User.builder()
+                .username(request.getUsername())
