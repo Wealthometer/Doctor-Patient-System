@@ -84,3 +84,4 @@ public class Invoice {
     private List<Payment> payments = new ArrayList<>();
 
     @CreationTimestamp
+    @Column(updatable = false)
