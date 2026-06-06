@@ -35,3 +35,4 @@ public class BillingController {
         return ResponseEntity.status(HttpStatus.CREATED).body(billingService.createInvoice(request));
     }
 
+    @GetMapping("/invoices/{id}")
