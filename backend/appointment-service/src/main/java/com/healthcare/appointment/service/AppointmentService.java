@@ -122,3 +122,4 @@ public class AppointmentService {
 
             boolean isBooked = bookedSlots.stream().anyMatch(a ->
                     a.getStartTime().isBefore(slotEnd) && a.getEndTime().isAfter(slotStart));
+
