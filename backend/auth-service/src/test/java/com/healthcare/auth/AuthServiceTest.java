@@ -115,3 +115,4 @@ class AuthServiceTest {
         when(authenticationManager.authenticate(any())).thenReturn(
                 new UsernamePasswordAuthenticationToken("testuser", "Password@123"));
         when(userRepository.findByUsernameOrEmail(anyString(), anyString()))
+                .thenReturn(Optional.of(testUser));
