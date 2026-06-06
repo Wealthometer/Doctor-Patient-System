@@ -75,3 +75,4 @@ management:
       enabled: true
 
 springdoc:
+  api-docs:
