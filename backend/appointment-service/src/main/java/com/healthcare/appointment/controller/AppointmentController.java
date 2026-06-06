@@ -92,3 +92,4 @@ public class AppointmentController {
     }
 
     @PatchMapping("/{id}/complete")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
