@@ -35,3 +35,4 @@ public class DoctorRequests {
         @NotBlank(message = "License number is required")
         private String licenseNumber;
 
+        private LocalDate licenseExpiryDate;
