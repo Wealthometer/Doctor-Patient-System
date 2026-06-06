@@ -34,3 +34,4 @@ public class Invoice {
     private String appointmentNumber;
 
     private UUID doctorId;
+    private String doctorName;
