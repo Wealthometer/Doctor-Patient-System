@@ -62,3 +62,4 @@ public class Invoice {
     @Builder.Default
     private BigDecimal paidAmount = BigDecimal.ZERO;
 
+    @Column(nullable = false)
