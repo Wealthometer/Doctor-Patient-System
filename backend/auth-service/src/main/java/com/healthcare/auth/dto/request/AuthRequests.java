@@ -48,3 +48,4 @@ public class AuthRequests {
         private String refreshToken;
     }
 
+    @Data
