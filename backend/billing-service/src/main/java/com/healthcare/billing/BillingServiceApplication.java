@@ -10,3 +10,4 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableDiscoveryClient
 @EnableFeignClients
 @EnableScheduling
+public class BillingServiceApplication {
