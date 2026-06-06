@@ -109,3 +109,4 @@ public class BillingService {
     @Transactional(readOnly = true)
     public Page<InvoiceResponse> getInvoicesByStatus(InvoiceStatus status, Pageable pageable) {
         return invoiceRepository.findByStatus(status, pageable).map(this::toResponse);
+    }
