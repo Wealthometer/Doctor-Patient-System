@@ -49,3 +49,4 @@ public class BillingController {
             @PageableDefault(size = 20, sort = "invoiceDate") Pageable pageable) {
         return ResponseEntity.ok(billingService.getAllInvoices(pageable));
     }
+
