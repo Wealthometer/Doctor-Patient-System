@@ -29,3 +29,4 @@ CREATE TABLE invoices (
 
 CREATE TABLE invoice_line_items (
     id           UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    invoice_id   UUID NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
