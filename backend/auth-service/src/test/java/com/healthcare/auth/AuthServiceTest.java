@@ -145,3 +145,4 @@ class AuthServiceTest {
 
     @Test
     @DisplayName("Should validate a valid token successfully")
+    void validateToken_ShouldReturnValid_WhenTokenIsValid() {
