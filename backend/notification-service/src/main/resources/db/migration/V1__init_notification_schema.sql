@@ -10,3 +10,4 @@ CREATE TABLE notifications (
     subject          VARCHAR(500) NOT NULL,
     body             TEXT NOT NULL,
     type             VARCHAR(50) NOT NULL,
+    channel          VARCHAR(20) NOT NULL DEFAULT 'EMAIL',
