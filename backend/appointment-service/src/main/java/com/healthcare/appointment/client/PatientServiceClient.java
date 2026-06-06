@@ -20,3 +20,4 @@ public interface PatientServiceClient {
         private UUID id;
         private String patientCode;
         private String firstName;
+        private String lastName;
