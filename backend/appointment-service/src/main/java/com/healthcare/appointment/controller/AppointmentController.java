@@ -42,3 +42,4 @@ public class AppointmentController {
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<AppointmentResponse> getById(@PathVariable UUID id) {
+        return ResponseEntity.ok(appointmentService.getAppointmentById(id));
