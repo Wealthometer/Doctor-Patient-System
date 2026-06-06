@@ -14,3 +14,4 @@ CREATE TABLE notifications (
     status           VARCHAR(20) NOT NULL DEFAULT 'PENDING',
     error_message    TEXT,
     sent_at          TIMESTAMP,
+    created_at       TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
