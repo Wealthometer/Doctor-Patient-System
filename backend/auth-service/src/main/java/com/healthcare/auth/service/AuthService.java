@@ -46,3 +46,4 @@ public class AuthService {
             throw new AuthException("Email already registered: " + request.getEmail());
         }
 
+        User user = User.builder()
