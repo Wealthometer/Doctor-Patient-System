@@ -39,3 +39,4 @@ public class DoctorRequests {
         private String bio;
         private String qualifications;
 
+        @Min(0) @Max(60)
