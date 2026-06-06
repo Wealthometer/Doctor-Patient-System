@@ -39,3 +39,4 @@ public class DoctorResponses {
         private DoctorStatus status;
         private double averageRating;
         private int totalRatings;
+        private LocalDateTime createdAt;
