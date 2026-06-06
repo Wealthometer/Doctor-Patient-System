@@ -102,3 +102,4 @@ public class AppointmentService {
     public Page<AppointmentResponse> getDoctorAppointmentsByDate(UUID doctorId, LocalDate date, Pageable pageable) {
         return appointmentRepository.findByDoctorIdAndAppointmentDate(doctorId, date, pageable).map(this::toResponse);
     }
+
