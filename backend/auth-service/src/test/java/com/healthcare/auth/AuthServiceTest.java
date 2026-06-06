@@ -45,3 +45,4 @@ class AuthServiceTest {
     private AuthService authService;
 
     private User testUser;
+
