@@ -162,3 +162,4 @@ public class AppointmentService {
         return toResponse(appointmentRepository.save(appointment));
     }
 
+    public AppointmentResponse cancelAppointment(UUID id, CancelAppointmentRequest request) {
