@@ -31,3 +31,4 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     List<Doctor> findByDepartmentAndStatus(String department, DoctorStatus status);
 
     @Query("""
+        SELECT d FROM Doctor d WHERE
