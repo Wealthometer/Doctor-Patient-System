@@ -49,3 +49,4 @@ management:
       exposure:
         include: health,info,metrics,prometheus
   endpoint:
+    health:
