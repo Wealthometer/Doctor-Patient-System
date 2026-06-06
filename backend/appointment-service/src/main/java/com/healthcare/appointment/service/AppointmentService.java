@@ -59,3 +59,4 @@ public class AppointmentService {
 
         var patientDto = patientServiceClient.getPatientById(request.getPatientId());
 
+        Appointment appointment = Appointment.builder()
