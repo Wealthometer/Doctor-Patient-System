@@ -46,3 +46,4 @@ class AuthServiceTest {
 
     private User testUser;
 
+    @BeforeEach
