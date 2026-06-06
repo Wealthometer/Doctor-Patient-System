@@ -41,3 +41,4 @@ public class GlobalExceptionHandler {
         return pd;
     }
 
+    @ExceptionHandler(MethodArgumentNotValidException.class)
