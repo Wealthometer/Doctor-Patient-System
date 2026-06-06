@@ -25,3 +25,4 @@ spring:
     locations: classpath:db/migration
   mail:
     host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
