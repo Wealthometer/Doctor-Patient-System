@@ -45,3 +45,4 @@ public class Invoice {
     @Column(nullable = false)
     private LocalDate dueDate;
 
+    @Column(nullable = false, precision = 10, scale = 2)
