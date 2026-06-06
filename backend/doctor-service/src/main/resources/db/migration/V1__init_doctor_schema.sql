@@ -18,3 +18,4 @@ CREATE TABLE doctors (
     license_expiry_date     DATE,
     bio                     TEXT,
     qualifications          VARCHAR(500),
+    years_of_experience     INT,
