@@ -96,3 +96,4 @@ public class DoctorController {
             @PathVariable UUID id,
             @Valid @RequestBody UpdateDoctorRequest request) {
         return ResponseEntity.ok(doctorService.updateDoctor(id, request));
+    }
