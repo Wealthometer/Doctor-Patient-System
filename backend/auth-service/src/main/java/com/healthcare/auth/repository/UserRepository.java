@@ -26,3 +26,4 @@ public interface UserRepository extends JpaRepository<User, UUID> {
 
     long countByRole(Role role);
 
+    @Modifying
