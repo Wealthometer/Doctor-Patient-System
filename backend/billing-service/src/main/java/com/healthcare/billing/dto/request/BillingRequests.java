@@ -28,3 +28,4 @@ public class BillingRequests {
         private String notes;
         @NotEmpty @Valid
         private List<LineItemRequest> lineItems;
+    }
