@@ -42,3 +42,4 @@ public class Doctor {
     private String phone;
 
     @Column(nullable = false)
+    private String specialization;
