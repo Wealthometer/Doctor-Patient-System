@@ -52,3 +52,4 @@ public class DoctorRequests {
 
         private String profileImageUrl;
     }
+
