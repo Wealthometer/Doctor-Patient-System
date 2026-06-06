@@ -140,3 +140,4 @@ public class AppointmentService {
                 throw new InvalidAppointmentStateException("Can only confirm SCHEDULED appointments");
             a.setConfirmedAt(LocalDateTime.now());
         });
+    }
