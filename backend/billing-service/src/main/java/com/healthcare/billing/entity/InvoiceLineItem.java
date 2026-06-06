@@ -18,3 +18,4 @@ public class InvoiceLineItem {
     private UUID id;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "invoice_id", nullable = false)
