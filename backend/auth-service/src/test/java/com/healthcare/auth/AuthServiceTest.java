@@ -189,3 +189,4 @@ class AuthServiceTest {
         AuthResponse response = authService.refreshToken(request);
 
         assertThat(response.getAccessToken()).isEqualTo("newAccessToken");
+        assertThat(storedToken.isRevoked()).isTrue();
