@@ -12,3 +12,4 @@ spring:
     password: ${DB_PASSWORD:w3e4r5t6y7}
     hikari:
       maximum-pool-size: 10
+      minimum-idle: 5
