@@ -31,3 +31,4 @@ public class AppointmentResponses {
         private String reason;
         private String notes;
         private String diagnosisSummary;
+        private String cancellationReason;
