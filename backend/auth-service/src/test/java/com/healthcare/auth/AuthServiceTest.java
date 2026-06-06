@@ -87,3 +87,4 @@ class AuthServiceTest {
         verify(userRepository).save(any(User.class));
     }
 
+    @Test
