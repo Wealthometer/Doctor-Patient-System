@@ -88,3 +88,4 @@ class AuthServiceTest {
     }
 
     @Test
+    @DisplayName("Should throw exception when username is taken")
