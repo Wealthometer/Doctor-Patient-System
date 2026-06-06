@@ -203,4 +203,5 @@ public class BillingService {
                 .doctorName(i.getDoctorName())
                 .department(i.getDepartment())
                 .invoiceDate(i.getInvoiceDate())
+                .dueDate(i.getDueDate())
                 .subtotal(i.getSubtotal())
