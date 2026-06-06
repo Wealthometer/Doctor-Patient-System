@@ -93,3 +93,4 @@ public class AuthService {
             throw new AuthException("Refresh token has been revoked");
         }
         if (storedToken.getExpiryDate().isBefore(Instant.now())) {
+            throw new AuthException("Refresh token has expired");
