@@ -84,3 +84,4 @@ public class BillingService {
         invoice.setTaxAmount(taxAmount);
         invoice.setTotalAmount(total);
 
+        Invoice saved = invoiceRepository.save(invoice);
