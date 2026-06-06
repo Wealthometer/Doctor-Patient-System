@@ -28,3 +28,4 @@ public class Notification {
     private String subject;
 
     @Column(nullable = false, columnDefinition = "TEXT")
+    private String body;
