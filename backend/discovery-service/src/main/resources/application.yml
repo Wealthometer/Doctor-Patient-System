@@ -30,3 +30,4 @@ management:
     health:
       show-details: always
 
+logging:
