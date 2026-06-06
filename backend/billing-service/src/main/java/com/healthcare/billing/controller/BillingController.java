@@ -55,3 +55,4 @@ public class BillingController {
     @Operation(summary = "Get invoices for a patient")
     public ResponseEntity<Page<InvoiceResponse>> getPatientInvoices(
             @PathVariable UUID patientId,
+            @PageableDefault(size = 20, sort = "invoiceDate") Pageable pageable) {
