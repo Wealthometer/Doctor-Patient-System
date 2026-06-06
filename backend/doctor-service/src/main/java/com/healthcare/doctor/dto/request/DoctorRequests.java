@@ -78,3 +78,4 @@ public class DoctorRequests {
         private Integer rating;
         private String comment;
     }
+}
