@@ -45,3 +45,4 @@ CREATE TABLE payments (
     method            VARCHAR(20)   NOT NULL,
     status            VARCHAR(20)   NOT NULL DEFAULT 'COMPLETED',
     transaction_id    VARCHAR(200),
+    notes             TEXT,
