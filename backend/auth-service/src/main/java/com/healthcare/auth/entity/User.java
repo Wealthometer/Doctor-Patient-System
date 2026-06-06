@@ -65,3 +65,4 @@ public class User implements UserDetails {
     @Builder.Default
     private boolean credentialsNonExpired = true;
 
+    @CreationTimestamp
