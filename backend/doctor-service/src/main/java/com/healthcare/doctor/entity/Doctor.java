@@ -45,3 +45,4 @@ public class Doctor {
     private String specialization;
 
     @Column(nullable = false)
+    private String department;
