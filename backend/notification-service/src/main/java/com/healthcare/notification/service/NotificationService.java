@@ -68,6 +68,7 @@ public class NotificationService {
                                              String doctorName, String dateTime) {
         NotificationRequest req = NotificationRequest.builder()
                 .recipientEmail(email)
+                .subject("Appointment Confirmed - HealthCare+")
                     
                 .recipientEmail(email)
                 .body(String.format("""
