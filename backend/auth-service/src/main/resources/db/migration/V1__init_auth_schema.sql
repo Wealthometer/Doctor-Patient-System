@@ -26,3 +26,4 @@ CREATE TABLE refresh_tokens (
     expiry_date TIMESTAMP NOT NULL,
     revoked BOOLEAN NOT NULL DEFAULT false
 );
+
