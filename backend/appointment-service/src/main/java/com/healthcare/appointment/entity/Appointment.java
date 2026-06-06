@@ -23,3 +23,4 @@ public class Appointment {
     private String appointmentNumber; // APT-20260601-0001
 
     @Column(nullable = false)
+    private UUID patientId;
