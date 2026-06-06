@@ -105,3 +105,4 @@ class AuthServiceTest {
                 .hasMessageContaining("Username already taken");
     }
 
+    @Test
