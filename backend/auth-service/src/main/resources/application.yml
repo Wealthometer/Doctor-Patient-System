@@ -61,3 +61,4 @@ springdoc:
 logging:
   level:
     com.healthcare.auth: DEBUG
+    org.springframework.security: WARN
