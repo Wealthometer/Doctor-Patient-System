@@ -43,3 +43,4 @@ VALUES (
     'System',
     'Administrator',
     'ADMIN'
+);
