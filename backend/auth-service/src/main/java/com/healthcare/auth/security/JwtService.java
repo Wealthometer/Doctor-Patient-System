@@ -56,3 +56,4 @@ public class JwtService {
         return buildToken(extraClaims, user, jwtExpiration);
     }
 
+    public String generateRefreshToken(User user) {
