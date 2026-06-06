@@ -110,3 +110,4 @@ class AuthServiceTest {
     void login_ShouldReturnTokens_WhenValidCredentials() {
         LoginRequest request = new LoginRequest();
         request.setUsernameOrEmail("testuser");
+        request.setPassword("Password@123");
