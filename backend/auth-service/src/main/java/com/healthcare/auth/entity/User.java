@@ -26,3 +26,4 @@ import java.util.UUID;
 @Builder
 public class User implements UserDetails {
 
+    @Id
