@@ -19,4 +19,5 @@ public class AppointmentRequests {
         private UUID doctorId;
 
         @NotNull(message = "Appointment date is required")
+        @FutureOrPresent(message = "Appointment date cannot be in the past")
         @NotNull(message = "Start time is required")
