@@ -67,3 +67,4 @@ class AuthServiceTest {
         request.setUsername("newuser");
         request.setEmail("new@example.com");
         request.setPassword("Password@123");
+        request.setFirstName("New");
