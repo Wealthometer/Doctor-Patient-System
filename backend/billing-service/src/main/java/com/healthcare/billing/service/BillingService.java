@@ -68,3 +68,4 @@ public class BillingService {
                     .invoice(invoice)
                     .description(itemReq.getDescription())
                     .serviceCode(itemReq.getServiceCode())
+                    .quantity(itemReq.getQuantity() != null ? itemReq.getQuantity() : 1)
