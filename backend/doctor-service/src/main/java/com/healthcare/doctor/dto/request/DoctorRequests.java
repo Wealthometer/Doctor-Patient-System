@@ -11,3 +11,4 @@ public class DoctorRequests {
 
     @Data
     public static class CreateDoctorRequest {
+        @NotNull
