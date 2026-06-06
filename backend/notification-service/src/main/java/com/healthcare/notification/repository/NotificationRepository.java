@@ -11,4 +11,5 @@ import java.util.UUID;
 
 @Repository
 public interface NotificationRepository extends JpaRepository<Notification, UUID> {
+    Page<Notification> findByRecipientId(UUID recipientId, Pageable pageable);
     Page<Notification> findByStatus(NotificationStatus status, Pageable pageable);
