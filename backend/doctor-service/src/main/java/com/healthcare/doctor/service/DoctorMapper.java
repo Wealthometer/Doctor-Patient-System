@@ -12,3 +12,4 @@ public interface DoctorMapper {
     @Mapping(target = "doctorCode", ignore = true)
     @Mapping(target = "status", ignore = true)
     @Mapping(target = "averageRating", ignore = true)
+    @Mapping(target = "totalRatings", ignore = true)
