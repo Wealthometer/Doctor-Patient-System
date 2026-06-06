@@ -149,3 +149,4 @@ public class AppointmentService {
         });
     }
 
+    public AppointmentResponse completeAppointment(UUID id, UpdateAppointmentRequest request) {
