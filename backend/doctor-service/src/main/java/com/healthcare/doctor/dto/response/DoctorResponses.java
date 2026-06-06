@@ -25,3 +25,4 @@ public class DoctorResponses {
         private String phone;
         private String specialization;
         private String department;
+        private String licenseNumber;
