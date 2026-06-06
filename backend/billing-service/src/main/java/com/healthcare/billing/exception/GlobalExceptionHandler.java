@@ -48,3 +48,4 @@ public class GlobalExceptionHandler {
                 errors.put(((FieldError) e).getField(), e.getDefaultMessage()));
         ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "Validation failed");
         pd.setTitle("Validation Error");
+        pd.setProperty("errors", errors);
