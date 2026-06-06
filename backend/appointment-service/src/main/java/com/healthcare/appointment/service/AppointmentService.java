@@ -211,6 +211,7 @@ public class AppointmentService {
                 .id(a.getId())
                 .appointmentNumber(a.getAppointmentNumber())
                 .patientId(a.getPatientId())
+                .doctorId(a.getDoctorId())
                 .doctorName(a.getDoctorName())
                 .department(a.getDepartment())
                 .appointmentDate(a.getAppointmentDate())
