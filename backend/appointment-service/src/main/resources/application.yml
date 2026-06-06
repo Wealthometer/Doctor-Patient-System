@@ -60,3 +60,4 @@ resilience4j:
       doctor-service:
         registerHealthIndicator: true
         slidingWindowSize: 10
+        minimumNumberOfCalls: 5
