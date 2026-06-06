@@ -29,3 +29,4 @@ public class Appointment {
     private String patientName;
 
     @Column(nullable = false)
+    private UUID doctorId;
