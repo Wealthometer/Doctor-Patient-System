@@ -29,3 +29,4 @@ spring:
     username: ${MAIL_USERNAME:noreply@healthcare.com}
     password: ${MAIL_PASSWORD:changeme}
     properties:
+      mail:
