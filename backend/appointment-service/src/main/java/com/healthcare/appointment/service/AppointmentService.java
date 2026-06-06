@@ -147,3 +147,4 @@ public class AppointmentService {
             if (a.getStatus() != AppointmentStatus.CONFIRMED && a.getStatus() != AppointmentStatus.SCHEDULED)
                 throw new InvalidAppointmentStateException("Appointment must be SCHEDULED or CONFIRMED to start");
         });
+    }
