@@ -103,3 +103,4 @@ class AuthServiceTest {
         assertThatThrownBy(() -> authService.register(request))
                 .isInstanceOf(AuthException.class)
                 .hasMessageContaining("Username already taken");
+    }
