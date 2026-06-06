@@ -14,3 +14,4 @@ import java.util.UUID;
 public class Payment {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
