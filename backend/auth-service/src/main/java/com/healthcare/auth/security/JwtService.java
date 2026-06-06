@@ -103,3 +103,4 @@ public class JwtService {
                 .verifyWith(getSignInKey())
                 .build()
                 .parseSignedClaims(token)
+                .getPayload();
