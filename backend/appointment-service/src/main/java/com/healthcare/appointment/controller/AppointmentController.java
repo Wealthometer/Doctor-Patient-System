@@ -84,3 +84,4 @@ public class AppointmentController {
     public ResponseEntity<AppointmentResponse> confirm(@PathVariable UUID id) {
         return ResponseEntity.ok(appointmentService.confirmAppointment(id));
     }
+
