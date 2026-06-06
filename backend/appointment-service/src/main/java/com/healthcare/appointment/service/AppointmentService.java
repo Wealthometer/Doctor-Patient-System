@@ -6,3 +6,4 @@ import com.healthcare.appointment.dto.request.AppointmentRequests.*;
 import com.healthcare.appointment.dto.response.AppointmentResponses.*;
 import com.healthcare.appointment.entity.Appointment;
 import com.healthcare.appointment.entity.AppointmentStatus;
+import com.healthcare.appointment.exception.AppointmentConflictException;
