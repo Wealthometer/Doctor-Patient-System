@@ -57,3 +57,4 @@ public class AuthService {
 
         userRepository.save(user);
         log.info("New user registered: {} with role {}", user.getUsername(), user.getRole());
+
