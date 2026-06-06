@@ -31,3 +31,4 @@ public class Notification {
     private String body;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
