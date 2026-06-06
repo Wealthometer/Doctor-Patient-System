@@ -124,3 +124,4 @@ public class AppointmentService {
                     a.getStartTime().isBefore(slotEnd) && a.getEndTime().isAfter(slotStart));
 
             slots.add(AvailableSlot.builder()
+                    .startTime(slotStart)
