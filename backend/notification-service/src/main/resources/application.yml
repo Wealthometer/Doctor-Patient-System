@@ -31,3 +31,4 @@ spring:
     properties:
       mail:
         smtp:
+          starttls:
