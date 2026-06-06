@@ -108,6 +108,7 @@ public class NotificationService {
                     """, patientName, doctorName, rxNumber))
                 .type(NotificationType.PRESCRIPTION_ISSUED)
                 .channel(NotificationChannel.EMAIL)
+                .build();
     }
 
     }
