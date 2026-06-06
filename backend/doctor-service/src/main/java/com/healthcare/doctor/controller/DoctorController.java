@@ -112,3 +112,4 @@ public class DoctorController {
             @PathVariable UUID id,
             @Valid @RequestBody RatingRequest request) {
         return ResponseEntity.ok(doctorService.submitRating(id, request));
+    }
