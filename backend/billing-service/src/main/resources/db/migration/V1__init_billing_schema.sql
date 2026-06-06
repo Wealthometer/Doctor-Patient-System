@@ -9,3 +9,4 @@ CREATE TABLE invoices (
     patient_name         VARCHAR(200) NOT NULL,
     appointment_id       UUID,
     appointment_number   VARCHAR(30),
+    doctor_id            UUID,
