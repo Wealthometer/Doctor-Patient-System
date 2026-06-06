@@ -87,3 +87,4 @@ public class DoctorController {
     public ResponseEntity<Page<DoctorResponse>> getBySpecialization(
             @PathVariable String specialization,
             @PageableDefault(size = 20) Pageable pageable) {
+        return ResponseEntity.ok(doctorService.getDoctorsBySpecialization(specialization, pageable));
