@@ -75,3 +75,4 @@ public class BillingController {
             @PathVariable UUID id,
             @Valid @RequestBody RecordPaymentRequest request) {
         return ResponseEntity.ok(billingService.recordPayment(id, request));
+    }
