@@ -92,3 +92,4 @@ public class AppointmentService {
     public Page<AppointmentResponse> getAppointmentsByPatient(UUID patientId, Pageable pageable) {
         return appointmentRepository.findByPatientId(patientId, pageable).map(this::toResponse);
     }
+
