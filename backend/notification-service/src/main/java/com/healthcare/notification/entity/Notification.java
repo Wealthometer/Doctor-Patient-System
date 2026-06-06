@@ -24,3 +24,4 @@ public class Notification {
 
     private String recipientPhone;
 
+    @Column(nullable = false)
