@@ -19,3 +19,4 @@ public interface DoctorMapper {
 
     @Mapping(target = "fullName", expression = "java(doctor.getFirstName() + ' ' + doctor.getLastName())")
     DoctorResponse toResponse(Doctor doctor);
+
