@@ -77,3 +77,4 @@ public class Invoice {
 
     @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @Builder.Default
+    private List<InvoiceLineItem> lineItems = new ArrayList<>();
