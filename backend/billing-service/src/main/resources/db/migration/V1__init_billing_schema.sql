@@ -32,3 +32,4 @@ CREATE TABLE invoice_line_items (
     invoice_id   UUID NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
     description  VARCHAR(500) NOT NULL,
     service_code VARCHAR(50)  NOT NULL,
+    quantity     INT          NOT NULL DEFAULT 1,
