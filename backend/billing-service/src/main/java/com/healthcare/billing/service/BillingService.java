@@ -184,3 +184,4 @@ public class BillingService {
         invoiceRepository.saveAll(overdue);
         if (!overdue.isEmpty()) log.info("Marked {} invoices as overdue", overdue.size());
     }
+
