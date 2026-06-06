@@ -87,6 +87,7 @@ public class NotificationService {
                 .type(NotificationType.APPOINTMENT_CONFIRMED)
                 .channel(NotificationChannel.EMAIL)
                 .build();
+        sendNotification(req);
                 .recipientEmail(email)
                 .body(String.format("""
                     
