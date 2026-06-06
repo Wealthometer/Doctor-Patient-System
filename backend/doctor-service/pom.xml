@@ -11,3 +11,4 @@
   </parent>
   <groupId>com.healthcare</groupId>
   <artifactId>doctor-service</artifactId>
+  <version>1.0.0</version>
