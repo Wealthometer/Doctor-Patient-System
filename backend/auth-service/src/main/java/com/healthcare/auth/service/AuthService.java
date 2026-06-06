@@ -150,3 +150,4 @@ public class AuthService {
                 .build();
     }
 
+    private AuthResponse buildAuthResponse(User user) {
