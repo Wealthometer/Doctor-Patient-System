@@ -57,3 +57,4 @@ public class DoctorService {
 
     @Transactional(readOnly = true)
     public DoctorResponse getDoctorByCode(String code) {
+        return doctorRepository.findByDoctorCode(code)
