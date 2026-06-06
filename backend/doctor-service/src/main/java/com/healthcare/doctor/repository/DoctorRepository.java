@@ -17,3 +17,4 @@ import java.util.UUID;
 public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
 
     Optional<Doctor> findByUserId(UUID userId);
+    Optional<Doctor> findByDoctorCode(String doctorCode);
