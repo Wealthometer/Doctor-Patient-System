@@ -44,3 +44,4 @@ public class BillingResponses {
     @Data @Builder
     public static class LineItemResponse {
         private UUID id;
+        private String description;
