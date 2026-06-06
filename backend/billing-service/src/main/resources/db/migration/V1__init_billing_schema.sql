@@ -11,3 +11,4 @@ CREATE TABLE invoices (
     appointment_number   VARCHAR(30),
     doctor_id            UUID,
     doctor_name          VARCHAR(200),
+    department           VARCHAR(200) NOT NULL,
