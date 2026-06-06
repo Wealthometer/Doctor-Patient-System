@@ -22,3 +22,4 @@ public class InvoiceLineItem {
     private Invoice invoice;
 
     @Column(nullable = false)
+    private String description;
