@@ -17,4 +17,5 @@ CREATE TABLE appointments (
     type                 VARCHAR(30) NOT NULL,
     reason               VARCHAR(1000) NOT NULL,
     notes                TEXT,
+    diagnosis_summary    TEXT,
 CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
