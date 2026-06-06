@@ -38,3 +38,4 @@ public class BillingResponses {
         private String notes;
         private List<LineItemResponse> lineItems;
         private List<PaymentResponse> payments;
+        private LocalDateTime createdAt;
