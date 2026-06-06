@@ -116,3 +116,4 @@ public class BillingService {
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found: " + invoiceId));
 
         if (invoice.getStatus() == InvoiceStatus.PAID || invoice.getStatus() == InvoiceStatus.CANCELLED) {
+            throw new InvalidBillingStateException("Cannot accept payment for a " + invoice.getStatus() + " invoice");
