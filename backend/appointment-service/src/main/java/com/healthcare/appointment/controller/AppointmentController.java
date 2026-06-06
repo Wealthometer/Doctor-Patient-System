@@ -112,3 +112,4 @@ public class AppointmentController {
     public ResponseEntity<AppointmentStatsResponse> getStats() {
         return ResponseEntity.ok(appointmentService.getStats());
     }
+}
