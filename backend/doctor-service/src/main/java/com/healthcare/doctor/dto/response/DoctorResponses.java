@@ -43,6 +43,7 @@ public class DoctorResponses {
         private LocalDateTime updatedAt;
     }
 
+    @Data
     @Builder
     public static class DoctorSummaryResponse {
         private UUID id;
