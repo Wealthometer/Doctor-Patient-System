@@ -75,3 +75,4 @@ public class Doctor {
     @Enumerated(EnumType.STRING)
     @Builder.Default
     private DoctorStatus status = DoctorStatus.ACTIVE;
+
