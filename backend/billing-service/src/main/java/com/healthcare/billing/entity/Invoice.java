@@ -52,3 +52,4 @@ public class Invoice {
     @Builder.Default
     private BigDecimal taxRate = BigDecimal.ZERO;
 
+    @Column(nullable = false, precision = 10, scale = 2)
