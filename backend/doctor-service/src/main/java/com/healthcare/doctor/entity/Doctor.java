@@ -26,3 +26,4 @@ public class Doctor {
     @Column(nullable = false, unique = true)
     private UUID userId;
 
+    @Column(nullable = false, unique = true, length = 20)
