@@ -31,3 +31,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
     List<Appointment> findByPatientIdAndStatusIn(UUID patientId, List<AppointmentStatus> statuses);
 
     @Query("""
+        SELECT a FROM Appointment a WHERE a.doctorId = :doctorId
