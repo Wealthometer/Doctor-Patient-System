@@ -11,3 +11,4 @@ import java.util.UUID;
 public class AppointmentRequests {
 
     @Data
+    public static class BookAppointmentRequest {
