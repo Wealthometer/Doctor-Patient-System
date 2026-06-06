@@ -48,3 +48,4 @@ public class AuthController {
         String token = authHeader.startsWith("Bearer ") ? authHeader.substring(7) : authHeader;
         return ResponseEntity.ok(authService.validateToken(token));
     }
+
