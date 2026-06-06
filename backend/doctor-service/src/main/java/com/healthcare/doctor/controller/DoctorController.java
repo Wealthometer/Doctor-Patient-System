@@ -29,3 +29,4 @@ public class DoctorController {
 
     private final DoctorService doctorService;
 
+    @PostMapping
