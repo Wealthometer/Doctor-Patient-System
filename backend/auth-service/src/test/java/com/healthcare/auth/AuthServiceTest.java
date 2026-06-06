@@ -155,3 +155,4 @@ class AuthServiceTest {
         assertThat(response.isValid()).isTrue();
         assertThat(response.getUsername()).isEqualTo("testuser");
         assertThat(response.getRole()).isEqualTo(Role.PATIENT);
+    }
