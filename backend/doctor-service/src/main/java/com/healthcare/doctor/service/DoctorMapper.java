@@ -15,3 +15,4 @@ public interface DoctorMapper {
     @Mapping(target = "totalRatings", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "updatedAt", ignore = true)
+    Doctor toEntity(CreateDoctorRequest request);
