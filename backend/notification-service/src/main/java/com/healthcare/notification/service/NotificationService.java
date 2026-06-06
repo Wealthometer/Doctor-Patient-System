@@ -65,6 +65,7 @@ public class NotificationService {
                                              String doctorName, String dateTime) {
                 .recipientEmail(email)
                 .body(String.format("""
+                    
     }
 
     }
