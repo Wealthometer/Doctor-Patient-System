@@ -56,3 +56,4 @@ public class BillingResponses {
         private UUID id;
         private String paymentReference;
         private BigDecimal amount;
+        private PaymentMethod method;
