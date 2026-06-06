@@ -49,3 +49,4 @@ feign:
 management:
   endpoints:
     web:
+      exposure:
