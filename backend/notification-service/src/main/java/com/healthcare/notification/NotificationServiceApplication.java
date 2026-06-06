@@ -8,3 +8,4 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableAsync
+public class NotificationServiceApplication {
