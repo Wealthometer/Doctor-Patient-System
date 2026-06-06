@@ -53,3 +53,4 @@ public class BillingService {
                 .taxRate(request.getTaxRate() != null ? request.getTaxRate() : BigDecimal.ZERO)
                 .insuranceProvider(request.getInsuranceProvider() != null ? request.getInsuranceProvider() : "Self-pay")
                 .insuranceCoverage(request.getInsuranceCoverage() != null ? request.getInsuranceCoverage() : BigDecimal.ZERO)
+                .notes(request.getNotes())
