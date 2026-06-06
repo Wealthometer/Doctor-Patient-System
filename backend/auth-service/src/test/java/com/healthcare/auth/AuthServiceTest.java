@@ -108,3 +108,4 @@ class AuthServiceTest {
     @Test
     @DisplayName("Should login successfully with valid credentials")
     void login_ShouldReturnTokens_WhenValidCredentials() {
+        LoginRequest request = new LoginRequest();
