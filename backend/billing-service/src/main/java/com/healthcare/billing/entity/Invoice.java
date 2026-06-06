@@ -63,3 +63,4 @@ public class Invoice {
     private BigDecimal paidAmount = BigDecimal.ZERO;
 
     @Column(nullable = false)
+    private String insuranceProvider;
