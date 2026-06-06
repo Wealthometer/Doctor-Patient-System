@@ -25,3 +25,4 @@ public class InvoiceLineItem {
     private String description;
 
     @Column(nullable = false)
+    private String serviceCode;
