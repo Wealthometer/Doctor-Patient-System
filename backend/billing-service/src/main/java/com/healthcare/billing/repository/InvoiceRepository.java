@@ -23,3 +23,4 @@ public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
     Page<Invoice> findByStatus(InvoiceStatus status, Pageable pageable);
     Page<Invoice> findByPatientIdAndStatus(UUID patientId, InvoiceStatus status, Pageable pageable);
 
+    List<Invoice> findByStatusAndDueDateBefore(InvoiceStatus status, LocalDate date);
