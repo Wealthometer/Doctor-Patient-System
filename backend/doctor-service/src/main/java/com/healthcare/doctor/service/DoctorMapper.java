@@ -16,3 +16,4 @@ public interface DoctorMapper {
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "updatedAt", ignore = true)
     Doctor toEntity(CreateDoctorRequest request);
+
