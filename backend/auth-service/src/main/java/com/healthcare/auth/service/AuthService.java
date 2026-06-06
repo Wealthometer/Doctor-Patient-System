@@ -94,3 +94,4 @@ public class AuthService {
         }
         if (storedToken.getExpiryDate().isBefore(Instant.now())) {
             throw new AuthException("Refresh token has expired");
+        }
