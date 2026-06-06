@@ -132,3 +132,4 @@ public class AppointmentService {
             current = slotEnd;
         }
         return slots;
+    }
