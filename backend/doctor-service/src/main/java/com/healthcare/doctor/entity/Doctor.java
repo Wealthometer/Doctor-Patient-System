@@ -41,3 +41,4 @@ public class Doctor {
     @Column(nullable = false)
     private String phone;
 
+    @Column(nullable = false)
