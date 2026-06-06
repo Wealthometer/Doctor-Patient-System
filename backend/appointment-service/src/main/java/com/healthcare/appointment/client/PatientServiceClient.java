@@ -32,3 +32,4 @@ public interface PatientServiceClient {
                     .id(id)
                     .firstName("Unknown")
                     .lastName("Patient")
+                    .build();
