@@ -68,3 +68,4 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
+    public ProblemDetail handleGenericException(Exception ex) {
