@@ -168,3 +168,4 @@ public class AuthService {
                 .user(UserInfo.builder()
                         .id(user.getId())
                         .username(user.getUsername())
+                        .email(user.getEmail())
