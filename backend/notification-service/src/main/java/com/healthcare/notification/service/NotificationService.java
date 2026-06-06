@@ -22,6 +22,7 @@ public class NotificationService {
     @Async
     @Transactional
     public void sendNotification(NotificationRequest request) {
+        Notification notification = Notification.builder()
                 .recipientId(request.getRecipientId())
                 .recipientPhone(request.getRecipientPhone())
                 .body(request.getBody())
