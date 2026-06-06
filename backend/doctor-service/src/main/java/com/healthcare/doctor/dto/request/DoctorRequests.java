@@ -67,3 +67,4 @@ public class DoctorRequests {
         private String consultationFee;
         private LocalTime workStartTime;
         private LocalTime workEndTime;
+        private String workDays;
