@@ -145,3 +145,4 @@ public class AuthService {
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
         refreshTokenRepository.revokeAllUserTokens(user);
         return MessageResponse.builder()
+                .message("Logged out successfully")
