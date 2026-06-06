@@ -45,6 +45,7 @@ public class DoctorResponses {
 
     @Builder
     public static class DoctorSummaryResponse {
+        private UUID id;
         private String doctorCode;
         private String fullName;
         private String specialization;
