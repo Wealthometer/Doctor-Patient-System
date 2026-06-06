@@ -6,3 +6,4 @@ import com.healthcare.billing.entity.PaymentStatus;
 import lombok.Builder;
 import lombok.Data;
 
+import java.math.BigDecimal;
