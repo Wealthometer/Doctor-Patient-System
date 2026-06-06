@@ -23,3 +23,4 @@ public interface PatientServiceClient {
         private String insuranceProvider;
     }
 
+    class Fallback implements PatientServiceClient {
