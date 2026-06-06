@@ -36,3 +36,4 @@ public class AppointmentService {
     private final PatientServiceClient patientServiceClient;
     private final DoctorServiceClient doctorServiceClient;
     private final AtomicLong appointmentCounter = new AtomicLong(1);
+
