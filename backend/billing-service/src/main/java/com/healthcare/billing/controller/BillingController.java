@@ -24,3 +24,4 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @SecurityRequirement(name = "bearerAuth")
 @Tag(name = "Billing", description = "Billing and invoice management APIs")
+public class BillingController {
