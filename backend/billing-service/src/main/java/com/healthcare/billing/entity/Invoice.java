@@ -18,3 +18,4 @@ import java.util.UUID;
 public class Invoice {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
