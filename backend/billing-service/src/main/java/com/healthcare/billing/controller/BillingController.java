@@ -72,3 +72,4 @@ public class BillingController {
     @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT')")
     @Operation(summary = "Record a payment against an invoice")
     public ResponseEntity<InvoiceResponse> recordPayment(
+            @PathVariable UUID id,
