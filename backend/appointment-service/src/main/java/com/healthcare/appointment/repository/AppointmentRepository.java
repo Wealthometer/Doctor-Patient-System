@@ -43,3 +43,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
             @Param("endTime") LocalTime endTime);
 
     @Query("""
+        SELECT a FROM Appointment a WHERE a.appointmentDate = :date
