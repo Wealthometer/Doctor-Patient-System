@@ -15,3 +15,4 @@ public interface DoctorServiceClient {
     @GetMapping("/api/v1/doctors/{id}")
     DoctorDto getDoctorById(@PathVariable UUID id);
 
+    @Data
