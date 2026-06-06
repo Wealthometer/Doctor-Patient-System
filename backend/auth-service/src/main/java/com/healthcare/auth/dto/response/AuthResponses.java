@@ -28,3 +28,4 @@ public class AuthResponses {
         private String email;
         private String firstName;
         private String lastName;
+        private Role role;
