@@ -33,3 +33,4 @@ public class DoctorRequests {
         private String department;
 
         @NotBlank(message = "License number is required")
+        private String licenseNumber;
