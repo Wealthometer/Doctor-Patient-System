@@ -42,3 +42,4 @@ public class AppointmentResponses {
     @Data
     @Builder
     public static class AppointmentStatsResponse {
+        private long totalAppointments;
