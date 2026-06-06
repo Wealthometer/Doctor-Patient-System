@@ -75,3 +75,4 @@ public class BillingService {
             invoice.getLineItems().add(item);
         }
 
+        BigDecimal taxAmount = subtotal.multiply(invoice.getTaxRate())
