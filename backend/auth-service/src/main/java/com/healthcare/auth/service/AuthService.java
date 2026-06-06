@@ -67,3 +67,4 @@ public class AuthService {
                     new UsernamePasswordAuthenticationToken(
                             request.getUsernameOrEmail(),
                             request.getPassword()
+                    )
