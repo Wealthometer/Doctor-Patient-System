@@ -148,3 +148,4 @@ public class AppointmentService {
                 throw new InvalidAppointmentStateException("Appointment must be SCHEDULED or CONFIRMED to start");
         });
     }
+
