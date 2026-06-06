@@ -14,3 +14,4 @@ CREATE TABLE users (
     account_non_locked BOOLEAN NOT NULL DEFAULT true,
     account_non_expired BOOLEAN NOT NULL DEFAULT true,
     credentials_non_expired BOOLEAN NOT NULL DEFAULT true,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
