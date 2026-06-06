@@ -33,3 +33,4 @@ public class AppointmentResponses {
         private String diagnosisSummary;
         private String cancellationReason;
         private LocalDateTime cancelledAt;
+        private LocalDateTime confirmedAt;
