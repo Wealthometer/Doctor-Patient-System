@@ -39,3 +39,4 @@ public class AuthResponses {
         private UUID userId;
         private String username;
         private String email;
+        private Role role;
