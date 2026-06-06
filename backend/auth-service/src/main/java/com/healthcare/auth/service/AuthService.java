@@ -61,3 +61,4 @@ public class AuthService {
         return buildAuthResponse(user);
     }
 
+    public AuthResponse login(LoginRequest request) {
