@@ -105,3 +105,4 @@ public class AppointmentService {
 
     @Transactional(readOnly = true)
     public List<AvailableSlot> getAvailableSlots(UUID doctorId, LocalDate date) {
+        var doctor = doctorServiceClient.getDoctorById(doctorId);
