@@ -132,3 +132,4 @@ public class BillingService {
                 .amount(request.getAmount())
                 .method(request.getMethod())
                 .transactionId(request.getTransactionId())
+                .notes(request.getNotes())
