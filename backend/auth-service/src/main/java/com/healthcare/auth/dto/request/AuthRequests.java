@@ -30,3 +30,4 @@ public class AuthRequests {
         private String lastName;
 
         @NotNull(message = "Role is required")
+        private Role role;
