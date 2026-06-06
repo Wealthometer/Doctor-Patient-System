@@ -55,4 +55,5 @@
     </dependencies>
   </dependencyManagement>
 
+  <build>
     <plugins>
