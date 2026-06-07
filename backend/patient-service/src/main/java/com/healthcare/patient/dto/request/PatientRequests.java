@@ -46,3 +46,4 @@ public class PatientRequests {
         private String emergencyContactRelation;
         private String allergies;
         private String chronicConditions;
+        private String bloodType;
