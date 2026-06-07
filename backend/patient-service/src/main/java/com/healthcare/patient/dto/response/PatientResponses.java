@@ -41,3 +41,4 @@ public class PatientResponses {
         private String insuranceProvider;
         private String insurancePolicyNumber;
         private LocalDateTime createdAt;
+        private LocalDateTime updatedAt;
