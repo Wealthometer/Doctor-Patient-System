@@ -58,6 +58,7 @@ public class SecurityConfig {
 
         @Override
         protected void doFilterInternal(@NonNull HttpServletRequest request,
+                                        @NonNull HttpServletResponse response,
                                         @NonNull FilterChain filterChain) throws ServletException, IOException {
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {
                 return;
