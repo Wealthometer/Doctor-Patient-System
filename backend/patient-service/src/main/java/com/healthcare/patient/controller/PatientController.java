@@ -93,3 +93,4 @@ public class PatientController {
 
     @PatchMapping("/{id}/deactivate")
     @PreAuthorize("hasRole('ADMIN')")
+    @Operation(summary = "Deactivate patient")
