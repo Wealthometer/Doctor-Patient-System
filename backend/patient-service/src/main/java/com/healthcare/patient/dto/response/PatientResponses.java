@@ -33,3 +33,4 @@ public class PatientResponses {
         private String emergencyContactName;
         private String emergencyContactPhone;
         private String emergencyContactRelation;
+        private String allergies;
