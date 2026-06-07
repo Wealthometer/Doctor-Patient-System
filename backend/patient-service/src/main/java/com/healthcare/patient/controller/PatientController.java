@@ -32,3 +32,4 @@ public class PatientController {
     @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT')")
     @Operation(summary = "Create patient profile")
     public ResponseEntity<PatientResponse> createPatient(@Valid @RequestBody CreatePatientRequest request) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(patientService.createPatient(request));
