@@ -82,3 +82,4 @@ public class PatientController {
         return ResponseEntity.ok(patientService.getPatientsByStatus(status, pageable));
     }
 
+    @PutMapping("/{id}")
