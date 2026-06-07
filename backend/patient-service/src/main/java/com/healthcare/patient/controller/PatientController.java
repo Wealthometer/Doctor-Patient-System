@@ -64,3 +64,4 @@ public class PatientController {
         return ResponseEntity.ok(patientService.getAllPatients(pageable));
     }
 
+    @GetMapping("/search")
