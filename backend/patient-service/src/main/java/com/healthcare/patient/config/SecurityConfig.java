@@ -54,4 +54,5 @@ public class SecurityConfig {
                 return;
             try {
                 Claims claims = Jwts.parser()
+                        .build()
 
