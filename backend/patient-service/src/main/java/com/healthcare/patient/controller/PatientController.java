@@ -40,3 +40,4 @@ public class PatientController {
     @Operation(summary = "Get patient by ID")
     public ResponseEntity<PatientResponse> getPatientById(@PathVariable UUID id) {
         return ResponseEntity.ok(patientService.getPatientById(id));
+    }
