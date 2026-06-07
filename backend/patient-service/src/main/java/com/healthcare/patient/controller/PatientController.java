@@ -54,3 +54,4 @@ public class PatientController {
     @Operation(summary = "Get patient by patient code")
     public ResponseEntity<PatientResponse> getPatientByCode(@PathVariable String code) {
         return ResponseEntity.ok(patientService.getPatientByCode(code));
+    }
