@@ -49,4 +49,5 @@ public class SecurityConfig {
         @Value("${application.security.jwt.secret-key}")
 
         protected void doFilterInternal(@NonNull HttpServletRequest request,
+                                        @NonNull FilterChain filterChain) throws ServletException, IOException {
 
