@@ -37,3 +37,4 @@ public class PatientResponses {
         private String chronicConditions;
         private String bloodType;
         private String medicalNotes;
+        private PatientStatus status;
