@@ -43,3 +43,4 @@ public class PatientController {
     }
 
     @GetMapping("/user/{userId}")
+    @Operation(summary = "Get patient by user ID")
