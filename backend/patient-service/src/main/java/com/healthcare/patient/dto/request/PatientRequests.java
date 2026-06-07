@@ -34,3 +34,4 @@ public class PatientRequests {
         @NotNull(message = "Gender is required")
         private Gender gender;
 
+        private String address;
