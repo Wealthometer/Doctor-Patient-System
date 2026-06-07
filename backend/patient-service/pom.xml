@@ -94,3 +94,4 @@
       <artifactId>mapstruct-processor</artifactId>
       <version>${mapstruct.version}</version>
       <scope>provided</scope>
+    </dependency>
