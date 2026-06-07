@@ -73,3 +73,4 @@ public class PatientRequests {
         private String bloodType;
         private String medicalNotes;
         private String insuranceProvider;
+        private String insurancePolicyNumber;
