@@ -52,6 +52,7 @@ public class SecurityConfig {
     @Component
     @Slf4j
     public static class JwtAuthFilter extends OncePerRequestFilter {
+
         @Value("${application.security.jwt.secret-key}")
 
         protected void doFilterInternal(@NonNull HttpServletRequest request,
