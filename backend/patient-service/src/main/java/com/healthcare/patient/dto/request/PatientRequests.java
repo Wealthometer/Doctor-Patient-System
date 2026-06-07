@@ -36,3 +36,4 @@ public class PatientRequests {
 
         private String address;
         private String city;
+        private String state;
