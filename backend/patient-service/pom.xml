@@ -19,3 +19,4 @@
     <mapstruct.version>1.5.5.Final</mapstruct.version>
 
   <dependencies>
+    <dependency>
