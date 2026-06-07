@@ -66,6 +66,7 @@ public class SecurityConfig {
                 return;
             }
             try {
+                String jwt = authHeader.substring(7);
                 Claims claims = Jwts.parser()
                         .build()
                         .getPayload();
