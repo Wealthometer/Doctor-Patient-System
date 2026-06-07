@@ -56,3 +56,4 @@ public class PatientController {
         return ResponseEntity.ok(patientService.getPatientByCode(code));
     }
 
+    @GetMapping
