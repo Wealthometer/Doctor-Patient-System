@@ -40,3 +40,4 @@ public class PatientRequests {
         private String zipCode;
         @Builder.Default
         private String country = "US";
+
