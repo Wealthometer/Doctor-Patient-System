@@ -42,3 +42,4 @@ public class SecurityConfig {
             .csrf(AbstractHttpConfigurer::disable)
                 .requestMatchers("/actuator/**", "/v3/api-docs/**", "/swagger-ui/**").permitAll()
             )
+            .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
