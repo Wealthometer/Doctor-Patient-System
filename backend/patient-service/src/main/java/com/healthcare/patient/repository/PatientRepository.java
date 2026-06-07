@@ -27,3 +27,4 @@ public interface PatientRepository extends JpaRepository<Patient, UUID> {
 
     Page<Patient> findByStatus(PatientStatus status, Pageable pageable);
 
+    @Query("""
