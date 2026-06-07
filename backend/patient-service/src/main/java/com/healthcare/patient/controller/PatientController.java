@@ -52,3 +52,4 @@ public class PatientController {
     @GetMapping("/code/{code}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     @Operation(summary = "Get patient by patient code")
+    public ResponseEntity<PatientResponse> getPatientByCode(@PathVariable String code) {
