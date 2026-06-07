@@ -88,3 +88,4 @@ public class SecurityConfig {
                 log.error("JWT authentication error: {}", e.getMessage());
             }
             filterChain.doFilter(request, response);
+        }
