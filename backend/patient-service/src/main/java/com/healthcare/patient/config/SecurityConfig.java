@@ -95,3 +95,4 @@ public class SecurityConfig {
             return Keys.hmacShaKeyFor(keyBytes);
         }
     }
+}
