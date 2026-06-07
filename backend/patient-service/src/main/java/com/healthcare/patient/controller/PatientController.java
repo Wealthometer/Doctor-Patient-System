@@ -61,3 +61,4 @@ public class PatientController {
     @Operation(summary = "Get all patients (paginated)")
     public ResponseEntity<Page<PatientResponse>> getAllPatients(
             @PageableDefault(size = 20, sort = "createdAt") Pageable pageable) {
+        return ResponseEntity.ok(patientService.getAllPatients(pageable));
