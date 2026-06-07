@@ -69,3 +69,4 @@ public class PatientRequests {
         private String emergencyContactPhone;
         private String emergencyContactRelation;
         private String allergies;
+        private String chronicConditions;
