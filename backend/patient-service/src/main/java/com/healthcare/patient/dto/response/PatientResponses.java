@@ -47,3 +47,4 @@ public class PatientResponses {
     @Data
     @Builder
     public static class PatientStatsResponse {
+        private long totalPatients;
