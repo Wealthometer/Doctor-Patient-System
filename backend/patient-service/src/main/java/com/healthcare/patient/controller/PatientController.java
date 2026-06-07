@@ -95,3 +95,4 @@ public class PatientController {
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Deactivate patient")
     public ResponseEntity<Void> deactivatePatient(@PathVariable UUID id) {
+        patientService.deactivatePatient(id);
