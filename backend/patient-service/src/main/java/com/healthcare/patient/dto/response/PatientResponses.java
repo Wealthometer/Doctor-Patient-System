@@ -51,3 +51,4 @@ public class PatientResponses {
         private long activePatients;
         private long inactivePatients;
     }
+}
