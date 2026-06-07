@@ -35,3 +35,4 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.CREATED).body(patientService.createPatient(request));
     }
 
+    @GetMapping("/{id}")
