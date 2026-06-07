@@ -26,3 +26,4 @@ public class PatientRequests {
 
         @NotBlank(message = "Phone is required")
         private String phone;
+
