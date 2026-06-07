@@ -75,3 +75,4 @@ public class PatientController {
 
     @GetMapping("/status/{status}")
     @PreAuthorize("hasRole('ADMIN')")
+    @Operation(summary = "Get patients by status")
