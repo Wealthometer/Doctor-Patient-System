@@ -50,3 +50,4 @@ public class PatientResponses {
         private long totalPatients;
         private long activePatients;
         private long inactivePatients;
+    }
