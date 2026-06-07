@@ -88,3 +88,4 @@ public class PatientController {
     public ResponseEntity<PatientResponse> updatePatient(
             @PathVariable UUID id,
             @Valid @RequestBody UpdatePatientRequest request) {
+        return ResponseEntity.ok(patientService.updatePatient(id, request));
