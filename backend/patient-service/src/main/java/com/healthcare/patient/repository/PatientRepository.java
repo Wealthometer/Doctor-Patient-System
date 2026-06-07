@@ -20,3 +20,4 @@ public interface PatientRepository extends JpaRepository<Patient, UUID> {
     Optional<Patient> findByPatientCode(String patientCode);
 
     Optional<Patient> findByEmail(String email);
+
