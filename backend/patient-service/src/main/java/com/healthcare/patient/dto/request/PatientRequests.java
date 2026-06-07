@@ -42,3 +42,4 @@ public class PatientRequests {
         private String country = "US";
 
         private String emergencyContactName;
+        private String emergencyContactPhone;
