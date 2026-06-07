@@ -81,3 +81,4 @@ public class SecurityConfig {
                             username, null,
                             List.of(new SimpleGrantedAuthority("ROLE_" + role))
                     );
+                    SecurityContextHolder.getContext().setAuthentication(authToken);
