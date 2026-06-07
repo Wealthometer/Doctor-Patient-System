@@ -91,3 +91,4 @@ public class PatientController {
         return ResponseEntity.ok(patientService.updatePatient(id, request));
     }
 
+    @PatchMapping("/{id}/deactivate")
