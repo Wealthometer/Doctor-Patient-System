@@ -78,3 +78,4 @@ public class SecurityConfig {
 
                 if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
                     var authToken = new UsernamePasswordAuthenticationToken(
+                            username, null,
