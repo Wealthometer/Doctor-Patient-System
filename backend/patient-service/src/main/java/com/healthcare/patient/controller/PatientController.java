@@ -43,4 +43,5 @@ public class PatientController {
     }
 
     @GetMapping("/user/{userId}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     @Operation(summary = "Get patient by user ID")
