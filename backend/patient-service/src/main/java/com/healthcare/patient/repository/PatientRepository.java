@@ -25,3 +25,4 @@ public interface PatientRepository extends JpaRepository<Patient, UUID> {
 
     boolean existsByUserId(UUID userId);
 
+    Page<Patient> findByStatus(PatientStatus status, Pageable pageable);
