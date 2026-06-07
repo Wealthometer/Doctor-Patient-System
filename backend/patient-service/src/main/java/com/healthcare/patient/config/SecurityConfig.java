@@ -91,3 +91,4 @@ public class SecurityConfig {
         }
 
         private SecretKey getSignInKey() {
+            return Keys.hmacShaKeyFor(keyBytes);
