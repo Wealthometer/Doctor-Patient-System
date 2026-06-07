@@ -60,3 +60,4 @@ public class PatientController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     @Operation(summary = "Get all patients (paginated)")
     public ResponseEntity<Page<PatientResponse>> getAllPatients(
+            @PageableDefault(size = 20, sort = "createdAt") Pageable pageable) {
