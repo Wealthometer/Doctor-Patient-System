@@ -23,3 +23,4 @@ import java.util.UUID;
 @RequestMapping("/api/v1/patients")
 @RequiredArgsConstructor
 @SecurityRequirement(name = "bearerAuth")
+@Tag(name = "Patients", description = "Patient management APIs")
