@@ -16,3 +16,4 @@ public class PatientRequests {
 
         @NotBlank(message = "First name is required")
         private String firstName;
+
