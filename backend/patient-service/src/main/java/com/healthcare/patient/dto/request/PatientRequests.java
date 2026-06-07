@@ -15,3 +15,4 @@ public class PatientRequests {
         private UUID userId;
 
         @NotBlank(message = "First name is required")
+        private String firstName;
