@@ -26,3 +26,4 @@ public class PatientResponses {
         private int age;
         private Gender gender;
         private String address;
+        private String city;
