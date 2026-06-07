@@ -120,3 +120,4 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <artifactId>spring-cloud-dependencies</artifactId>
