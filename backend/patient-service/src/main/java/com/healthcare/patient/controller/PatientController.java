@@ -55,3 +55,4 @@ public class PatientController {
     public ResponseEntity<PatientResponse> getPatientByCode(@PathVariable String code) {
         return ResponseEntity.ok(patientService.getPatientByCode(code));
     }
+
