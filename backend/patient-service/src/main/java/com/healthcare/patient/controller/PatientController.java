@@ -103,3 +103,4 @@ public class PatientController {
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get patient statistics")
     public ResponseEntity<PatientStatsResponse> getStats() {
+        return ResponseEntity.ok(patientService.getStats());
