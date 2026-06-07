@@ -76,3 +76,4 @@ public class SecurityConfig {
                 String username = claims.getSubject();
                 String role = claims.get("role", String.class);
 
+                if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
