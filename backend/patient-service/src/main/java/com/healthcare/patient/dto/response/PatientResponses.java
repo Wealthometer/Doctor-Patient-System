@@ -31,3 +31,4 @@ public class PatientResponses {
         private String zipCode;
         private String country;
         private String emergencyContactName;
+        private String emergencyContactPhone;
