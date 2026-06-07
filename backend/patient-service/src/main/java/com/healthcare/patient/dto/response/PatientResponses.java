@@ -24,3 +24,4 @@ public class PatientResponses {
         private String phone;
         private LocalDate dateOfBirth;
         private int age;
+        private Gender gender;
