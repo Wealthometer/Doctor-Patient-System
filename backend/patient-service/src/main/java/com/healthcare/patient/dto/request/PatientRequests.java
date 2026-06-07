@@ -32,3 +32,4 @@ public class PatientRequests {
         private LocalDate dateOfBirth;
 
         @NotNull(message = "Gender is required")
+        private Gender gender;
