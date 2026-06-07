@@ -105,3 +105,4 @@ public class PatientController {
     public ResponseEntity<PatientStatsResponse> getStats() {
         return ResponseEntity.ok(patientService.getStats());
     }
+}
