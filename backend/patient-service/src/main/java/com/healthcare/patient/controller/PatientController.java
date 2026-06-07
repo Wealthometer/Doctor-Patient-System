@@ -86,3 +86,4 @@ public class PatientController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
     @Operation(summary = "Update patient details")
     public ResponseEntity<PatientResponse> updatePatient(
+            @PathVariable UUID id,
