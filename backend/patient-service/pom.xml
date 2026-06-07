@@ -121,3 +121,4 @@
     <dependencies>
       <dependency>
         <artifactId>spring-cloud-dependencies</artifactId>
+        <type>pom</type>
