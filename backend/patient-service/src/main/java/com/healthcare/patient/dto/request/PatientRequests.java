@@ -56,3 +56,4 @@ public class PatientRequests {
     }
 
     @Data
+    public static class UpdatePatientRequest {
