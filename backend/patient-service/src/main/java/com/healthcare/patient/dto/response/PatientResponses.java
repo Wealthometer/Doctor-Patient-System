@@ -13,3 +13,4 @@ public class PatientResponses {
 
     @Data
     @Builder
+    public static class PatientResponse {
