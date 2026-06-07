@@ -40,4 +40,5 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
     </dependency>
+    <dependency>
     </dependency>
