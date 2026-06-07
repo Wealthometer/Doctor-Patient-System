@@ -118,3 +118,4 @@
   </dependencies>
 
   <dependencyManagement>
+    <dependencies>
