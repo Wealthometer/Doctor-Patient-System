@@ -58,3 +58,4 @@ public class PatientController {
 
     @GetMapping
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
+    @Operation(summary = "Get all patients (paginated)")
