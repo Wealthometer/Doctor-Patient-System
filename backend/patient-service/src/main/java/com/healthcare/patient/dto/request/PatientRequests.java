@@ -49,3 +49,4 @@ public class PatientRequests {
         private String bloodType;
         private String medicalNotes;
 
+        @NotBlank(message = "Insurance provider is required")
