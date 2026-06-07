@@ -49,3 +49,4 @@ public class PatientController {
         return ResponseEntity.ok(patientService.getPatientByUserId(userId));
     }
 
+    @GetMapping("/code/{code}")
