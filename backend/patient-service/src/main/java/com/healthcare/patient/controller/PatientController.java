@@ -28,3 +28,4 @@ public class PatientController {
 
     private final PatientService patientService;
 
+    @PostMapping
