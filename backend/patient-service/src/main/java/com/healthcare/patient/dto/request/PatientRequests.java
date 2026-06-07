@@ -31,3 +31,4 @@ public class PatientRequests {
         @Past(message = "Date of birth must be in the past")
         private LocalDate dateOfBirth;
 
+        @NotNull(message = "Gender is required")
