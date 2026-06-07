@@ -22,3 +22,4 @@ public class PatientResponses {
         private String fullName;
         private String email;
         private String phone;
+        private LocalDate dateOfBirth;
