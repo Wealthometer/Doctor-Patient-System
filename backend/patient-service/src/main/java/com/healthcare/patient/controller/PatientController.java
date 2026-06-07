@@ -77,3 +77,4 @@ public class PatientController {
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get patients by status")
     public ResponseEntity<Page<PatientResponse>> getPatientsByStatus(
+            @PathVariable PatientStatus status,
