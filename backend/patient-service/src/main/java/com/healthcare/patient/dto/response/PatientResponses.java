@@ -36,3 +36,4 @@ public class PatientResponses {
         private String allergies;
         private String chronicConditions;
         private String bloodType;
+        private String medicalNotes;
