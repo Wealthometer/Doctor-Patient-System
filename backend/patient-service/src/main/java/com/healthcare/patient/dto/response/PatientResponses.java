@@ -4,3 +4,4 @@ import com.healthcare.patient.entity.Gender;
 import com.healthcare.patient.entity.PatientStatus;
 import lombok.Builder;
 import lombok.Data;
+
