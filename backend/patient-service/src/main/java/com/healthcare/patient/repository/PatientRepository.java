@@ -36,3 +36,4 @@ public interface PatientRepository extends JpaRepository<Patient, UUID> {
         LOWER(p.phone) LIKE LOWER(CONCAT('%', :query, '%'))
     """)
     Page<Patient> searchPatients(@Param("query") String query, Pageable pageable);
+
