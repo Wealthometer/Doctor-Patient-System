@@ -55,4 +55,5 @@ public class SecurityConfig {
             try {
                 Claims claims = Jwts.parser()
                         .build()
+                        .getPayload();
 
