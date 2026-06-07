@@ -48,3 +48,4 @@ public class PatientController {
     public ResponseEntity<PatientResponse> getPatientByUserId(@PathVariable UUID userId) {
         return ResponseEntity.ok(patientService.getPatientByUserId(userId));
     }
+
