@@ -44,3 +44,4 @@ public class PatientResponses {
         private LocalDateTime updatedAt;
     }
 
+    @Data
