@@ -79,3 +79,4 @@ public class SecurityConfig {
                 if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
                     var authToken = new UsernamePasswordAuthenticationToken(
                             username, null,
+                            List.of(new SimpleGrantedAuthority("ROLE_" + role))
