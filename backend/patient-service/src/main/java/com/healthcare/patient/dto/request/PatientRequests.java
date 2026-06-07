@@ -12,3 +12,4 @@ public class PatientRequests {
     @Data
     public static class CreatePatientRequest {
         @NotNull(message = "User ID is required")
+        private UUID userId;
