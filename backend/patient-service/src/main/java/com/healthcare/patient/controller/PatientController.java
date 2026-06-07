@@ -47,3 +47,4 @@ public class PatientController {
     @Operation(summary = "Get patient by user ID")
     public ResponseEntity<PatientResponse> getPatientByUserId(@PathVariable UUID userId) {
         return ResponseEntity.ok(patientService.getPatientByUserId(userId));
+    }
