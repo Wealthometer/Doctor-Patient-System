@@ -29,3 +29,4 @@ public interface PatientRepository extends JpaRepository<Patient, UUID> {
 
     @Query("""
         SELECT p FROM Patient p WHERE
+        LOWER(p.firstName) LIKE LOWER(CONCAT('%', :query, '%')) OR
