@@ -48,3 +48,4 @@ public class PatientResponses {
     @Builder
     public static class PatientStatsResponse {
         private long totalPatients;
+        private long activePatients;
