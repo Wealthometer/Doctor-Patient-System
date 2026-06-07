@@ -64,6 +64,7 @@ public class SecurityConfig {
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {
                 filterChain.doFilter(request, response);
                 return;
+            }
             try {
                 Claims claims = Jwts.parser()
                         .build()
