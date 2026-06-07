@@ -18,3 +18,4 @@ public class PatientResponses {
         private UUID userId;
         private String patientCode;
         private String firstName;
+        private String lastName;
