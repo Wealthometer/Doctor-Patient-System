@@ -73,3 +73,4 @@ public class PatientController {
         return ResponseEntity.ok(patientService.searchPatients(query, pageable));
     }
 
+    @GetMapping("/status/{status}")
