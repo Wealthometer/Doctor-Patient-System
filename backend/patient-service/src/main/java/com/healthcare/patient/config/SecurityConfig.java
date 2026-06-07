@@ -73,3 +73,4 @@ public class SecurityConfig {
                         .parseSignedClaims(jwt)
                         .getPayload();
 
+                String username = claims.getSubject();
