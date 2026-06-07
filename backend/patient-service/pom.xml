@@ -129,6 +129,7 @@
     </dependencies>
   </dependencyManagement>
   <build>
+        <groupId>org.springframework.boot</groupId>
         <configuration>
             <exclude><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId></exclude>
         </configuration>
