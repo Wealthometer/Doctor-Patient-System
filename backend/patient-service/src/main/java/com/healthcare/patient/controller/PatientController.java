@@ -96,3 +96,4 @@ public class PatientController {
     @Operation(summary = "Deactivate patient")
     public ResponseEntity<Void> deactivatePatient(@PathVariable UUID id) {
         patientService.deactivatePatient(id);
+        return ResponseEntity.noContent().build();
