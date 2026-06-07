@@ -66,3 +66,4 @@ public class PatientRequests {
         private String zipCode;
         private String country;
         private String emergencyContactName;
+        private String emergencyContactPhone;
