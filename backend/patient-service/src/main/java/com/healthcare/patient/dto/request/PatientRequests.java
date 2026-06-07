@@ -53,3 +53,4 @@ public class PatientRequests {
         private String insuranceProvider;
 
         private String insurancePolicyNumber;
+    }
