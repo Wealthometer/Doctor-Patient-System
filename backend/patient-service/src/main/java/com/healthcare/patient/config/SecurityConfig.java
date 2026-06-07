@@ -52,4 +52,5 @@ public class SecurityConfig {
                                         @NonNull FilterChain filterChain) throws ServletException, IOException {
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {
                 return;
+            try {
 
