@@ -100,3 +100,4 @@ public class PatientController {
     }
 
     @GetMapping("/stats")
+    @PreAuthorize("hasRole('ADMIN')")
