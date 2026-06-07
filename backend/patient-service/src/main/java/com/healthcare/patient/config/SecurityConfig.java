@@ -86,3 +86,4 @@ public class SecurityConfig {
                 }
             } catch (Exception e) {
                 log.error("JWT authentication error: {}", e.getMessage());
+            }
