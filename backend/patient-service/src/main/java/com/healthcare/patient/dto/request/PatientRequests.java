@@ -25,3 +25,4 @@ public class PatientRequests {
         private String email;
 
         @NotBlank(message = "Phone is required")
+        private String phone;
