@@ -51,3 +51,4 @@ public class PatientRequests {
 
         @NotBlank(message = "Insurance provider is required")
         private String insuranceProvider;
+
