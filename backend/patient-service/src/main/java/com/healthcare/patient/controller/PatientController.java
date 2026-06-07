@@ -53,3 +53,4 @@ public class PatientController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     @Operation(summary = "Get patient by patient code")
     public ResponseEntity<PatientResponse> getPatientByCode(@PathVariable String code) {
+        return ResponseEntity.ok(patientService.getPatientByCode(code));
