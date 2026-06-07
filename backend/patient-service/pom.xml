@@ -130,6 +130,7 @@
   </dependencyManagement>
   <build>
         <configuration>
+            <exclude><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId></exclude>
         </configuration>
     </plugins>
 </project>
