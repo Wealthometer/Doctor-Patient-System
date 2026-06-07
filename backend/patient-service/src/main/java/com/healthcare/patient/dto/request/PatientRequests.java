@@ -21,3 +21,4 @@ public class PatientRequests {
         private String lastName;
 
         @NotBlank(message = "Email is required")
+        @Email
