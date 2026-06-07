@@ -30,3 +30,4 @@ public class PatientController {
 
     @PostMapping
     @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT')")
+    @Operation(summary = "Create patient profile")
