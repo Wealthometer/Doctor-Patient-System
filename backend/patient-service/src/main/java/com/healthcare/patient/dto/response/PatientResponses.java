@@ -39,3 +39,4 @@ public class PatientResponses {
         private String medicalNotes;
         private PatientStatus status;
         private String insuranceProvider;
+        private String insurancePolicyNumber;
