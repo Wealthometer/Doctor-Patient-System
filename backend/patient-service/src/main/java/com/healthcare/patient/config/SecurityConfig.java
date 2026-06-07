@@ -90,3 +90,4 @@ public class SecurityConfig {
             filterChain.doFilter(request, response);
         }
 
+        private SecretKey getSignInKey() {
