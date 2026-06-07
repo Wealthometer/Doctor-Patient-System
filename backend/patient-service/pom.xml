@@ -10,6 +10,7 @@
     <relativePath/>
   </parent>
   <groupId>com.healthcare</groupId>
+  <artifactId>patient-service</artifactId>
   <version>1.0.0</version>
   <name>patient-service</name>
 
