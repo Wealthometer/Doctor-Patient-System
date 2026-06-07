@@ -54,6 +54,7 @@ public class SecurityConfig {
     public static class JwtAuthFilter extends OncePerRequestFilter {
 
         @Value("${application.security.jwt.secret-key}")
+        private String secretKey;
 
         protected void doFilterInternal(@NonNull HttpServletRequest request,
                                         @NonNull FilterChain filterChain) throws ServletException, IOException {
