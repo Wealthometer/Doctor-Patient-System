@@ -50,3 +50,4 @@ public class PatientController {
     }
 
     @GetMapping("/code/{code}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
