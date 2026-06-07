@@ -90,3 +90,4 @@ public class PatientController {
             @Valid @RequestBody UpdatePatientRequest request) {
         return ResponseEntity.ok(patientService.updatePatient(id, request));
     }
+
