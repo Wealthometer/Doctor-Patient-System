@@ -25,3 +25,4 @@
     </dependency>
     <dependency>
       <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
