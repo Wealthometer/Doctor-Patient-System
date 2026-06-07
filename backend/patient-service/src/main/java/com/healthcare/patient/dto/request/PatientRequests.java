@@ -41,3 +41,4 @@ public class PatientRequests {
         @Builder.Default
         private String country = "US";
 
+        private String emergencyContactName;
