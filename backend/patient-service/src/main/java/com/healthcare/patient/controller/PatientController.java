@@ -69,3 +69,4 @@ public class PatientController {
     @Operation(summary = "Search patients")
     public ResponseEntity<Page<PatientResponse>> searchPatients(
             @RequestParam String query,
+            @PageableDefault(size = 20) Pageable pageable) {
