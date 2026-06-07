@@ -70,5 +70,6 @@ public class SecurityConfig {
                 Claims claims = Jwts.parser()
                         .verifyWith(getSignInKey())
                         .build()
+                        .parseSignedClaims(jwt)
                         .getPayload();
 
