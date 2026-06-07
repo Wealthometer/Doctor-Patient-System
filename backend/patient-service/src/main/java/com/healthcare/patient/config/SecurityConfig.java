@@ -56,6 +56,7 @@ public class SecurityConfig {
         @Value("${application.security.jwt.secret-key}")
         private String secretKey;
 
+        @Override
         protected void doFilterInternal(@NonNull HttpServletRequest request,
                                         @NonNull FilterChain filterChain) throws ServletException, IOException {
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {
