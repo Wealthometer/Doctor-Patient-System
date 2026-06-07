@@ -48,6 +48,7 @@ public class SecurityConfig {
             .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
+
     @Component
     public static class JwtAuthFilter extends OncePerRequestFilter {
         @Value("${application.security.jwt.secret-key}")
