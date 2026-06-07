@@ -29,3 +29,4 @@ public class PatientController {
     private final PatientService patientService;
 
     @PostMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'PATIENT')")
