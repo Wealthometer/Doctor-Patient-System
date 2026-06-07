@@ -10,3 +10,4 @@ import java.util.UUID;
 public class PatientRequests {
 
     @Data
+    public static class CreatePatientRequest {
