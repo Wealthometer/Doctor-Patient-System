@@ -14,3 +14,4 @@ public class PatientRequests {
         @NotNull(message = "User ID is required")
         private UUID userId;
 
+        @NotBlank(message = "First name is required")
