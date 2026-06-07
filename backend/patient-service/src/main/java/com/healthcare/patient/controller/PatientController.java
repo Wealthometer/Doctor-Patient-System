@@ -84,3 +84,4 @@ public class PatientController {
 
     @PutMapping("/{id}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
+    @Operation(summary = "Update patient details")
