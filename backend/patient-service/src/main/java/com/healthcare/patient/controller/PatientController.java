@@ -68,3 +68,4 @@ public class PatientController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     @Operation(summary = "Search patients")
     public ResponseEntity<Page<PatientResponse>> searchPatients(
+            @RequestParam String query,
