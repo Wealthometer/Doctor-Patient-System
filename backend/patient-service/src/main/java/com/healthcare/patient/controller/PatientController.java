@@ -87,3 +87,4 @@ public class PatientController {
     @Operation(summary = "Update patient details")
     public ResponseEntity<PatientResponse> updatePatient(
             @PathVariable UUID id,
+            @Valid @RequestBody UpdatePatientRequest request) {
