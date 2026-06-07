@@ -79,3 +79,4 @@ public class PatientController {
     public ResponseEntity<Page<PatientResponse>> getPatientsByStatus(
             @PathVariable PatientStatus status,
             @PageableDefault(size = 20) Pageable pageable) {
+        return ResponseEntity.ok(patientService.getPatientsByStatus(status, pageable));
