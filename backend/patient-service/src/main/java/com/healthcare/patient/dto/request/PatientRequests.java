@@ -59,3 +59,4 @@ public class PatientRequests {
     public static class UpdatePatientRequest {
         private String firstName;
         private String lastName;
+        private String phone;
