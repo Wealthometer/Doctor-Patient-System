@@ -102,3 +102,4 @@ public class PatientController {
     @GetMapping("/stats")
     @PreAuthorize("hasRole('ADMIN')")
     @Operation(summary = "Get patient statistics")
+    public ResponseEntity<PatientStatsResponse> getStats() {
