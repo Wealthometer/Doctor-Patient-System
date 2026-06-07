@@ -55,3 +55,4 @@ public class PatientRequests {
         private String insurancePolicyNumber;
     }
 
+    @Data
