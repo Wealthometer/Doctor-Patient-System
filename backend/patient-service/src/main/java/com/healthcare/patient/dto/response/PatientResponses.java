@@ -21,3 +21,4 @@ public class PatientResponses {
         private String lastName;
         private String fullName;
         private String email;
+        private String phone;
