@@ -77,3 +77,4 @@ public class SecurityConfig {
                 String role = claims.get("role", String.class);
 
                 if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+                    var authToken = new UsernamePasswordAuthenticationToken(
