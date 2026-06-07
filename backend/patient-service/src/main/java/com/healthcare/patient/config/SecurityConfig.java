@@ -80,3 +80,4 @@ public class SecurityConfig {
                     var authToken = new UsernamePasswordAuthenticationToken(
                             username, null,
                             List.of(new SimpleGrantedAuthority("ROLE_" + role))
+                    );
