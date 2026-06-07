@@ -85,3 +85,4 @@ public class SecurityConfig {
                     SecurityContextHolder.getContext().setAuthentication(authToken);
                 }
             } catch (Exception e) {
+                log.error("JWT authentication error: {}", e.getMessage());
