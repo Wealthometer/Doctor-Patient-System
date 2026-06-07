@@ -16,3 +16,4 @@ public class PatientResponses {
     public static class PatientResponse {
         private UUID id;
         private UUID userId;
+        private String patientCode;
