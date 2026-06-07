@@ -38,3 +38,4 @@ public class PatientController {
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     @Operation(summary = "Get patient by ID")
+    public ResponseEntity<PatientResponse> getPatientById(@PathVariable UUID id) {
