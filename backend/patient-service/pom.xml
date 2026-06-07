@@ -31,3 +31,4 @@
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
     <dependency>
+      <artifactId>spring-boot-starter-validation</artifactId>
