@@ -25,3 +25,4 @@ public class PatientResponses {
         private LocalDate dateOfBirth;
         private int age;
         private Gender gender;
+        private String address;
