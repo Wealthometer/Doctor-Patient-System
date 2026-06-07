@@ -104,3 +104,4 @@ public class PatientController {
     @Operation(summary = "Get patient statistics")
     public ResponseEntity<PatientStatsResponse> getStats() {
         return ResponseEntity.ok(patientService.getStats());
+    }
