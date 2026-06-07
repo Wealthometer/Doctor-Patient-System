@@ -49,3 +49,4 @@ public class PatientResponses {
     public static class PatientStatsResponse {
         private long totalPatients;
         private long activePatients;
+        private long inactivePatients;
