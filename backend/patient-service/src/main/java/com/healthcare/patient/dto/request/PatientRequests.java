@@ -28,3 +28,4 @@ public class PatientRequests {
         private String phone;
 
         @NotNull(message = "Date of birth is required")
+        @Past(message = "Date of birth must be in the past")
