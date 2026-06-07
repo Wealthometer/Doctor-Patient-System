@@ -74,3 +74,4 @@ public class PatientController {
     }
 
     @GetMapping("/status/{status}")
+    @PreAuthorize("hasRole('ADMIN')")
