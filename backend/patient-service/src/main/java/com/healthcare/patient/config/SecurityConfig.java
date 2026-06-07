@@ -36,3 +36,4 @@ import java.util.List;
 @EnableMethodSecurity
 public class SecurityConfig {
 
+    @Bean
