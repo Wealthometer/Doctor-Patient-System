@@ -19,3 +19,4 @@ public class PatientResponses {
         private String patientCode;
         private String firstName;
         private String lastName;
+        private String fullName;
