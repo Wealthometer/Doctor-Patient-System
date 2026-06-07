@@ -17,3 +17,4 @@ public class PatientResponses {
         private UUID id;
         private UUID userId;
         private String patientCode;
+        private String firstName;
