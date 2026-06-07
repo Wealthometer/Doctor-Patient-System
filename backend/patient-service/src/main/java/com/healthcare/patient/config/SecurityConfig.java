@@ -45,3 +45,4 @@ public class SecurityConfig {
             .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
     }
     @Component
+    public static class JwtAuthFilter extends OncePerRequestFilter {
