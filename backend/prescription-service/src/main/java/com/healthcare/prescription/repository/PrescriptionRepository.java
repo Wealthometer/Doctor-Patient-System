@@ -14,6 +14,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
+public interface PrescriptionRepository extends JpaRepository<Prescription, UUID> {
 
     Optional<Prescription> findByPrescriptionNumber(String prescriptionNumber);
     Page<Prescription> findByPatientId(UUID patientId, Pageable pageable);
