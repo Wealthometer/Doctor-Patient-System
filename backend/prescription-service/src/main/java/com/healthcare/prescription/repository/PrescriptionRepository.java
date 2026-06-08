@@ -15,4 +15,5 @@ import java.util.UUID;
 @Repository
 
     Optional<Prescription> findByPrescriptionNumber(String prescriptionNumber);
+    Page<Prescription> findByPatientId(UUID patientId, Pageable pageable);
 
