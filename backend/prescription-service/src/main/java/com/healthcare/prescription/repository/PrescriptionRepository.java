@@ -20,3 +20,4 @@ import java.util.UUID;
     Page<Prescription> findByPatientIdAndStatus(UUID patientId, PrescriptionStatus status, Pageable pageable);
     List<Prescription> findByAppointmentId(UUID appointmentId);
 
+    @Query("SELECT p FROM Prescription p WHERE p.status = 'ACTIVE' AND p.expiryDate < :date")
