@@ -21,3 +21,4 @@ import java.util.UUID;
     List<Prescription> findByAppointmentId(UUID appointmentId);
 
     @Query("SELECT p FROM Prescription p WHERE p.status = 'ACTIVE' AND p.expiryDate < :date")
+    List<Prescription> findExpiredPrescriptions(@Param("date") LocalDate date);
