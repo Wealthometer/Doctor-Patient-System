@@ -13,4 +13,5 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class PrescriptionServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(PrescriptionServiceApplication.class, args);
+    }
 }
