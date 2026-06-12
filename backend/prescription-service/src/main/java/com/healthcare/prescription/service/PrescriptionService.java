@@ -7,3 +7,4 @@ import com.healthcare.prescription.entity.PrescriptionStatus;
 import com.healthcare.prescription.exception.PrescriptionNotFoundException;
 import com.healthcare.prescription.repository.PrescriptionRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
