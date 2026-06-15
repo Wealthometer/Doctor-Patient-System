@@ -1,0 +1,450 @@
+version: "3.9"
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  HealthCare+ Doctor-Patient Management System — Docker Compose
+# ─────────────────────────────────────────────────────────────────────────────
+
+x-common-env: &common-env
+  EUREKA_HOST: discovery-service
+  EUREKA_USERNAME: eureka
+  EUREKA_PASSWORD: eureka-secret
+  CONFIG_SERVER_URL: http://config-server:8888
+  JWT_SECRET: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  DB_USERNAME: postgres
+  DB_PASSWORD: w3e4r5t6y7
+
+x-service-defaults: &service-defaults
+  restart: unless-stopped
+  networks:
+    - healthcare-network
+  depends_on:
+    discovery-service:
+      condition: service_healthy
+    config-server:
+      condition: service_healthy
+
+networks:
+  healthcare-network:
+    driver: bridge
+    name: healthcare-network
+
+volumes:
+  postgres-auth-data:
+  postgres-patient-data:
+  postgres-doctor-data:
+  postgres-appointment-data:
+  postgres-prescription-data:
+  postgres-notification-data:
+  postgres-billing-data:
+  prometheus-data:
+  grafana-data:
+
+services:
+
+  # ── Databases ───────────────────────────────────────────────────────────────
+
+  postgres-auth:
+    image: postgres:16-alpine
+    container_name: postgres-auth
+    environment:
+      POSTGRES_DB: healthcare_auth
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: w3e4r5t6y7
+    volumes:
+      - postgres-auth-data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthcare_auth"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-patient:
+    image: postgres:16-alpine
+    container_name: postgres-patient
+    environment:
+      POSTGRES_DB: healthcare_patients
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: w3e4r5t6y7
+    volumes:
+      - postgres-patient-data:/var/lib/postgresql/data
+    ports:
+      - "5434:5432"
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthcare_patients"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-doctor:
+    image: postgres:16-alpine
+    container_name: postgres-doctor
+    environment:
+      POSTGRES_DB: healthcare_doctors
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: w3e4r5t6y7
+    volumes:
+      - postgres-doctor-data:/var/lib/postgresql/data
+    ports:
+      - "5435:5432"
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthcare_doctors"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-appointment:
+    image: postgres:16-alpine
+    container_name: postgres-appointment
+    environment:
+      POSTGRES_DB: healthcare_appointments
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: w3e4r5t6y7
+    volumes:
+      - postgres-appointment-data:/var/lib/postgresql/data
+    ports:
+      - "5436:5432"
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthcare_appointments"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-prescription:
+    image: postgres:16-alpine
+    container_name: postgres-prescription
+    environment:
+      POSTGRES_DB: healthcare_prescriptions
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: w3e4r5t6y7
+    volumes:
+      - postgres-prescription-data:/var/lib/postgresql/data
+    ports:
+      - "5437:5432"
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthcare_prescriptions"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-notification:
+    image: postgres:16-alpine
+    container_name: postgres-notification
+    environment:
+      POSTGRES_DB: healthcare_notifications
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: w3e4r5t6y7
+    volumes:
+      - postgres-notification-data:/var/lib/postgresql/data
+    ports:
+      - "5438:5432"
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthcare_notifications"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-billing:
+    image: postgres:16-alpine
+    container_name: postgres-billing
+    environment:
+      POSTGRES_DB: healthcare_billing
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: w3e4r5t6y7
+    volumes:
+      - postgres-billing-data:/var/lib/postgresql/data
+    ports:
+      - "5439:5432"
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d healthcare_billing"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Infrastructure ───────────────────────────────────────────────────────────
+
+  discovery-service:
+    build:
+      context: ./backend/discovery-service
+      dockerfile: Dockerfile
+    container_name: discovery-service
+    ports:
+      - "8761:8761"
+    environment:
+      EUREKA_USERNAME: eureka
+      EUREKA_PASSWORD: eureka-secret
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:8761/actuator/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      start-period: 30s
+      retries: 5
+
+  config-server:
+    build:
+      context: ./backend/config-server
+      dockerfile: Dockerfile
+    container_name: config-server
+    ports:
+      - "8888:8888"
+    environment:
+      EUREKA_HOST: discovery-service
+      EUREKA_USERNAME: eureka
+      EUREKA_PASSWORD: eureka-secret
+    networks:
+      - healthcare-network
+    depends_on:
+      discovery-service:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:8888/actuator/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      start-period: 40s
+      retries: 5
+
+  # ── Microservices ────────────────────────────────────────────────────────────
+
+  auth-service:
+    build:
+      context: ./backend/auth-service
+      dockerfile: Dockerfile
+    container_name: auth-service
+    <<: *service-defaults
+    ports:
+      - "8081:8081"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8081
+      DB_HOST: postgres-auth
+      DB_PORT: 5432
+      DB_NAME: healthcare_auth
+    depends_on:
+      postgres-auth:
+        condition: service_healthy
+      discovery-service:
+        condition: service_healthy
+      config-server:
+        condition: service_healthy
+
+  patient-service:
+    build:
+      context: ./backend/patient-service
+      dockerfile: Dockerfile
+    container_name: patient-service
+    <<: *service-defaults
+    ports:
+      - "8082:8082"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8082
+      DB_HOST: postgres-patient
+      DB_PORT: 5432
+      DB_NAME: healthcare_patients
+    depends_on:
+      postgres-patient:
+        condition: service_healthy
+      discovery-service:
+        condition: service_healthy
+      config-server:
+        condition: service_healthy
+
+  doctor-service:
+    build:
+      context: ./backend/doctor-service
+      dockerfile: Dockerfile
+    container_name: doctor-service
+    <<: *service-defaults
+    ports:
+      - "8083:8083"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8083
+      DB_HOST: postgres-doctor
+      DB_PORT: 5432
+      DB_NAME: healthcare_doctors
+    depends_on:
+      postgres-doctor:
+        condition: service_healthy
+      discovery-service:
+        condition: service_healthy
+      config-server:
+        condition: service_healthy
+
+  appointment-service:
+    build:
+      context: ./backend/appointment-service
+      dockerfile: Dockerfile
+    container_name: appointment-service
+    <<: *service-defaults
+    ports:
+      - "8084:8084"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8084
+      DB_HOST: postgres-appointment
+      DB_PORT: 5432
+      DB_NAME: healthcare_appointments
+    depends_on:
+      postgres-appointment:
+        condition: service_healthy
+      patient-service:
+        condition: service_started
+      doctor-service:
+        condition: service_started
+
+  prescription-service:
+    build:
+      context: ./backend/prescription-service
+      dockerfile: Dockerfile
+    container_name: prescription-service
+    <<: *service-defaults
+    ports:
+      - "8085:8085"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8085
+      DB_HOST: postgres-prescription
+      DB_PORT: 5432
+      DB_NAME: healthcare_prescriptions
+    depends_on:
+      postgres-prescription:
+        condition: service_healthy
+      patient-service:
+        condition: service_started
+      doctor-service:
+        condition: service_started
+
+  notification-service:
+    build:
+      context: ./backend/notification-service
+      dockerfile: Dockerfile
+    container_name: notification-service
+    <<: *service-defaults
+    ports:
+      - "8086:8086"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8086
+      DB_HOST: postgres-notification
+      DB_PORT: 5432
+      DB_NAME: healthcare_notifications
+      MAIL_HOST: ${MAIL_HOST:-smtp.gmail.com}
+      MAIL_PORT: ${MAIL_PORT:-587}
+      MAIL_USERNAME: ${MAIL_USERNAME:-noreply@healthcare.com}
+      MAIL_PASSWORD: ${MAIL_PASSWORD:-changeme}
+    depends_on:
+      postgres-notification:
+        condition: service_healthy
+
+  billing-service:
+    build:
+      context: ./backend/billing-service
+      dockerfile: Dockerfile
+    container_name: billing-service
+    <<: *service-defaults
+    ports:
+      - "8087:8087"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8087
+      DB_HOST: postgres-billing
+      DB_PORT: 5432
+      DB_NAME: healthcare_billing
+    depends_on:
+      postgres-billing:
+        condition: service_healthy
+      patient-service:
+        condition: service_started
+
+  api-gateway:
+    build:
+      context: ./backend/api-gateway
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    <<: *service-defaults
+    ports:
+      - "8080:8080"
+    environment:
+      <<: *common-env
+      SERVER_PORT: 8080
+      FRONTEND_URL: http://localhost:3000
+    depends_on:
+      auth-service:
+        condition: service_started
+      patient-service:
+        condition: service_started
+
+  # ── Frontend ─────────────────────────────────────────────────────────────────
+
+  frontend:
+    build:
+      context: ./frontend-react
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "3000:80"
+    networks:
+      - healthcare-network
+    environment:
+      - VITE_API_URL=http://localhost:8080
+    depends_on:
+      - api-gateway
+    restart: unless-stopped
+
+  # ── Monitoring ───────────────────────────────────────────────────────────────
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./docker/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    networks:
+      - healthcare-network
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+    networks:
+      - healthcare-network
+    depends_on:
+      - prometheus
+    restart: unless-stopped
