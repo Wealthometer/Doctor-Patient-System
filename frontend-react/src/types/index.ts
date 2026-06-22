@@ -1,8 +1,12 @@
+export type Role = 'PATIENT' | 'DOCTOR' | 'ADMIN';
+
 export interface User {
   id: string;
-  name: string;
-  role: 'patient' | 'doctor' | 'admin';
-  email: string;
+  name?: string;
+  firstName?: string;
+  lastName?: string;
+  role: Role;
+  email?: string;
 }
 
 export interface Appointment {

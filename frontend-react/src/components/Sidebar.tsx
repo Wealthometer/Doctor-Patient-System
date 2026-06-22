@@ -8,7 +8,7 @@ const menuItems = [
   { icon: FileText, label: 'Prescriptions', path: '/prescriptions' },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ role }: { role?: string }) {
   const location = useLocation();
 
   return (

@@ -19,13 +19,12 @@ function App() {
           
           <main className="flex-1 overflow-auto p-8">
             <Routes>
-              <Route path="/" element={<DoctorDashboard />} />
-              <Route path="/dashboard" element={<DoctorDashboard />} />
-              <Route path="/patients" element={<Patients />} />
-              <Route path="/appointments" element={<Appointments />} />
-              <Route path="/prescriptions" element={<Prescriptions />} />
-              <Route path="/patient-dashboard" element={<PatientDashboard />} />
-              <Route path="/book-appointment" element={<AppointmentBooking />} />
+              <Route path="/doctor/dashboard" element={<DoctorDashboard />} />
+              <Route path="/doctor/patients" element={<Patients />} />
+              <Route path="/doctor/appointments" element={<Appointments />} />
+              <Route path="/doctor/prescriptions" element={<Prescriptions />} />
+              {/* <Route path="/patient-dashboard" element={<PatientDashboard />} />
+              <Route path="/book-appointment" element={<AppointmentBooking />} /> */}
             </Routes>
           </main>
         </div>
