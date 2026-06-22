@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '@/store';
-import { logout } from '@/store/slices/authSlice';
+import { logoutThunk } from '@/store/slices/authSlice';
 import {
   LayoutDashboard, Users, Calendar, Stethoscope, Pill,
   CreditCard, Bell, Settings, LogOut, Menu, X,
@@ -45,8 +45,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     : user?.role === 'DOCTOR' ? doctorNav
     : patientNav;
 
-  const handleLogout = () => {
-    dispatch(logout());
+  const handleLogout = async () => {
+    await dispatch(logoutThunk());
     toast.success('Logged out successfully');
     navigate('/login');
   };
