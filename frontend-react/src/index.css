@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  * { box-sizing: border-box; }
-  html { -webkit-font-smoothing: antialiased; }
-  body { @apply text-gray-900 bg-gray-50; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Optional: Smooth transition */
+* {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
