@@ -1,26 +1,19 @@
 {
   "compilerOptions": {
+    "types": ["vite/client"],
+
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     },
-    "ignoreDeprecations": "6.0",
-    "jsx": "react-jsx",
+
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
     "strict": true,
     "noEmit": true
   },
   "include": [
     "src"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
   ]
 }
