@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.2.0</version>
+    <version>3.3.5</version>
     <relativePath/>
   </parent>
   <groupId>com.healthcare</groupId>
@@ -16,7 +16,8 @@
 
   <properties>
     <java.version>21</java.version>
-    <spring-cloud.version>2023.0.5</spring-cloud.version>
+    <!-- 2023.0.x is the correct BOM line for Spring Boot 3.3.x -->
+    <spring-cloud.version>2023.0.3</spring-cloud.version>
   </properties>
 
   <dependencies>
@@ -35,6 +36,11 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <!-- Circuit Breaker support for Gateway filters -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>

@@ -76,7 +76,7 @@ public class Doctor {
     @Builder.Default
     private DoctorStatus status = DoctorStatus.ACTIVE;
 
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "numeric(3,1)")
     @Builder.Default
     private double averageRating = 0.0;
 

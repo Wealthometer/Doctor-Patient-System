@@ -30,66 +30,36 @@ spring:
           uri: lb://auth-service
           predicates:
             - Path=/api/v1/auth/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: auth-service
-                fallbackUri: forward:/fallback/auth
 
         # ── Patient Service ─────────────────────────────────────────────
         - id: patient-service
           uri: lb://patient-service
           predicates:
             - Path=/api/v1/patients/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: patient-service
-                fallbackUri: forward:/fallback/patient
 
         # ── Doctor Service ──────────────────────────────────────────────
         - id: doctor-service
           uri: lb://doctor-service
           predicates:
             - Path=/api/v1/doctors/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: doctor-service
-                fallbackUri: forward:/fallback/doctor
 
         # ── Appointment Service ─────────────────────────────────────────
         - id: appointment-service
           uri: lb://appointment-service
           predicates:
             - Path=/api/v1/appointments/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: appointment-service
-                fallbackUri: forward:/fallback/appointment
 
         # ── Prescription Service ────────────────────────────────────────
         - id: prescription-service
           uri: lb://prescription-service
           predicates:
             - Path=/api/v1/prescriptions/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: prescription-service
-                fallbackUri: forward:/fallback/prescription
 
         # ── Billing Service ─────────────────────────────────────────────
         - id: billing-service
           uri: lb://billing-service
           predicates:
             - Path=/api/v1/billing/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: billing-service
-                fallbackUri: forward:/fallback/billing
 
         # ── Notification Service ────────────────────────────────────────
         - id: notification-service
@@ -143,14 +113,14 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://${EUREKA_USERNAME:eureka}:${EUREKA_PASSWORD:eureka-secret}@${EUREKA_HOST:localhost}:8761/eureka/
+      defaultZone: ${EUREKA_URI:http://localhost:8761}/eureka/
   instance:
     prefer-ip-address: true
 
 application:
   security:
     jwt:
-      secret-key: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+      secret-key: ${JWT_SECRET}
 
 management:
   endpoints:

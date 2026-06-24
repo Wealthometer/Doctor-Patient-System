@@ -2,8 +2,8 @@ package com.healthcare.gateway.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.Instant;
@@ -22,10 +22,10 @@ public class FallbackController {
         ));
     }
 
-    @GetMapping("/auth")         public ResponseEntity<?> authFallback()         { return fallback("Auth Service"); }
-    @GetMapping("/patient")      public ResponseEntity<?> patientFallback()      { return fallback("Patient Service"); }
-    @GetMapping("/doctor")       public ResponseEntity<?> doctorFallback()       { return fallback("Doctor Service"); }
-    @GetMapping("/appointment")  public ResponseEntity<?> appointmentFallback()  { return fallback("Appointment Service"); }
-    @GetMapping("/prescription") public ResponseEntity<?> prescriptionFallback() { return fallback("Prescription Service"); }
-    @GetMapping("/billing")      public ResponseEntity<?> billingFallback()      { return fallback("Billing Service"); }
+    @RequestMapping("/auth")         public ResponseEntity<?> authFallback()         { return fallback("Auth Service"); }
+    @RequestMapping("/patient")      public ResponseEntity<?> patientFallback()      { return fallback("Patient Service"); }
+    @RequestMapping("/doctor")       public ResponseEntity<?> doctorFallback()       { return fallback("Doctor Service"); }
+    @RequestMapping("/appointment")  public ResponseEntity<?> appointmentFallback()  { return fallback("Appointment Service"); }
+    @RequestMapping("/prescription") public ResponseEntity<?> prescriptionFallback() { return fallback("Prescription Service"); }
+    @RequestMapping("/billing")      public ResponseEntity<?> billingFallback()      { return fallback("Billing Service"); }
 }

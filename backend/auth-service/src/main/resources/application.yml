@@ -7,9 +7,9 @@ spring:
   config:
     import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
   datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:healthcare_auth}
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:w3e4r5t6y7}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     hikari:
       maximum-pool-size: 10
       minimum-idle: 5
@@ -30,7 +30,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://${EUREKA_USERNAME:eureka}:${EUREKA_PASSWORD:eureka-secret}@${EUREKA_HOST:localhost}:8761/eureka/
+      defaultZone: http://localhost:8761/eureka
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}
@@ -38,10 +38,11 @@ eureka:
 application:
   security:
     jwt:
-      secret-key: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
-      expiration: 900000        # 15 minutes
+      secret-key: ${JWT_SECRET}
+      expiration: 86400000        # 24 hours (1 day)
       refresh-token:
-        expiration: 604800000   # 7 days
+        expiration: 604800000     # 7 days]
+
 
 management:
   endpoints:

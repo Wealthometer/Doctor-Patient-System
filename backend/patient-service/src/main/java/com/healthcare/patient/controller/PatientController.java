@@ -56,14 +56,6 @@ public class PatientController {
         return ResponseEntity.ok(patientService.getPatientByCode(code));
     }
 
-    @GetMapping
-    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
-    @Operation(summary = "Get all patients (paginated)")
-    public ResponseEntity<Page<PatientResponse>> getAllPatients(
-            @PageableDefault(size = 20, sort = "createdAt") Pageable pageable) {
-        return ResponseEntity.ok(patientService.getAllPatients(pageable));
-    }
-
     @GetMapping("/search")
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
     @Operation(summary = "Search patients")
@@ -71,6 +63,14 @@ public class PatientController {
             @RequestParam String query,
             @PageableDefault(size = 20) Pageable pageable) {
         return ResponseEntity.ok(patientService.searchPatients(query, pageable));
+    }
+
+    @GetMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
+    @Operation(summary = "Get all patients (paginated)")
+    public ResponseEntity<Page<PatientResponse>> getAllPatients(
+            @PageableDefault(size = 20, sort = "createdAt") Pageable pageable) {
+        return ResponseEntity.ok(patientService.getAllPatients(pageable));
     }
 
     @GetMapping("/status/{status}")
