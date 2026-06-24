@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '@/store';
+<<<<<<< HEAD
 import { logoutThunk } from '@/store/slices/authSlice';
+=======
+import { logout } from '@/store/slices/authSlice';
+>>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
 import {
   LayoutDashboard, Users, Calendar, Stethoscope, Pill,
   CreditCard, Bell, Settings, LogOut, Menu, X,
@@ -45,8 +49,13 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     : user?.role === 'DOCTOR' ? doctorNav
     : patientNav;
 
+<<<<<<< HEAD
   const handleLogout = async () => {
     await dispatch(logoutThunk());
+=======
+  const handleLogout = () => {
+    dispatch(logout());
+>>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
     toast.success('Logged out successfully');
     navigate('/login');
   };
@@ -102,11 +111,19 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-blue-800 text-xs font-semibold">
+<<<<<<< HEAD
                   {user?.username?.[0]?.toUpperCase()}
                 </span>
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-xs font-semibold text-gray-900 truncate">{user?.username}</p>
+=======
+                  {user?.firstName?.[0]}{user?.lastName?.[0]}
+                </span>
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs font-semibold text-gray-900 truncate">{user?.firstName} {user?.lastName}</p>
+>>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
                 <p className="text-xs text-gray-500">{user?.role}</p>
               </div>
               <button onClick={handleLogout} className="text-gray-400 hover:text-red-500 p-1" title="Logout">
@@ -138,10 +155,17 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-2 pl-2 border-l border-gray-200">
             <div className="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center">
               <span className="text-blue-800 text-xs font-semibold">
+<<<<<<< HEAD
                 {user?.username?.[0]?.toUpperCase()}
               </span>
             </div>
             <span className="text-xs font-medium text-gray-700 hidden sm:block">{user?.username}</span>
+=======
+                {user?.firstName?.[0]}{user?.lastName?.[0]}
+              </span>
+            </div>
+            <span className="text-xs font-medium text-gray-700 hidden sm:block">{user?.firstName}</span>
+>>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
             <ChevronDown size={14} className="text-gray-400" />
           </div>
         </header>

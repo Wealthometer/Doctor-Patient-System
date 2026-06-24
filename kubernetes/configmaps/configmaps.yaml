@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: healthcare-config
+  namespace: healthcare-system
+data:
+  EUREKA_HOST: "discovery-service"
+  CONFIG_SERVER_URL: "http://config-server:8888"
+  DB_PORT: "5432"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: service-ports
+  namespace: healthcare-system
+data:
+  DISCOVERY_PORT: "8761"
+  CONFIG_PORT: "8888"
+  GATEWAY_PORT: "8080"
+  AUTH_PORT: "8081"
+  PATIENT_PORT: "8082"
+  DOCTOR_PORT: "8083"
+  APPOINTMENT_PORT: "8084"
+  PRESCRIPTION_PORT: "8085"
+  NOTIFICATION_PORT: "8086"
+  BILLING_PORT: "8087"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+  namespace: healthcare-system
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 15s
+    scrape_configs:
+      - job_name: 'api-gateway'
+        metrics_path: '/actuator/prometheus'
+        static_configs:
+          - targets: ['api-gateway:8080']
+      - job_name: 'auth-service'
+        metrics_path: '/actuator/prometheus'
+        static_configs:
+          - targets: ['auth-service:8081']
+      - job_name: 'patient-service'
+        metrics_path: '/actuator/prometheus'
+        static_configs:
+          - targets: ['patient-service:8082']
+      - job_name: 'doctor-service'
+        metrics_path: '/actuator/prometheus'
+        static_configs:
+          - targets: ['doctor-service:8083']
+      - job_name: 'appointment-service'
+        metrics_path: '/actuator/prometheus'
+        static_configs:
+          - targets: ['appointment-service:8084']
+      - job_name: 'billing-service'
+        metrics_path: '/actuator/prometheus'
+        static_configs:
+          - targets: ['billing-service:8087']
