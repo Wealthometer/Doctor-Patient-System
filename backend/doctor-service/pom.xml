@@ -147,3 +147,4 @@
 
     <build>
         <plugins>
+            <!-- Maven Compiler Plugin -->
