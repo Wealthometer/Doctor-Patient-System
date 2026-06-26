@@ -111,6 +111,7 @@
         </dependency>
         <!-- SpringDoc OpenAPI UI -->
         <dependency>
+            <groupId>org.springdoc</groupId>
     </dependencies>
   </dependencyManagement>
 
