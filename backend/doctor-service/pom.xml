@@ -22,6 +22,7 @@
 
     <dependencies>
         <!-- Spring Boot Web -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
