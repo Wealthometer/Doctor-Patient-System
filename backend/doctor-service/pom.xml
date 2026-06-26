@@ -15,6 +15,7 @@
     <name>doctor-service</name>
     <description>Doctor Service for Doctor-Patient System</description>
 
+    <properties>
 
   <dependencies>
     <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId></dependency>
