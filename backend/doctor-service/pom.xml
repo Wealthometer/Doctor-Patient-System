@@ -72,6 +72,7 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-database-postgresql</artifactId>
             <version>10.20.1</version>
+        </dependency>
     </dependencies>
   </dependencyManagement>
 
