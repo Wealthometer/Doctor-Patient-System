@@ -4,3 +4,4 @@ WORKDIR /app
 COPY pom.xml .
 # Cache dependencies first
 RUN mvn dependency:go-offline -B
+COPY src ./src
