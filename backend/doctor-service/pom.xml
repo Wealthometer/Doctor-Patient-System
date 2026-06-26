@@ -53,6 +53,7 @@
         </dependency>
         <!-- Spring Cloud Config Client -->
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
     </dependencies>
   </dependencyManagement>
 
