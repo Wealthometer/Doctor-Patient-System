@@ -168,3 +168,4 @@
                 </configuration>
             </plugin>
             <!-- Spring Boot Maven Plugin -->
+            <plugin>
