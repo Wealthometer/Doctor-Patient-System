@@ -10,6 +10,7 @@ spring:
       password: ${EUREKA_PASSWORD:eureka-secret}
 
 eureka:
+  instance:
   endpoints:
     web:
       exposure:
