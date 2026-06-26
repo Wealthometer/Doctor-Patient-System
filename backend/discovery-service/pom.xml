@@ -39,3 +39,4 @@
     </dependency>
   </dependencies>
 
+  <dependencyManagement>
