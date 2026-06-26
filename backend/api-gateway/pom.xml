@@ -56,7 +56,6 @@
       <artifactId>jjwt-jackson</artifactId>
       <version>0.12.3</version>
       <scope>runtime</scope>
-      <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
