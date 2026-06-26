@@ -15,4 +15,5 @@
   <name>discovery-service</name>
 
   <properties>
+    <java.version>21</java.version>
       <groupId>org.springframework.boot</groupId>
