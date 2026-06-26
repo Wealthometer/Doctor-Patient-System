@@ -97,6 +97,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <!-- MapStruct -->
     </dependencies>
   </dependencyManagement>
 
