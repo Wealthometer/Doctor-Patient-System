@@ -11,3 +11,4 @@ public class DoctorServiceApplication {
         SpringApplication.run(DoctorServiceApplication.class, args);
     }
 }
+
