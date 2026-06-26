@@ -68,6 +68,7 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
         <!-- Flyway PostgreSQL -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
