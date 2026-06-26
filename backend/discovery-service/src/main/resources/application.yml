@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: discovery-service
+  security:
   endpoints:
     web:
       exposure:
