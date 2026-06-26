@@ -19,4 +19,5 @@
     <spring-cloud.version>2023.0.0</spring-cloud.version>
   </properties>
 
+  <dependencies>
       <groupId>org.springframework.boot</groupId>
