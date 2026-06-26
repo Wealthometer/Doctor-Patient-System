@@ -107,6 +107,7 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
             <version>1.5.5.Final</version>
+            <scope>provided</scope>
     </dependencies>
   </dependencyManagement>
 
