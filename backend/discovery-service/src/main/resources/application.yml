@@ -19,6 +19,7 @@ eureka:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false
   endpoints:
     web:
       exposure:
