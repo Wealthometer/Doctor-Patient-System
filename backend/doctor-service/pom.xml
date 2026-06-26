@@ -32,6 +32,7 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <!-- Spring Boot Data JPA -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
