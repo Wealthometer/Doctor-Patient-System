@@ -135,3 +135,4 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
