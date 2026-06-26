@@ -54,6 +54,7 @@
         <!-- Spring Cloud Config Client -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
     </dependencies>
   </dependencyManagement>
 
