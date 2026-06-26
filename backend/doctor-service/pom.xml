@@ -116,6 +116,7 @@
             <version>2.3.0</version>
         </dependency>
         <!-- Test Dependencies -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
