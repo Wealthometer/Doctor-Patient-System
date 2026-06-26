@@ -165,3 +165,4 @@
                             <artifactId>mapstruct-processor</artifactId>
                         </path>
                     </annotationProcessorPaths>
+                </configuration>
