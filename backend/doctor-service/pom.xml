@@ -149,3 +149,4 @@
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
