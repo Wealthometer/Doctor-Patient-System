@@ -133,7 +133,6 @@
         </dependency>
     </dependencies>
 
-          </excludes>
         </configuration>
       </plugin>
     </plugins>
