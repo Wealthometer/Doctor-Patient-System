@@ -20,6 +20,7 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 0
     enable-self-preservation: false
+
   endpoints:
     web:
       exposure:
