@@ -43,6 +43,7 @@
         </dependency>
         <!-- Spring Boot Actuator -->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
     </dependencies>
   </dependencyManagement>
 
