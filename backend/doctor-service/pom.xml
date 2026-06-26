@@ -58,6 +58,7 @@
         </dependency>
         <!-- PostgreSQL Driver -->
         <dependency>
+            <groupId>org.postgresql</groupId>
     </dependencies>
   </dependencyManagement>
 
