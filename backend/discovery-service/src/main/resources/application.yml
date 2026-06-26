@@ -13,6 +13,7 @@ eureka:
   instance:
     hostname: localhost
   client:
+    register-with-eureka: false
   endpoints:
     web:
       exposure:
