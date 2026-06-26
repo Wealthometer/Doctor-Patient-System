@@ -157,3 +157,4 @@
                     <target>21</target>
                     <annotationProcessorPaths>
                         <path>
+                            <groupId>org.projectlombok</groupId>
