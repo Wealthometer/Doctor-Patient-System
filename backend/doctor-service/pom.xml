@@ -110,6 +110,7 @@
             <scope>provided</scope>
         </dependency>
         <!-- SpringDoc OpenAPI UI -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
