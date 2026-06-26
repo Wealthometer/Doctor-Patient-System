@@ -98,6 +98,7 @@
             <optional>true</optional>
         </dependency>
         <!-- MapStruct -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
