@@ -10,4 +10,5 @@
     <relativePath/>
   </parent>
   <groupId>com.healthcare</groupId>
+  <artifactId>discovery-service</artifactId>
       <groupId>org.springframework.boot</groupId>
