@@ -27,6 +27,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- Spring Boot Security -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
