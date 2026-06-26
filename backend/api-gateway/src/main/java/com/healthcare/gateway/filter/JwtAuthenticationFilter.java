@@ -25,6 +25,7 @@ import java.util.List;
 public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
     private static final Logger log = LoggerFactory.getLogger(JwtAuthenticationFilter.class);
+
     @Value("${application.security.jwt.secret-key}")
     private String secretKey;
 
