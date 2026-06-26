@@ -3,6 +3,7 @@ server:
 
 spring:
   application:
+    name: discovery-service
   endpoints:
     web:
       exposure:
