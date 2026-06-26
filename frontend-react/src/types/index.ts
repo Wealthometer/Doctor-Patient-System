@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // ── Auth ──────────────────────────────────────────────────────────────────────
 export type Role = 'ADMIN' | 'DOCTOR' | 'PATIENT' | 'NURSE';
 
@@ -19,23 +18,6 @@ export interface AuthState {
   isAuthenticated: boolean;
   isLoading: boolean;
   error: string | null;
-=======
-export type Role = 'PATIENT' | 'DOCTOR' | 'ADMIN';
-
-export interface User {
-  id: string;
-  name?: string;
-  firstName?: string;
-  lastName?: string;
-  role: Role;
-  email?: string;
-}
-
-export interface AuthResponse {
-  accessToken: string;
-  refreshToken: string;
-  user: User;
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
 }
 
 export interface LoginRequest {
@@ -47,7 +29,6 @@ export interface RegisterRequest {
   username: string;
   email: string;
   password: string;
-<<<<<<< HEAD
   firstName: string;
   lastName: string;
   role: Role;
@@ -166,44 +147,10 @@ export interface PrescriptionItem {
   quantity?: number;
   refillsAllowed: number;
   refillsUsed: number;
-=======
-  firstName?: string;
-  lastName?: string;
-  role?: Role;
-}
-
-export interface Page<T> {
-  items: T[];
-  total: number;
-  page: number;
-  pageSize: number;
-}
-
-export interface Patient {
-  id: string;
-  name: string;
-  age?: number;
-  email?: string;
-  phone?: string;
-  condition?: string;
-  lastVisit?: string;
-}
-
-export interface Doctor {
-  id: string;
-  name: string;
-  specialty?: string;
-  email?: string;
-  phone?: string;
-  department?: string;
-  status?: string;
-  rating?: number;
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
 }
 
 export interface Prescription {
   id: string;
-<<<<<<< HEAD
   prescriptionNumber: string;
   patientId: string;
   patientName: string;
@@ -277,43 +224,3 @@ export interface ApiError {
   status: number;
   timestamp: string;
 }
-=======
-  patientName: string;
-  doctorName: string;
-  medication: string;
-  dosage: string;
-  instructions?: string;
-  dateIssued: string;
-  status?: string;
-}
-
-export interface Invoice {
-  id: string;
-  patientName: string;
-  amount: number;
-  status: string;
-  dueDate: string;
-}
-
-export interface AvailableSlot {
-  doctorId: string;
-  date: string;
-  time: string;
-  available: boolean;
-}
-
-export interface Appointment {
-  id: string;
-  patientName: string;
-  doctorName: string;
-  date: string;
-  time: string;
-  status: 'upcoming' | 'completed' | 'cancelled';
-}
-
-export interface Stats {
-  totalPatients: number;
-  totalAppointments: number;
-  todayAppointments: number;
-}
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63

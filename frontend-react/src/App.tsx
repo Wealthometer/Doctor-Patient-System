@@ -4,13 +4,10 @@ import { Toaster } from 'react-hot-toast';
 import { store } from '@/store';
 import ProtectedRoute from '@/components/common/ProtectedRoute';
 import AppLayout from '@/components/layout/AppLayout';
-<<<<<<< HEAD
-=======
 import DoctorDashboard from './pages/DoctorDashboard';
 import Appointments from './pages/Appointments';
 import Patients from './pages/Patients';
 import Prescriptions from './pages/Prescriptions';
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
 import LoginPage from '@/pages/auth/LoginPage';
 import AdminDashboard from '@/pages/admin/AdminDashboard';
 import AppointmentsPage from '@/pages/admin/AppointmentsPage';
@@ -75,48 +72,26 @@ function App() {
           } />
 
           {/* Doctor routes */}
-<<<<<<< HEAD
-          
-          {/* <Route path="/doctor/dashboard" element={
-            <ProtectedRoute allowedRoles={['DOCTOR']}>
-              <AppLayout><Placeholder title="Doctor Dashboard" /></AppLayout>
-            </ProtectedRoute>
-          } />
-          <Route path="/doctor/appointments" element={
-            <ProtectedRoute allowedRoles={['DOCTOR']}>
-              <AppLayout><AppointmentsPage /></AppLayout>
-=======
           <Route path="/doctor/dashboard" element={
             <ProtectedRoute allowedRoles={['DOCTOR']}>
               <AppLayout><DoctorDashboard /></AppLayout>
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
             </ProtectedRoute>
           } />
           <Route path="/doctor/patients" element={
             <ProtectedRoute allowedRoles={['DOCTOR']}>
-<<<<<<< HEAD
-              <AppLayout><Placeholder title="My Patients" /></AppLayout>
-=======
               <AppLayout><Patients /></AppLayout>
             </ProtectedRoute>
           } />
           <Route path="/doctor/appointments" element={
             <ProtectedRoute allowedRoles={['DOCTOR']}>
               <AppLayout><Appointments /></AppLayout>
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
             </ProtectedRoute>
           } />
           <Route path="/doctor/prescriptions" element={
             <ProtectedRoute allowedRoles={['DOCTOR']}>
-<<<<<<< HEAD
-              <AppLayout><Placeholder title="Prescriptions" /></AppLayout>
-            </ProtectedRoute>
-          } /> */}
-=======
               <AppLayout><Prescriptions /></AppLayout>
             </ProtectedRoute>
           } />
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
 
           {/* Patient routes */}
           <Route path="/patient/dashboard" element={

@@ -5,10 +5,7 @@
       "@/*": ["src/*"]
     },
     "ignoreDeprecations": "6.0",
-<<<<<<< HEAD
     "types": ["vite/client"],
-=======
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "bundler",

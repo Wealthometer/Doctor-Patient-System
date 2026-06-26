@@ -3,10 +3,7 @@ import { patientApi, doctorApi, appointmentApi, billingApi } from '@/api/service
 import { Users, Stethoscope, Calendar, DollarSign, TrendingUp, Activity } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import toast from 'react-hot-toast';
-<<<<<<< HEAD
 import { useAppSelector } from '@/store';
-=======
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
 
 interface Stats {
   patients: { totalPatients: number; activePatients: number } | null;
@@ -28,10 +25,7 @@ const weeklyData = [
 ];
 
 export default function AdminDashboard() {
-<<<<<<< HEAD
   const { user } = useAppSelector((s) => s.auth);
-=======
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
   const [stats, setStats] = useState<Stats>({ patients: null, doctors: null, appts: null, billing: null });
   const [loading, setLoading] = useState(true);
 
@@ -109,11 +103,7 @@ export default function AdminDashboard() {
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-lg font-semibold text-gray-900">Dashboard Overview</h2>
-<<<<<<< HEAD
           <p className="text-sm text-gray-500">Welcome back, {user?.username} — here's what's happening today.</p>
-=======
-          <p className="text-sm text-gray-500">Welcome back — here's what's happening today.</p>
->>>>>>> a6232077d0e0ab37b4384586393aa4203b9a7e63
         </div>
         <span className="inline-flex items-center gap-1.5 text-xs font-medium bg-green-50 text-green-700 px-2.5 py-1 rounded-full">
           <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
