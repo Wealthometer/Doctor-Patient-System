@@ -16,6 +16,7 @@ import java.time.Instant;
 public class LoggingFilter implements GlobalFilter, Ordered {
 
     private static final Logger log = LoggerFactory.getLogger(LoggingFilter.class);
+
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         Instant start = Instant.now();
