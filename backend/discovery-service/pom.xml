@@ -13,4 +13,5 @@
   <artifactId>discovery-service</artifactId>
   <version>1.0.0</version>
   <name>discovery-service</name>
+
       <groupId>org.springframework.boot</groupId>
