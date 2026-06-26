@@ -133,6 +133,5 @@
         </dependency>
     </dependencies>
 
-    </plugins>
   </build>
 </project>
