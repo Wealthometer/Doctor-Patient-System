@@ -13,7 +13,6 @@ import java.time.Duration;
 import java.time.Instant;
 
 @Component
-@Slf4j
 public class LoggingFilter implements GlobalFilter, Ordered {
 
     @Override
