@@ -161,3 +161,4 @@
                             <artifactId>lombok</artifactId>
                         </path>
                         <path>
+                            <groupId>org.mapstruct</groupId>
