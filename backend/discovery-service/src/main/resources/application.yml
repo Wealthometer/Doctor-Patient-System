@@ -1,3 +1,4 @@
 server:
   port: 8761
+    com.netflix.eureka: WARN
     com.netflix.discovery: WARN
