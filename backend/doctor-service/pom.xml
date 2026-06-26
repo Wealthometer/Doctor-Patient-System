@@ -9,6 +9,7 @@
         <version>3.2.0</version>
         <relativePath/>
     </parent>
+    <groupId>com.healthcare</groupId>
 
   <properties>
     <java.version>21</java.version>
