@@ -21,7 +21,6 @@
     </properties>
 
     <dependencies>
-        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
