@@ -15,7 +15,6 @@
     <name>doctor-service</name>
     <description>Doctor Service for Doctor-Patient System</description>
 
-    <spring-cloud.version>2023.0.5</spring-cloud.version>
     <mapstruct.version>1.5.5.Final</mapstruct.version>
   </properties>
 
