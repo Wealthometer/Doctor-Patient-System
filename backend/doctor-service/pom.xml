@@ -20,7 +20,6 @@
         <spring-cloud.version>2023.0.5</spring-cloud.version>
     </properties>
 
-
   <dependencyManagement>
     <dependencies>
       <dependency>
