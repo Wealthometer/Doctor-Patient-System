@@ -15,6 +15,7 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
   endpoints:
     web:
       exposure:
