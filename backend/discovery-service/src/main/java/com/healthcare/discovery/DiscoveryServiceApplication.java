@@ -1,5 +1,6 @@
 package com.healthcare.discovery;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
     }
 }
