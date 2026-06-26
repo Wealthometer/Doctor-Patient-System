@@ -1,6 +1,7 @@
 server:
   port: 8761
 
+      show-details: always
 
 logging:
   level:
