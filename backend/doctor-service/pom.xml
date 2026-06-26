@@ -88,6 +88,7 @@
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-jackson</artifactId>
+            <version>0.12.3</version>
     </dependencies>
   </dependencyManagement>
 
