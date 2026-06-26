@@ -22,7 +22,6 @@ import javax.crypto.SecretKey;
 import java.util.List;
 
 @Component
-@Slf4j
 public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
     @Value("${application.security.jwt.secret-key}")
