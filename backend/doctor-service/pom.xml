@@ -12,6 +12,7 @@
     <groupId>com.healthcare</groupId>
     <artifactId>doctor-service</artifactId>
     <version>1.0.0</version>
+    <name>doctor-service</name>
 
   <properties>
     <java.version>21</java.version>
