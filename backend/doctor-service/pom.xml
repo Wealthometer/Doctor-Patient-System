@@ -28,6 +28,7 @@
         </dependency>
         <!-- Spring Boot Security -->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
     </dependencies>
   </dependencyManagement>
 
