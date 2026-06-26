@@ -21,5 +21,6 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.springframework.cloud</groupId>
     <dependency>
       <groupId>org.springframework.boot</groupId>
