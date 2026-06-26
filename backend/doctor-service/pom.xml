@@ -67,6 +67,7 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
         </dependency>
+        <!-- Flyway PostgreSQL -->
     </dependencies>
   </dependencyManagement>
 
