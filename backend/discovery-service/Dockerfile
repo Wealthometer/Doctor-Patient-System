@@ -27,4 +27,5 @@ EXPOSE ${SERVER_PORT:-8080}
 ENTRYPOINT ["java", \
   "-XX:+UseContainerSupport", \
   "-XX:MaxRAMPercentage=75.0", \
+  "-XX:+UseG1GC", \
   "-Djava.security.egd=file:/dev/./urandom", \
