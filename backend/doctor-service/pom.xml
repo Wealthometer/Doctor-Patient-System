@@ -92,6 +92,7 @@
             <scope>runtime</scope>
         </dependency>
         <!-- Lombok -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
