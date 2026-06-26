@@ -74,6 +74,7 @@
             <version>10.20.1</version>
         </dependency>
         <!-- JWT -->
+        <dependency>
     </dependencies>
   </dependencyManagement>
 
