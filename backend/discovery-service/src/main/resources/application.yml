@@ -12,6 +12,7 @@ spring:
 eureka:
   instance:
     hostname: localhost
+  client:
   endpoints:
     web:
       exposure:
