@@ -17,6 +17,7 @@
 
     <properties>
         <java.version>21</java.version>
+        <spring-cloud.version>2023.0.5</spring-cloud.version>
 
   <dependencies>
     <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId></dependency>
