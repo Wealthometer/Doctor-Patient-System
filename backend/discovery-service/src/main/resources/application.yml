@@ -5,6 +5,7 @@ spring:
   application:
     name: discovery-service
   security:
+    user:
       name: ${EUREKA_USERNAME:eureka}
   endpoints:
     web:
