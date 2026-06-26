@@ -64,6 +64,7 @@
         </dependency>
         <!-- Flyway Core -->
         <dependency>
+            <groupId>org.flywaydb</groupId>
     </dependencies>
   </dependencyManagement>
 
