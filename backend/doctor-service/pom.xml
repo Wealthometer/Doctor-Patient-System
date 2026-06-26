@@ -145,3 +145,4 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
