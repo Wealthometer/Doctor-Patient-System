@@ -23,6 +23,7 @@
     <dependencies>
         <!-- Spring Boot Web -->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
     </dependencies>
   </dependencyManagement>
 
