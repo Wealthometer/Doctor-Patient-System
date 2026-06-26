@@ -1,6 +1,7 @@
 server:
   port: 8761
 
+  endpoint:
     health:
       show-details: always
 
