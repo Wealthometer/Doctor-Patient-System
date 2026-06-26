@@ -1,6 +1,7 @@
 server:
   port: 8761
 
+    web:
       exposure:
         include: health,info,metrics
   endpoint:
