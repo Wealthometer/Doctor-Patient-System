@@ -33,6 +33,7 @@
         </dependency>
         <!-- Spring Boot Data JPA -->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
     </dependencies>
   </dependencyManagement>
 
