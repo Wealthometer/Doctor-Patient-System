@@ -19,3 +19,4 @@ USER appuser
 COPY --from=build /app/target/*.jar app.jar
 
 # Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
