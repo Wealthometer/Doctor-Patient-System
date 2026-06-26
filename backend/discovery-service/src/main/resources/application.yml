@@ -1,4 +1,5 @@
 server:
   port: 8761
+  level:
     com.netflix.eureka: WARN
     com.netflix.discovery: WARN
