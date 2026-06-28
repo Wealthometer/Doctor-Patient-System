@@ -15,11 +15,12 @@ const chartData = [
   { day: 'Fri', appointments: 18 },
 ];
 
+
 export default function DoctorDashboard() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-4xl font-bold text-gray-900">Good morning, Dr. Armani</h1>
+        <h1 className="text-3xl font-bold text-gray-900">Welcome, Dr. Armani</h1>
         <p className="text-gray-600 mt-2">Here's what's happening in your clinic today</p>
       </div>
 
@@ -28,7 +29,7 @@ export default function DoctorDashboard() {
         {stats.map((stat, index) => (
           <div key={index} className="bg-white p-8 rounded-3xl shadow-sm hover:shadow transition-all">
             <p className="text-gray-500 text-lg">{stat.title}</p>
-            <p className="text-6xl font-bold text-teal-600 mt-4">{stat.value}</p>
+            <p className="text-2xl font-bold text-gray-900 mt-4">{stat.value}</p>
           </div>
         ))}
       </div>
@@ -38,7 +39,7 @@ export default function DoctorDashboard() {
         {/* Weekly Trend */}
         <div className="bg-white p-8 rounded-3xl shadow-sm">
           <h3 className="font-semibold text-xl mb-6 flex items-center gap-2">
-            <TrendingUp className="w-6 h-6 text-teal-600" />
+            <TrendingUp className="w-6 h-6 text-blue-700" />
             Weekly Appointments Trend
           </h3>
           <ResponsiveContainer width="100%" height={320}>
@@ -50,9 +51,9 @@ export default function DoctorDashboard() {
               <Line 
                 type="natural" 
                 dataKey="appointments" 
-                stroke="#14b8a6" 
+                stroke="#2563EB" 
                 strokeWidth={5} 
-                dot={{ fill: '#14b8a6', r: 6 }}
+                dot={{ fill: '#2563EB', r: 6 }}
               />
             </LineChart>
           </ResponsiveContainer>
@@ -67,12 +68,12 @@ export default function DoctorDashboard() {
               { patient: "Michael Chen", time: "11:00 AM", reason: "Consultation" },
               { patient: "Aisha Patel", time: "02:30 PM", reason: "Check-up" }
             ].map((app, i) => (
-              <div key={i} className="flex justify-between items-center p-5 bg-gray-50 rounded-2xl hover:bg-teal-50 transition-all">
+              <div key={i} className="flex justify-between items-center p-5 bg-gray-50 rounded-2xl hover:bg-blue-50 transition-all">
                 <div>
                   <p className="font-medium">{app.patient}</p>
                   <p className="text-sm text-gray-600">{app.reason}</p>
                 </div>
-                <div className="text-right font-mono text-teal-700 font-semibold">
+                <div className="text-right font-mono text-blue-700 font-semibold">
                   {app.time}
                 </div>
               </div>

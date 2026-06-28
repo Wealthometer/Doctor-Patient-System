@@ -11,6 +11,9 @@ import Prescriptions from './pages/Prescriptions';
 import LoginPage from '@/pages/auth/LoginPage';
 import AdminDashboard from '@/pages/admin/AdminDashboard';
 import AppointmentsPage from '@/pages/admin/AppointmentsPage';
+import UserManagementPage from '@/pages/admin/UserManagementPage';
+import DepartmentsPage from '@/pages/admin/DepartmentsPage';
+import RegisterPage from '@/pages/auth/RegisterPage';
 
 // Lazy placeholder for pages not yet built out
 const Placeholder = ({ title }: { title: string }) => (
@@ -36,7 +39,7 @@ function App() {
         <Routes>
           {/* Public */}
           <Route path="/login"    element={<LoginPage />} />
-          <Route path="/register" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/"         element={<Navigate to="/login" replace />} />
 
           {/* Admin routes */}
@@ -57,7 +60,12 @@ function App() {
           } />
           <Route path="/admin/users" element={
             <ProtectedRoute allowedRoles={['ADMIN']}>
-              <AppLayout><Placeholder title="User Management" /></AppLayout>
+              <AppLayout><UserManagementPage /></AppLayout>
+            </ProtectedRoute>
+          } />
+          <Route path="/admin/departments" element={
+            <ProtectedRoute allowedRoles={['ADMIN']}>
+              <AppLayout><DepartmentsPage /></AppLayout>
             </ProtectedRoute>
           } />
           <Route path="/admin/billing" element={

@@ -5,37 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e38d61-8924-4c27-8077-efb4ca6eb92b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/doctor-service/src/main/java/com/healthcare/doctor/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/doctor-service/src/main/java/com/healthcare/doctor/exception/DoctorAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/doctor-service/src/main/java/com/healthcare/doctor/exception/DoctorNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/eureka-server/eureka-server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/PrescriptionServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/controller/PrescriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/dto/request/PrescriptionRequests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/entity/Prescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/entity/PrescriptionItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/entity/PrescriptionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/repository/PrescriptionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/java/com/healthcare/prescription/service/PrescriptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/prescription-service/src/main/resources/db/migration/V1__init_prescription_schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api-gateway/src/main/java/com/healthcare/gateway/exception/FallbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api-gateway/src/main/java/com/healthcare/gateway/exception/FallbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api-gateway/src/main/java/com/healthcare/gateway/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api-gateway/src/main/java/com/healthcare/gateway/filter/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth-service/src/main/java/com/healthcare/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/java/com/healthcare/auth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/doctor-service/src/main/java/com/healthcare/doctor/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/doctor-service/src/main/java/com/healthcare/doctor/entity/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/doctor-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/doctor-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/patient-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config-server/src/main/resources/configs/patient-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config-server/src/main/resources/configs/patient-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/dto/request/PatientRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/dto/request/PatientRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/service/PatientMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/patient-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-react/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-react/src/api/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/api/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-react/src/pages/Appointments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/pages/Appointments.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-react/src/pages/DoctorDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/pages/DoctorDashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-react/src/pages/Patients.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/pages/Patients.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,16 +118,16 @@
     "Spring Boot.AppointmentServiceApplication.executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "eureka-server",
+    "git-widget-placeholder": "api-test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Documents/HMS-PROJECT/Doctor-Patient-System/backend",
+    "last_opened_file_path": "C:/Users/user/Documents/HMS-PROJECT/Doctor-Patient-System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">

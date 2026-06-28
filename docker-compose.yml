@@ -1,4 +1,4 @@
-version: "3.8"
+
 
 services:
 
@@ -67,11 +67,11 @@ services:
       - SPRING_PROFILES_ACTIVE=docker
       - SPRING_CONFIG_IMPORT=optional:configserver:http://config-server:8888
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
-      - SPRING_DATASOURCE_URL=${AUTHDB_URL}
-      - SPRING_DATASOURCE_USERNAME=${AUTHDB_USER}
-      - SPRING_DATASOURCE_PASSWORD=${AUTHDB_PASSWORD}
+      - SPRING_DATASOURCE_URL=${DB_URL}
+      - SPRING_DATASOURCE_USERNAME=${DB_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}
       - JWT_SECRET=${JWT_SECRET}
-      - JWT_EXPIRATION=${JWT_EXPIRATION}
+      - JWT_EXPIRATION=86400000
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8081/actuator/health"]
       interval: 10s
@@ -100,8 +100,10 @@ services:
       - SPRING_CONFIG_IMPORT=optional:configserver:http://config-server:8888
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
       - SPRING_DATASOURCE_URL=${PATIENTDB_URL}
-      - SPRING_DATASOURCE_USERNAME=${PATIENTDB_USER}
+      - SPRING_DATASOURCE_USERNAME=${PATIENTDB_USERNAME}
       - SPRING_DATASOURCE_PASSWORD=${PATIENTDB_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRATION=86400000
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8003/actuator/health"]
       interval: 10s

@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: ${PATIENTDB_URL}
+    username: ${PATIENTDB_USERNAME}
+    password: ${PATIENTDB_PASSWORD}
     hikari:
       maximum-pool-size: 10
       minimum-idle: 5

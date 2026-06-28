@@ -21,6 +21,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/patients")
+@CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
 @SecurityRequirement(name = "bearerAuth")
 @Tag(name = "Patients", description = "Patient management APIs")

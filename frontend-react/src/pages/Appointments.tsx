@@ -15,9 +15,9 @@ export default function Appointments() {
         <h2 className="text-2xl font-semibold mb-6">Today's Schedule</h2>
         <div className="space-y-4">
           {appointments.map(app => (
-            <div key={app.id} className="flex items-center justify-between p-6 bg-gray-50 rounded-2xl hover:bg-teal-50 transition-all">
+            <div key={app.id} className="flex items-center justify-between p-6 bg-gray-50 rounded-2xl hover:bg-blue-50 transition-all">
               <div className="flex items-center gap-4">
-                <Calendar className="w-8 h-8 text-teal-600" />
+                <Calendar className="w-8 h-8 text-blue-700" />
                 <div>
                   <p className="font-semibold">{app.patient}</p>
                   <p className="text-gray-600">{app.type}</p>
@@ -25,7 +25,7 @@ export default function Appointments() {
               </div>
               <div className="text-right">
                 <p className="font-mono font-medium">{app.time}</p>
-                <span className={`text-sm px-4 py-1 rounded-full ${app.status === 'Upcoming' ? 'bg-teal-100 text-teal-700' : 'bg-green-100 text-green-700'}`}>
+                <span className={`text-sm px-4 py-1 rounded-full ${app.status === 'Upcoming' ? 'bg-blue-100 text-blue-700' : 'bg-green-100 text-green-700'}`}>
                   {app.status}
                 </span>
               </div>

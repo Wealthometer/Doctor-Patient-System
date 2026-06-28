@@ -25,6 +25,8 @@ export const patientApi = {
   getAll:         (params?: Record<string, unknown>) => apiClient.get<Page<Patient>>('/api/v1/patients', { params }),
   search:         (query: string, params?: Record<string, unknown>) =>
     apiClient.get<Page<Patient>>('/api/v1/patients/search', { params: { query, ...params } }),
+  getByStatus:    (status: string, params?: Record<string, unknown>) =>
+    apiClient.get<Page<Patient>>(`/api/v1/patients/status/${status}`, { params }),
   update:         (id: string, data: unknown) => apiClient.put<Patient>(`/api/v1/patients/${id}`, data),
   deactivate:     (id: string)              => apiClient.patch(`/api/v1/patients/${id}/deactivate`),
   getStats:       ()                        => apiClient.get('/api/v1/patients/stats'),
