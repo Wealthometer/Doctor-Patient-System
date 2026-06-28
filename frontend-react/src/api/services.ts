@@ -2,7 +2,7 @@ import apiClient from './client';
 import type {
   AuthResponse, LoginRequest, RegisterRequest,
   Page, Patient, Doctor, Appointment, Prescription, Invoice,
-  AvailableSlot,
+  AvailableSlot, CreatePatientRequest,
 } from '@/types';
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
@@ -18,7 +18,7 @@ export const authApi = {
 
 // ── Patients ──────────────────────────────────────────────────────────────────
 export const patientApi = {
-  create:         (data: unknown)           => apiClient.post<Patient>('/api/v1/patients', data),
+  create:         (data: CreatePatientRequest) => apiClient.post<Patient>('/api/v1/patients', data),
   getById:        (id: string)              => apiClient.get<Patient>(`/api/v1/patients/${id}`),
   getByUserId:    (userId: string)          => apiClient.get<Patient>(`/api/v1/patients/user/${userId}`),
   getByCode:      (code: string)            => apiClient.get<Patient>(`/api/v1/patients/code/${code}`),

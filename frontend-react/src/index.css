@@ -8,6 +8,13 @@
   html { -webkit-font-smoothing: antialiased; }
   body { @apply text-gray-900 bg-gray-50; }
 }
+
+@layer components {
+  .form-input {
+    @apply w-full px-4 py-2.5 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition bg-white;
+  }
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;

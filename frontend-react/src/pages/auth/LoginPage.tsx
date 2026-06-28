@@ -28,7 +28,7 @@ export default function LoginPage() {
   useEffect(() => {
     if (isAuthenticated && user) {
       const routes: Record<string, string> = {
-        ADMIN: '/admin/dashboard', DOCTOR: '/doctor/dashboard', PATIENT: '/patient/dashboard',
+        ADMIN: '/admin/dashboard', DOCTOR: '/doctor/dashboard', PATIENT: '/patient/create-profile',
       };
       navigate(routes[user.role] || '/dashboard', { replace: true });
     }

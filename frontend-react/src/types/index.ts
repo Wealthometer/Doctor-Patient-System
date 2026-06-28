@@ -61,12 +61,44 @@ export interface Patient {
   address?: string;
   city?: string;
   state?: string;
+  zipCode?: string;
+  country?: string;
+  emergencyContactName?: string;
+  emergencyContactPhone?: string;
+  emergencyContactRelation?: string;
   bloodType?: string;
   allergies?: string;
   chronicConditions?: string;
+  medicalNotes?: string;
   status: PatientStatus;
   insuranceProvider: string;
+  insurancePolicyNumber?: string;
   createdAt: string;
+  updatedAt?: string;
+}
+
+export interface CreatePatientRequest {
+  userId: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  dateOfBirth: string;
+  gender: Gender;
+  address?: string;
+  city?: string;
+  state?: string;
+  zipCode?: string;
+  country?: string;
+  emergencyContactName?: string;
+  emergencyContactPhone?: string;
+  emergencyContactRelation?: string;
+  allergies?: string;
+  chronicConditions?: string;
+  bloodType?: string;
+  medicalNotes?: string;
+  insuranceProvider: string;
+  insurancePolicyNumber?: string;
 }
 
 // ── Doctor ────────────────────────────────────────────────────────────────────

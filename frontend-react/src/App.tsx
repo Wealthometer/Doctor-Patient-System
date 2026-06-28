@@ -5,6 +5,8 @@ import { store } from '@/store';
 import ProtectedRoute from '@/components/common/ProtectedRoute';
 import AppLayout from '@/components/layout/AppLayout';
 import DoctorDashboard from './pages/DoctorDashboard';
+import PatientDashboard from './pages/PatientDashboard';
+import PatientCreateProfile from './pages/PatientCreateProfile';
 import Appointments from './pages/Appointments';
 import Patients from './pages/Patients';
 import Prescriptions from './pages/Prescriptions';
@@ -102,9 +104,14 @@ function App() {
           } />
 
           {/* Patient routes */}
+          <Route path="/patient/create-profile" element={
+            <ProtectedRoute allowedRoles={['PATIENT']}>
+              <AppLayout><PatientCreateProfile /></AppLayout>
+            </ProtectedRoute>
+          } />
           <Route path="/patient/dashboard" element={
             <ProtectedRoute allowedRoles={['PATIENT']}>
-              <AppLayout><Placeholder title="Patient Overview" /></AppLayout>
+              <AppLayout><PatientDashboard /></AppLayout>
             </ProtectedRoute>
           } />
           <Route path="/patient/appointments" element={

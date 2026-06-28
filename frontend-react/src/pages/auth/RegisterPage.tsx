@@ -23,7 +23,7 @@ type FormData = z.infer<typeof schema>;
 const routeByRole: Record<Role, string> = {
   ADMIN: '/admin/dashboard',
   DOCTOR: '/doctor/dashboard',
-  PATIENT: '/patient/dashboard',
+  PATIENT: '/patient/create-profile',
   NURSE: '/doctor/dashboard',
 };
 
