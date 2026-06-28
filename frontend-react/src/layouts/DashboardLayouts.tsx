@@ -1,4 +1,4 @@
-git import { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import Sidebar from '@/components/Sidebar';
 import Topbar from '@/components/Topbar';
 
