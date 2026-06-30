@@ -9,3 +9,4 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.time.LocalTime;
 import java.util.UUID;
 
+@FeignClient(name = "doctor-service", fallback = DoctorServiceClient.DoctorServiceFallback.class)
