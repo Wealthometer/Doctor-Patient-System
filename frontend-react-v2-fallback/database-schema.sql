@@ -308,6 +308,9 @@ CREATE TABLE notifications (
     user_id         UUID        NOT NULL,
     channel         VARCHAR(50),
     subject         VARCHAR(255),
+    recipient       VARCHAR(255) NOT NULL,  -- email addr or phone
+    status          VARCHAR(20) NOT NULL DEFAULT 'PENDING'
+                        CHECK (status IN ('PENDING','SENT','FAILED','CANCELLED')),
     reference_type  VARCHAR(50),            -- APPOINTMENT | PRESCRIPTION | INVOICE
     reference_id    UUID,
     sent_at         TIMESTAMP,
