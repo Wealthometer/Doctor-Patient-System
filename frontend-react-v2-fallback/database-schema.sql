@@ -301,5 +301,9 @@ CREATE INDEX idx_payments_status        ON payments(payment_status);
 
 -- =============================================================================
 -- NOTIFICATION SERVICE DATABASE (optional standalone)
+-- =============================================================================
+
+CREATE TABLE notifications (
+    id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
 );
 
