@@ -223,6 +223,7 @@ export interface AvailableSlot {
 }
 
 // ── Prescription ─────────────────────────────────────────────────────────────
+export type PrescriptionStatus = 'ACTIVE' | 'COMPLETED' | 'CANCELLED';
 
 export interface PrescriptionItem {
   id: string;
