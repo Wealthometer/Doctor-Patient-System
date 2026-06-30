@@ -6,3 +6,4 @@ import { Loader2, X, ChevronLeft, ChevronRight, Search } from 'lucide-react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger' | 'ghost' | 'outline';
   size?: 'sm' | 'md' | 'lg';
+  loading?: boolean;
