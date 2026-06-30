@@ -64,3 +64,6 @@ CREATE TABLE patients (
 
     -- Emergency contact
     emergency_contact_name      VARCHAR(100),
+    emergency_contact_phone     VARCHAR(20),
+    emergency_contact_relation  VARCHAR(50),
+
