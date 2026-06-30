@@ -305,6 +305,7 @@ CREATE INDEX idx_payments_status        ON payments(payment_status);
 
 CREATE TABLE notifications (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id         UUID        NOT NULL,
     channel         VARCHAR(50),
     subject         VARCHAR(255),
     reference_type  VARCHAR(50),            -- APPOINTMENT | PRESCRIPTION | INVOICE
