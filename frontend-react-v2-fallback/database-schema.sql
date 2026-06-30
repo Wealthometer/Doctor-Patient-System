@@ -214,6 +214,7 @@ CREATE TABLE prescription_items (
     id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     prescription_id     UUID         NOT NULL REFERENCES prescriptions(id) ON DELETE CASCADE,
     medication_name     VARCHAR(200) NOT NULL,
+    dosage              VARCHAR(100) NOT NULL,
     frequency           VARCHAR(100) NOT NULL,
     duration            VARCHAR(100) NOT NULL,
     instructions        TEXT,
