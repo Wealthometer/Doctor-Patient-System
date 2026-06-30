@@ -343,3 +343,6 @@ SELECT
     a.start_time,
     a.end_time,
     a.status,
+    a.type,
+    a.reason,
+    a.diagnosis_summary,
