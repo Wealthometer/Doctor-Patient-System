@@ -213,6 +213,7 @@ export interface AppointmentResponse {
   updatedAt: string;
 }
 
+export interface BookAppointmentRequest {
 export interface AvailableSlot {
   startTime: string;
   endTime: string;
