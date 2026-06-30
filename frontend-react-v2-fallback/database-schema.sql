@@ -309,3 +309,13 @@ CREATE TABLE notifications (
     reference_id    UUID,
 );
 
+CREATE INDEX idx_notif_user_id    ON notifications(user_id);
+CREATE INDEX idx_notif_status     ON notifications(status);
+CREATE INDEX idx_notif_ref        ON notifications(reference_type, reference_id);
+
+-- =============================================================================
+-- USEFUL VIEWS
+-- =============================================================================
+
+-- Full appointment details (for reporting)
+CREATE OR REPLACE VIEW vw_appointment_details AS
