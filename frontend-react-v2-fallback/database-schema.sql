@@ -22,4 +22,5 @@ CREATE TABLE users (
     is_locked       BOOLEAN      NOT NULL DEFAULT FALSE,
     email_verified  BOOLEAN      NOT NULL DEFAULT FALSE,
     last_login_at   TIMESTAMP,
+    created_at      TIMESTAMP    NOT NULL DEFAULT NOW(),
 
