@@ -33,3 +33,4 @@ CREATE TABLE refresh_tokens (
     expires_at  TIMESTAMP   NOT NULL,
     created_at  TIMESTAMP   NOT NULL DEFAULT NOW()
 );
+
