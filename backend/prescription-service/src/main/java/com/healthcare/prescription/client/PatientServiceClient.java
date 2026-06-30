@@ -28,3 +28,4 @@ public interface PatientServiceClient {
     class PatientServiceFallback implements PatientServiceClient {
         @Override
         public PatientDto getPatientById(UUID id) {
+            return PatientDto.builder()
