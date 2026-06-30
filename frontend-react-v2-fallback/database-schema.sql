@@ -192,5 +192,6 @@ CREATE INDEX idx_appt_date          ON appointments(appointment_date);
 CREATE INDEX idx_appt_status        ON appointments(status);
 CREATE INDEX idx_appt_number        ON appointments(appointment_number);
 
+CREATE TABLE prescriptions (
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
