@@ -13,3 +13,4 @@ import { DoctorsPage } from './pages/admin/DoctorsPage';
 import { AppointmentsPage } from './pages/appointments/AppointmentsPage';
 import { PrescriptionsPage } from './pages/prescriptions/PrescriptionsPage';
 import { BillingPage } from './pages/billing/BillingPage';
+import { ProfilePage } from './pages/profile/ProfilePage';
