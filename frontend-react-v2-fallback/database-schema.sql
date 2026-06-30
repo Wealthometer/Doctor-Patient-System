@@ -362,6 +362,7 @@ SELECT
     i.status,
     i.total_amount,
     i.paid_amount,
+    i.balance_amount,
     COUNT(p.id)   AS payment_count,
     SUM(p.amount) AS confirmed_payments
 FROM invoices i
