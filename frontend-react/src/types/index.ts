@@ -107,6 +107,8 @@ export interface UpdatePatientRequest {
   bloodType?: string;
   medicalNotes?: string;
   insuranceProvider?: string;
+  insurancePolicyNumber?: string;
+}
   id: string;
   userId: string;
   doctorCode: string;
