@@ -8,3 +8,4 @@ import { ProtectedRoute } from './components/layout/ProtectedRoute';
 import { LoginPage } from './pages/auth/LoginPage';
 import { RegisterPage } from './pages/auth/RegisterPage';
 import { DashboardRouter } from './pages/DashboardRouter';
+import { PatientsPage } from './pages/admin/PatientsPage';
