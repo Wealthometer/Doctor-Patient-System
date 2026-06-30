@@ -24,3 +24,4 @@ export default function App() {
           toastOptions={{
             duration: 4000,
             style: { borderRadius: '10px', fontSize: '13px', fontWeight: 500 },
+            success: { iconTheme: { primary: '#10b981', secondary: '#fff' } },
