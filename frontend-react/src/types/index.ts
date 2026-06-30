@@ -11,7 +11,6 @@ export interface UserInfo {
   createdAt: string;
 }
 
-export interface AuthState {
   user: User | null;
   accessToken: string | null;
   refreshToken: string | null;
