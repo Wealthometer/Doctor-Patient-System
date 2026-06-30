@@ -133,6 +133,7 @@ CREATE TABLE doctors (
     updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
+CREATE TABLE doctor_ratings (
     id          UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     doctor_id   UUID        NOT NULL REFERENCES doctors(id) ON DELETE CASCADE,
     patient_id  UUID        NOT NULL,   -- FK to patient service
