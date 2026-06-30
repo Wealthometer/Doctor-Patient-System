@@ -30,3 +30,4 @@ public interface DoctorServiceClient {
         private Integer maxDailyAppointments;
         private String status;
     }
+
