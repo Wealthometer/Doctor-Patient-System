@@ -206,6 +206,9 @@ CREATE TABLE prescriptions (
     doctor_id           UUID         NOT NULL,
     appointment_id      UUID,                           -- optional link
 
+
+    status              VARCHAR(20) NOT NULL DEFAULT 'ACTIVE'
+                            CHECK (status IN ('ACTIVE','EXPIRED','CANCELLED')),
     notes               TEXT,
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
