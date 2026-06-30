@@ -293,6 +293,7 @@ export interface InvoiceResponse {
   patientName?: string;
   subtotal: number;
   discount: number;
+  totalAmount: number;
   createdAt: string;
 }
 
