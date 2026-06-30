@@ -307,6 +307,8 @@ CREATE TABLE notifications (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     reference_type  VARCHAR(50),            -- APPOINTMENT | PRESCRIPTION | INVOICE
     reference_id    UUID,
+    sent_at         TIMESTAMP,
+    error_message   TEXT,
 );
 
 CREATE INDEX idx_notif_user_id    ON notifications(user_id);
