@@ -249,6 +249,7 @@ CREATE TABLE invoices (
                         CHECK (status IN ('DRAFT','PENDING','PAID','PARTIALLY_PAID','CANCELLED','OVERDUE')),
 
 
+
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
 );
 
