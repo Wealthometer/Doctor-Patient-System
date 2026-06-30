@@ -17,3 +17,4 @@ public interface DoctorServiceClient {
 
     @Data
     @Builder
+    class DoctorDto {
