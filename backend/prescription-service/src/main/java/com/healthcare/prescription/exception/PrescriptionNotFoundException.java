@@ -6,3 +6,4 @@ public class PrescriptionNotFoundException extends RuntimeException {
     }
 
     public PrescriptionNotFoundException(String message, Throwable cause) {
+        super(message, cause);
