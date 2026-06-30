@@ -10,6 +10,7 @@
     <relativePath/>
   </parent>
   <groupId>com.healthcare</groupId>
+  <artifactId>billing-service</artifactId>
   <version>1.0.0</version>
   <name>appointment-service</name>
 
