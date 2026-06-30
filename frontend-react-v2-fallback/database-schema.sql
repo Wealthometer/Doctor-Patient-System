@@ -116,3 +116,4 @@ CREATE TABLE doctors (
     consultation_fee        NUMERIC(10,2),
     profile_image_url       TEXT,
 
+    -- Schedule
