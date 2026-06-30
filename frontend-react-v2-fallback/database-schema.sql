@@ -35,3 +35,4 @@ CREATE TABLE refresh_tokens (
 );
 
 -- Indexes
+CREATE INDEX idx_users_email    ON users(email);
