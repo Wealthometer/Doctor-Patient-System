@@ -90,7 +90,6 @@ export interface CreatePatientRequest {
   insurancePolicyNumber?: string;
 }
 
-export interface Doctor {
   id: string;
   userId: string;
   doctorCode: string;
