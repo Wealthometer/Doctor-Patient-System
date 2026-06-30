@@ -10,6 +10,7 @@ import java.util.UUID;
 
 public class PatientRequests {
 
+    @Builder
     @Data
     public static class CreatePatientRequest {
         @NotNull(message = "User ID is required")
