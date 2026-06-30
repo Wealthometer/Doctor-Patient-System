@@ -261,6 +261,9 @@ CREATE TABLE invoices (
 
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+);
+
+CREATE TABLE invoice_line_items (
     quantity        INTEGER       NOT NULL DEFAULT 1,
     unit_price      NUMERIC(10,2) NOT NULL,
     total_price     NUMERIC(12,2) GENERATED ALWAYS AS (quantity * unit_price) STORED,
