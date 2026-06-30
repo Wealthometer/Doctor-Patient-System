@@ -34,3 +34,4 @@ export default function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/" element={<Navigate to="/login" replace />} />
 
+          {/* Protected app */}
