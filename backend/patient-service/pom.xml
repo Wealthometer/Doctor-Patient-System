@@ -163,6 +163,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <excludes>
+            <exclude>
           </excludes>
         </configuration>
       </plugin>
