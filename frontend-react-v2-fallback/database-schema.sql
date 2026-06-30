@@ -32,3 +32,4 @@ CREATE TABLE refresh_tokens (
     token       TEXT        NOT NULL UNIQUE,
     expires_at  TIMESTAMP   NOT NULL,
     created_at  TIMESTAMP   NOT NULL DEFAULT NOW()
+);
