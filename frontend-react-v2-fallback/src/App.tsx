@@ -55,3 +55,4 @@ export default function App() {
               </ProtectedRoute>
             } />
 
+            <Route path="appointments" element={<AppointmentsPage />} />
