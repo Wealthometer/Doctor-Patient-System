@@ -237,6 +237,7 @@ export interface Prescription {
   id: string;
   patientId: string;
   doctorId: string;
+  patientName: string;
   doctorName: string;
   issueDate: string;
   expiryDate: string;
