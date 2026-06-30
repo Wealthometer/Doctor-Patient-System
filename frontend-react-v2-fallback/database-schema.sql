@@ -132,4 +132,5 @@ CREATE TABLE doctors (
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
 );
+
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
