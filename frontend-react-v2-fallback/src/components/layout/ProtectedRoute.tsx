@@ -7,3 +7,4 @@ interface ProtectedRouteProps {
   children: React.ReactNode;
   roles?: Role[];
 }
+
