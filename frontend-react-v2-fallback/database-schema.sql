@@ -395,5 +395,6 @@ VALUES (
     uuid_generate_v4(),
     'admin',
     'admin@healthcare.com',
+    '$2a$12$placeholder_bcrypt_hash',
     'System',
     'Admin',
