@@ -152,6 +152,7 @@
             </path>
             <path>
               <groupId>org.mapstruct</groupId>
+              <version>${mapstruct.version}</version>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
