@@ -33,6 +33,7 @@ export interface RegisterRequest {
   role: Role;
 }
 
+// ── Patient ─────────────────────────────────────────────────────────────────
 export type Gender = 'MALE' | 'FEMALE' | 'OTHER' | 'PREFER_NOT_TO_SAY';
 
 export interface Patient {
