@@ -1,1 +1,2 @@
 -- =============================================================================
+-- HealthCare Management System — Complete PostgreSQL Schema
