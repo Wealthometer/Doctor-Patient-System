@@ -127,3 +127,4 @@ CREATE TABLE doctors (
     total_ratings           INTEGER      DEFAULT 0,
 
     status                  VARCHAR(20)  NOT NULL DEFAULT 'ACTIVE'
+                                CHECK (status IN ('ACTIVE','INACTIVE','ON_LEAVE','SUSPENDED')),
