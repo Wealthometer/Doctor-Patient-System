@@ -240,6 +240,7 @@ export interface Prescription {
   patientName: string;
   doctorName: string;
   appointmentId?: string;
+  medications: Medication[];
   notes?: string;
   status: PrescriptionStatus;
   items: PrescriptionItem[];
