@@ -134,4 +134,5 @@ CREATE TABLE doctors (
 );
 
     id          UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    doctor_id   UUID        NOT NULL REFERENCES doctors(id) ON DELETE CASCADE,
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
