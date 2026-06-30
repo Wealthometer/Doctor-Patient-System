@@ -118,3 +118,4 @@ CREATE TABLE doctors (
 
     -- Schedule
     work_start_time         TIME,
+    work_end_time           TIME,
