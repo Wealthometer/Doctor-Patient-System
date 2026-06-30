@@ -80,6 +80,7 @@ export interface CreatePatientRequest {
   zipCode?: string;
   country?: string;
   emergencyContactName?: string;
+  emergencyContactPhone?: string;
 
 export interface Doctor {
   id: string;
