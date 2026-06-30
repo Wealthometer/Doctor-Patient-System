@@ -241,6 +241,7 @@ export interface Prescription {
   doctorName: string;
   appointmentId?: string;
   medications: Medication[];
+  diagnosis: string;
   notes?: string;
   status: PrescriptionStatus;
   items: PrescriptionItem[];
