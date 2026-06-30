@@ -1,7 +1,6 @@
 // ── Auth ────────────────────────────────────────────────────────────────────
 export type Role = 'ADMIN' | 'DOCTOR' | 'PATIENT' | 'NURSE';
 
-export interface User {
   id: string;
   username: string;
   email: string;
