@@ -266,6 +266,7 @@ export interface CreatePrescriptionRequest {
   medications: Medication[];
   diagnosis: string;
   notes?: string;
+  expiryDate?: string;
 }
 
 export interface LineItem {
