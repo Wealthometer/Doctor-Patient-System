@@ -43,3 +43,4 @@ export default function App() {
             <Route index element={<Navigate to="dashboard" replace />} />
             <Route path="dashboard" element={<DashboardRouter />} />
 
+            <Route path="patients" element={
