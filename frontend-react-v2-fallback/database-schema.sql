@@ -212,4 +212,6 @@ CREATE TABLE prescriptions (
     updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
 CREATE TABLE prescription_items (
     id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    prescription_id     UUID         NOT NULL REFERENCES prescriptions(id) ON DELETE CASCADE,
+    medication_name     VARCHAR(200) NOT NULL,
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
