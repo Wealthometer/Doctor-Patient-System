@@ -327,5 +327,4 @@ export interface Page<T> {
 
   detail: string;
   status: number;
-  timestamp: string;
 }
