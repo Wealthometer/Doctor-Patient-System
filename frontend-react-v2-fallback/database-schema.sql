@@ -151,4 +151,6 @@ CREATE INDEX idx_doctors_status         ON doctors(status);
 -- =============================================================================
 
 CREATE TABLE appointments (
+    id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    appointment_number  VARCHAR(20) NOT NULL UNIQUE,   -- e.g. APT-20240101-0001
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
