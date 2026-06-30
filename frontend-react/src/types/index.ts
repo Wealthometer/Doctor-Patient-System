@@ -83,6 +83,7 @@ export interface CreatePatientRequest {
   emergencyContactPhone?: string;
   emergencyContactRelation?: string;
   allergies?: string;
+  chronicConditions?: string;
 
 export interface Doctor {
   id: string;
