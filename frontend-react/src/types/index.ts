@@ -11,7 +11,6 @@ export interface UserInfo {
   createdAt: string;
 }
 
-  error: string | null;
 }
 
 export interface LoginRequest {
