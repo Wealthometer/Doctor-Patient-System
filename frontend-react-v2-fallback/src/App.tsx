@@ -51,3 +51,4 @@ export default function App() {
 
             <Route path="doctors" element={
               <ProtectedRoute roles={['ADMIN']}>
+                <DoctorsPage />
