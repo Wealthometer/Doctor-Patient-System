@@ -197,7 +197,6 @@ export type AppointmentType =
 export interface AppointmentResponse {
   id: string;
   patientId: string;
-  patientName: string;
   doctorId: string;
   doctorName: string;
   department: string;
