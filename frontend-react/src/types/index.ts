@@ -54,6 +54,7 @@ export interface PatientResponse {
   country: string;
   emergencyContactName?: string;
   emergencyContactPhone?: string;
+  emergencyContactRelation?: string;
   allergies?: string;
   chronicConditions?: string;
   status: PatientStatus;
