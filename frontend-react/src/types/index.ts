@@ -210,6 +210,7 @@ export interface AppointmentResponse {
   diagnosisSummary?: string;
   cancellationReason?: string;
   createdAt: string;
+  updatedAt: string;
 }
 
 export interface AvailableSlot {
