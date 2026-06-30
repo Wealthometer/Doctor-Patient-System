@@ -131,6 +131,7 @@ export interface DoctorResponse {
   specialization: string;
   department: string;
   licenseNumber: string;
+  licenseExpiryDate?: string;
   bio?: string;
   qualifications?: string;
   yearsOfExperience?: number;
