@@ -379,3 +379,7 @@ CREATE SEQUENCE IF NOT EXISTS seq_invoice_number START 1;
 
 -- Example usage in application code:
 -- patient_code = 'PAT-' || LPAD(nextval('seq_patient_code')::TEXT, 6, '0')
+-- doctor_code  = 'DOC-' || LPAD(nextval('seq_doctor_code')::TEXT, 6, '0')
+-- etc.
+
+-- =============================================================================
