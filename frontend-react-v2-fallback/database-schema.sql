@@ -71,3 +71,6 @@ CREATE TABLE patients (
     allergies                   TEXT,
     chronic_conditions          TEXT,
     blood_type                  VARCHAR(5),
+    medical_notes               TEXT,
+
+    -- Insurance
