@@ -117,3 +117,4 @@ CREATE TABLE doctors (
     profile_image_url       TEXT,
 
     -- Schedule
+    work_start_time         TIME,
