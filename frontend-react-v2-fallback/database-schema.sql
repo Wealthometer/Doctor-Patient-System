@@ -55,3 +55,9 @@ CREATE TABLE patients (
     date_of_birth               DATE         NOT NULL,
     gender                      VARCHAR(10)  NOT NULL CHECK (gender IN ('MALE','FEMALE','OTHER')),
 
+    -- Address
+    address                     VARCHAR(255),
+    city                        VARCHAR(100),
+    state                       VARCHAR(100),
+    zip_code                    VARCHAR(20),
+    country                     VARCHAR(100) DEFAULT 'US',
