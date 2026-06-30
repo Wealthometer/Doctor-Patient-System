@@ -23,3 +23,4 @@ export default function App() {
           position="top-right"
           toastOptions={{
             duration: 4000,
+            style: { borderRadius: '10px', fontSize: '13px', fontWeight: 500 },
