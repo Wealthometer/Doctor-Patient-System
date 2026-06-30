@@ -299,6 +299,7 @@ export interface InvoiceResponse {
   remainingAmount: number;
   status: InvoiceStatus;
   dueDate?: string;
+  notes?: string;
   createdAt: string;
 }
 
