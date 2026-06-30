@@ -33,7 +33,6 @@ export interface RegisterRequest {
   role: Role;
 }
 
-  user: User;
 }
 
 // ── Patient ───────────────────────────────────────────────────────────────────
