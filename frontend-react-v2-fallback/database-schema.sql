@@ -226,6 +226,7 @@ CREATE TABLE prescription_items (
     sort_order          SMALLINT    DEFAULT 0
 );
 
+-- Indexes
 CREATE INDEX idx_presc_patient_id   ON prescriptions(patient_id);
 CREATE INDEX idx_presc_status       ON prescriptions(status);
 CREATE INDEX idx_presc_number       ON prescriptions(prescription_number);
