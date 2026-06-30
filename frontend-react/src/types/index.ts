@@ -303,6 +303,7 @@ export interface InvoiceResponse {
   createdAt: string;
 }
 
+  totalRevenue: number;
   overdueCount: number;
   totalInvoices: number;
 }
