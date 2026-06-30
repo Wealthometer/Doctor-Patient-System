@@ -32,4 +32,5 @@ public interface DoctorServiceClient {
     }
 
     class DoctorServiceFallback implements DoctorServiceClient {
+        @Override
         public DoctorDto getDoctorById(UUID id) {
