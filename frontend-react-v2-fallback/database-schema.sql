@@ -108,3 +108,4 @@ CREATE TABLE doctors (
     -- Professional
     specialization          VARCHAR(100) NOT NULL,
     department              VARCHAR(100) NOT NULL,
+    license_number          VARCHAR(50)  NOT NULL UNIQUE,
