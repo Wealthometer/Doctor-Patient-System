@@ -373,3 +373,9 @@ GROUP BY i.id, i.invoice_number, i.patient_id, i.patient_name,
 
 CREATE SEQUENCE IF NOT EXISTS seq_patient_code START 1;
 CREATE SEQUENCE IF NOT EXISTS seq_doctor_code  START 1;
+CREATE SEQUENCE IF NOT EXISTS seq_appt_number  START 1;
+CREATE SEQUENCE IF NOT EXISTS seq_presc_number START 1;
+CREATE SEQUENCE IF NOT EXISTS seq_invoice_number START 1;
+
+-- Example usage in application code:
+-- patient_code = 'PAT-' || LPAD(nextval('seq_patient_code')::TEXT, 6, '0')
