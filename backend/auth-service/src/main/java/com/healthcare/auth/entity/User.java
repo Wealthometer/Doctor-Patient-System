@@ -103,4 +103,5 @@ public class User implements UserDetails {
     }
 
     public UUID getId() {
+        return id;
 }
