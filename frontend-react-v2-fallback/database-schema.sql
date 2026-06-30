@@ -368,3 +368,8 @@ GROUP BY i.id, i.invoice_number, i.patient_id, i.patient_name,
          i.paid_amount, i.balance_amount;
 
 -- =============================================================================
+-- SEQUENCE HELPERS (for generating readable codes)
+-- =============================================================================
+
+CREATE SEQUENCE IF NOT EXISTS seq_patient_code START 1;
+CREATE SEQUENCE IF NOT EXISTS seq_doctor_code  START 1;
