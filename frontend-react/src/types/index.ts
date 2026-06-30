@@ -295,6 +295,7 @@ export interface InvoiceResponse {
   discount: number;
   totalAmount: number;
   remainingAmount: number;
+  status: InvoiceStatus;
   createdAt: string;
 }
 
