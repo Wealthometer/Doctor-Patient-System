@@ -66,6 +66,7 @@ export interface PatientResponse {
   updatedAt: string;
 }
 
+export interface CreatePatientRequest {
 
 export interface Doctor {
   id: string;
