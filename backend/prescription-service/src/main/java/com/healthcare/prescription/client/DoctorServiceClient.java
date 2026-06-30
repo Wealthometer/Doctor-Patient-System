@@ -20,3 +20,4 @@ public interface DoctorServiceClient {
     class DoctorDto {
         private UUID id;
         private String doctorCode;
+        private String firstName;
