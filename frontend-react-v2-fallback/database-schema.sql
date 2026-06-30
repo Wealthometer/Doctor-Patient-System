@@ -46,3 +46,4 @@ CREATE INDEX idx_refresh_user   ON refresh_tokens(user_id);
 
 CREATE TABLE patients (
     id                          UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id                     UUID        NOT NULL UNIQUE,   -- FK to auth.users
