@@ -82,3 +82,7 @@ CREATE TABLE patients (
                                     CHECK (status IN ('ACTIVE','INACTIVE','SUSPENDED')),
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+-- Indexes
