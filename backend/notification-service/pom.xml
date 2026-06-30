@@ -150,6 +150,7 @@
             <arg>--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>
           </compilerArgs>
           <annotationProcessorPaths>
+            <path>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
