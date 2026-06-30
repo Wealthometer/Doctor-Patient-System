@@ -346,6 +346,9 @@ SELECT
     a.type,
     a.reason,
     a.diagnosis_summary,
+    a.created_at
+FROM appointments a;
+
 CREATE OR REPLACE VIEW vw_invoice_summary AS
     i.invoice_number,
     i.patient_name,
