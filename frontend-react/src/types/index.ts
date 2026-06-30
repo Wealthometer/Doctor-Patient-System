@@ -57,6 +57,7 @@ export interface PatientResponse {
   emergencyContactRelation?: string;
   allergies?: string;
   chronicConditions?: string;
+  bloodType?: string;
   insuranceProvider: string;
   createdAt: string;
 }
