@@ -86,6 +86,7 @@ export interface CreatePatientRequest {
   chronicConditions?: string;
   bloodType?: string;
   medicalNotes?: string;
+  insuranceProvider: string;
 
 export interface Doctor {
   id: string;
