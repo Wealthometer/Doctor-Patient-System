@@ -134,3 +134,4 @@ public class DoctorService {
         long count = doctorRepository.count();
         return "D-" + String.format("%04d", count + 1001);
     }
+}
