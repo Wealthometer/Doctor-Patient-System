@@ -305,6 +305,7 @@ export interface InvoiceResponse {
 
 export interface BillingStatsResponse {
   totalRevenue: number;
+  pendingAmount: number;
   overdueCount: number;
   totalInvoices: number;
 }
