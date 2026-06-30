@@ -58,6 +58,7 @@ export interface PatientResponse {
   allergies?: string;
   chronicConditions?: string;
   bloodType?: string;
+  medicalNotes?: string;
   insuranceProvider: string;
   createdAt: string;
 }
