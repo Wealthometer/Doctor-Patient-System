@@ -239,7 +239,6 @@ export interface Prescription {
   doctorId: string;
   patientName: string;
   doctorName: string;
-  diagnosis?: string;
   notes?: string;
   status: PrescriptionStatus;
   items: PrescriptionItem[];
