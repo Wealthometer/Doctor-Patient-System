@@ -18,3 +18,4 @@ public interface PatientServiceClient {
     @Builder
     class PatientDto {
         private UUID id;
+        private String patientCode;
