@@ -218,6 +218,7 @@ export interface BookAppointmentRequest {
   doctorId: string;
   appointmentDate: string;
   startTime: string;
+  endTime: string;
 export interface AvailableSlot {
   startTime: string;
   endTime: string;
