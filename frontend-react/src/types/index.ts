@@ -243,6 +243,7 @@ export interface Prescription {
   medications: Medication[];
   diagnosis: string;
   notes?: string;
+  issueDate: string;
   status: PrescriptionStatus;
   items: PrescriptionItem[];
   createdAt: string;
