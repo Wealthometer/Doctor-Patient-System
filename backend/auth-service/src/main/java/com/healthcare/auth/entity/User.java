@@ -118,4 +118,5 @@ public class User implements UserDetails {
         return lastName;
     }
 
+    public Role getRole() {
 }
