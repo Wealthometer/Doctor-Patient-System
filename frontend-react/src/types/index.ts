@@ -33,7 +33,6 @@ export interface RegisterRequest {
   role: Role;
 }
 
-  expiresIn: number;
   user: User;
 }
 
