@@ -249,7 +249,6 @@ export interface Prescription {
   createdAt: string;
 }
 
-export interface Invoice {
   id: string;
   invoiceNumber: string;
   patientId: string;
