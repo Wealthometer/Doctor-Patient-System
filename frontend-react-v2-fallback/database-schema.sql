@@ -347,3 +347,5 @@ SELECT
     a.reason,
     a.diagnosis_summary,
     i.invoice_number,
+    i.patient_name,
+    i.invoice_date,
