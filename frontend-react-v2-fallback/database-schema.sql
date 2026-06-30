@@ -129,3 +129,4 @@ CREATE TABLE doctors (
     status                  VARCHAR(20)  NOT NULL DEFAULT 'ACTIVE'
                                 CHECK (status IN ('ACTIVE','INACTIVE','ON_LEAVE','SUSPENDED')),
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+    created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
