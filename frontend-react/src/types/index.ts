@@ -300,6 +300,7 @@ export interface InvoiceResponse {
   paidAmount: number;
   remainingAmount: number;
   status: InvoiceStatus;
+  invoiceDate: string;
   dueDate?: string;
   notes?: string;
   createdAt: string;
