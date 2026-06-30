@@ -160,6 +160,7 @@
                     <target>21</target>
                     <fork>true</fork>
                     <compilerArgs>
+                        <arg>--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
