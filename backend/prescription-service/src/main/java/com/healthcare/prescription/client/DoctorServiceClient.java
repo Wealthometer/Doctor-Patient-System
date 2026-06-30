@@ -22,3 +22,4 @@ public interface DoctorServiceClient {
         private String doctorCode;
         private String firstName;
         private String lastName;
+        private String specialization;
