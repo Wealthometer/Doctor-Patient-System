@@ -35,6 +35,7 @@ export interface RegisterRequest {
 
 // ── Patient ─────────────────────────────────────────────────────────────────
 export type Gender = 'MALE' | 'FEMALE' | 'OTHER' | 'PREFER_NOT_TO_SAY';
+export type PatientStatus = 'ACTIVE' | 'INACTIVE' | 'SUSPENDED';
 
 export interface Patient {
   id: string;
