@@ -87,6 +87,7 @@ export interface CreatePatientRequest {
   bloodType?: string;
   medicalNotes?: string;
   insuranceProvider: string;
+  insurancePolicyNumber?: string;
 
 export interface Doctor {
   id: string;
