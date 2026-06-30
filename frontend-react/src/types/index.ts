@@ -269,7 +269,6 @@ export interface CreatePrescriptionRequest {
   expiryDate?: string;
 }
 
-export interface LineItem {
   id: string;
   description: string;
   serviceCode: string;
