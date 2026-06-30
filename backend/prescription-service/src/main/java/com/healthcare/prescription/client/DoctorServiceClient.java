@@ -41,3 +41,4 @@ public interface DoctorServiceClient {
                     .department("General")
                     .build();
         }
+    }
