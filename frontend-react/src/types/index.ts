@@ -173,6 +173,7 @@ export interface CreateDoctorRequest {
   yearsOfExperience?: number;
   consultationFee?: string;
   workStartTime?: string;
+  workEndTime?: string;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
