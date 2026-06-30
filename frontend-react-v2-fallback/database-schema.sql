@@ -331,3 +331,8 @@ CREATE INDEX idx_notif_ref        ON notifications(reference_type, reference_id)
 
 -- Full appointment details (for reporting)
 CREATE OR REPLACE VIEW vw_appointment_details AS
+SELECT
+    a.id,
+    a.appointment_number,
+    a.patient_id,
+    a.patient_name,
