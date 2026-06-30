@@ -122,3 +122,4 @@ CREATE TABLE doctors (
     work_days               VARCHAR(100),           -- e.g. 'Mon,Tue,Wed,Thu,Fri'
     max_daily_appointments  INTEGER DEFAULT 20,
 
+    -- Rating (denormalised for performance)
