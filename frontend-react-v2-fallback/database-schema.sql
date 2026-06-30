@@ -181,6 +181,7 @@ CREATE TABLE appointments (
 
     cancelled_at    TIMESTAMP,
     confirmed_at    TIMESTAMP,
+    completed_at    TIMESTAMP,
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
