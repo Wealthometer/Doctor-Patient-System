@@ -152,6 +152,7 @@
           </compilerArgs>
           <annotationProcessorPaths>
             <path>
+              <groupId>org.projectlombok</groupId>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
