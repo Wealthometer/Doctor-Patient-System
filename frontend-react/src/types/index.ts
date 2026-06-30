@@ -111,6 +111,7 @@ export interface UpdatePatientRequest {
 }
 
 export interface PatientStatsResponse {
+  total: number;
   id: string;
   userId: string;
   doctorCode: string;
