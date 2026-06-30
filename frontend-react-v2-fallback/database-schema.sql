@@ -177,6 +177,8 @@ CREATE TABLE appointments (
     diagnosis_summary   TEXT,
     cancellation_reason TEXT,
 
+    cancelled_at    TIMESTAMP,
+    confirmed_at    TIMESTAMP,
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
 );
