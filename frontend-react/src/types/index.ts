@@ -226,6 +226,7 @@ export interface AvailableSlot {
 export type PrescriptionStatus = 'ACTIVE' | 'COMPLETED' | 'CANCELLED';
 
 export interface Medication {
+  name: string;
   dosage: string;
   frequency: string;
   duration: string;
