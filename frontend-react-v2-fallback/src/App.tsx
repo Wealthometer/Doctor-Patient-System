@@ -40,3 +40,4 @@ export default function App() {
               <AppLayout />
             </ProtectedRoute>
           }>
+            <Route index element={<Navigate to="dashboard" replace />} />
