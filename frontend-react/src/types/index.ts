@@ -181,6 +181,7 @@ export interface CreateDoctorRequest {
 export interface DoctorStatsResponse {
   total: number;
   active: number;
+  byDepartment: Record<string, number>;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
