@@ -231,7 +231,6 @@ export interface Medication {
   frequency: string;
   duration: string;
   instructions?: string;
-  quantity?: number;
   refillsAllowed: number;
   refillsUsed: number;
 }
