@@ -246,6 +246,7 @@ CREATE TABLE invoices (
     patient_id      UUID         NOT NULL,
 
     status          VARCHAR(20)  NOT NULL DEFAULT 'PENDING'
+                        CHECK (status IN ('DRAFT','PENDING','PAID','PARTIALLY_PAID','CANCELLED','OVERDUE')),
 
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
