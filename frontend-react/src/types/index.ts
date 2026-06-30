@@ -269,7 +269,6 @@ export interface CreatePrescriptionRequest {
   expiryDate?: string;
 }
 
-  id: string;
   description: string;
   serviceCode: string;
   quantity: number;
