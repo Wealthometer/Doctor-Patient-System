@@ -209,4 +209,5 @@ CREATE TABLE prescriptions (
     notes               TEXT,
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
