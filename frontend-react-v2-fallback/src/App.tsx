@@ -11,3 +11,4 @@ import { DashboardRouter } from './pages/DashboardRouter';
 import { PatientsPage } from './pages/admin/PatientsPage';
 import { DoctorsPage } from './pages/admin/DoctorsPage';
 import { AppointmentsPage } from './pages/appointments/AppointmentsPage';
+import { PrescriptionsPage } from './pages/prescriptions/PrescriptionsPage';
