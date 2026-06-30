@@ -222,6 +222,7 @@ export interface AvailableSlot {
   available: boolean;
 }
 
+// ── Prescription ─────────────────────────────────────────────────────────────
 
 export interface PrescriptionItem {
   id: string;
