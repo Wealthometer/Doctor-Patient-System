@@ -26,3 +26,4 @@ public interface DoctorServiceClient {
         private String department;
         private LocalTime workStartTime;
         private LocalTime workEndTime;
+        private String workDays;
