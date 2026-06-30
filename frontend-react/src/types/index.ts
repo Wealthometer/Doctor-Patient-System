@@ -81,6 +81,7 @@ export interface CreatePatientRequest {
   country?: string;
   emergencyContactName?: string;
   emergencyContactPhone?: string;
+  emergencyContactRelation?: string;
 
 export interface Doctor {
   id: string;
