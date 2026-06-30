@@ -291,6 +291,7 @@ export interface InvoiceResponse {
   invoiceNumber: string;
   patientId: string;
   patientName?: string;
+  appointmentId?: string;
   subtotal: number;
   discount: number;
   totalAmount: number;
