@@ -110,3 +110,4 @@ CREATE TABLE doctors (
     department              VARCHAR(100) NOT NULL,
     license_number          VARCHAR(50)  NOT NULL UNIQUE,
     license_expiry_date     DATE,
+    bio                     TEXT,
