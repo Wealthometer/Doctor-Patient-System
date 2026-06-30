@@ -88,6 +88,7 @@
       <optional>true</optional>
     </dependency>
     <dependency>
+      <groupId>jakarta.annotation</groupId>
     <dependency>
       <groupId>org.mapstruct</groupId>
       <artifactId>mapstruct</artifactId>
