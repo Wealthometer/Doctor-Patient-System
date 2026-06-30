@@ -43,4 +43,5 @@ CREATE INDEX idx_refresh_user   ON refresh_tokens(user_id);
 -- =============================================================================
 -- PATIENT SERVICE DATABASE
 -- =============================================================================
+
 CREATE TABLE patients (
