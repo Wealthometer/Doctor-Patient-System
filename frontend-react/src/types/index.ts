@@ -168,6 +168,7 @@ export interface CreateDoctorRequest {
   department: string;
   licenseNumber: string;
   licenseExpiryDate?: string;
+  bio?: string;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
