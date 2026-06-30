@@ -38,3 +38,4 @@ public interface DoctorServiceClient {
                     .id(id)
                     .firstName("Unknown")
                     .lastName("Doctor")
+                    .department("General")
