@@ -28,3 +28,4 @@ api.interceptors.response.use(
           localStorage.setItem('accessToken', data.accessToken);
           original.headers.Authorization = `Bearer ${data.accessToken}`;
           return api(original);
+        } catch {
