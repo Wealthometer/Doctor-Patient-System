@@ -253,6 +253,7 @@ CREATE TABLE invoices (
     status          VARCHAR(20)  NOT NULL DEFAULT 'PENDING'
                         CHECK (status IN ('DRAFT','PENDING','PAID','PARTIALLY_PAID','CANCELLED','OVERDUE')),
 
+    subtotal        NUMERIC(12,2) NOT NULL DEFAULT 0,
     tax             NUMERIC(12,2) NOT NULL DEFAULT 0,
     discount        NUMERIC(12,2) NOT NULL DEFAULT 0,
     total_amount    NUMERIC(12,2) NOT NULL DEFAULT 0,
