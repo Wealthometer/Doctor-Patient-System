@@ -23,3 +23,4 @@ api.interceptors.response.use(
       original._retry = true;
       const refreshToken = localStorage.getItem('refreshToken');
       if (refreshToken) {
+        try {
