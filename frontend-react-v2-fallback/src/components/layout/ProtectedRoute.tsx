@@ -4,3 +4,4 @@ import { useAppSelector } from '../../hooks/redux';
 import type { Role } from '../../types';
 
 interface ProtectedRouteProps {
+  children: React.ReactNode;
