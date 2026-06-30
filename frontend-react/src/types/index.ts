@@ -203,7 +203,6 @@ export interface AppointmentResponse {
   appointmentDate: string;
   startTime: string;
   endTime: string;
-  status: AppointmentStatus;
   type: AppointmentType;
   reason: string;
   notes?: string;
