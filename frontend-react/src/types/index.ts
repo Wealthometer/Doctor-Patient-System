@@ -105,6 +105,7 @@ export interface UpdatePatientRequest {
   allergies?: string;
   chronicConditions?: string;
   bloodType?: string;
+  medicalNotes?: string;
   id: string;
   userId: string;
   doctorCode: string;
