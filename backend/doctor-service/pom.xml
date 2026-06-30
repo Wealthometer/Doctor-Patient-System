@@ -159,6 +159,7 @@
                     <source>21</source>
                     <target>21</target>
                     <fork>true</fork>
+                    <compilerArgs>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
