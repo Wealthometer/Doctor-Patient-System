@@ -198,7 +198,6 @@ export interface AppointmentResponse {
   id: string;
   patientId: string;
   doctorId: string;
-  doctorName: string;
   department: string;
   appointmentDate: string;
   startTime: string;
