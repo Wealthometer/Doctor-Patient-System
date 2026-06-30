@@ -43,7 +43,6 @@ export interface PatientResponse {
   patientCode: string;
   firstName: string;
   lastName: string;
-  fullName: string;
   email: string;
   phone: string;
   dateOfBirth: string;
