@@ -11,7 +11,6 @@ export interface UserInfo {
   createdAt: string;
 }
 
-  accessToken: string | null;
   refreshToken: string | null;
   isAuthenticated: boolean;
   isLoading: boolean;
