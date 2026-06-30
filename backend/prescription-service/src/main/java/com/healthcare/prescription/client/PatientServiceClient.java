@@ -24,3 +24,4 @@ public interface PatientServiceClient {
         private String email;
         private String phone;
     }
+
