@@ -272,6 +272,7 @@ export interface CreatePrescriptionRequest {
 // ── Billing ───────────────────────────────────────────────────────────────────
 export type InvoiceStatus = 'PENDING' | 'PAID' | 'PARTIAL' | 'OVERDUE' | 'CANCELLED';
 
+export interface InvoiceItem {
   description: string;
   serviceCode: string;
   quantity: number;
