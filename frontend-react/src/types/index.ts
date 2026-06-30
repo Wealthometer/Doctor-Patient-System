@@ -263,6 +263,7 @@ export interface CreatePrescriptionRequest {
   patientId: string;
   doctorId: string;
   appointmentId?: string;
+  medications: Medication[];
 }
 
 export interface LineItem {
