@@ -184,6 +184,7 @@ export interface DoctorStatsResponse {
   byDepartment: Record<string, number>;
   bySpecialization: Record<string, number>;
 }
+
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
