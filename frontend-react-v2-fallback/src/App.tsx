@@ -49,3 +49,4 @@ export default function App() {
               </ProtectedRoute>
             } />
 
+            <Route path="doctors" element={
