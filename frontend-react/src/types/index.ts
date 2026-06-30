@@ -174,6 +174,7 @@ export interface CreateDoctorRequest {
   consultationFee?: string;
   workStartTime?: string;
   workEndTime?: string;
+  workDays?: string;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
