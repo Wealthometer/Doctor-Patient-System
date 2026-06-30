@@ -102,4 +102,5 @@ public class User implements UserDetails {
         return password;
     }
 
+    public UUID getId() {
 }
