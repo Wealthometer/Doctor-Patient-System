@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-      "@/*": ["src/*"]
     },
 
     "module": "ESNext",
