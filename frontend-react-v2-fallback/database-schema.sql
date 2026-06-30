@@ -81,3 +81,4 @@ CREATE TABLE patients (
     status                      VARCHAR(20)  NOT NULL DEFAULT 'ACTIVE'
                                     CHECK (status IN ('ACTIVE','INACTIVE','SUSPENDED')),
 
+    created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
