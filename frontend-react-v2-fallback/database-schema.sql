@@ -351,3 +351,4 @@ SELECT
     i.invoice_date,
     i.due_date,
     i.paid_amount,
+    SUM(p.amount) AS confirmed_payments
