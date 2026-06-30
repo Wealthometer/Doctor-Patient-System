@@ -102,6 +102,7 @@ export interface UpdatePatientRequest {
   emergencyContactName?: string;
   emergencyContactPhone?: string;
   emergencyContactRelation?: string;
+  allergies?: string;
   id: string;
   userId: string;
   doctorCode: string;
