@@ -324,7 +324,6 @@ export interface Page<T> {
   first: boolean;
   last: boolean;
 }
-
   detail: string;
   status: number;
 }
