@@ -106,6 +106,7 @@ export interface UpdatePatientRequest {
   chronicConditions?: string;
   bloodType?: string;
   medicalNotes?: string;
+  insuranceProvider?: string;
   id: string;
   userId: string;
   doctorCode: string;
