@@ -61,3 +61,6 @@ CREATE TABLE patients (
     state                       VARCHAR(100),
     zip_code                    VARCHAR(20),
     country                     VARCHAR(100) DEFAULT 'US',
+
+    -- Emergency contact
+    emergency_contact_name      VARCHAR(100),
