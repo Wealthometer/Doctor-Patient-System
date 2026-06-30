@@ -15,3 +15,4 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, roles 
   if (roles && !roles.includes(user.role as Role)) return <Navigate to="/app/dashboard" replace />;
 
   return <>{children}</>;
+};
