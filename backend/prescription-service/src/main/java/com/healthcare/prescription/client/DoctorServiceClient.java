@@ -29,3 +29,4 @@ public interface DoctorServiceClient {
         private String workDays;
         private Integer maxDailyAppointments;
         private String status;
+    }
