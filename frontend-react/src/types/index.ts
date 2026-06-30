@@ -46,7 +46,6 @@ export interface PatientResponse {
   email: string;
   phone: string;
   dateOfBirth: string;
-  age: number;
   gender: Gender;
   address?: string;
   city?: string;
