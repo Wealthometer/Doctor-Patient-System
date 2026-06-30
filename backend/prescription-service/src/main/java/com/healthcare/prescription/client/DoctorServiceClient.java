@@ -28,3 +28,4 @@ public interface DoctorServiceClient {
         private LocalTime workEndTime;
         private String workDays;
         private Integer maxDailyAppointments;
+        private String status;
