@@ -27,3 +27,4 @@ export default function App() {
             success: { iconTheme: { primary: '#10b981', secondary: '#fff' } },
             error: { iconTheme: { primary: '#ef4444', secondary: '#fff' } },
           }}
+        />
