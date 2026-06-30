@@ -261,5 +261,7 @@ CREATE TABLE invoices (
 
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+    quantity        INTEGER       NOT NULL DEFAULT 1,
+    unit_price      NUMERIC(10,2) NOT NULL,
 );
 
