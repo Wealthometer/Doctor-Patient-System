@@ -109,6 +109,7 @@ export interface UpdatePatientRequest {
   insuranceProvider?: string;
   insurancePolicyNumber?: string;
 }
+
   id: string;
   userId: string;
   doctorCode: string;
