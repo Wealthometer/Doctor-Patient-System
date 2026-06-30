@@ -113,6 +113,7 @@ export interface UpdatePatientRequest {
 export interface PatientStatsResponse {
   total: number;
   active: number;
+  inactive: number;
   id: string;
   userId: string;
   doctorCode: string;
