@@ -25,3 +25,4 @@ public interface DoctorServiceClient {
         private String specialization;
         private String department;
         private LocalTime workStartTime;
+        private LocalTime workEndTime;
