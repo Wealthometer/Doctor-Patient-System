@@ -98,3 +98,9 @@ CREATE INDEX idx_patients_name         ON patients(last_name, first_name);
 
 CREATE TABLE doctors (
     id                      UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id                 UUID         NOT NULL UNIQUE,
+    doctor_code             VARCHAR(20)  NOT NULL UNIQUE,   -- e.g. DOC-000001
+    first_name              VARCHAR(100) NOT NULL,
+    last_name               VARCHAR(100) NOT NULL,
+    email                   VARCHAR(255) NOT NULL,
+    phone                   VARCHAR(20)  NOT NULL,
