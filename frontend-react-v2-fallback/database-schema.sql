@@ -94,3 +94,7 @@ CREATE INDEX idx_patients_name         ON patients(last_name, first_name);
 
 -- =============================================================================
 -- DOCTOR SERVICE DATABASE
+-- =============================================================================
+
+CREATE TABLE doctors (
+    id                      UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
