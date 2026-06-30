@@ -270,5 +270,8 @@ CREATE TABLE invoices (
 CREATE TABLE payments (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     invoice_id      UUID          NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
+    payment_status  VARCHAR(20)   NOT NULL DEFAULT 'COMPLETED'
+                        CHECK (payment_status IN ('PENDING','COMPLETED','FAILED','REFUNDED')),
+    transaction_id  VARCHAR(100),
 );
 
