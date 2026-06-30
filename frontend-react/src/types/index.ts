@@ -274,7 +274,6 @@ export type InvoiceStatus = 'PENDING' | 'PAID' | 'PARTIAL' | 'OVERDUE' | 'CANCEL
 
 export interface InvoiceItem {
   description: string;
-  serviceCode: string;
   quantity: number;
   unitPrice: number;
   totalPrice: number;
