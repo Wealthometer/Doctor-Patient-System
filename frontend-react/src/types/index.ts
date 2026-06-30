@@ -159,6 +159,7 @@ export interface DoctorSummaryResponse {
 }
 
 export interface CreateDoctorRequest {
+  userId: string;
   firstName: string;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
