@@ -166,6 +166,7 @@
             <exclude>
               <groupId>org.projectlombok</groupId>
               <artifactId>lombok</artifactId>
+            </exclude>
           </excludes>
         </configuration>
       </plugin>
