@@ -26,3 +26,4 @@ CREATE TABLE users (
     updated_at      TIMESTAMP    NOT NULL DEFAULT NOW()
 );
 
+CREATE TABLE refresh_tokens (
