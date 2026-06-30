@@ -11,3 +11,4 @@ import java.util.UUID;
 @FeignClient(name = "patient-service", fallback = PatientServiceClient.PatientServiceFallback.class)
 public interface PatientServiceClient {
 
+    @GetMapping("/api/v1/patients/{id}")
