@@ -94,6 +94,7 @@ export interface UpdatePatientRequest {
   firstName?: string;
   lastName?: string;
   phone?: string;
+  address?: string;
   id: string;
   userId: string;
   doctorCode: string;
