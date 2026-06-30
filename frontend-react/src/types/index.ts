@@ -214,6 +214,7 @@ export interface AppointmentResponse {
 }
 
 export interface BookAppointmentRequest {
+  patientId: string;
 export interface AvailableSlot {
   startTime: string;
   endTime: string;
