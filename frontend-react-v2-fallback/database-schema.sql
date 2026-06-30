@@ -205,6 +205,7 @@ CREATE TABLE prescriptions (
     patient_id          UUID         NOT NULL,
     patient_name        VARCHAR(200),
     doctor_id           UUID         NOT NULL,
+    doctor_name         VARCHAR(200),
     appointment_id      UUID,                           -- optional link
 
     issue_date          DATE    NOT NULL DEFAULT CURRENT_DATE,
