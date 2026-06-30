@@ -50,6 +50,7 @@ export interface PatientResponse {
   address?: string;
   city?: string;
   state?: string;
+  zipCode?: string;
   allergies?: string;
   chronicConditions?: string;
   status: PatientStatus;
