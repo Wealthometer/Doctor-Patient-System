@@ -148,6 +148,7 @@ export interface DoctorResponse {
   updatedAt: string;
 }
 
+export interface DoctorSummaryResponse {
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
