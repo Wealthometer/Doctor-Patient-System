@@ -225,5 +225,6 @@ CREATE TABLE prescription_items (
     instructions        TEXT,
     sort_order          SMALLINT    DEFAULT 0
 CREATE INDEX idx_presc_patient_id   ON prescriptions(patient_id);
+CREATE INDEX idx_presc_status       ON prescriptions(status);
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
