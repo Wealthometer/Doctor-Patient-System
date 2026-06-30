@@ -119,6 +119,7 @@ export interface PatientStatsResponse {
 
 // ── Doctor ──────────────────────────────────────────────────────────────────
 export type DoctorStatus = 'ACTIVE' | 'INACTIVE' | 'ON_LEAVE';
+
   id: string;
   userId: string;
   doctorCode: string;
