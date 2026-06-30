@@ -144,7 +144,6 @@ export interface DoctorResponse {
   averageRating?: number;
   totalRatings?: number;
   status: DoctorStatus;
-  totalRatings: number;
   createdAt: string;
 }
 
