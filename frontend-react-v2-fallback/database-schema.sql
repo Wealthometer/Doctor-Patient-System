@@ -249,3 +249,5 @@ CREATE TABLE invoices (
 
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+);
+
