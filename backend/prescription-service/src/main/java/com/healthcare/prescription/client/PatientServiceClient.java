@@ -21,3 +21,4 @@ public interface PatientServiceClient {
         private String patientCode;
         private String firstName;
         private String lastName;
+        private String email;
