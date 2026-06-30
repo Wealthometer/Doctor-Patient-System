@@ -44,3 +44,4 @@ export default function App() {
             <Route path="dashboard" element={<DashboardRouter />} />
 
             <Route path="patients" element={
+              <ProtectedRoute roles={['ADMIN', 'DOCTOR', 'NURSE']}>
