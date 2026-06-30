@@ -114,6 +114,7 @@ export interface PatientStatsResponse {
   total: number;
   active: number;
   inactive: number;
+  newThisMonth: number;
   id: string;
   userId: string;
   doctorCode: string;
