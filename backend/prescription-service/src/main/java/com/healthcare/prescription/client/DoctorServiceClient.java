@@ -32,3 +32,4 @@ public interface DoctorServiceClient {
     }
 
     class DoctorServiceFallback implements DoctorServiceClient {
+        public DoctorDto getDoctorById(UUID id) {
