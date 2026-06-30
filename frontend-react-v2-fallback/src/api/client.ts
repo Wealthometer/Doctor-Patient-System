@@ -21,3 +21,4 @@ api.interceptors.response.use(
     const original = error.config;
     if (error.response?.status === 401 && !original._retry) {
       original._retry = true;
+      const refreshToken = localStorage.getItem('refreshToken');
