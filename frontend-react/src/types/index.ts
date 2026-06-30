@@ -103,6 +103,7 @@ export interface UpdatePatientRequest {
   emergencyContactPhone?: string;
   emergencyContactRelation?: string;
   allergies?: string;
+  chronicConditions?: string;
   id: string;
   userId: string;
   doctorCode: string;
