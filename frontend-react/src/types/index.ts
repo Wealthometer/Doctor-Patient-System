@@ -33,7 +33,6 @@ export interface RegisterRequest {
   role: Role;
 }
 
-  tokenType: string;
   expiresIn: number;
   user: User;
 }
