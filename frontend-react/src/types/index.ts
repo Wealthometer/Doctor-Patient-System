@@ -69,6 +69,7 @@ export interface PatientResponse {
 export interface CreatePatientRequest {
   userId: string;
   firstName: string;
+  lastName: string;
 
 export interface Doctor {
   id: string;
