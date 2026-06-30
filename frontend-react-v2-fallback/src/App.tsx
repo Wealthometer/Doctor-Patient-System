@@ -22,3 +22,4 @@ export default function App() {
         <Toaster
           position="top-right"
           toastOptions={{
+            duration: 4000,
