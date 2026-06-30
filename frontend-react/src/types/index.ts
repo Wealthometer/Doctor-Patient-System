@@ -98,6 +98,7 @@ export interface UpdatePatientRequest {
   city?: string;
   state?: string;
   zipCode?: string;
+  country?: string;
   id: string;
   userId: string;
   doctorCode: string;
