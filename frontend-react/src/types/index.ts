@@ -220,6 +220,7 @@ export interface BookAppointmentRequest {
   startTime: string;
   endTime: string;
   type: AppointmentType;
+  reason: string;
 export interface AvailableSlot {
   startTime: string;
   endTime: string;
