@@ -125,3 +125,4 @@ CREATE TABLE doctors (
     -- Rating (denormalised for performance)
     average_rating          NUMERIC(3,2) DEFAULT 0.0,
     total_ratings           INTEGER      DEFAULT 0,
+
