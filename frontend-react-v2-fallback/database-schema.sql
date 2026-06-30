@@ -395,4 +395,5 @@ VALUES (
     uuid_generate_v4(),
     'admin',
     'admin@healthcare.com',
+    'System',
     'Admin',
