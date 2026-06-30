@@ -41,3 +41,4 @@ CREATE INDEX idx_users_role     ON users(role);
 CREATE INDEX idx_refresh_user   ON refresh_tokens(user_id);
 
 -- =============================================================================
+-- PATIENT SERVICE DATABASE
