@@ -104,3 +104,7 @@ CREATE TABLE doctors (
     last_name               VARCHAR(100) NOT NULL,
     email                   VARCHAR(255) NOT NULL,
     phone                   VARCHAR(20)  NOT NULL,
+
+    -- Professional
+    specialization          VARCHAR(100) NOT NULL,
+    department              VARCHAR(100) NOT NULL,
