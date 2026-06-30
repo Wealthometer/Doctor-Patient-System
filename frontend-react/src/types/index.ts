@@ -99,6 +99,7 @@ export interface UpdatePatientRequest {
   state?: string;
   zipCode?: string;
   country?: string;
+  emergencyContactName?: string;
   id: string;
   userId: string;
   doctorCode: string;
