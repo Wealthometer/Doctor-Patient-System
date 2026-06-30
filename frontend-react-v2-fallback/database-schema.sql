@@ -113,3 +113,4 @@ CREATE TABLE doctors (
     bio                     TEXT,
     qualifications          TEXT,
     years_of_experience     INTEGER      DEFAULT 0,
+    consultation_fee        NUMERIC(10,2),
