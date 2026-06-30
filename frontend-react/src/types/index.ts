@@ -66,7 +66,6 @@ export interface PatientResponse {
   updatedAt: string;
 }
 
-export type DoctorStatus = 'ACTIVE' | 'INACTIVE' | 'ON_LEAVE' | 'SUSPENDED';
 
 export interface Doctor {
   id: string;
