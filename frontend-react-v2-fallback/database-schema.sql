@@ -149,6 +149,7 @@ CREATE INDEX idx_doctors_code           ON doctors(doctor_code);
 CREATE INDEX idx_doctors_department     ON doctors(department);
 CREATE INDEX idx_doctors_specialization ON doctors(specialization);
 CREATE INDEX idx_doctors_status         ON doctors(status);
+CREATE INDEX idx_doctor_ratings_doctor  ON doctor_ratings(doctor_id);
 
 -- =============================================================================
 -- APPOINTMENT SERVICE DATABASE
