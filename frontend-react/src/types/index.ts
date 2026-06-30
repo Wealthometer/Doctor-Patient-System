@@ -73,6 +73,7 @@ export interface CreatePatientRequest {
   email: string;
   phone: string;
   dateOfBirth: string;
+  gender: Gender;
 
 export interface Doctor {
   id: string;
