@@ -294,6 +294,7 @@ export interface InvoiceResponse {
   subtotal: number;
   discount: number;
   totalAmount: number;
+  remainingAmount: number;
   createdAt: string;
 }
 
