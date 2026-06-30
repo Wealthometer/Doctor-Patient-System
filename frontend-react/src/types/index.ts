@@ -281,7 +281,6 @@ export interface InvoiceItem {
 
 export interface Payment {
   id: string;
-  paymentReference: string;
   amount: number;
   method: string;
   status: string;
