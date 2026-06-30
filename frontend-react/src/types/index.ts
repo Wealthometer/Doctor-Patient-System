@@ -33,7 +33,6 @@ export interface RegisterRequest {
   role: Role;
 }
 
-  refreshToken: string;
   tokenType: string;
   expiresIn: number;
   user: User;
