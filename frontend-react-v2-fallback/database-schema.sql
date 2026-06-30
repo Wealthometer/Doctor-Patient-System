@@ -181,6 +181,10 @@ CREATE TABLE appointments (
     updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
+CREATE INDEX idx_appt_patient_id    ON appointments(patient_id);
+CREATE INDEX idx_appt_doctor_id     ON appointments(doctor_id);
+CREATE INDEX idx_appt_date          ON appointments(appointment_date);
+CREATE INDEX idx_appt_status        ON appointments(status);
 CREATE INDEX idx_appt_number        ON appointments(appointment_number);
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
