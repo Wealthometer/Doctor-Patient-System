@@ -16,3 +16,4 @@ public interface PatientServiceClient {
 
     @Data
     @Builder
+        private UUID id;
