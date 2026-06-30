@@ -46,3 +46,4 @@ export default function App() {
             <Route path="patients" element={
               <ProtectedRoute roles={['ADMIN', 'DOCTOR', 'NURSE']}>
                 <PatientsPage />
+              </ProtectedRoute>
