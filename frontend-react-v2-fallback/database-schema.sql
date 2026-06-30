@@ -194,7 +194,10 @@ CREATE INDEX idx_appt_status        ON appointments(status);
 CREATE INDEX idx_appt_number        ON appointments(appointment_number);
 
 -- =============================================================================
+
 CREATE TABLE prescriptions (
+    id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    prescription_number VARCHAR(20)  NOT NULL UNIQUE,   -- e.g. RX-20240101-0001
     patient_id          UUID         NOT NULL,
     patient_name        VARCHAR(200),
     doctor_id           UUID         NOT NULL,
