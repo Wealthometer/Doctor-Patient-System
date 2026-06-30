@@ -178,6 +178,7 @@ export interface CreateDoctorRequest {
   maxDailyAppointments?: number;
 }
 
+export interface DoctorStatsResponse {
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
