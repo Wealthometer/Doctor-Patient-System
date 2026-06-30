@@ -346,3 +346,4 @@ SELECT
     a.type,
     a.reason,
     a.diagnosis_summary,
+    i.invoice_number,
