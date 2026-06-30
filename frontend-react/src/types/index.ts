@@ -251,7 +251,6 @@ export interface Prescription {
 
 export interface CreatePrescriptionRequest {
   patientId: string;
-  subtotal: number;
   taxAmount: number;
   totalAmount: number;
   paidAmount: number;
