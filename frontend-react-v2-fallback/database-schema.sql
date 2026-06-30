@@ -245,5 +245,7 @@ CREATE TABLE invoices (
     invoice_number  VARCHAR(20)  NOT NULL UNIQUE,   -- e.g. INV-20240101-0001
     patient_id      UUID         NOT NULL,
 
+    status          VARCHAR(20)  NOT NULL DEFAULT 'PENDING'
+
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
