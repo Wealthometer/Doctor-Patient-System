@@ -35,3 +35,4 @@ export default function App() {
           <Route path="/" element={<Navigate to="/login" replace />} />
 
           {/* Protected app */}
+          <Route path="/app" element={
