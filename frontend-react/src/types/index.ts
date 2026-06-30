@@ -251,7 +251,6 @@ export interface Prescription {
 
 export interface CreatePrescriptionRequest {
   patientId: string;
-  department: string;
   invoiceDate: string;
   dueDate: string;
   subtotal: number;
