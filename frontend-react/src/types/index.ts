@@ -11,6 +11,7 @@ export interface UserInfo {
   createdAt: string;
 }
 
+export interface AuthResponse {
 }
 
 export interface LoginRequest {
