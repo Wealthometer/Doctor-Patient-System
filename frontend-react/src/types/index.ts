@@ -239,6 +239,7 @@ export interface Prescription {
   doctorId: string;
   patientName: string;
   doctorName: string;
+  appointmentId?: string;
   notes?: string;
   status: PrescriptionStatus;
   items: PrescriptionItem[];
