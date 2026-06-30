@@ -119,3 +119,4 @@ CREATE TABLE doctors (
     -- Schedule
     work_start_time         TIME,
     work_end_time           TIME,
+    work_days               VARCHAR(100),           -- e.g. 'Mon,Tue,Wed,Thu,Fri'
