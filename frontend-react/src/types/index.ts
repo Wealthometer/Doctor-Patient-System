@@ -187,7 +187,6 @@ export interface DoctorStatsResponse {
 
 // ── Appointment ──────────────────────────────────────────────────────────────
 export type AppointmentStatus =
-  | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
 
 export type AppointmentType =
   | 'CONSULTATION' | 'FOLLOW_UP' | 'ROUTINE_CHECKUP'
