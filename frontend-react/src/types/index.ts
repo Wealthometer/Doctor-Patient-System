@@ -251,7 +251,6 @@ export interface Prescription {
 
 export interface CreatePrescriptionRequest {
   patientId: string;
-  totalAmount: number;
   paidAmount: number;
   balanceDue: number;
   insuranceProvider: string;
