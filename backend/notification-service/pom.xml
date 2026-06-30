@@ -169,6 +169,7 @@
         <configuration>
           <excludes>
             <exclude>
+              <groupId>org.projectlombok</groupId>
           </excludes>
         </configuration>
       </plugin>
