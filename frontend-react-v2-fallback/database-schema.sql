@@ -76,3 +76,8 @@ CREATE TABLE patients (
     -- Insurance
     insurance_provider          VARCHAR(100) NOT NULL,
     insurance_policy_number     VARCHAR(50),
+
+    -- Status
+    status                      VARCHAR(20)  NOT NULL DEFAULT 'ACTIVE'
+                                    CHECK (status IN ('ACTIVE','INACTIVE','SUSPENDED')),
+
