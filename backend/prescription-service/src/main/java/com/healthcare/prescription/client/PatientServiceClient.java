@@ -12,3 +12,4 @@ import java.util.UUID;
 public interface PatientServiceClient {
 
     @GetMapping("/api/v1/patients/{id}")
+    PatientDto getPatientById(@PathVariable UUID id);
