@@ -261,6 +261,7 @@ export interface Prescription {
 
 export interface CreatePrescriptionRequest {
   patientId: string;
+  appointmentId?: string;
 }
 
 export interface LineItem {
