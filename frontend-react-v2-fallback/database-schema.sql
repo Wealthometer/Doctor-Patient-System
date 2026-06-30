@@ -52,3 +52,6 @@ CREATE TABLE patients (
     last_name                   VARCHAR(100) NOT NULL,
     email                       VARCHAR(255) NOT NULL,
     phone                       VARCHAR(20)  NOT NULL,
+    date_of_birth               DATE         NOT NULL,
+    gender                      VARCHAR(10)  NOT NULL CHECK (gender IN ('MALE','FEMALE','OTHER')),
+
