@@ -204,6 +204,7 @@ export interface AppointmentResponse {
   startTime: string;
   endTime: string;
   type: AppointmentType;
+  status: AppointmentStatus;
   reason: string;
   notes?: string;
   diagnosisSummary?: string;
