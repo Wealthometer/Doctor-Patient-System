@@ -350,6 +350,7 @@ SELECT
     i.patient_name,
     i.invoice_date,
     i.due_date,
+    i.status,
     i.paid_amount,
     COUNT(p.id)   AS payment_count,
     SUM(p.amount) AS confirmed_payments
