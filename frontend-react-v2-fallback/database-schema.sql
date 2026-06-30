@@ -230,6 +230,7 @@ CREATE INDEX idx_presc_number       ON prescriptions(prescription_number);
 CREATE INDEX idx_presc_items_presc  ON prescription_items(prescription_id);
 
 -- =============================================================================
+-- BILLING SERVICE DATABASE
 
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
