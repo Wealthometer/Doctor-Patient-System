@@ -159,4 +159,6 @@ CREATE TABLE appointments (
     appointment_number  VARCHAR(20) NOT NULL UNIQUE,   -- e.g. APT-20240101-0001
     patient_id          UUID        NOT NULL,           -- FK to patient service
     patient_name        VARCHAR(200),                  -- denormalised cache
+    doctor_id           UUID        NOT NULL,           -- FK to doctor service
+    doctor_name         VARCHAR(200),
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
