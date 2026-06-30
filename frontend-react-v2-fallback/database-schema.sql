@@ -306,8 +306,10 @@ CREATE INDEX idx_payments_status        ON payments(payment_status);
 CREATE TABLE notifications (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     user_id         UUID        NOT NULL,
+    type            VARCHAR(50) NOT NULL,   -- EMAIL | SMS | PUSH
     channel         VARCHAR(50),
     subject         VARCHAR(255),
+    body            TEXT        NOT NULL,
     recipient       VARCHAR(255) NOT NULL,  -- email addr or phone
     status          VARCHAR(20) NOT NULL DEFAULT 'PENDING'
                         CHECK (status IN ('PENDING','SENT','FAILED','CANCELLED')),
