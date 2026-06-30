@@ -5,6 +5,7 @@ import com.healthcare.doctor.dto.request.DoctorRequests.UpdateDoctorRequest;
 import com.healthcare.doctor.dto.request.DoctorRequests.RatingRequest;
 import com.healthcare.doctor.dto.response.DoctorResponses.DoctorResponse;
 import com.healthcare.doctor.dto.response.DoctorResponses.DoctorSummaryResponse;
+import com.healthcare.doctor.dto.response.DoctorResponses.DoctorStatsResponse;
 import com.healthcare.doctor.entity.Doctor;
 import com.healthcare.doctor.entity.DoctorStatus;
 import com.healthcare.doctor.exception.DoctorAlreadyExistsException;
