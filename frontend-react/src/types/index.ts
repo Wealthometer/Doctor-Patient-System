@@ -12,6 +12,7 @@ export interface UserInfo {
 }
 
 export interface AuthResponse {
+  accessToken: string;
 }
 
 export interface LoginRequest {
