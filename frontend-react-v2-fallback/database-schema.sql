@@ -363,6 +363,8 @@ SELECT
     i.paid_amount,
     COUNT(p.id)   AS payment_count,
     SUM(p.amount) AS confirmed_payments
+FROM invoices i
+LEFT JOIN payments p ON p.invoice_id = i.id AND p.payment_status = 'COMPLETED'
 GROUP BY i.id, i.invoice_number, i.patient_id, i.patient_name,
          i.invoice_date, i.due_date, i.status, i.total_amount,
          i.paid_amount, i.balance_amount;
