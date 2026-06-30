@@ -198,6 +198,7 @@ export interface AppointmentResponse {
   id: string;
   patientId: string;
   doctorId: string;
+  patientName?: string;
   appointmentDate: string;
   startTime: string;
   endTime: string;
