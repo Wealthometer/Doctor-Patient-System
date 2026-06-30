@@ -130,4 +130,5 @@ CREATE TABLE doctors (
                                 CHECK (status IN ('ACTIVE','INACTIVE','ON_LEAVE','SUSPENDED')),
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
