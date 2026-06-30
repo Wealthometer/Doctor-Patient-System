@@ -110,6 +110,7 @@ export interface UpdatePatientRequest {
   insurancePolicyNumber?: string;
 }
 
+export interface PatientStatsResponse {
   id: string;
   userId: string;
   doctorCode: string;
