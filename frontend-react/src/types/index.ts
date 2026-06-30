@@ -191,7 +191,6 @@ export type AppointmentStatus =
   | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
 
 export type AppointmentType =
-  | 'EMERGENCY' | 'TELEMEDICINE' | 'PROCEDURE' | 'LAB_REVIEW';
 
 export interface Appointment {
   id: string;
