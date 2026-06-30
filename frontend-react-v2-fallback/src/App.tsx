@@ -20,3 +20,4 @@ export default function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Toaster
+          position="top-right"
