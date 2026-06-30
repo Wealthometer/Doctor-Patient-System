@@ -60,6 +60,7 @@ export interface PatientResponse {
   bloodType?: string;
   medicalNotes?: string;
   insuranceProvider: string;
+  insurancePolicyNumber?: string;
   createdAt: string;
 }
 
