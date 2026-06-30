@@ -354,6 +354,7 @@ CREATE OR REPLACE VIEW vw_invoice_summary AS
 SELECT
     i.id,
     i.invoice_number,
+    i.patient_id,
     i.patient_name,
     i.invoice_date,
     i.due_date,
