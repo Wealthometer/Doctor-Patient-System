@@ -49,3 +49,4 @@ CREATE TABLE patients (
     user_id                     UUID        NOT NULL UNIQUE,   -- FK to auth.users
     patient_code                VARCHAR(20) NOT NULL UNIQUE,   -- e.g. PAT-000001
     first_name                  VARCHAR(100) NOT NULL,
+    last_name                   VARCHAR(100) NOT NULL,
