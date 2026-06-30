@@ -177,6 +177,7 @@ CREATE TABLE appointments (
     diagnosis_summary   TEXT,
     cancellation_reason TEXT,
 
+CREATE INDEX idx_appt_number        ON appointments(appointment_number);
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
