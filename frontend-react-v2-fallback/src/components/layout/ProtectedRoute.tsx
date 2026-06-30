@@ -13,3 +13,4 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, roles 
 
   if (!token || !user) return <Navigate to="/login" replace />;
   if (roles && !roles.includes(user.role as Role)) return <Navigate to="/app/dashboard" replace />;
+
