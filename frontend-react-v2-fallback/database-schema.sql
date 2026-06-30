@@ -67,3 +67,7 @@ CREATE TABLE patients (
     emergency_contact_phone     VARCHAR(20),
     emergency_contact_relation  VARCHAR(50),
 
+    -- Medical info
+    allergies                   TEXT,
+    chronic_conditions          TEXT,
+    blood_type                  VARCHAR(5),
