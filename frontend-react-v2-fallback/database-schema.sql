@@ -351,6 +351,7 @@ SELECT
     i.invoice_date,
     i.due_date,
     i.paid_amount,
+    COUNT(p.id)   AS payment_count,
     SUM(p.amount) AS confirmed_payments
 GROUP BY i.id, i.invoice_number, i.patient_id, i.patient_name,
          i.invoice_date, i.due_date, i.status, i.total_amount,
