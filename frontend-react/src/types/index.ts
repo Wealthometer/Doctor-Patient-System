@@ -154,6 +154,7 @@ export interface DoctorSummaryResponse {
   firstName: string;
   lastName: string;
   specialization: string;
+  department: string;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
