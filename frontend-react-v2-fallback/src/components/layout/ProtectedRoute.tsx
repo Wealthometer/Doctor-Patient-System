@@ -6,3 +6,4 @@ import type { Role } from '../../types';
 interface ProtectedRouteProps {
   children: React.ReactNode;
   roles?: Role[];
+}
