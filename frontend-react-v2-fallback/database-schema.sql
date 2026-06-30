@@ -200,6 +200,7 @@ CREATE TABLE prescriptions (
     doctor_id           UUID         NOT NULL,
     appointment_id      UUID,                           -- optional link
 
+    notes               TEXT,
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
