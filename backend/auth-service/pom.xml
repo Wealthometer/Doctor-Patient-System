@@ -158,6 +158,7 @@
             </path>
             <path>
               <groupId>org.mapstruct</groupId>
+              <artifactId>mapstruct-processor</artifactId>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
