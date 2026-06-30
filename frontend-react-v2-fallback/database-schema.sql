@@ -391,3 +391,5 @@ CREATE SEQUENCE IF NOT EXISTS seq_invoice_number START 1;
 -- Admin user (password: Admin@123 — bcrypt hashed placeholder)
 INSERT INTO users (id, username, email, password, first_name, last_name, role)
 VALUES (
+    'admin',
+    'admin@healthcare.com',
