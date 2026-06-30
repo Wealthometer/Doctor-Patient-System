@@ -11,7 +11,6 @@ export interface UserInfo {
   createdAt: string;
 }
 
-  isAuthenticated: boolean;
   isLoading: boolean;
   error: string | null;
 }
