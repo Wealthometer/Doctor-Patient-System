@@ -38,3 +38,4 @@ export default function App() {
           <Route path="/app" element={
             <ProtectedRoute>
               <AppLayout />
+            </ProtectedRoute>
