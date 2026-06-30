@@ -162,6 +162,7 @@ export interface CreateDoctorRequest {
   userId: string;
   firstName: string;
   lastName: string;
+  email: string;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
