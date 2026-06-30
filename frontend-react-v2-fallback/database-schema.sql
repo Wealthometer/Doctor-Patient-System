@@ -398,3 +398,5 @@ VALUES (
     '$2a$12$placeholder_bcrypt_hash',
     'System',
     'Admin',
+    'ADMIN'
+) ON CONFLICT DO NOTHING;
