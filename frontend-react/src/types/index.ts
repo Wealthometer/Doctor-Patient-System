@@ -249,7 +249,6 @@ export interface Prescription {
   createdAt: string;
 }
 
-export type InvoiceStatus =
   | 'PENDING' | 'PARTIALLY_PAID' | 'PAID' | 'OVERDUE' | 'CANCELLED' | 'REFUNDED';
 
 export interface Invoice {
