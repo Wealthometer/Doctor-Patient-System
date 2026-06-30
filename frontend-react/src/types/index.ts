@@ -70,6 +70,7 @@ export interface CreatePatientRequest {
   userId: string;
   firstName: string;
   lastName: string;
+  email: string;
 
 export interface Doctor {
   id: string;
