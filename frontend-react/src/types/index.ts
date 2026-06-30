@@ -325,7 +325,6 @@ export interface Page<T> {
   last: boolean;
 }
 
-export interface ApiError {
   detail: string;
   status: number;
   timestamp: string;
