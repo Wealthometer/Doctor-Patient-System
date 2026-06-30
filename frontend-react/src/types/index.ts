@@ -61,6 +61,7 @@ export interface PatientResponse {
   medicalNotes?: string;
   insuranceProvider: string;
   insurancePolicyNumber?: string;
+  status: PatientStatus;
   createdAt: string;
 }
 
