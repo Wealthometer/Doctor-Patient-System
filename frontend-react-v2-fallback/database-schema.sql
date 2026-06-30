@@ -244,6 +244,11 @@ CREATE TABLE invoices (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     invoice_number  VARCHAR(20)  NOT NULL UNIQUE,   -- e.g. INV-20240101-0001
     patient_id      UUID         NOT NULL,
+    patient_name    VARCHAR(200),
+    appointment_id  UUID,
+
+    invoice_date    DATE         NOT NULL DEFAULT CURRENT_DATE,
+    due_date        DATE,
 
     status          VARCHAR(20)  NOT NULL DEFAULT 'PENDING'
                         CHECK (status IN ('DRAFT','PENDING','PAID','PARTIALLY_PAID','CANCELLED','OVERDUE')),
