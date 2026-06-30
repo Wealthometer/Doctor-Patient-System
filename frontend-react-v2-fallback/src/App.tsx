@@ -66,3 +66,4 @@ export default function App() {
 
             <Route path="profile" element={<ProfilePage />} />
           </Route>
+
