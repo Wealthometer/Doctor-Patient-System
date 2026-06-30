@@ -4,3 +4,4 @@ import { Loader2, X, ChevronLeft, ChevronRight, Search } from 'lucide-react';
 
 // ── Button ────────────────────────────────────────────────────────────────────
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'danger' | 'ghost' | 'outline';
