@@ -270,6 +270,7 @@ export interface CreatePrescriptionRequest {
 }
 
 // ── Billing ───────────────────────────────────────────────────────────────────
+export type InvoiceStatus = 'PENDING' | 'PAID' | 'PARTIAL' | 'OVERDUE' | 'CANCELLED';
   description: string;
   serviceCode: string;
   quantity: number;
