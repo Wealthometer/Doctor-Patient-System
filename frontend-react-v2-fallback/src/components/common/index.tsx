@@ -19,3 +19,4 @@ export const Button: React.FC<ButtonProps> = ({
     danger: 'bg-red-600 text-white hover:bg-red-700 shadow-sm',
     ghost: 'text-slate-600 hover:bg-slate-100',
     outline: 'border border-slate-300 text-slate-700 hover:bg-slate-50',
+  };
