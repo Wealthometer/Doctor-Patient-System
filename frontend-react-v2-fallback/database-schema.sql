@@ -34,3 +34,4 @@ CREATE TABLE refresh_tokens (
     created_at  TIMESTAMP   NOT NULL DEFAULT NOW()
 );
 
+-- Indexes
