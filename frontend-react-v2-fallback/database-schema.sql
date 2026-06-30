@@ -139,6 +139,7 @@ CREATE TABLE doctor_ratings (
     patient_id  UUID        NOT NULL,   -- FK to patient service
     rating      SMALLINT    NOT NULL CHECK (rating BETWEEN 1 AND 5),
     comment     TEXT,
+    UNIQUE (doctor_id, patient_id)     -- one rating per patient per doctor
 );
 CREATE INDEX idx_doctors_user_id        ON doctors(user_id);
 CREATE INDEX idx_doctors_code           ON doctors(doctor_code);
