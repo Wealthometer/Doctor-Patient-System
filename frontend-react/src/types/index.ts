@@ -303,6 +303,9 @@ export interface InvoiceResponse {
   createdAt: string;
 }
 
+  overdueCount: number;
+  totalInvoices: number;
+}
 // ── Pagination ────────────────────────────────────────────────────────────────
 export interface Page<T> {
   content: T[];
