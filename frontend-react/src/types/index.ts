@@ -265,6 +265,7 @@ export interface CreatePrescriptionRequest {
   appointmentId?: string;
   medications: Medication[];
   diagnosis: string;
+  notes?: string;
 }
 
 export interface LineItem {
