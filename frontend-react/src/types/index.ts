@@ -312,6 +312,7 @@ export interface BillingStatsResponse {
   overdueCount: number;
   totalInvoices: number;
 }
+
 // ── Pagination ────────────────────────────────────────────────────────────────
 export interface Page<T> {
   content: T[];
