@@ -279,7 +279,7 @@ export interface InvoiceItem {
   totalPrice: number;
 }
 
-export interface Payment {
+export interface InvoiceResponse {
   id: string;
   createdAt: string;
 }
