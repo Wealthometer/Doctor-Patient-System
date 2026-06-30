@@ -251,7 +251,6 @@ export interface Prescription {
 
 export interface CreatePrescriptionRequest {
   patientId: string;
-  payments: Payment[];
 }
 
 export interface LineItem {
