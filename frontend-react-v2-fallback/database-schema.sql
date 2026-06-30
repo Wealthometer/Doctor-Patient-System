@@ -298,5 +298,8 @@ CREATE INDEX idx_invoices_number        ON invoices(invoice_number);
 CREATE INDEX idx_line_items_invoice     ON invoice_line_items(invoice_id);
 CREATE INDEX idx_payments_invoice       ON payments(invoice_id);
 CREATE INDEX idx_payments_status        ON payments(payment_status);
+
+-- =============================================================================
+-- NOTIFICATION SERVICE DATABASE (optional standalone)
 );
 
