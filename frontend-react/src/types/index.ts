@@ -63,6 +63,7 @@ export interface PatientResponse {
   insurancePolicyNumber?: string;
   status: PatientStatus;
   createdAt: string;
+  updatedAt: string;
 }
 
 // ── Doctor ────────────────────────────────────────────────────────────────────
