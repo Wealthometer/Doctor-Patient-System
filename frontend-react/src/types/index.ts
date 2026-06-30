@@ -246,7 +246,6 @@ export interface Prescription {
   issueDate: string;
   expiryDate?: string;
   status: PrescriptionStatus;
-  items: PrescriptionItem[];
   createdAt: string;
 }
 
