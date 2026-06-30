@@ -111,4 +111,5 @@ public class User implements UserDetails {
     }
 
     public String getFirstName() {
+        return firstName;
 }
