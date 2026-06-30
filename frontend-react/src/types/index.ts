@@ -288,6 +288,7 @@ export interface InvoiceItem {
 
 export interface InvoiceResponse {
   id: string;
+  invoiceNumber: string;
   createdAt: string;
 }
 
