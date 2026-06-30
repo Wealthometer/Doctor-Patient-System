@@ -64,3 +64,4 @@ export default function App() {
               </ProtectedRoute>
             } />
 
+            <Route path="profile" element={<ProfilePage />} />
