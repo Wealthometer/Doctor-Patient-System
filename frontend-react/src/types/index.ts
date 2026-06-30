@@ -176,6 +176,7 @@ export interface CreateDoctorRequest {
   workEndTime?: string;
   workDays?: string;
   maxDailyAppointments?: number;
+}
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
