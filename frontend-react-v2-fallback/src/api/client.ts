@@ -33,3 +33,4 @@ api.interceptors.response.use(
           window.location.href = '/login';
         }
       } else {
+        localStorage.clear();
