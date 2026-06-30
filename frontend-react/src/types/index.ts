@@ -227,6 +227,7 @@ export interface BookAppointmentRequest {
 export interface AppointmentStatsResponse {
   total: number;
   scheduled: number;
+  confirmed: number;
 export interface AvailableSlot {
   startTime: string;
   endTime: string;
