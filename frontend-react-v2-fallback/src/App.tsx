@@ -10,3 +10,4 @@ import { RegisterPage } from './pages/auth/RegisterPage';
 import { DashboardRouter } from './pages/DashboardRouter';
 import { PatientsPage } from './pages/admin/PatientsPage';
 import { DoctorsPage } from './pages/admin/DoctorsPage';
+import { AppointmentsPage } from './pages/appointments/AppointmentsPage';
