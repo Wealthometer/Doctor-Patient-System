@@ -17,3 +17,4 @@ api.interceptors.request.use((config) => {
 // Auto-refresh on 401
 api.interceptors.response.use(
   (res) => res,
+  async (error) => {
