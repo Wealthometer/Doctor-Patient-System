@@ -36,3 +36,4 @@ export default function App() {
 
           {/* Protected app */}
           <Route path="/app" element={
+            <ProtectedRoute>
