@@ -228,6 +228,7 @@ export interface AppointmentStatsResponse {
   total: number;
   scheduled: number;
   confirmed: number;
+  completed: number;
 export interface AvailableSlot {
   startTime: string;
   endTime: string;
