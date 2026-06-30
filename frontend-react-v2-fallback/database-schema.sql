@@ -123,3 +123,4 @@ CREATE TABLE doctors (
     max_daily_appointments  INTEGER DEFAULT 20,
 
     -- Rating (denormalised for performance)
+    average_rating          NUMERIC(3,2) DEFAULT 0.0,
