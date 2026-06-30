@@ -40,3 +40,4 @@ public interface DoctorServiceClient {
                     .lastName("Doctor")
                     .department("General")
                     .build();
+        }
