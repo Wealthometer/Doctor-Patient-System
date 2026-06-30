@@ -2,3 +2,4 @@
 -- HealthCare Management System — Complete PostgreSQL Schema
 -- Covers: auth, patient, doctor, appointment, prescription, billing services
 -- =============================================================================
+-- Enable UUID extension
