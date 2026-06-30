@@ -33,7 +33,6 @@ export interface RegisterRequest {
   role: Role;
 }
 
-}
 
 // ── Patient ───────────────────────────────────────────────────────────────────
 export type PatientStatus = 'ACTIVE' | 'INACTIVE' | 'DECEASED' | 'TRANSFERRED';
