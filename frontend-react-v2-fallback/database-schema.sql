@@ -115,3 +115,4 @@ CREATE TABLE doctors (
     years_of_experience     INTEGER      DEFAULT 0,
     consultation_fee        NUMERIC(10,2),
     profile_image_url       TEXT,
+
