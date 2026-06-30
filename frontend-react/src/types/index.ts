@@ -289,6 +289,7 @@ export interface InvoiceItem {
 export interface InvoiceResponse {
   id: string;
   invoiceNumber: string;
+  patientName?: string;
   createdAt: string;
 }
 
