@@ -137,6 +137,7 @@ CREATE TABLE doctors (
     doctor_id   UUID        NOT NULL REFERENCES doctors(id) ON DELETE CASCADE,
     patient_id  UUID        NOT NULL,   -- FK to patient service
     rating      SMALLINT    NOT NULL CHECK (rating BETWEEN 1 AND 5),
+    comment     TEXT,
 );
 CREATE INDEX idx_doctors_user_id        ON doctors(user_id);
 CREATE INDEX idx_doctors_code           ON doctors(doctor_code);
