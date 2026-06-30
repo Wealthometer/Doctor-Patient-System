@@ -92,6 +92,7 @@ export interface CreatePatientRequest {
 
 export interface UpdatePatientRequest {
   firstName?: string;
+  lastName?: string;
   id: string;
   userId: string;
   doctorCode: string;
