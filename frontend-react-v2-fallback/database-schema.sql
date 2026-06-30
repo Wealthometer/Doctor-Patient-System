@@ -23,4 +23,5 @@ CREATE TABLE users (
     email_verified  BOOLEAN      NOT NULL DEFAULT FALSE,
     last_login_at   TIMESTAMP,
     created_at      TIMESTAMP    NOT NULL DEFAULT NOW(),
+    updated_at      TIMESTAMP    NOT NULL DEFAULT NOW()
 
