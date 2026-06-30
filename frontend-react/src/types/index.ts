@@ -117,6 +117,7 @@ export interface PatientStatsResponse {
   newThisMonth: number;
 }
 
+// ── Doctor ──────────────────────────────────────────────────────────────────
   id: string;
   userId: string;
   doctorCode: string;
