@@ -162,4 +162,12 @@ CREATE TABLE appointments (
     patient_name        VARCHAR(200),                  -- denormalised cache
     doctor_id           UUID        NOT NULL,           -- FK to doctor service
     doctor_name         VARCHAR(200),
+    department          VARCHAR(100),
+
+    appointment_date    DATE        NOT NULL,
+    start_time          TIME        NOT NULL,
+    end_time            TIME        NOT NULL,
+
+    status              VARCHAR(20) NOT NULL DEFAULT 'SCHEDULED'
+                            CHECK (status IN ('SCHEDULED','CONFIRMED','IN_PROGRESS','COMPLETED','CANCELLED','NO_SHOW')),
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
