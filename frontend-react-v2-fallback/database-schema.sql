@@ -264,6 +264,8 @@ CREATE TABLE invoices (
 );
 
 CREATE TABLE invoice_line_items (
+    invoice_id      UUID          NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
+    description     VARCHAR(500)  NOT NULL,
     quantity        INTEGER       NOT NULL DEFAULT 1,
     unit_price      NUMERIC(10,2) NOT NULL,
     total_price     NUMERIC(12,2) GENERATED ALWAYS AS (quantity * unit_price) STORED,
