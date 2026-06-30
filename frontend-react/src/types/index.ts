@@ -141,6 +141,7 @@ export interface DoctorResponse {
   workDays?: string;
   maxDailyAppointments?: number;
   profileImageUrl?: string;
+  averageRating?: number;
   status: DoctorStatus;
   averageRating: number;
   totalRatings: number;
