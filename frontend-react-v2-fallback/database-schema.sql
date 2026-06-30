@@ -126,3 +126,4 @@ CREATE TABLE doctors (
     average_rating          NUMERIC(3,2) DEFAULT 0.0,
     total_ratings           INTEGER      DEFAULT 0,
 
+    status                  VARCHAR(20)  NOT NULL DEFAULT 'ACTIVE'
