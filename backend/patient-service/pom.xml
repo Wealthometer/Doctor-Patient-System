@@ -155,6 +155,7 @@
               <artifactId>mapstruct-processor</artifactId>
               <version>${mapstruct.version}</version>
             </path>
+          </annotationProcessorPaths>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
