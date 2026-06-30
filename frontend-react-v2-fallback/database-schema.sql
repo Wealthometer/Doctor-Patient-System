@@ -243,6 +243,7 @@ CREATE INDEX idx_presc_items_presc  ON prescription_items(prescription_id);
 CREATE TABLE invoices (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     invoice_number  VARCHAR(20)  NOT NULL UNIQUE,   -- e.g. INV-20240101-0001
+    patient_id      UUID         NOT NULL,
 
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
