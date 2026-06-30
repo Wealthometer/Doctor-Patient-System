@@ -8,4 +8,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.UUID;
 
+@FeignClient(name = "patient-service", fallback = PatientServiceClient.PatientServiceFallback.class)
 public interface PatientServiceClient {
