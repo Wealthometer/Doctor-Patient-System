@@ -73,6 +73,7 @@
         <version>3.12.1</version>
         <configuration>
           <source>${java.version}</source>
+          <target>${java.version}</target>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
