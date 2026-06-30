@@ -86,3 +86,7 @@ CREATE TABLE patients (
 );
 
 -- Indexes
+CREATE INDEX idx_patients_user_id      ON patients(user_id);
+CREATE INDEX idx_patients_code         ON patients(patient_code);
+CREATE INDEX idx_patients_status       ON patients(status);
+CREATE INDEX idx_patients_email        ON patients(email);
