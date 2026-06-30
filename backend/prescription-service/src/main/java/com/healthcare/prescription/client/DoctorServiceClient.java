@@ -18,3 +18,4 @@ public interface DoctorServiceClient {
     @Data
     @Builder
     class DoctorDto {
+        private UUID id;
