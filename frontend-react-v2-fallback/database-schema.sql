@@ -120,3 +120,4 @@ CREATE TABLE doctors (
     work_start_time         TIME,
     work_end_time           TIME,
     work_days               VARCHAR(100),           -- e.g. 'Mon,Tue,Wed,Thu,Fri'
+    max_daily_appointments  INTEGER DEFAULT 20,
