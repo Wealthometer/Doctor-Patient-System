@@ -19,6 +19,7 @@
     <spring-cloud.version>2023.0.5</spring-cloud.version>
     <jjwt.version>0.12.3</jjwt.version>
     <mapstruct.version>1.5.5.Final</mapstruct.version>
+    <lombok.version>1.18.38</lombok.version>
   </properties>
 
   <dependencies>
