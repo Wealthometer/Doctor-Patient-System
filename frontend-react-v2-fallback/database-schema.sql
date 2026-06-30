@@ -258,12 +258,14 @@ CREATE TABLE invoices (
     discount        NUMERIC(12,2) NOT NULL DEFAULT 0,
     total_amount    NUMERIC(12,2) NOT NULL DEFAULT 0,
     paid_amount     NUMERIC(12,2) NOT NULL DEFAULT 0,
+    balance_amount  NUMERIC(12,2) GENERATED ALWAYS AS (total_amount - paid_amount) STORED,
 
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
 );
 
 CREATE TABLE invoice_line_items (
+    id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     invoice_id      UUID          NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
     description     VARCHAR(500)  NOT NULL,
     quantity        INTEGER       NOT NULL DEFAULT 1,
