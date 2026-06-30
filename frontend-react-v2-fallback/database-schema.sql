@@ -293,5 +293,10 @@ CREATE TABLE payments (
 -- Indexes
 CREATE INDEX idx_invoices_patient_id    ON invoices(patient_id);
 CREATE INDEX idx_invoices_status        ON invoices(status);
+CREATE INDEX idx_invoices_date          ON invoices(invoice_date);
+CREATE INDEX idx_invoices_number        ON invoices(invoice_number);
+CREATE INDEX idx_line_items_invoice     ON invoice_line_items(invoice_id);
+CREATE INDEX idx_payments_invoice       ON payments(invoice_id);
+CREATE INDEX idx_payments_status        ON payments(payment_status);
 );
 
