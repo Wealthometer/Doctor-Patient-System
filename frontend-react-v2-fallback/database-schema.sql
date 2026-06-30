@@ -50,3 +50,4 @@ CREATE TABLE patients (
     patient_code                VARCHAR(20) NOT NULL UNIQUE,   -- e.g. PAT-000001
     first_name                  VARCHAR(100) NOT NULL,
     last_name                   VARCHAR(100) NOT NULL,
+    email                       VARCHAR(255) NOT NULL,
