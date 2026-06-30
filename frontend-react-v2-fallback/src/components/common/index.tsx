@@ -10,3 +10,4 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;
 }
 
+export const Button: React.FC<ButtonProps> = ({
