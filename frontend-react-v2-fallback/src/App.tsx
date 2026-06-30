@@ -57,3 +57,4 @@ export default function App() {
 
             <Route path="appointments" element={<AppointmentsPage />} />
             <Route path="prescriptions" element={<PrescriptionsPage />} />
+
