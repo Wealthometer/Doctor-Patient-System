@@ -164,6 +164,7 @@ export interface CreateDoctorRequest {
   lastName: string;
   email: string;
   phone: string;
+  specialization: string;
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
   | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW' | 'RESCHEDULED';
