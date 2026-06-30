@@ -249,6 +249,7 @@ export interface Prescription {
   createdAt: string;
 }
 
+export interface CreatePrescriptionRequest {
   patientId: string;
   patientName: string;
   department: string;
