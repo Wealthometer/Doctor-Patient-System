@@ -6,3 +6,4 @@ public class DoctorAlreadyExistsException extends RuntimeException {
 
         super(message, cause);
     }
+}
