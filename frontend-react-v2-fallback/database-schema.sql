@@ -227,4 +227,5 @@ CREATE TABLE prescription_items (
 CREATE INDEX idx_presc_patient_id   ON prescriptions(patient_id);
 CREATE INDEX idx_presc_status       ON prescriptions(status);
 
+
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
