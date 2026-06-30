@@ -260,8 +260,10 @@ CREATE TABLE invoices (
     paid_amount     NUMERIC(12,2) NOT NULL DEFAULT 0,
     balance_amount  NUMERIC(12,2) GENERATED ALWAYS AS (total_amount - paid_amount) STORED,
 
+    notes           TEXT,
 
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at  TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE invoice_line_items (
@@ -277,6 +279,9 @@ CREATE TABLE invoice_line_items (
 CREATE TABLE payments (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     invoice_id      UUID          NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
+    amount          NUMERIC(12,2) NOT NULL,
+    payment_method  VARCHAR(20)   NOT NULL
+                        CHECK (payment_method IN ('CASH','CARD','INSURANCE','BANK_TRANSFER','ONLINE')),
     payment_status  VARCHAR(20)   NOT NULL DEFAULT 'COMPLETED'
                         CHECK (payment_status IN ('PENDING','COMPLETED','FAILED','REFUNDED')),
     transaction_id  VARCHAR(100),
