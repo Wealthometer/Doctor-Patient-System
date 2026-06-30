@@ -317,6 +317,8 @@ CREATE TABLE notifications (
     reference_id    UUID,
     sent_at         TIMESTAMP,
     error_message   TEXT,
+    retry_count     SMALLINT    DEFAULT 0,
+    created_at      TIMESTAMP   NOT NULL DEFAULT NOW()
 );
 
 CREATE INDEX idx_notif_user_id    ON notifications(user_id);
