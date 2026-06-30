@@ -285,5 +285,13 @@ CREATE TABLE payments (
     payment_status  VARCHAR(20)   NOT NULL DEFAULT 'COMPLETED'
                         CHECK (payment_status IN ('PENDING','COMPLETED','FAILED','REFUNDED')),
     transaction_id  VARCHAR(100),
+    paid_at         TIMESTAMP     NOT NULL DEFAULT NOW(),
+    notes           TEXT,
+    created_at      TIMESTAMP     NOT NULL DEFAULT NOW()
+);
+
+-- Indexes
+CREATE INDEX idx_invoices_patient_id    ON invoices(patient_id);
+CREATE INDEX idx_invoices_status        ON invoices(status);
 );
 
