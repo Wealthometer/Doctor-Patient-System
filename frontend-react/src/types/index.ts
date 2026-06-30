@@ -101,6 +101,7 @@ export interface UpdatePatientRequest {
   country?: string;
   emergencyContactName?: string;
   emergencyContactPhone?: string;
+  emergencyContactRelation?: string;
   id: string;
   userId: string;
   doctorCode: string;
