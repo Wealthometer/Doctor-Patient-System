@@ -145,6 +145,7 @@ export interface DoctorResponse {
   totalRatings?: number;
   status: DoctorStatus;
   createdAt: string;
+  updatedAt: string;
 }
 
 // ── Appointment ───────────────────────────────────────────────────────────────
