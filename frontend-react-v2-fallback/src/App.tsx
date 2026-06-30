@@ -41,3 +41,4 @@ export default function App() {
             </ProtectedRoute>
           }>
             <Route index element={<Navigate to="dashboard" replace />} />
+            <Route path="dashboard" element={<DashboardRouter />} />
