@@ -224,6 +224,7 @@ export interface BookAppointmentRequest {
   notes?: string;
 }
 
+export interface AppointmentStatsResponse {
 export interface AvailableSlot {
   startTime: string;
   endTime: string;
