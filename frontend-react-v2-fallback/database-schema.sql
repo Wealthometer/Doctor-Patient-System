@@ -170,6 +170,8 @@ CREATE TABLE appointments (
 
     status              VARCHAR(20) NOT NULL DEFAULT 'SCHEDULED'
                             CHECK (status IN ('SCHEDULED','CONFIRMED','IN_PROGRESS','COMPLETED','CANCELLED','NO_SHOW')),
+
+    type                VARCHAR(30) NOT NULL
                             CHECK (type IN ('CONSULTATION','FOLLOW_UP','EMERGENCY','ROUTINE_CHECKUP','PROCEDURE','LAB_TEST')),
 
     reason              VARCHAR(1000) NOT NULL,
