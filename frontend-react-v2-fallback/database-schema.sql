@@ -19,4 +19,5 @@ CREATE TABLE users (
     last_name       VARCHAR(100) NOT NULL,
     role            VARCHAR(20)  NOT NULL CHECK (role IN ('ADMIN','DOCTOR','PATIENT','NURSE')),
     is_active       BOOLEAN      NOT NULL DEFAULT TRUE,
+    is_locked       BOOLEAN      NOT NULL DEFAULT FALSE,
 
