@@ -8,3 +8,4 @@ export const api = axios.create({
 });
 
 // Attach JWT on every request
+api.interceptors.request.use((config) => {
