@@ -53,6 +53,7 @@ export interface PatientResponse {
   zipCode?: string;
   country: string;
   emergencyContactName?: string;
+  emergencyContactPhone?: string;
   allergies?: string;
   chronicConditions?: string;
   status: PatientStatus;
