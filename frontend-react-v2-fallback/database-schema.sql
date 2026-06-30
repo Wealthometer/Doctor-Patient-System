@@ -193,5 +193,8 @@ CREATE INDEX idx_appt_status        ON appointments(status);
 CREATE INDEX idx_appt_number        ON appointments(appointment_number);
 
 CREATE TABLE prescriptions (
+    patient_id          UUID         NOT NULL,
+    patient_name        VARCHAR(200),
+    doctor_id           UUID         NOT NULL,
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
