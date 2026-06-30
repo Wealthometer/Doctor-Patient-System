@@ -111,4 +111,5 @@ CREATE TABLE doctors (
     license_number          VARCHAR(50)  NOT NULL UNIQUE,
     license_expiry_date     DATE,
     bio                     TEXT,
+    qualifications          TEXT,
     years_of_experience     INTEGER      DEFAULT 0,
