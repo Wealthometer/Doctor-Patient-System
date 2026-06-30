@@ -75,6 +75,7 @@
           <source>${java.version}</source>
           <target>${java.version}</target>
           <fork>true</fork>
+          <compilerArgs>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
