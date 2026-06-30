@@ -326,7 +326,6 @@ export interface Page<T> {
 }
 
 export interface ApiError {
-  title: string;
   detail: string;
   status: number;
   timestamp: string;
