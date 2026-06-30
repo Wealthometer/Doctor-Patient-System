@@ -47,3 +47,4 @@ export default function App() {
               <ProtectedRoute roles={['ADMIN', 'DOCTOR', 'NURSE']}>
                 <PatientsPage />
               </ProtectedRoute>
+            } />
