@@ -77,6 +77,7 @@ export interface CreatePatientRequest {
   address?: string;
   city?: string;
   state?: string;
+  zipCode?: string;
 
 export interface Doctor {
   id: string;
