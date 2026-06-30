@@ -138,6 +138,7 @@ CREATE TABLE doctors (
     patient_id  UUID        NOT NULL,   -- FK to patient service
     rating      SMALLINT    NOT NULL CHECK (rating BETWEEN 1 AND 5),
 );
+CREATE INDEX idx_doctors_user_id        ON doctors(user_id);
 CREATE INDEX idx_doctors_code           ON doctors(doctor_code);
 CREATE INDEX idx_doctors_department     ON doctors(department);
     created_at  TIMESTAMP NOT NULL DEFAULT NOW(),
