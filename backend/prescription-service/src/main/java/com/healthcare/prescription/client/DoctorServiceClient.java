@@ -19,3 +19,4 @@ public interface DoctorServiceClient {
     @Builder
     class DoctorDto {
         private UUID id;
+        private String doctorCode;
