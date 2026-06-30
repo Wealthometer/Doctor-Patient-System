@@ -349,3 +349,4 @@ SELECT
     i.invoice_number,
     i.patient_name,
     i.invoice_date,
+    i.due_date,
