@@ -208,6 +208,7 @@ CREATE TABLE prescriptions (
     appointment_id      UUID,                           -- optional link
 
     issue_date          DATE    NOT NULL DEFAULT CURRENT_DATE,
+    expiry_date         DATE,
 
     status              VARCHAR(20) NOT NULL DEFAULT 'ACTIVE'
                             CHECK (status IN ('ACTIVE','EXPIRED','CANCELLED')),
