@@ -41,3 +41,4 @@ export const Button: React.FC<ButtonProps> = ({
 export const Badge: React.FC<{ status: string; label?: string }> = ({ status, label }) => (
   <span className={cn('inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold', statusColor(status))}>
     {label || status.replace(/_/g, ' ')}
+  </span>
