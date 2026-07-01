@@ -44,3 +44,4 @@ export const Badge: React.FC<{ status: string; label?: string }> = ({ status, la
   </span>
 );
 
+// ── Input ─────────────────────────────────────────────────────────────────────
