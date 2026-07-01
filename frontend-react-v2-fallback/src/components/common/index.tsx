@@ -43,3 +43,4 @@ export const Badge: React.FC<{ status: string; label?: string }> = ({ status, la
     {label || status.replace(/_/g, ' ')}
   </span>
 );
+
