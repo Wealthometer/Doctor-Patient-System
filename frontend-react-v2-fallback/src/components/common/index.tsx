@@ -45,3 +45,4 @@ export const Badge: React.FC<{ status: string; label?: string }> = ({ status, la
 );
 
 // ── Input ─────────────────────────────────────────────────────────────────────
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
