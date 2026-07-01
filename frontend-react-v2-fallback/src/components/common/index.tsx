@@ -24,3 +24,4 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
+        'inline-flex items-center gap-2 rounded-lg font-medium transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 disabled:opacity-50 disabled:cursor-not-allowed',
