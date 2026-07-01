@@ -30,3 +30,4 @@ export const Button: React.FC<ButtonProps> = ({
       )}
       disabled={disabled || loading}
       {...props}
+    >
