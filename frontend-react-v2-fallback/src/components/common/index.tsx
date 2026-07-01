@@ -38,3 +38,4 @@ export const Button: React.FC<ButtonProps> = ({
 };
 
 // ── Badge ─────────────────────────────────────────────────────────────────────
+export const Badge: React.FC<{ status: string; label?: string }> = ({ status, label }) => (
