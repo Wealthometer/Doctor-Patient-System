@@ -29,3 +29,4 @@ export const Button: React.FC<ButtonProps> = ({
         variants[variant], sizes[size], className
       )}
       disabled={disabled || loading}
+      {...props}
