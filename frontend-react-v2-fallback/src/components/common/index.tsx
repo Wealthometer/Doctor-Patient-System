@@ -31,3 +31,4 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled || loading}
       {...props}
     >
+      {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : icon}
