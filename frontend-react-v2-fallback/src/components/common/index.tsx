@@ -67,3 +67,4 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
           {...props}
         />
       </div>
+      {error && <p className="text-xs text-red-600">{error}</p>}
