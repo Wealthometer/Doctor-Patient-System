@@ -96,3 +96,4 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
         {options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
       </select>
       {error && <p className="text-xs text-red-600">{error}</p>}
+    </div>
