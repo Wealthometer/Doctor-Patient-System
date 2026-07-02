@@ -137,3 +137,4 @@ export const Card: React.FC<{ children: React.ReactNode; className?: string; onC
 );
 
 // ── Stat Card ─────────────────────────────────────────────────────────────────
+export const StatCard: React.FC<{
