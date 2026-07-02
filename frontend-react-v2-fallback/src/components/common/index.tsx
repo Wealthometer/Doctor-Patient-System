@@ -106,3 +106,4 @@ interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement
   label?: string;
   error?: string;
 }
+export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
