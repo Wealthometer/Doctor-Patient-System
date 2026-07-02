@@ -133,3 +133,4 @@ export const Card: React.FC<{ children: React.ReactNode; className?: string; onC
     onClick={onClick}
   >
     {children}
+  </div>
