@@ -99,3 +99,4 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
     </div>
   )
 );
+Select.displayName = 'Select';
