@@ -91,3 +91,4 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
           className
         )}
         {...props}
+      >
