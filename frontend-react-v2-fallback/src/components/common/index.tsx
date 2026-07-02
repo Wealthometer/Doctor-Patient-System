@@ -92,3 +92,4 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
         )}
         {...props}
       >
+        <option value="">Select...</option>
