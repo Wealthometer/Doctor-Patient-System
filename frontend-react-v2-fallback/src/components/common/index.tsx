@@ -121,3 +121,4 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         {...props}
       />
       {error && <p className="text-xs text-red-600">{error}</p>}
+    </div>
