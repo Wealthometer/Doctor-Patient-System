@@ -74,3 +74,4 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 Input.displayName = 'Input';
 
 // ── Select ────────────────────────────────────────────────────────────────────
+interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
