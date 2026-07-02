@@ -112,3 +112,4 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
       {label && <label className="text-sm font-medium text-slate-700">{label}</label>}
       <textarea
         ref={ref}
+        className={cn(
