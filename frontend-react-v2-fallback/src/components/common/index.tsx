@@ -50,3 +50,4 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: string;
   icon?: React.ReactNode;
 }
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
