@@ -120,3 +120,4 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         rows={3}
         {...props}
       />
+      {error && <p className="text-xs text-red-600">{error}</p>}
