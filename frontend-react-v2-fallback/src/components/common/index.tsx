@@ -75,3 +75,4 @@ Input.displayName = 'Input';
 
 // ── Select ────────────────────────────────────────────────────────────────────
 interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+  label?: string;
