@@ -79,3 +79,4 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   error?: string;
   options: { value: string; label: string }[];
 }
+export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
