@@ -63,3 +63,4 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             icon && 'pl-9',
             error && 'border-red-400 focus:ring-red-500',
             className
+          )}
