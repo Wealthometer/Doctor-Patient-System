@@ -104,3 +104,4 @@ Select.displayName = 'Select';
 // ── Textarea ──────────────────────────────────────────────────────────────────
 interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
+  error?: string;
