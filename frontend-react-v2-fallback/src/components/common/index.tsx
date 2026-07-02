@@ -90,3 +90,4 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
           error && 'border-red-400',
           className
         )}
+        {...props}
