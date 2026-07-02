@@ -85,3 +85,4 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       {label && <label className="text-sm font-medium text-slate-700">{label}</label>}
       <select
         ref={ref}
+        className={cn(
