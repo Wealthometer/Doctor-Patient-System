@@ -118,3 +118,4 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
           className
         )}
         rows={3}
+        {...props}
