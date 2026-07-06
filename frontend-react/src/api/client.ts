@@ -5,7 +5,12 @@ import toast from 'react-hot-toast';
 
 const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 
-const apiClient: AxiosInstance = axios.create({
+const getAccessToken = () => {
+  const stateToken = store.getState().auth.accessToken;
+  return stateToken || localStorage.getItem('accessToken');
+};
+
+const apiClient: AxiosInstance = axios.create({ // Create an Axios instance with default settings
   baseURL: BASE_URL,
   headers: { 'Content-Type': 'application/json' },
   timeout: 15000,
@@ -14,9 +19,9 @@ const apiClient: AxiosInstance = axios.create({
 // ── Request interceptor: attach JWT ──────────────────────────────────────────
 apiClient.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
-    const token = store.getState().auth.accessToken;
-    if (token && config.headers) {
-      config.headers.Authorization = `Bearer ${token}`;
+    const token = getAccessToken();
+    if (token) {
+      config.headers.set('Authorization', `Bearer ${token}`);
     }
     return config;
   },
@@ -42,7 +47,7 @@ apiClient.interceptors.response.use(
         return new Promise((resolve, reject) => {
           failedQueue.push({ resolve, reject });
         }).then((token) => {
-          originalRequest.headers.Authorization = `Bearer ${token}`;
+          originalRequest.headers.set('Authorization', `Bearer ${token}`);
           return apiClient(originalRequest);
         });
       }
@@ -61,7 +66,7 @@ apiClient.interceptors.response.use(
         const { data } = await axios.post(`${BASE_URL}/api/v1/auth/refresh-token`, { refreshToken });
         store.dispatch(setTokens({ accessToken: data.accessToken, refreshToken: data.refreshToken }));
         processQueue(null, data.accessToken);
-        originalRequest.headers.Authorization = `Bearer ${data.accessToken}`;
+        originalRequest.headers.set('Authorization', `Bearer ${data.accessToken}`);
         return apiClient(originalRequest);
       } catch (refreshError) {
         processQueue(refreshError, null);

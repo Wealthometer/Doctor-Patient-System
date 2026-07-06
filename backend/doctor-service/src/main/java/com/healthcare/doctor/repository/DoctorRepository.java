@@ -24,6 +24,7 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
     boolean existsByEmail(String email);
     boolean existsByUserId(UUID userId);
     boolean existsByLicenseNumber(String licenseNumber);
+    boolean existsByDoctorCode(String doctorCode);
 
     Page<Doctor> findByDepartment(String department, Pageable pageable);
     Page<Doctor> findBySpecialization(String specialization, Pageable pageable);
@@ -45,6 +46,13 @@ public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
 
     @Query("SELECT DISTINCT d.specialization FROM Doctor d WHERE d.status = 'ACTIVE' ORDER BY d.specialization")
     List<String> findAllActiveSpecializations();
+
+    @Query(value = """
+        SELECT COALESCE(MAX(CAST(SUBSTRING(doctor_code FROM 3) AS INTEGER)), 1000)
+        FROM doctors
+        WHERE doctor_code ~ '^D-[0-9]+$'
+    """, nativeQuery = true)
+    int findMaxDoctorCodeNumber();
 
     long countByStatus(DoctorStatus status);
 }

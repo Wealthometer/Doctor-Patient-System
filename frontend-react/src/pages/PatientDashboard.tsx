@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react';
 import type { ElementType } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AlertCircle, Calendar, FileText, HeartPulse, ShieldCheck, UserRound } from 'lucide-react';
+import { AlertCircle, Calendar, FileText, HeartPulse, Pill, ShieldCheck, Stethoscope, UserRound } from 'lucide-react';
 import toast from 'react-hot-toast';
-import { patientApi } from '@/api/services';
+import { appointmentApi, patientApi, prescriptionApi } from '@/api/services';
 import { useAppSelector } from '@/store';
-import type { Patient } from '@/types';
+import type { Appointment, Patient, Prescription } from '@/types';
 
 export default function PatientDashboard() {
   const navigate = useNavigate();
   const { user } = useAppSelector((s) => s.auth);
   const [patient, setPatient] = useState<Patient | null>(null);
+  const [appointments, setAppointments] = useState<Appointment[]>([]);
+  const [prescriptions, setPrescriptions] = useState<Prescription[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,7 +23,21 @@ export default function PatientDashboard() {
 
       try {
         const { data } = await patientApi.getByUserId(user.id);
-        if (active) setPatient(data);
+        const [appointmentsResult, prescriptionsResult] = await Promise.allSettled([
+          appointmentApi.getByPatient(data.id, { size: 5, sort: 'appointmentDate,desc' }),
+          prescriptionApi.getByPatient(data.id, { size: 5, sort: 'issueDate,desc' }),
+        ]);
+
+        const appointmentsRes =
+          appointmentsResult.status === 'fulfilled' ? appointmentsResult.value : null;
+        const prescriptionsRes =
+          prescriptionsResult.status === 'fulfilled' ? prescriptionsResult.value : null;
+
+        if (active) {
+          setPatient(data);
+          setAppointments(appointmentsRes?.data.content ?? []);
+          setPrescriptions(prescriptionsRes?.data.content ?? []);
+        }
       } catch (error: unknown) {
         const err = error as { response?: { status?: number } };
         if (err.response?.status === 404) {
@@ -80,6 +96,22 @@ export default function PatientDashboard() {
         <SummaryCard label="Insurance" value={patient.insuranceProvider} icon={FileText} detail={patient.insurancePolicyNumber || 'Policy number not listed'} />
       </div>
 
+      <section className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+        <div className="flex items-center gap-3 mb-5">
+          <Stethoscope className="text-blue-700" size={22} />
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900">Medical records</h2>
+            <p className="text-sm text-gray-500">Profile records fetched from the patient service.</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Detail label="Blood type" value={patient.bloodType || 'N/A'} />
+          <Detail label="Allergies" value={patient.allergies || 'None listed'} />
+          <Detail label="Chronic conditions" value={patient.chronicConditions || 'None listed'} />
+          <Detail label="Medical notes" value={patient.medicalNotes || 'None listed'} />
+        </div>
+      </section>
+
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
         <section className="xl:col-span-2 bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
           <h2 className="text-lg font-semibold text-gray-900 mb-5">Profile details</h2>
@@ -104,13 +136,75 @@ export default function PatientDashboard() {
       </div>
 
       <section className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-        <div className="flex items-center gap-3 mb-5">
-          <Calendar className="text-blue-700" size={22} />
-          <h2 className="text-lg font-semibold text-gray-900">Upcoming appointments</h2>
+        <div className="flex items-center justify-between gap-3 mb-5">
+          <div className="flex items-center gap-3">
+            <Calendar className="text-blue-700" size={22} />
+            <h2 className="text-lg font-semibold text-gray-900">Appointments</h2>
+          </div>
+          <button
+            onClick={() => navigate('/patient/book-appointment')}
+            className="rounded-lg bg-blue-600 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            Book Appointment
+          </button>
         </div>
-        <div className="rounded-xl bg-gray-50 p-5 text-sm text-gray-600">
-          Appointment history will appear here once bookings are connected to this patient profile.
+        {appointments.length === 0 ? (
+          <div className="rounded-xl bg-gray-50 p-5 text-sm text-gray-600">
+            No appointments found.
+          </div>
+        ) : (
+          <div className="divide-y divide-gray-100 rounded-xl border border-gray-100">
+            {appointments.map((appointment) => (
+              <div key={appointment.id} className="flex items-center justify-between p-4">
+                <div>
+                  <p className="text-sm font-medium text-gray-900">{appointment.doctorName}</p>
+                  <p className="text-xs text-gray-500">{appointment.department} - {appointment.reason}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-medium text-gray-900">{appointment.appointmentDate}</p>
+                  <p className="text-xs text-gray-500">{appointment.startTime.slice(0, 5)} - {appointment.status.replace('_', ' ')}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
+      <section className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+        <div className="flex items-center justify-between gap-3 mb-5">
+          <div className="flex items-center gap-3">
+            <Pill className="text-blue-700" size={22} />
+            <h2 className="text-lg font-semibold text-gray-900">Prescriptions</h2>
+          </div>
+          <button
+            onClick={() => navigate('/patient/prescriptions')}
+            className="rounded-lg border border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            View All
+          </button>
         </div>
+        {prescriptions.length === 0 ? (
+          <div className="rounded-xl bg-gray-50 p-5 text-sm text-gray-600">
+            No prescriptions found.
+          </div>
+        ) : (
+          <div className="divide-y divide-gray-100 rounded-xl border border-gray-100">
+            {prescriptions.map((prescription) => (
+              <div key={prescription.id} className="p-4">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-medium text-gray-900">{prescription.prescriptionNumber}</p>
+                    <p className="text-xs text-gray-500">{prescription.doctorName} - {prescription.diagnosis || 'No diagnosis listed'}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm font-medium text-gray-900">{prescription.status}</p>
+                    <p className="text-xs text-gray-500">Expires {prescription.expiryDate}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </section>
     </div>
   );

@@ -110,6 +110,65 @@ services:
       timeout: 5s
       retries: 5
 
+  #DOCTOR-SERVICE
+  doctor-service:
+    build:
+      context: ./backend/doctor-service
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    networks:
+      - hms-microservices-network
+    depends_on:
+      config-server:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CONFIG_IMPORT=optional:configserver:http://config-server:8888
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+      - SPRING_DATASOURCE_URL=${DOCTORDB_URL}
+      - SPRING_DATASOURCE_USERNAME=${DOCTORDB_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DOCTORDB_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRATION=86400000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8083/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5    
+
+
+   #APPOINTMENT-SERVICE
+  appointment-service:
+    build:
+      context: ./backend/appointment-service
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8084"
+    networks:
+      - hms-microservices-network
+    depends_on:
+      config-server:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CONFIG_IMPORT=optional:configserver:http://config-server:8888
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+      - SPRING_DATASOURCE_URL=${APPOINTMENTDB_URL}
+      - SPRING_DATASOURCE_USERNAME=${APPOINTMENTDB_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${APPOINTMENTDB_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRATION=86400000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8084/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5   
+
   # ─────────────────────────────────────────
   # API GATEWAY
   # ─────────────────────────────────────────
@@ -139,6 +198,38 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+    # ─────────────────────────────────────────
+    # PRESCRIPTION SERVICE
+    # ───────────────────────────────────────── 
+
+  prescription-service:
+    build:
+      context: ./backend/prescription-service
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+    networks:
+      - hms-microservices-network
+    depends_on:
+      config-server:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CONFIG_IMPORT=optional:configserver:http://config-server:8888
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+      - SPRING_DATASOURCE_URL=${PRESCRIPTIONDB_URL}
+      - SPRING_DATASOURCE_USERNAME=${PRESCRIPTIONDB_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${PRESCRIPTIONDB_PASSWORD}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRATION=86400000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8085/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5 
 
 # ─────────────────────────────────────────
 # NETWORKS
