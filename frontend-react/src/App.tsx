@@ -5,9 +5,11 @@ import { store } from '@/store';
 import ProtectedRoute from '@/components/common/ProtectedRoute';
 import AppLayout from '@/components/layout/AppLayout';
 import DoctorDashboard from './pages/DoctorDashboard';
+import DoctorCreateProfile from './pages/DoctorCreateProfile';
 import PatientDashboard from './pages/PatientDashboard';
 import PatientCreateProfile from './pages/PatientCreateProfile';
 import Appointments from './pages/Appointments';
+import AppointmentBooking from './pages/AppointmentBooking';
 import Patients from './pages/Patients';
 import Prescriptions from './pages/Prescriptions';
 import LoginPage from '@/pages/auth/LoginPage';
@@ -82,6 +84,11 @@ function App() {
           } />
 
           {/* Doctor routes */}
+          <Route path="/doctor/create-profile" element={
+            <ProtectedRoute allowedRoles={['DOCTOR']}>
+              <AppLayout><DoctorCreateProfile /></AppLayout>
+            </ProtectedRoute>
+          } />
           <Route path="/doctor/dashboard" element={
             <ProtectedRoute allowedRoles={['DOCTOR']}>
               <AppLayout><DoctorDashboard /></AppLayout>
@@ -119,9 +126,19 @@ function App() {
               <AppLayout><AppointmentsPage /></AppLayout>
             </ProtectedRoute>
           } />
+          <Route path="/patient/book-appointment" element={
+            <ProtectedRoute allowedRoles={['PATIENT']}>
+              <AppLayout><AppointmentBooking /></AppLayout>
+            </ProtectedRoute>
+          } />
           <Route path="/patient/prescriptions" element={
             <ProtectedRoute allowedRoles={['PATIENT']}>
-              <AppLayout><Placeholder title="My Prescriptions" /></AppLayout>
+              <AppLayout><Prescriptions /></AppLayout>
+            </ProtectedRoute>
+          } />
+          <Route path="/patient/records" element={
+            <ProtectedRoute allowedRoles={['PATIENT']}>
+              <AppLayout><PatientDashboard /></AppLayout>
             </ProtectedRoute>
           } />
           <Route path="/patient/billing" element={

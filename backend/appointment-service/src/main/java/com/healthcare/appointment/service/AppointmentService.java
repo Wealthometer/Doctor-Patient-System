@@ -89,6 +89,11 @@ public class AppointmentService {
     }
 
     @Transactional(readOnly = true)
+    public Page<AppointmentResponse> getAllAppointments(Pageable pageable) {
+        return appointmentRepository.findAll(pageable).map(this::toResponse);
+    }
+
+    @Transactional(readOnly = true)
     public Page<AppointmentResponse> getAppointmentsByPatient(UUID patientId, Pageable pageable) {
         return appointmentRepository.findByPatientId(patientId, pageable).map(this::toResponse);
     }

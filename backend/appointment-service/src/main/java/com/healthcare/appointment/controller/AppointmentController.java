@@ -24,6 +24,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/v1/appointments")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000")
 @SecurityRequirement(name = "bearerAuth")
 @Tag(name = "Appointments", description = "Appointment management APIs")
 public class AppointmentController {
@@ -43,6 +44,13 @@ public class AppointmentController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE', 'PATIENT')")
     public ResponseEntity<AppointmentResponse> getById(@PathVariable UUID id) {
         return ResponseEntity.ok(appointmentService.getAppointmentById(id));
+    }
+
+    @GetMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'NURSE')")
+    public ResponseEntity<Page<AppointmentResponse>> getAll(
+            @PageableDefault(size = 20, sort = "appointmentDate") Pageable pageable) {
+        return ResponseEntity.ok(appointmentService.getAllAppointments(pageable));
     }
 
     @GetMapping("/patient/{patientId}")

@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: discovery-service
+  name: eureka-server
   namespace: healthcare-system
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: discovery-service
+      app: eureka-server
   template:
     metadata:
       labels:
-        app: discovery-service
+        app: eureka-server
     spec:
       containers:
-        - name: discovery-service
-          image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/discovery-service:latest
+        - name: eureka-server
+          image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/eureka-server:latest
           ports:
             - containerPort: 8761
           env:
@@ -57,7 +57,7 @@ metadata:
   namespace: healthcare-system
 spec:
   selector:
-    app: discovery-service
+    app: eureka-server
   ports:
     - port: 8761
       targetPort: 8761

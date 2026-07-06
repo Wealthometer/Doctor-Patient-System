@@ -131,6 +131,37 @@ export interface Doctor {
   createdAt: string;
 }
 
+export interface CreateDoctorRequest {
+  userId: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  specialization: string;
+  department: string;
+  licenseNumber: string;
+  licenseExpiryDate?: string;
+  bio?: string;
+  qualifications?: string;
+  yearsOfExperience?: number;
+  consultationFee?: string;
+  workStartTime?: string;
+  workEndTime?: string;
+  workDays?: string;
+  maxDailyAppointments?: number;
+  profileImageUrl?: string;
+}
+
+export type UpdateDoctorRequest = Partial<Omit<CreateDoctorRequest, 'userId' | 'email' | 'licenseNumber'>>;
+
+export interface DoctorStats {
+  totalDoctors: number;
+  activeDoctors: number;
+  onLeaveDoctors: number;
+  departments: string[];
+  specializations: string[];
+}
+
 // ── Appointment ───────────────────────────────────────────────────────────────
 export type AppointmentStatus =
   | 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS'
@@ -166,6 +197,30 @@ export interface AvailableSlot {
   available: boolean;
 }
 
+export interface BookAppointmentRequest {
+  patientId: string;
+  doctorId: string;
+  appointmentDate: string;
+  startTime: string;
+  endTime: string;
+  type: AppointmentType;
+  reason: string;
+  notes?: string;
+}
+
+export interface CompleteAppointmentRequest {
+  diagnosisSummary?: string;
+  notes?: string;
+}
+
+export interface AppointmentStats {
+  totalAppointments: number;
+  todayAppointments: number;
+  scheduledAppointments: number;
+  completedAppointments: number;
+  cancelledAppointments: number;
+}
+
 // ── Prescription ──────────────────────────────────────────────────────────────
 export type PrescriptionStatus = 'ACTIVE' | 'EXPIRED' | 'CANCELLED' | 'COMPLETED';
 
@@ -195,6 +250,27 @@ export interface Prescription {
   status: PrescriptionStatus;
   items: PrescriptionItem[];
   createdAt: string;
+}
+
+export interface CreatePrescriptionItemRequest {
+  medicationName: string;
+  dosage: string;
+  frequency: string;
+  duration: string;
+  instructions?: string;
+  quantity?: number;
+  refillsAllowed?: number;
+}
+
+export interface CreatePrescriptionRequest {
+  patientId: string;
+  doctorId: string;
+  appointmentId?: string;
+  issueDate: string;
+  expiryDate: string;
+  diagnosis: string;
+  notes?: string;
+  items: CreatePrescriptionItemRequest[];
 }
 
 // ── Billing ───────────────────────────────────────────────────────────────────

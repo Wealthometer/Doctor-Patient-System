@@ -1,5 +1,6 @@
 package com.healthcare.prescription.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,6 +17,7 @@ public class PrescriptionItem {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "prescription_id", nullable = false)
+    @JsonIgnore
     private Prescription prescription;
 
     @Column(nullable = false)
