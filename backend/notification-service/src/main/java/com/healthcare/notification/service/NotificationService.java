@@ -32,6 +32,7 @@ public class NotificationService {
     @Async
     public void sendNotification(NotificationRequest request) {
         processAndSave(request);
+    }
         Notification notification = Notification.builder()
                 .recipientId(request.getRecipientId())
                 .recipientEmail(request.getRecipientEmail())
