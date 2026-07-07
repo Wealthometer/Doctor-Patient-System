@@ -172,6 +172,7 @@ public class BillingService {
                 .pendingInvoices(invoiceRepository.countByStatus(InvoiceStatus.PENDING))
                 .overdueInvoices(invoiceRepository.countByStatus(InvoiceStatus.OVERDUE))
                 .paidInvoices(invoiceRepository.countByStatus(InvoiceStatus.PAID))
+                .totalRevenue(totalRevenue != null ? totalRevenue : BigDecimal.ZERO)
                 .monthlyRevenue(monthlyRevenue != null ? monthlyRevenue : BigDecimal.ZERO)
                 .outstandingBalance(outstanding != null ? outstanding : BigDecimal.ZERO)
                 .build();
