@@ -52,7 +52,10 @@ export default function Topbar() {
         </button>
 
         {/* Notifications */}
-        <div className="relative cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 p-3 rounded-2xl transition-all">
+        <div
+          onClick={() => navigate('/notifications')}
+          className="relative cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 p-3 rounded-2xl transition-all"
+        >
           <Bell className="w-6 h-6 text-gray-600 dark:text-gray-400" />
           <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
         </div>
