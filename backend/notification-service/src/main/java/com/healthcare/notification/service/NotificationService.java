@@ -51,10 +51,10 @@ public class NotificationService {
                 .build();
 
         try {
-            if (notification.getChannel() == NotificationChannel.EMAIL) {
-                sendEmail(notification);
-            } else if (notification.getChannel() == NotificationChannel.SMS) {
-                sendSms(notification);
+            switch (notification.getChannel()) {
+                case EMAIL -> sendEmail(notification);
+                case SMS -> sendSms(notification);
+                case PUSH -> sendPush(notification);
             }
             notification.setStatus(NotificationStatus.SENT);
             notification.setSentAt(LocalDateTime.now());
