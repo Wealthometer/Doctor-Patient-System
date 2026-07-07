@@ -81,6 +81,7 @@ public class NotificationService {
     }
 
     // Template helpers for common notification types
+        return notificationRepository.findById(id)
     public void sendAppointmentConfirmation(String email, String patientName,
                                              String doctorName, String dateTime) {
         NotificationRequest req = NotificationRequest.builder()
