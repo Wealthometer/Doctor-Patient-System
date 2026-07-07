@@ -27,6 +27,7 @@ public class NotificationService {
 
     private final NotificationRepository notificationRepository;
     private final JavaMailSender mailSender;
+    private final PatientServiceClient patientServiceClient;
 
     @Async
     @Transactional
