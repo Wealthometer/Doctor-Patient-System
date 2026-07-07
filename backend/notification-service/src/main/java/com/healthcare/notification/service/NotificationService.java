@@ -80,7 +80,12 @@ public class NotificationService {
         log.info("SMS to {}: {}", notification.getRecipientPhone(), notification.getBody());
     }
 
-    // Template helpers for common notification types
+    private void sendPush(Notification notification) {
+        log.info("PUSH to recipient {}: {}", notification.getRecipientId(), notification.getSubject());
+    }
+
+    @Transactional(readOnly = true)
+    public NotificationResponse getNotificationById(UUID id) {
         return notificationRepository.findById(id)
     public void sendAppointmentConfirmation(String email, String patientName,
                                              String doctorName, String dateTime) {
