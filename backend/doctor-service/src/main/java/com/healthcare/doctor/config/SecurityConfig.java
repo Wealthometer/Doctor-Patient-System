@@ -81,13 +81,13 @@ public class SecurityConfig {
         protected void doFilterInternal(@NonNull HttpServletRequest request,
                                         @NonNull HttpServletResponse response,
                                         @NonNull FilterChain filterChain) throws ServletException, IOException {
+            final String authHeader = request.getHeader("Authorization");
+            if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+                filterChain.doFilter(request, response);
+                return;
+            }
+
             try {
-                final String authHeader = request.getHeader("Authorization");
-                if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-                    filterChain.doFilter(request, response);
-                    return;
-                }
-                
                 String jwt = authHeader.substring(7);
                 Claims claims = Jwts.parser()
                         .verifyWith(getSignInKey())
@@ -106,12 +106,14 @@ public class SecurityConfig {
                     authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                     SecurityContextHolder.getContext().setAuthentication(authToken);
                 }
-                filterChain.doFilter(request, response);
             } catch (Exception e) {
                 log.error("JWT authentication error: {}", e.getMessage());
                 response.setStatus(401);
                 response.getWriter().write("{\"error\": \"Unauthorized\"}");
+                return;
             }
+
+            filterChain.doFilter(request, response);
         }
 
         private SecretKey getSignInKey() {

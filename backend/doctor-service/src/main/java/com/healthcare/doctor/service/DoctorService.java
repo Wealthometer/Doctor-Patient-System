@@ -127,7 +127,18 @@ public class DoctorService {
     }
 
     private String generateDoctorCode() {
-        long count = doctorRepository.count();
-        return "D-" + String.format("%04d", count + 1001);
+        int nextNumber = doctorRepository.findMaxDoctorCodeNumber() + 1;
+        String doctorCode = formatDoctorCode(nextNumber);
+
+        while (doctorRepository.existsByDoctorCode(doctorCode)) {
+            nextNumber++;
+            doctorCode = formatDoctorCode(nextNumber);
+        }
+
+        return doctorCode;
+    }
+
+    private String formatDoctorCode(int number) {
+        return "D-" + String.format("%04d", number);
     }
 }

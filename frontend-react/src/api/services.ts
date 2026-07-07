@@ -2,7 +2,9 @@ import apiClient from './client';
 import type {
   AuthResponse, LoginRequest, RegisterRequest,
   Page, Patient, Doctor, Appointment, Prescription, Invoice,
-  AvailableSlot, CreatePatientRequest,
+  AvailableSlot, CreatePatientRequest, CreateDoctorRequest, UpdateDoctorRequest,
+  BookAppointmentRequest, CompleteAppointmentRequest, CreatePrescriptionRequest,
+  DoctorStats, AppointmentStats,
 } from '@/types';
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
@@ -34,27 +36,32 @@ export const patientApi = {
 
 // ── Doctors ───────────────────────────────────────────────────────────────────
 export const doctorApi = {
-  create:              (data: unknown)     => apiClient.post<Doctor>('/api/v1/doctors', data),
+  create:              (data: CreateDoctorRequest) => apiClient.post<Doctor>('/api/v1/doctors', data),
   getById:             (id: string)        => apiClient.get<Doctor>(`/api/v1/doctors/${id}`),
   getByUserId:         (userId: string)    => apiClient.get<Doctor>(`/api/v1/doctors/user/${userId}`),
+  getByCode:           (code: string)      => apiClient.get<Doctor>(`/api/v1/doctors/code/${code}`),
   getAll:              (params?: Record<string, unknown>) => apiClient.get<Page<Doctor>>('/api/v1/doctors', { params }),
   search:              (query: string, params?: Record<string, unknown>) =>
     apiClient.get<Page<Doctor>>('/api/v1/doctors/search', { params: { query, ...params } }),
   getByDepartment:     (dept: string, params?: Record<string, unknown>) =>
     apiClient.get<Page<Doctor>>(`/api/v1/doctors/department/${dept}`, { params }),
-  getActiveByDept:     (dept: string)      => apiClient.get(`/api/v1/doctors/department/${dept}/active`),
-  update:              (id: string, data: unknown) => apiClient.put<Doctor>(`/api/v1/doctors/${id}`, data),
+  getActiveByDept:     (dept: string)      => apiClient.get<Doctor[]>(`/api/v1/doctors/department/${dept}/active`),
+  getBySpecialization: (specialization: string, params?: Record<string, unknown>) =>
+    apiClient.get<Page<Doctor>>(`/api/v1/doctors/specialization/${specialization}`, { params }),
+  update:              (id: string, data: UpdateDoctorRequest) => apiClient.put<Doctor>(`/api/v1/doctors/${id}`, data),
   updateStatus:        (id: string, status: string) =>
     apiClient.patch<Doctor>(`/api/v1/doctors/${id}/status`, null, { params: { status } }),
   submitRating:        (id: string, data: { rating: number; comment?: string }) =>
     apiClient.post<Doctor>(`/api/v1/doctors/${id}/ratings`, data),
-  getStats:            ()                  => apiClient.get('/api/v1/doctors/stats'),
+  getStats:            ()                  => apiClient.get<DoctorStats>('/api/v1/doctors/stats'),
 };
 
 // ── Appointments ──────────────────────────────────────────────────────────────
 export const appointmentApi = {
-  book:              (data: unknown)        => apiClient.post<Appointment>('/api/v1/appointments', data),
+  book:              (data: BookAppointmentRequest) => apiClient.post<Appointment>('/api/v1/appointments', data),
   getById:           (id: string)           => apiClient.get<Appointment>(`/api/v1/appointments/${id}`),
+  getAll:            (params?: Record<string, unknown>) =>
+    apiClient.get<Page<Appointment>>('/api/v1/appointments', { params }),
   getByPatient:      (patientId: string, params?: Record<string, unknown>) =>
     apiClient.get<Page<Appointment>>(`/api/v1/appointments/patient/${patientId}`, { params }),
   getByDoctor:       (doctorId: string, params?: Record<string, unknown>) =>
@@ -65,15 +72,15 @@ export const appointmentApi = {
     apiClient.get<AvailableSlot[]>(`/api/v1/appointments/doctor/${doctorId}/slots`, { params: { date } }),
   confirm:           (id: string)           => apiClient.patch<Appointment>(`/api/v1/appointments/${id}/confirm`),
   start:             (id: string)           => apiClient.patch<Appointment>(`/api/v1/appointments/${id}/start`),
-  complete:          (id: string, data: unknown) => apiClient.patch<Appointment>(`/api/v1/appointments/${id}/complete`, data),
+  complete:          (id: string, data: CompleteAppointmentRequest) => apiClient.patch<Appointment>(`/api/v1/appointments/${id}/complete`, data),
   cancel:            (id: string, cancellationReason: string) =>
     apiClient.patch<Appointment>(`/api/v1/appointments/${id}/cancel`, { cancellationReason }),
-  getStats:          ()                     => apiClient.get('/api/v1/appointments/stats'),
+  getStats:          ()                     => apiClient.get<AppointmentStats>('/api/v1/appointments/stats'),
 };
 
 // ── Prescriptions ─────────────────────────────────────────────────────────────
 export const prescriptionApi = {
-  create:        (data: unknown)            => apiClient.post<Prescription>('/api/v1/prescriptions', data),
+  create:        (data: CreatePrescriptionRequest) => apiClient.post<Prescription>('/api/v1/prescriptions', data),
   getById:       (id: string)               => apiClient.get<Prescription>(`/api/v1/prescriptions/${id}`),
   getByPatient:  (patientId: string, params?: Record<string, unknown>) =>
     apiClient.get<Page<Prescription>>(`/api/v1/prescriptions/patient/${patientId}`, { params }),

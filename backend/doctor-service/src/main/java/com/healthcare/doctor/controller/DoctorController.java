@@ -22,6 +22,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/doctors")
+@CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
 @SecurityRequirement(name = "bearerAuth")
 @Tag(name = "Doctors", description = "Doctor management APIs")
@@ -30,7 +31,7 @@ public class DoctorController {
     private final DoctorService doctorService;
 
     @PostMapping
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
     public ResponseEntity<DoctorResponse> createDoctor(@Valid @RequestBody CreateDoctorRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(doctorService.createDoctor(request));
     }
