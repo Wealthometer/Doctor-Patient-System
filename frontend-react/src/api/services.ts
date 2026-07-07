@@ -4,7 +4,7 @@ import type {
   Page, Patient, Doctor, Appointment, Prescription, Invoice, Notification,
   AvailableSlot, CreatePatientRequest, CreateDoctorRequest, UpdateDoctorRequest,
   BookAppointmentRequest, CompleteAppointmentRequest, CreatePrescriptionRequest,
-  DoctorStats, AppointmentStats,
+  DoctorStats, AppointmentStats, SendNotificationRequest,
 } from '@/types';
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
