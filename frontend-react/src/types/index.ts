@@ -315,6 +315,39 @@ export interface Payment {
   createdAt: string;
 }
 
+// ── Notification ──────────────────────────────────────────────────────────────
+export type NotificationStatus = 'PENDING' | 'SENT' | 'FAILED' | 'CANCELLED';
+export type NotificationChannel = 'EMAIL' | 'SMS' | 'PUSH';
+export type NotificationType =
+  | 'APPOINTMENT_BOOKED' | 'APPOINTMENT_CONFIRMED' | 'APPOINTMENT_CANCELLED'
+  | 'APPOINTMENT_REMINDER' | 'PRESCRIPTION_ISSUED' | 'PRESCRIPTION_EXPIRY'
+  | 'BILLING_INVOICE' | 'PAYMENT_RECEIVED' | 'GENERAL';
+
+export interface Notification {
+  id: string;
+  recipientId: string;
+  recipientEmail: string;
+  recipientPhone?: string;
+  subject: string;
+  body: string;
+  type: NotificationType;
+  channel: NotificationChannel;
+  status: NotificationStatus;
+  errorMessage?: string;
+  sentAt?: string;
+  createdAt: string;
+}
+
+export interface SendNotificationRequest {
+  recipientId?: string;
+  recipientEmail: string;
+  recipientPhone?: string;
+  subject: string;
+  body: string;
+  type: NotificationType;
+  channel?: NotificationChannel;
+}
+
 // ── Pagination ────────────────────────────────────────────────────────────────
 export interface Page<T> {
   content: T[];
