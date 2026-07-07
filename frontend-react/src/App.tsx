@@ -148,6 +148,13 @@ function App() {
             </ProtectedRoute>
           } />
 
+          {/* Notifications (accessible by all authenticated roles) */}
+          <Route path="/notifications" element={
+            <ProtectedRoute allowedRoles={['ADMIN', 'DOCTOR', 'PATIENT', 'NURSE']}>
+              <AppLayout><Notifications /></AppLayout>
+            </ProtectedRoute>
+          } />
+
           {/* Catch-all */}
           <Route path="/unauthorized" element={
             <div className="flex items-center justify-center h-screen">
