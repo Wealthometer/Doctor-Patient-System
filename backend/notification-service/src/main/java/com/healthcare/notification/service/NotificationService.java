@@ -4,6 +4,7 @@ import com.healthcare.notification.client.PatientServiceClient;
 import com.healthcare.notification.dto.NotificationRequest;
 import com.healthcare.notification.dto.NotificationResponse;
 import com.healthcare.notification.entity.*;
+import com.healthcare.notification.exception.NotificationNotFoundException;
 import com.healthcare.notification.repository.NotificationRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
