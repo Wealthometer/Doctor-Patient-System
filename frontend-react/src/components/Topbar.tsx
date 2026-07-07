@@ -1,5 +1,8 @@
 import { Bell, LogOut, Sun, Moon } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '@/store';
+import { fetchUnreadCount } from '@/store/slices/notificationSlice';
 
 export default function Topbar() {
   const [darkMode, setDarkMode] = useState(false);
