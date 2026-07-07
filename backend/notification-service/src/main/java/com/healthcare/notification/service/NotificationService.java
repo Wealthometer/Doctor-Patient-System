@@ -87,6 +87,54 @@ public class NotificationService {
     @Transactional(readOnly = true)
     public NotificationResponse getNotificationById(UUID id) {
         return notificationRepository.findById(id)
+                .map(this::toResponse)
+                .orElseThrow(() -> new NotificationNotFoundException("Notification not found: " + id));
+    }
+
+    @Transactional(readOnly = true)
+    public Page<NotificationResponse> getAllNotifications(Pageable pageable) {
+        return notificationRepository.findAll(pageable).map(this::toResponse);
+    }
+
+    @Transactional(readOnly = true)
+    public Page<NotificationResponse> getNotificationsByRecipient(UUID recipientId, Pageable pageable) {
+        return notificationRepository.findByRecipientId(recipientId, pageable).map(this::toResponse);
+    }
+
+    @Transactional(readOnly = true)
+    public Page<NotificationResponse> getNotificationsByStatus(NotificationStatus status, Pageable pageable) {
+        return notificationRepository.findByStatus(status, pageable).map(this::toResponse);
+    }
+
+    @Transactional(readOnly = true)
+    public long getUnreadCount() {
+        return notificationRepository.countByStatus(NotificationStatus.PENDING);
+    }
+
+    public NotificationResponse cancelNotification(UUID id) {
+        Notification notification = notificationRepository.findById(id)
+                .orElseThrow(() -> new NotificationNotFoundException("Notification not found: " + id));
+        notification.setStatus(NotificationStatus.CANCELLED);
+        return toResponse(notificationRepository.save(notification));
+    }
+
+    private NotificationResponse toResponse(Notification n) {
+        return NotificationResponse.builder()
+                .id(n.getId())
+                .recipientId(n.getRecipientId())
+                .recipientEmail(n.getRecipientEmail())
+                .recipientPhone(n.getRecipientPhone())
+                .subject(n.getSubject())
+                .body(n.getBody())
+                .type(n.getType())
+                .channel(n.getChannel())
+                .status(n.getStatus())
+                .errorMessage(n.getErrorMessage())
+                .sentAt(n.getSentAt())
+                .createdAt(n.getCreatedAt())
+                .build();
+    }
+
     public void sendAppointmentConfirmation(String email, String patientName,
                                              String doctorName, String dateTime) {
         NotificationRequest req = NotificationRequest.builder()
