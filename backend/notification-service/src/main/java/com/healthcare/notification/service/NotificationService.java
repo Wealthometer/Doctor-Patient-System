@@ -1,15 +1,10 @@
 package com.healthcare.notification.service;
 
-import com.healthcare.notification.client.PatientServiceClient;
 import com.healthcare.notification.dto.NotificationRequest;
-import com.healthcare.notification.dto.NotificationResponse;
 import com.healthcare.notification.entity.*;
-import com.healthcare.notification.exception.NotificationNotFoundException;
 import com.healthcare.notification.repository.NotificationRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.scheduling.annotation.Async;
@@ -17,29 +12,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
-@Transactional
 public class NotificationService {
 
     private final NotificationRepository notificationRepository;
     private final JavaMailSender mailSender;
-    private final PatientServiceClient patientServiceClient;
 
     @Async
+    @Transactional
     public void sendNotification(NotificationRequest request) {
-        processAndSave(request);
-    }
-
-    public NotificationResponse sendAndReturn(NotificationRequest request) {
-        Notification notification = processAndSave(request);
-        return toResponse(notification);
-    }
-
-    private Notification processAndSave(NotificationRequest request) {
         Notification notification = Notification.builder()
                 .recipientId(request.getRecipientId())
                 .recipientEmail(request.getRecipientEmail())
@@ -51,10 +35,10 @@ public class NotificationService {
                 .build();
 
         try {
-            switch (notification.getChannel()) {
-                case EMAIL -> sendEmail(notification);
-                case SMS -> sendSms(notification);
-                case PUSH -> sendPush(notification);
+            if (notification.getChannel() == NotificationChannel.EMAIL) {
+                sendEmail(notification);
+            } else if (notification.getChannel() == NotificationChannel.SMS) {
+                sendSms(notification);
             }
             notification.setStatus(NotificationStatus.SENT);
             notification.setSentAt(LocalDateTime.now());
@@ -64,7 +48,7 @@ public class NotificationService {
             notification.setErrorMessage(e.getMessage());
             log.error("Failed to send notification to {}: {}", request.getRecipientEmail(), e.getMessage());
         }
-        return notificationRepository.save(notification);
+        notificationRepository.save(notification);
     }
 
     private void sendEmail(Notification notification) {
@@ -77,64 +61,11 @@ public class NotificationService {
     }
 
     private void sendSms(Notification notification) {
+        // Integration point for SMS provider (Twilio, AWS SNS, etc.)
         log.info("SMS to {}: {}", notification.getRecipientPhone(), notification.getBody());
     }
 
-    private void sendPush(Notification notification) {
-        log.info("PUSH to recipient {}: {}", notification.getRecipientId(), notification.getSubject());
-    }
-
-    @Transactional(readOnly = true)
-    public NotificationResponse getNotificationById(UUID id) {
-        return notificationRepository.findById(id)
-                .map(this::toResponse)
-                .orElseThrow(() -> new NotificationNotFoundException("Notification not found: " + id));
-    }
-
-    @Transactional(readOnly = true)
-    public Page<NotificationResponse> getAllNotifications(Pageable pageable) {
-        return notificationRepository.findAll(pageable).map(this::toResponse);
-    }
-
-    @Transactional(readOnly = true)
-    public Page<NotificationResponse> getNotificationsByRecipient(UUID recipientId, Pageable pageable) {
-        return notificationRepository.findByRecipientId(recipientId, pageable).map(this::toResponse);
-    }
-
-    @Transactional(readOnly = true)
-    public Page<NotificationResponse> getNotificationsByStatus(NotificationStatus status, Pageable pageable) {
-        return notificationRepository.findByStatus(status, pageable).map(this::toResponse);
-    }
-
-    @Transactional(readOnly = true)
-    public long getUnreadCount() {
-        return notificationRepository.countByStatus(NotificationStatus.PENDING);
-    }
-
-    public NotificationResponse cancelNotification(UUID id) {
-        Notification notification = notificationRepository.findById(id)
-                .orElseThrow(() -> new NotificationNotFoundException("Notification not found: " + id));
-        notification.setStatus(NotificationStatus.CANCELLED);
-        return toResponse(notificationRepository.save(notification));
-    }
-
-    private NotificationResponse toResponse(Notification n) {
-        return NotificationResponse.builder()
-                .id(n.getId())
-                .recipientId(n.getRecipientId())
-                .recipientEmail(n.getRecipientEmail())
-                .recipientPhone(n.getRecipientPhone())
-                .subject(n.getSubject())
-                .body(n.getBody())
-                .type(n.getType())
-                .channel(n.getChannel())
-                .status(n.getStatus())
-                .errorMessage(n.getErrorMessage())
-                .sentAt(n.getSentAt())
-                .createdAt(n.getCreatedAt())
-                .build();
-    }
-
+    // Template helpers for common notification types
     public void sendAppointmentConfirmation(String email, String patientName,
                                              String doctorName, String dateTime) {
         NotificationRequest req = NotificationRequest.builder()

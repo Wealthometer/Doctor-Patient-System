@@ -1,13 +1,7 @@
 import { Bell, LogOut, Sun, Moon } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '@/store';
-import { fetchUnreadCount } from '@/store/slices/notificationSlice';
 
 export default function Topbar() {
-  const navigate = useNavigate();
-  const dispatch = useAppDispatch();
-  const { unreadCount } = useAppSelector((s) => s.notifications);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -17,10 +11,6 @@ export default function Topbar() {
       document.documentElement.classList.add('dark');
     }
   }, []);
-
-  useEffect(() => {
-    dispatch(fetchUnreadCount());
-  }, [dispatch]);
 
   const toggleDarkMode = () => {
     const newMode = !darkMode;
@@ -52,16 +42,9 @@ export default function Topbar() {
         </button>
 
         {/* Notifications */}
-        <div
-          onClick={() => navigate('/notifications')}
-          className="relative cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 p-3 rounded-2xl transition-all"
-        >
+        <div className="relative cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 p-3 rounded-2xl transition-all">
           <Bell className="w-6 h-6 text-gray-600 dark:text-gray-400" />
-          {unreadCount > 0 && (
-            <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-              {unreadCount > 99 ? '99+' : unreadCount}
-            </span>
-          )}
+          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
         </div>
 
         {/* User Profile */}

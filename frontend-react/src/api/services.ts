@@ -1,10 +1,10 @@
 import apiClient from './client';
 import type {
   AuthResponse, LoginRequest, RegisterRequest,
-  Page, Patient, Doctor, Appointment, Prescription, Invoice, Notification,
+  Page, Patient, Doctor, Appointment, Prescription, Invoice,
   AvailableSlot, CreatePatientRequest, CreateDoctorRequest, UpdateDoctorRequest,
   BookAppointmentRequest, CompleteAppointmentRequest, CreatePrescriptionRequest,
-  DoctorStats, AppointmentStats, SendNotificationRequest,
+  DoctorStats, AppointmentStats,
 } from '@/types';
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
@@ -105,18 +105,4 @@ export const billingApi = {
     apiClient.post<Invoice>(`/api/v1/billing/invoices/${id}/payments`, data),
   cancelInvoice:     (id: string)           => apiClient.patch<Invoice>(`/api/v1/billing/invoices/${id}/cancel`),
   getStats:          ()                     => apiClient.get('/api/v1/billing/stats'),
-};
-
-// ── Notifications ─────────────────────────────────────────────────────────────
-export const notificationApi = {
-  send:            (data: SendNotificationRequest) => apiClient.post<Notification>('/api/v1/notifications', data),
-  getById:         (id: string)                    => apiClient.get<Notification>(`/api/v1/notifications/${id}`),
-  getAll:          (params?: Record<string, unknown>) =>
-    apiClient.get<Page<Notification>>('/api/v1/notifications', { params }),
-  getByRecipient:  (recipientId: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Notification>>(`/api/v1/notifications/recipient/${recipientId}`, { params }),
-  getByStatus:     (status: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Notification>>(`/api/v1/notifications/status/${status}`, { params }),
-  getUnreadCount:  ()                              => apiClient.get<number>('/api/v1/notifications/unread/count'),
-  cancel:          (id: string)                    => apiClient.patch<Notification>(`/api/v1/notifications/${id}/cancel`),
 };
