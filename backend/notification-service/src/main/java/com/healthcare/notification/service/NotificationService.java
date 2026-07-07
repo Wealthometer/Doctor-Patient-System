@@ -30,7 +30,6 @@ public class NotificationService {
     private final PatientServiceClient patientServiceClient;
 
     @Async
-    @Transactional
     public void sendNotification(NotificationRequest request) {
         Notification notification = Notification.builder()
                 .recipientId(request.getRecipientId())
