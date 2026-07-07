@@ -1,7 +1,7 @@
 import apiClient from './client';
 import type {
   AuthResponse, LoginRequest, RegisterRequest,
-  Page, Patient, Doctor, Appointment, Prescription, Invoice,
+  Page, Patient, Doctor, Appointment, Prescription, Invoice, Notification,
   AvailableSlot, CreatePatientRequest, CreateDoctorRequest, UpdateDoctorRequest,
   BookAppointmentRequest, CompleteAppointmentRequest, CreatePrescriptionRequest,
   DoctorStats, AppointmentStats,
