@@ -1,19 +1,18 @@
 package com.healthcare.notification.dto;
 
 import com.healthcare.notification.entity.NotificationChannel;
+import com.healthcare.notification.entity.NotificationStatus;
 import com.healthcare.notification.entity.NotificationType;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class NotificationRequest {
+public class NotificationResponse {
+    private UUID id;
     private UUID recipientId;
     private String recipientEmail;
     private String recipientPhone;
@@ -21,4 +20,8 @@ public class NotificationRequest {
     private String body;
     private NotificationType type;
     private NotificationChannel channel;
+    private NotificationStatus status;
+    private String errorMessage;
+    private LocalDateTime sentAt;
+    private LocalDateTime createdAt;
 }

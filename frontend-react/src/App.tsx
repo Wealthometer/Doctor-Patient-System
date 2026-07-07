@@ -12,6 +12,7 @@ import Appointments from './pages/Appointments';
 import AppointmentBooking from './pages/AppointmentBooking';
 import Patients from './pages/Patients';
 import Prescriptions from './pages/Prescriptions';
+import Notifications from './pages/Notifications';
 import LoginPage from '@/pages/auth/LoginPage';
 import AdminDashboard from '@/pages/admin/AdminDashboard';
 import AppointmentsPage from '@/pages/admin/AppointmentsPage';
@@ -144,6 +145,13 @@ function App() {
           <Route path="/patient/billing" element={
             <ProtectedRoute allowedRoles={['PATIENT']}>
               <AppLayout><Placeholder title="My Billing" /></AppLayout>
+            </ProtectedRoute>
+          } />
+
+          {/* Notifications (accessible by all authenticated roles) */}
+          <Route path="/notifications" element={
+            <ProtectedRoute allowedRoles={['ADMIN', 'DOCTOR', 'PATIENT', 'NURSE']}>
+              <AppLayout><Notifications /></AppLayout>
             </ProtectedRoute>
           } />
 
