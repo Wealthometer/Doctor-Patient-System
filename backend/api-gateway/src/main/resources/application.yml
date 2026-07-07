@@ -110,6 +110,13 @@ spring:
           filters:
             - RewritePath=/billing-service/v3/api-docs, /v3/api-docs
 
+        - id: notification-service-docs
+          uri: lb://notification-service
+          predicates:
+            - Path=/notification-service/v3/api-docs
+          filters:
+            - RewritePath=/notification-service/v3/api-docs, /v3/api-docs
+
 eureka:
   client:
     service-url:
