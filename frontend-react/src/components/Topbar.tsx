@@ -5,6 +5,9 @@ import { useAppDispatch, useAppSelector } from '@/store';
 import { fetchUnreadCount } from '@/store/slices/notificationSlice';
 
 export default function Topbar() {
+  const navigate = useNavigate();
+  const dispatch = useAppDispatch();
+  const { unreadCount } = useAppSelector((s) => s.notifications);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
