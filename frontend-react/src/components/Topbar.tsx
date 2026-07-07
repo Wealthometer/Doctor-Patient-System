@@ -18,6 +18,10 @@ export default function Topbar() {
     }
   }, []);
 
+  useEffect(() => {
+    dispatch(fetchUnreadCount());
+  }, [dispatch]);
+
   const toggleDarkMode = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);
