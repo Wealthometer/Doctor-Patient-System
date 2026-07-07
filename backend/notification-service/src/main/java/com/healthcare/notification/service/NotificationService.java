@@ -33,6 +33,13 @@ public class NotificationService {
     public void sendNotification(NotificationRequest request) {
         processAndSave(request);
     }
+
+    public NotificationResponse sendAndReturn(NotificationRequest request) {
+        Notification notification = processAndSave(request);
+        return toResponse(notification);
+    }
+
+    private Notification processAndSave(NotificationRequest request) {
         Notification notification = Notification.builder()
                 .recipientId(request.getRecipientId())
                 .recipientEmail(request.getRecipientEmail())
