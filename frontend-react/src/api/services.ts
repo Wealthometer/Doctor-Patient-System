@@ -1,99 +1,121 @@
-import apiClient from './client';
+import { api } from './client';
 import type {
-  AuthResponse, LoginRequest, RegisterRequest,
-  Page, Patient, Doctor, Appointment, Prescription, Invoice,
-  AvailableSlot,
-} from '@/types';
+  AuthResponse, LoginRequest, RegisterRequest, UserInfo,
+  PatientResponse, CreatePatientRequest, UpdatePatientRequest, PatientStatsResponse, Page,
+  DoctorResponse, CreateDoctorRequest, DoctorStatsResponse, DoctorStatus, DoctorSummaryResponse,
+  AppointmentResponse, BookAppointmentRequest, AppointmentStatsResponse, AvailableSlot,
+  Prescription, CreatePrescriptionRequest,
+  InvoiceResponse, BillingStatsResponse,
+} from '../types';
 
-// ── Auth ──────────────────────────────────────────────────────────────────────
+// ── Auth ─────────────────────────────────────────────────────────────────────
 export const authApi = {
-  login:        (data: LoginRequest)       => apiClient.post<AuthResponse>('/api/v1/auth/login', data),
-  register:     (data: RegisterRequest)    => apiClient.post<AuthResponse>('/api/v1/auth/register', data),
-  logout:       ()                         => apiClient.post('/api/v1/auth/logout'),
-  me:           ()                         => apiClient.get('/api/v1/auth/me'),
-  refreshToken: (refreshToken: string)     => apiClient.post<AuthResponse>('/api/v1/auth/refresh-token', { refreshToken }),
-  changePassword:(data: { currentPassword: string; newPassword: string }) =>
-    apiClient.put('/api/v1/auth/change-password', data),
+  login: (data: LoginRequest) =>
+    api.post<AuthResponse>('/auth/login', data).then(r => r.data),
+  register: (data: RegisterRequest) =>
+    api.post<AuthResponse>('/auth/register', data).then(r => r.data),
+  me: () => api.get<UserInfo>('/auth/me').then(r => r.data),
+  logout: () => api.post('/auth/logout').then(r => r.data),
+  changePassword: (data: { currentPassword: string; newPassword: string }) =>
+    api.put('/auth/change-password', data).then(r => r.data),
 };
 
-// ── Patients ──────────────────────────────────────────────────────────────────
+// ── Patient ──────────────────────────────────────────────────────────────────
 export const patientApi = {
-  create:         (data: unknown)           => apiClient.post<Patient>('/api/v1/patients', data),
-  getById:        (id: string)              => apiClient.get<Patient>(`/api/v1/patients/${id}`),
-  getByUserId:    (userId: string)          => apiClient.get<Patient>(`/api/v1/patients/user/${userId}`),
-  getByCode:      (code: string)            => apiClient.get<Patient>(`/api/v1/patients/code/${code}`),
-  getAll:         (params?: Record<string, unknown>) => apiClient.get<Page<Patient>>('/api/v1/patients', { params }),
-  search:         (query: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Patient>>('/api/v1/patients/search', { params: { query, ...params } }),
-  update:         (id: string, data: unknown) => apiClient.put<Patient>(`/api/v1/patients/${id}`, data),
-  deactivate:     (id: string)              => apiClient.patch(`/api/v1/patients/${id}/deactivate`),
-  getStats:       ()                        => apiClient.get('/api/v1/patients/stats'),
+  create: (data: CreatePatientRequest) =>
+    api.post<PatientResponse>('/patients', data).then(r => r.data),
+  getById: (id: string) =>
+    api.get<PatientResponse>(`/patients/${id}`).then(r => r.data),
+  getByUserId: (userId: string) =>
+    api.get<PatientResponse>(`/patients/user/${userId}`).then(r => r.data),
+  getAll: (page = 0, size = 20) =>
+    api.get<Page<PatientResponse>>('/patients', { params: { page, size } }).then(r => r.data),
+  search: (query: string, page = 0) =>
+    api.get<Page<PatientResponse>>('/patients/search', { params: { query, page } }).then(r => r.data),
+  update: (id: string, data: UpdatePatientRequest) =>
+    api.put<PatientResponse>(`/patients/${id}`, data).then(r => r.data),
+  deactivate: (id: string) =>
+    api.patch(`/patients/${id}/deactivate`).then(r => r.data),
+  stats: () =>
+    api.get<PatientStatsResponse>('/patients/stats').then(r => r.data),
 };
 
-// ── Doctors ───────────────────────────────────────────────────────────────────
+// ── Doctor ───────────────────────────────────────────────────────────────────
 export const doctorApi = {
-  create:              (data: unknown)     => apiClient.post<Doctor>('/api/v1/doctors', data),
-  getById:             (id: string)        => apiClient.get<Doctor>(`/api/v1/doctors/${id}`),
-  getByUserId:         (userId: string)    => apiClient.get<Doctor>(`/api/v1/doctors/user/${userId}`),
-  getAll:              (params?: Record<string, unknown>) => apiClient.get<Page<Doctor>>('/api/v1/doctors', { params }),
-  search:              (query: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Doctor>>('/api/v1/doctors/search', { params: { query, ...params } }),
-  getByDepartment:     (dept: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Doctor>>(`/api/v1/doctors/department/${dept}`, { params }),
-  getActiveByDept:     (dept: string)      => apiClient.get(`/api/v1/doctors/department/${dept}/active`),
-  update:              (id: string, data: unknown) => apiClient.put<Doctor>(`/api/v1/doctors/${id}`, data),
-  updateStatus:        (id: string, status: string) =>
-    apiClient.patch<Doctor>(`/api/v1/doctors/${id}/status`, null, { params: { status } }),
-  submitRating:        (id: string, data: { rating: number; comment?: string }) =>
-    apiClient.post<Doctor>(`/api/v1/doctors/${id}/ratings`, data),
-  getStats:            ()                  => apiClient.get('/api/v1/doctors/stats'),
+  create: (data: CreateDoctorRequest) =>
+    api.post<DoctorResponse>('/doctors', data).then(r => r.data),
+  getById: (id: string) =>
+    api.get<DoctorResponse>(`/doctors/${id}`).then(r => r.data),
+  getByUserId: (userId: string) =>
+    api.get<DoctorResponse>(`/doctors/user/${userId}`).then(r => r.data),
+  getAll: (page = 0, size = 20) =>
+    api.get<Page<DoctorResponse>>('/doctors', { params: { page, size } }).then(r => r.data),
+  search: (query: string, page = 0) =>
+    api.get<Page<DoctorResponse>>('/doctors/search', { params: { query, page } }).then(r => r.data),
+  getByDepartment: (department: string) =>
+    api.get<DoctorSummaryResponse[]>(`/doctors/department/${department}/active`).then(r => r.data),
+  update: (id: string, data: Partial<CreateDoctorRequest>) =>
+    api.put<DoctorResponse>(`/doctors/${id}`, data).then(r => r.data),
+  updateStatus: (id: string, status: DoctorStatus) =>
+    api.patch<DoctorResponse>(`/doctors/${id}/status`, null, { params: { status } }).then(r => r.data),
+  submitRating: (id: string, data: { rating: number; comment?: string }) =>
+    api.post<DoctorResponse>(`/doctors/${id}/ratings`, data).then(r => r.data),
+  stats: () =>
+    api.get<DoctorStatsResponse>('/doctors/stats').then(r => r.data),
 };
 
-// ── Appointments ──────────────────────────────────────────────────────────────
+// ── Appointment ───────────────────────────────────────────────────────────────
 export const appointmentApi = {
-  book:              (data: unknown)        => apiClient.post<Appointment>('/api/v1/appointments', data),
-  getById:           (id: string)           => apiClient.get<Appointment>(`/api/v1/appointments/${id}`),
-  getByPatient:      (patientId: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Appointment>>(`/api/v1/appointments/patient/${patientId}`, { params }),
-  getByDoctor:       (doctorId: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Appointment>>(`/api/v1/appointments/doctor/${doctorId}`, { params }),
-  getDoctorByDate:   (doctorId: string, date: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Appointment>>(`/api/v1/appointments/doctor/${doctorId}/date/${date}`, { params }),
-  getAvailableSlots: (doctorId: string, date: string) =>
-    apiClient.get<AvailableSlot[]>(`/api/v1/appointments/doctor/${doctorId}/slots`, { params: { date } }),
-  confirm:           (id: string)           => apiClient.patch<Appointment>(`/api/v1/appointments/${id}/confirm`),
-  start:             (id: string)           => apiClient.patch<Appointment>(`/api/v1/appointments/${id}/start`),
-  complete:          (id: string, data: unknown) => apiClient.patch<Appointment>(`/api/v1/appointments/${id}/complete`, data),
-  cancel:            (id: string, cancellationReason: string) =>
-    apiClient.patch<Appointment>(`/api/v1/appointments/${id}/cancel`, { cancellationReason }),
-  getStats:          ()                     => apiClient.get('/api/v1/appointments/stats'),
+  book: (data: BookAppointmentRequest) =>
+    api.post<AppointmentResponse>('/appointments', data).then(r => r.data),
+  getById: (id: string) =>
+    api.get<AppointmentResponse>(`/appointments/${id}`).then(r => r.data),
+  getByPatient: (patientId: string, page = 0) =>
+    api.get<Page<AppointmentResponse>>(`/appointments/patient/${patientId}`, { params: { page } }).then(r => r.data),
+  getByDoctor: (doctorId: string, page = 0) =>
+    api.get<Page<AppointmentResponse>>(`/appointments/doctor/${doctorId}`, { params: { page } }).then(r => r.data),
+  getDoctorSlots: (doctorId: string, date: string) =>
+    api.get<AvailableSlot[]>(`/appointments/doctor/${doctorId}/slots`, { params: { date } }).then(r => r.data),
+  confirm: (id: string) =>
+    api.patch<AppointmentResponse>(`/appointments/${id}/confirm`).then(r => r.data),
+  start: (id: string) =>
+    api.patch<AppointmentResponse>(`/appointments/${id}/start`).then(r => r.data),
+  complete: (id: string, data: { diagnosisSummary?: string; notes?: string }) =>
+    api.patch<AppointmentResponse>(`/appointments/${id}/complete`, data).then(r => r.data),
+  cancel: (id: string, cancellationReason: string) =>
+    api.patch<AppointmentResponse>(`/appointments/${id}/cancel`, { cancellationReason }).then(r => r.data),
+  stats: () =>
+    api.get<AppointmentStatsResponse>('/appointments/stats').then(r => r.data),
 };
 
-// ── Prescriptions ─────────────────────────────────────────────────────────────
+// ── Prescription ──────────────────────────────────────────────────────────────
 export const prescriptionApi = {
-  create:        (data: unknown)            => apiClient.post<Prescription>('/api/v1/prescriptions', data),
-  getById:       (id: string)               => apiClient.get<Prescription>(`/api/v1/prescriptions/${id}`),
-  getByPatient:  (patientId: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Prescription>>(`/api/v1/prescriptions/patient/${patientId}`, { params }),
-  getActive:     (patientId: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Prescription>>(`/api/v1/prescriptions/patient/${patientId}/active`, { params }),
-  getByDoctor:   (doctorId: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Prescription>>(`/api/v1/prescriptions/doctor/${doctorId}`, { params }),
-  cancel:        (id: string)               => apiClient.patch<Prescription>(`/api/v1/prescriptions/${id}/cancel`),
+  create: (data: CreatePrescriptionRequest) =>
+    api.post<Prescription>('/prescriptions', data).then(r => r.data),
+  getById: (id: string) =>
+    api.get<Prescription>(`/prescriptions/${id}`).then(r => r.data),
+  getByPatient: (patientId: string, page = 0) =>
+    api.get<Page<Prescription>>(`/prescriptions/patient/${patientId}`, { params: { page } }).then(r => r.data),
+  getActiveByPatient: (patientId: string) =>
+    api.get<Page<Prescription>>(`/prescriptions/patient/${patientId}/active`).then(r => r.data),
+  getByDoctor: (doctorId: string, page = 0) =>
+    api.get<Page<Prescription>>(`/prescriptions/doctor/${doctorId}`, { params: { page } }).then(r => r.data),
+  cancel: (id: string) =>
+    api.patch<Prescription>(`/prescriptions/${id}/cancel`).then(r => r.data),
 };
 
 // ── Billing ───────────────────────────────────────────────────────────────────
 export const billingApi = {
-  createInvoice:     (data: unknown)        => apiClient.post<Invoice>('/api/v1/billing/invoices', data),
-  getInvoiceById:    (id: string)           => apiClient.get<Invoice>(`/api/v1/billing/invoices/${id}`),
-  getAllInvoices:     (params?: Record<string, unknown>) =>
-    apiClient.get<Page<Invoice>>('/api/v1/billing/invoices', { params }),
-  getPatientInvoices:(patientId: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Invoice>>(`/api/v1/billing/invoices/patient/${patientId}`, { params }),
-  getByStatus:       (status: string, params?: Record<string, unknown>) =>
-    apiClient.get<Page<Invoice>>(`/api/v1/billing/invoices/status/${status}`, { params }),
-  recordPayment:     (id: string, data: unknown) =>
-    apiClient.post<Invoice>(`/api/v1/billing/invoices/${id}/payments`, data),
-  cancelInvoice:     (id: string)           => apiClient.patch<Invoice>(`/api/v1/billing/invoices/${id}/cancel`),
-  getStats:          ()                     => apiClient.get('/api/v1/billing/stats'),
+  getPatientInvoices: (patientId: string, page = 0) =>
+    api.get<Page<InvoiceResponse>>(`/billing/invoices/patient/${patientId}`, { params: { page } }).then(r => r.data),
+  getAll: (page = 0) =>
+    api.get<Page<InvoiceResponse>>('/billing/invoices', { params: { page } }).then(r => r.data),
+  getById: (id: string) =>
+    api.get<InvoiceResponse>(`/billing/invoices/${id}`).then(r => r.data),
+  recordPayment: (id: string, data: { amount: number; paymentMethod: string; notes?: string }) =>
+    api.post<InvoiceResponse>(`/billing/invoices/${id}/payments`, data).then(r => r.data),
+  cancel: (id: string) =>
+    api.patch<InvoiceResponse>(`/billing/invoices/${id}/cancel`).then(r => r.data),
+  stats: () =>
+    api.get<BillingStatsResponse>('/billing/stats').then(r => r.data),
 };
