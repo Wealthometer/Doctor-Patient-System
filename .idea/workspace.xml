@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e38d61-8924-4c27-8077-efb4ca6eb92b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config-server/src/main/resources/configs/patient-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config-server/src/main/resources/configs/patient-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/java/com/healthcare/patient/service/PatientMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/patient-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/patient-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-react/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-react/src/api/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/api/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-react/src/pages/Appointments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/pages/Appointments.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-react/src/pages/DoctorDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/pages/DoctorDashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-react/src/pages/Patients.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-react/src/pages/Patients.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/USER/Documents/GitHub/Doctor-Patient-System2" value="3ElL7BzuE8bONfEJZw6JKON9vVj" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="333" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,16 +115,20 @@
     "Spring Boot.AppointmentServiceApplication.executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "api-test",
     "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Documents/HMS-PROJECT/Doctor-Patient-System",
+    "last_opened_file_path": "C:/Users/USER/Documents/GitHub/Doctor-Patient-System2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
