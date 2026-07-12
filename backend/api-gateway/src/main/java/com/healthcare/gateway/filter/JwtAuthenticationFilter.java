@@ -63,6 +63,15 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .parseSignedClaims(token)
                     .getPayload();
 
+            // Log header information for debugging (be careful not to log sensitive info in production)
+            if (log.isDebugEnabled()) {
+                log.debug("Processing request for path: {}", path);
+                log.debug("User ID: {}", claims.get("userId", String.class));
+                log.debug("Username: {}", claims.getSubject());
+                log.debug("User email: {}", claims.get("email", String.class));
+                log.debug("User role: {}", claims.get("role", String.class));
+            }
+
             // Forward user info as headers to downstream services
             ServerHttpRequest mutatedRequest = request.mutate()
                     .header("X-User-Id",    claims.get("userId", String.class))
@@ -70,6 +79,16 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .header("X-User-Email", claims.get("email", String.class))
                     .header("X-User-Role",  claims.get("role",  String.class))
                     .build();
+
+            // Log the headers we're adding (for debugging)
+            if (log.isDebugEnabled()) {
+                HttpHeaders headers = mutatedRequest.getHeaders();
+                log.debug("Adding headers to request: X-User-Id={}, X-Username={}, X-User-Email={}, X-User-Role={}",
+                        headers.getFirst("X-User-Id"),
+                        headers.getFirst("X-Username"),
+                        headers.getFirst("X-User-Email"),
+                        headers.getFirst("X-User-Role"));
+            }
 
             return chain.filter(exchange.mutate().request(mutatedRequest).build());
 
