@@ -143,7 +143,7 @@ spec:
     spec:
       containers:
         - name: auth-service
-          image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/auth-service:latest
+          image: elladev20/auth-service:latest
           ports:
             - containerPort: 8081
           env:
